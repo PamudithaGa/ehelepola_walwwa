@@ -1,9 +1,9 @@
 import React from 'react'
 
 //Components
-import Hero from '../components/Hero';
-import Places from '../components/Places';
-import Gallery from '../components/Gallery';
+import Hero from '../components/prisonarcade/Hero';
+import Places from '../components/prisonarcade/Places';
+import Gallery from '../components/prisonarcade/Gallery';
 
 const PrisonArcade: React.FC = () => {
   return (
