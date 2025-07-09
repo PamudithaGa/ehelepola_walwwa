@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Gallery: React.FC = () => {
+const Places: React.FC = () => {
   return (
     <div>
-      
+
     </div>
   )
 }
 
-export default Gallery
+export default Places
