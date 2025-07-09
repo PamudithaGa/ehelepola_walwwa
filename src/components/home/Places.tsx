@@ -102,9 +102,9 @@ const Places: React.FC = () => {
         {/* Description Box */}
         <div className="flex-1 flex flex-col lg:mt-25">
           <div className="">
-            <h1 className="text-primary ">Ehelepola Walawwa: Echoes of Royalty, Crafted for Today’s World</h1>
+            <h1 className="text-primary text-3xl font-bold">Ehelepola Walawwa: Echoes of Royalty, Crafted for Today’s World</h1>
           </div>
-          <p className="text-gray-600 text-base leading-relaxed text-justify mb-4">
+          <p className="text-gray-600 text-base leading-relaxed text-justify my-4">
             Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From
             immersive shopping to artistic entertainment, historical
             exploration, and royal dining — each zone offers a unique experience
@@ -131,10 +131,10 @@ const Places: React.FC = () => {
           </p>
 
           <div className="flex gap-4 mt-18 pt-4 ">
-            <button className="bg-primary cursor-pointer text-secondary px-4 py-2 rounded-[16px] hover:brightness-110 transition">
+            <button className="bg-primary cursor-pointer text-secondary px-4 py-2  hover:brightness-110 transition">
               Explore More
             </button>
-            <button className="border border-highlight cursor-pointer text-highlight px-4 py-2 rounded-[16px] hover:brightness-110 transition">
+            <button className="border border-highlight cursor-pointer text-highlight px-4 py-2  hover:brightness-110 transition">
               Contact Us
             </button>
           </div>
