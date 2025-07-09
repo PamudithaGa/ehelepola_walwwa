@@ -5,9 +5,9 @@ import Timeline from '../components/waxmuseum/timeline'
 
 const WaxMuseum:React.FC = () => {
   return (
-    <div>
+    <section>
       <Timeline/>
-    </div>
+    </section>
   )
 }
 

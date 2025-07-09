@@ -28,15 +28,16 @@ const Gallery: React.FC = () => {
       {/* Left text section */}
      
 
-      <div className="flex-1 flex flex-col justify-center items-start px-10 hidden lg:block">
-        <div className="ml-20 mt-10 bg-blue-500">
+      <div className="flex-1 flex flex-col w-2/3 justify-center items-center pl-10 hidden lg:block">
+        
+        <div className="ml-20 mt-10  w-full">
           <h1 className="text-5xl font-light mb-4">Gallery</h1>
-          <p className="text-lg text-gray-300 max-w-xl">
+          <p className="text-lg  text-gray-300 max-w-xl">
             An immersive scroll experience — where visuals flow like time.
           </p>
 
           {/* Dynamic Preview Image */}
-          <div className="mt-6 w-full h-[380px] rounded-lg overflow-hidden border border-white/20 shadow-md">
+          <div className="mt-6 w-full h-[440px]  rounded-lg overflow-hidden border border-white/20 shadow-md">
             <img
               src={allImages[currentIndex]}
               alt={`Preview ${currentIndex}`}
@@ -58,6 +59,7 @@ const Gallery: React.FC = () => {
                 Prev
               </button>
             </div>
+            
             <div>
               <button
                 onClick={() =>
@@ -68,12 +70,13 @@ const Gallery: React.FC = () => {
                 Next
               </button>
             </div>
+
           </div>
         </div>
       </div>
 
       {/* Scrolling image columns */}
-      <div className="flex-1 flex justify-center gap-6">
+      <div className="flex-1 flex justify-center w-1/3 gap-6">
         {/* Left Column: Scroll Down */}
         <motion.div
           className="flex flex-col gap-4"
