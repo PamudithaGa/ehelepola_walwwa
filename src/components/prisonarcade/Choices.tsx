@@ -108,14 +108,9 @@ const Choices: React.FC = () => {
       {/* Desktop grid layout */}
       <div className="hidden md:grid grid-cols-4 grid-rows-2 gap-5 w-4/5 mx-auto text-white">
         {data.map((card) => (
-          // <ChoiceItem
-          //   key={idx}
-          //   imgSrc={item.imgSrc}
-          //   title={item.title}
-          //   description={item.description}
-          // />
+          
 
-          <div className="grid h-[320px] place-items-center bg-black bg-opacity-60 backdrop-blur-md border border-black/30 shadow-lg">
+          <div className="grid h-[320px] place-items-center rounded-xl bg-black bg-opacity-60 backdrop-blur-md border border-black/30 shadow-lg">
             <div className="h-20 w-20 mt-8 bg-[#353535] rounded-full flex items-center justify-center">
               <img src={card.imgSrc} alt={card.title} className="p-4" />
             </div>
