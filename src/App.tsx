@@ -1,21 +1,37 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 //Components
 import Places from "./components/home/Places";
 import Gallery from "./components/home/Gallery";
+import Footer from "./components/common/Footer";
+
+import FooterTopImage from './assets/footer-image.png'
 
 function App() {
   return (
     <>
-      <div className="flex items-center justify-center w-full ">
+      <section className="flex items-center justify-center w-full ">
         <Places />
-      </div>
-      <div className="flex items-center justify-center w-full bg-primary">
-        <Gallery/>
-      </div>
+      </section>
+
+      <section className="flex items-center justify-center w-full bg-primary">
+        <Gallery />
+      </section>
+
+
+      {/* footer */}
+      <section
+        className="mt-10 ">
+        <div>
+          <img src={FooterTopImage} />
+        </div>
+        <section
+          className="bg-primary z-10">
+          <Footer />
+        </section>
+      </section>
+
     </>
   );
 }
