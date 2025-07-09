@@ -36,45 +36,16 @@ const zones = [
 const Places: React.FC = () => {
   return (
     <div className="w-5/6 lg:h-[100dvh] mx-auto  flex items-center">
-      <div className="flex flex-col md:flex-row gap-8 ">
+      <div className="flex flex-col md:flex-row gap-16 ">
         {/* Image Grid */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
-          {[Prison, MadaMidula, WaxMuseum, KingCourt].map((imgSrc, idx) => (
-            <div
-              key={idx}
-              className="py-8 px-3 border border-gray-300 pt-12 bg-black flex flex-col justify-center items-center"
-            >
-              <div className="w-full flex  items-center justify-center mb-2">
-                <img
-                  src={imgSrc}
-                  alt="Place Logo"
-                  className="h-20 object-contain"
-                />
-              </div>
-              <div className=" lg:pt-2 px-4">
-                <p className="text-highlight/[0.8] font-extralight  text-[14px] text-justify mb-4">
-                  exploration, and royal dining — each zone offers a unique
-                  experience within these timeless walls. Discover the cultural
-                  heart of Sri Lanka at Ehelapola Walawwa.
-                </p>
-              </div>
-              <div className=" lg:mt-2 w-full px-4">
-                <div className="px-4 py-2 w-full   border border-white/30 flex justify-center items-center">
-                  <button className="text-secondary font-medium">
-                    Explore
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div> */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
           {zones.map((zone, idx) => (
             <div
               key={idx}
-              className="py-8 px-3 border border-gray-300 pt-12 bg-black flex flex-col justify-center items-center"
+              className="py-8 px-3 rounded-xl pt-12 bg-black flex flex-col justify-center items-center"
             >
-              <div className="w-full flex items-center justify-center mb-2">
+              <div className="w-full flex items-center border rounded-2xl justify-center mb-2">
                 <img
                   src={zone.image}
                   alt={zone.title}
@@ -82,14 +53,14 @@ const Places: React.FC = () => {
                 />
               </div>
 
-              <div className="lg:pt-2 px-4 text-center">
-                <p className="text-highlight/[0.8] font-extralight text-[14px] text-justify mb-4">
+              <div className="lg:pt-2 px-4 ">
+                <p className="text-highlight/[0.8] font-extralight text-[14px]  mb-4">
                   {zone.description}
                 </p>
               </div>
 
               <div className="lg:mt-2 w-full px-4">
-                <div className="px-4 py-2 w-full border border-white/30 flex justify-center items-center">
+                <div className="px-4 py-2 w-full border rounded-lg border-white/30 flex justify-center items-center">
                   <button className="text-secondary font-medium">
                     Explore
                   </button>
@@ -100,11 +71,11 @@ const Places: React.FC = () => {
         </div>
 
         {/* Description Box */}
-        <div className="flex-1 flex flex-col lg:mt-25">
+        <div className="flex-1 flex flex-col lg:mt-5">
           <div className="">
-            <h1 className="text-primary ">Ehelepola Walawwa: Echoes of Royalty, Crafted for Today’s World</h1>
+            <h1 className="text-primary  leading-12 text-[45px] font-bold">Legacy Meets Luxury, <br /> <span className="text-4xl text-ternary">Ehelepola Walawwa</span> </h1>
           </div>
-          <p className="text-gray-600 text-base leading-relaxed text-justify mb-4">
+          <p className="text-gray-600 text-base leading-relaxed text-justify my-4">
             Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From
             immersive shopping to artistic entertainment, historical
             exploration, and royal dining — each zone offers a unique experience
@@ -130,11 +101,11 @@ const Places: React.FC = () => {
             entertainment, historical exploration, and royal dining */}
           </p>
 
-          <div className="flex gap-4 mt-18 pt-4 ">
-            <button className="bg-primary cursor-pointer text-secondary px-4 py-2 rounded-[16px] hover:brightness-110 transition">
+          <div className="flex gap-4 pt-5 ">
+            <button className="bg-primary cursor-pointer rounded-lg border border-primary text-secondary px-4 py-2  hover:brightness-110 transition">
               Explore More
             </button>
-            <button className="border border-highlight cursor-pointer text-highlight px-4 py-2 rounded-[16px] hover:brightness-110 transition">
+            <button className="border border-highlight  rounded-lg cursor-pointer text-highlight px-4 py-2  hover:brightness-110 transition">
               Contact Us
             </button>
           </div>

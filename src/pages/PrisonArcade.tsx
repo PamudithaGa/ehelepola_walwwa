@@ -5,20 +5,39 @@ import Hero from "../components/prisonarcade/Hero";
 import Choices from "../components/prisonarcade/Choices";
 import Places from "../components/prisonarcade/Places";
 import Gallery from "../components/prisonarcade/Gallery";
+import Footer from "../components/common/Footer";
 
+import FooterTopImage from '../assets/footer-image.png'
 const PrisonArcade: React.FC = () => {
   return (
     <>
-      <Hero />
-      <div>
+      <section>
+        <Hero />
+      </section>
+
+      <section className="h-[100dvh] flex items-center bg-amber-300">
         <Choices />
-      </div>
-      <div>
+      </section>
+
+      <section>
         <Places />
-      </div>
-      <div className="mt-20">
+      </section>
+
+      <section className="mt-20">
         <Gallery />
-      </div>
+      </section>
+
+      {/* footer */}
+      <section
+        className="mt-10 ">
+        <div>
+          <img src={FooterTopImage} />
+        </div>
+        <section
+          className="bg-primary z-10">
+          <Footer />
+        </section>
+      </section>
     </>
   );
 };
