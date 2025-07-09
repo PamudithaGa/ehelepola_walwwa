@@ -10,7 +10,7 @@ const PrisonArcade: React.FC = () => {
   return (
     <>
       <Hero />
-      <div>
+      <div className="h-auto bg-amber-300">
         <Choices />
       </div>
       <div>
