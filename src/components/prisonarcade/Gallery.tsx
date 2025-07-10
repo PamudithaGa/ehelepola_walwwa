@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const allImages = [
   "https://images.unsplash.com/photo-1583394838336-acd977736f90",
@@ -14,6 +15,7 @@ const Gallery: React.FC = () => {
   const loopedImages = [...allImages, ...allImages];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,28 +26,71 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full h-[100vh] bg-black text-white flex overflow-hidden">
+    <div className="w-full  h-[100dvh] bg-black text-white flex overflow-hidden">
       {/* Left text section */}
-     
 
-      <div className="flex-1 flex flex-col justify-center items-start px-10 hidden lg:block">
-        <div className="ml-20 mt-10 bg-blue-500">
+      <div className="flex-1 flex flex-col w-2/3 justify-center items-center lg:ml-20 pl-10 ">
+        <div className="lg:ml-20 mt-10 pr-10 w-full">
           <h1 className="text-5xl font-light mb-4">Gallery</h1>
-          <p className="text-lg text-gray-300 max-w-xl">
+          <p className="text-lg  text-gray-300 max-w-xl">
             An immersive scroll experience — where visuals flow like time.
           </p>
-
           {/* Dynamic Preview Image */}
-          <div className="mt-6 w-full h-[380px] rounded-lg overflow-hidden border border-white/20 shadow-md">
+          <div className="mt-6 w-full h-[440px]  rounded-lg overflow-hidden border border-white/20 shadow-md">
             <img
               src={allImages[currentIndex]}
               alt={`Preview ${currentIndex}`}
-              className="w-full  object-contain transition-all duration-500"
+              className="w-full object-contain transition-all duration-500 cursor-pointer"
+              onClick={() => setShowModal(true)}
             />
           </div>
 
-          {/* Prev/Next Controls */}
-          <div className="mt-4 flex gap-4  justify-center  ">
+          {/* Image full screen */}
+          {showModal && (
+            <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
+              <div className="relative max-w-6xl w-full px-4">
+                {/* Close Button */}
+                <button
+                  onClick={() => setShowModal(false)}
+                  className="absolute top-4 right-4 text-white text-3xl z-50 hover:text-gray-300"
+                >
+                  &times;
+                </button>
+
+                {/* Prev Button */}
+                <button
+                  onClick={() =>
+                    setCurrentIndex((prev) =>
+                      prev === 0 ? allImages.length - 1 : prev - 1
+                    )
+                  }
+                  className="absolute left-4 top-1/2 -translate-y-1/2 text-white text-2xl bg-white/10 hover:bg-white/20 rounded-full p-2 z-50"
+                >
+                  <FaArrowLeft size={16} />
+                </button>
+
+                {/* Next Button */}
+                <button
+                  onClick={() =>
+                    setCurrentIndex((prev) => (prev + 1) % allImages.length)
+                  }
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-2xl bg-white/10 hover:bg-white/20 rounded-full p-2 z-50"
+                >
+                  <FaArrowRight size={16} />{" "}
+                </button>
+
+                {/* Fullscreen Image */}
+                <img
+                  src={allImages[currentIndex]}
+                  alt="Fullscreen Preview"
+                  className="w-full h-auto max-h-[90vh] object-contain rounded-lg shadow-xl"
+                />
+              </div>
+            </div>
+          )}
+
+          {/* Prev/Next */}
+          <div className="mt-12 flex gap-4  justify-center  ">
             <div>
               <button
                 onClick={() =>
@@ -53,19 +98,20 @@ const Gallery: React.FC = () => {
                     prev === 0 ? allImages.length - 1 : prev - 1
                   )
                 }
-                className="px-4 py-2 border border-white/30 hover:bg-white/10 transition  text-sm"
+                className="px-4 py-4 border rounded-full cursor-pointer border-white/30 hover:bg-white/10 transition  text-sm"
               >
-                Prev
+                <FaArrowLeft size={16} />
               </button>
             </div>
+
             <div>
               <button
                 onClick={() =>
                   setCurrentIndex((prev) => (prev + 1) % allImages.length)
                 }
-                className="px-4 py-2 border border-white/30 hover:bg-white/10 transition  text-sm"
+                className="px-4  py-4 border rounded-full cursor-pointer border-white/30 hover:bg-white/10 transition  text-sm"
               >
-                Next
+                <FaArrowRight size={16} />{" "}
               </button>
             </div>
           </div>
@@ -73,7 +119,7 @@ const Gallery: React.FC = () => {
       </div>
 
       {/* Scrolling image columns */}
-      <div className="flex-1 flex justify-center gap-6">
+      <div className="flex-1 lg:flex justify-center w-1/3 gap-6 hidden lg:block">
         {/* Left Column: Scroll Down */}
         <motion.div
           className="flex flex-col gap-4"
