@@ -3,7 +3,7 @@ import "./App.css";
 
 //Components
 import Places from "./components/home/Places";
-import Gallery from "./components/home/Gallery";
+import Gallery from "./components/prisonarcade/Gallery";
 import Footer from "./components/common/Footer";
 import NavBar from "./components/common/NavBar";
 import HeroSection from "./components/home/HeroSection";
@@ -32,7 +32,7 @@ const App: React.FC = () => {
         <NavBar page="home" />
       </section>
 
-      <section>
+      <section className="w-full">
         <HeroSection />
       </section>
 
@@ -40,7 +40,7 @@ const App: React.FC = () => {
         <Places />
       </section>
 
-      <section className="flex items-center justify-center w-full bg-primary mt-20">
+      <section className="mt-20">
         <Gallery />
       </section>
 

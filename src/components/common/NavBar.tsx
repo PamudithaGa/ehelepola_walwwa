@@ -23,7 +23,7 @@ const NavBar: React.FC<NavProps> = ({ page }) => {
           <ul className="hidden md:flex gap-6 text-white font-regular justify-center w-full">
             <li><Link to="/" onClick={closeMenu} className={linkClass('home')}>Home</Link></li>
             <li><Link to="/" onClick={closeMenu} className={linkClass('about')}>About</Link></li>
-            <li><Link to="/about" onClick={closeMenu} className={linkClass('about')}>Shopping</Link></li>
+            <li><Link to="/PrisonArcade" onClick={closeMenu} className={linkClass('PrisonArcade')}>Shopping</Link></li>
             <li><Link to="/services" onClick={closeMenu} className={linkClass('services')}>Dining</Link></li>
             <li><Link to="/portfolio" onClick={closeMenu} className={linkClass('portfolio')}>Emtertainment</Link></li>
             <li><Link to="/contact" onClick={closeMenu} className={linkClass('contact')}>Wax Museum</Link></li>
