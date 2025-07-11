@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
       const shortText = fullText.slice(0, 250) + "...";
   
     return (
-      <section className="relative w-screen lg:h-[100dvh] h-[70dvh] md:h-[65dvh] overflow-hidden">
+      <section className="relative w-full lg:h-[100dvh] h-[70dvh] md:h-[65dvh] overflow-hidden">
         {/* Background Video */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -41,38 +41,23 @@ const HeroSection: React.FC = () => {
         />
   
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10" />
   
         {/* Content */}
         <div className="relative w-11/12 lg:w-5/6 mx-auto z-20 flex flex-col items-center justify-center h-full text-center px-4 text-secondary/[0.8] font-thin mt-15 md:mt-25 lg:mt-20">
           {/* Logo */}
-          <img
+          {/* <img
             src={logo}
             alt="Logo"
             className={`w-30 h-35 md:w-50 md:h-60 mb-4 transform transition-all duration-2000 ease-in-out ${
               showContent ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }`}
-          />
+          /> */}
 
           {/* Paragraph */}
-          <p
-        className={`text-xs leading-7 md:text-[18px] font-extralight w-full  md:mt-5 md:leading-9 transform transition-all duration-1000 ease-in-out ${
-          showContent ? "opacity-100 translate-y-0 font-extralight" : "font-extralight opacity-0 translate-y-5"
-        }`}>
-        {/* Mobile: Short text unless expanded */}
-        <span className="block md:hidden">
-          {expanded ? fullText : shortText}
-          <button
-            className="text-gray-500 font-medium ml-2 underline"
-            onClick={() => setExpanded(!expanded)}
-          >
-            {expanded ? "Show less" : "Read more"}
-          </button>
-        </span>
+          <h1 className="text-secondary leading-12 text-[60px] font-meritta font-bold">Legacy Meets Luxury </h1>
 
-        {/* Desktop: Always show full */}
-        <span className="hidden md:inline">{fullText}</span>
-      </p>
+       
         </div>
       </section>
     );
