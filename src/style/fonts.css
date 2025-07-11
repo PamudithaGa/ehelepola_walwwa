@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'meritta';
+  src: url('../assets/fonts/MerittaSerif.ttf') format('ttf'),
+  url('../assets/fonts/MerittaSerif.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}

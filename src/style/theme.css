@@ -1,7 +1,11 @@
+@import '../style/fonts.css';
+
 @theme{
     --color-primary:#000000;
     --color-secondary:#ffffff;
     --color-ternary:#595959;
     --color-highlight:#7f7d7d;
+
+    --font-titlefont: "meritta", "sans-serif";
 
 }
