@@ -24,11 +24,11 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full h-[100vh] bg-black text-white flex overflow-hidden">
+    <div className="w-full h-[100dvh] bg-black text-white flex gap-2 overflow-hidden">
       {/* Left text section */}
      
 
-      <div className="flex-1 flex flex-col w-2/3 justify-center items-center pl-10 hidden lg:block">
+      <div className="flex-1 flex flex-col w-4/5 bg-red-300 justify-center items-center pl-10 hidden lg:block">
         
         <div className="ml-20 mt-10  w-full">
           <h1 className="text-5xl font-light mb-4">Gallery</h1>
@@ -76,7 +76,7 @@ const Gallery: React.FC = () => {
       </div>
 
       {/* Scrolling image columns */}
-      <div className="flex-1 flex justify-center w-1/3 gap-6">
+      <div className="flex-1 flex justify-center w-1/5 gap-6 bg-red-500">
         {/* Left Column: Scroll Down */}
         <motion.div
           className="flex flex-col gap-4"

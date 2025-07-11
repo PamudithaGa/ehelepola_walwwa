@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
   
         {/* Content */}
-        <div className="relative w-11/12 lg:w-5/6 mx-auto z-20 flex flex-col items-center justify-center h-full text-center px-4 text-white mt-15 md:mt-25 lg:mt-20">
+        <div className="relative w-11/12 lg:w-5/6 mx-auto z-20 flex flex-col items-center justify-center h-full text-center px-4 text-secondary/[0.8] font-thin mt-15 md:mt-25 lg:mt-20">
           {/* Logo */}
           <img
             src={logo}
@@ -56,10 +56,9 @@ const HeroSection: React.FC = () => {
 
           {/* Paragraph */}
           <p
-        className={`text-xs leading-7 md:text-lg font-extralight w-full drop-shadow-sm md:mt-5 md:leading-9 transform transition-all duration-1000 ease-in-out ${
+        className={`text-xs leading-7 md:text-[18px] font-extralight w-full  md:mt-5 md:leading-9 transform transition-all duration-1000 ease-in-out ${
           showContent ? "opacity-100 translate-y-0 font-extralight" : "font-extralight opacity-0 translate-y-5"
-        }`}
-      >
+        }`}>
         {/* Mobile: Short text unless expanded */}
         <span className="block md:hidden">
           {expanded ? fullText : shortText}
