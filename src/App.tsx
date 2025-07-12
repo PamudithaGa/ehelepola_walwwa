@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import { Toaster } from "react-hot-toast";
 
 //Components
 import Places from "./components/home/Places";
@@ -56,6 +57,7 @@ const App: React.FC = () => {
           <Footer />
         </section>
       </section>
+       <Toaster position="top-right" />
 
     </>
   );
