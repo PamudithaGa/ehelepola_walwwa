@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 // Pages
 import PrisonArcade from "./pages/PrisonArcade.tsx";
 import WaxMuseum from "./pages/WaxMuseum.tsx";
+import ContactUs from "./pages/ContactUs.tsx";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/WaxMuseum",
-    element: <WaxMuseum/>,
+    element: <WaxMuseum />,
+  },
+  {
+    path: "/ContactUs",
+    element: <ContactUs />,
   },
 ]);
 
