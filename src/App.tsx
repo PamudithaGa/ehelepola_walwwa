@@ -36,7 +36,7 @@ const App: React.FC = () => {
         <HeroSection />
       </section>
 
-      <section className="flex items-center justify-center w-full mt-20">
+      <section className="flex items-center justify-center w-full mt-30">
         <Places />
       </section>
 
