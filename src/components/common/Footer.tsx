@@ -87,11 +87,11 @@ const Footer: React.FC = () => {
             </footer>
 
             {/* Bottom Bar */}
-            <div className="py-4 w-full px-4 text-highlight bg-[#0c0c0c]">
+            <div className="py-4 w-full px-4 text-highlight bg-[#131313]">
                 <div className="w-5/6 mx-auto flex flex-col-reverse sm:flex-row justify-between items-center gap-4">
                     {/* Copyright */}
                     <div className="text-[12px] text-center lg:text-justify">
-                        Powered by All In One Holdings © 2025 All Rights Reserved.
+                        Powered by All In One IT Solutions © 2025 All Rights Reserved.
                     </div>
 
                     {/* Social Icons */}
