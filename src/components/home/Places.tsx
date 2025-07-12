@@ -5,6 +5,7 @@ import KingCourt from "../../assets/home/kings-court-wite.png";
 import MadaMidula from "../../assets/home/MADA-MIDULA-White-vertical.png";
 import Prison from "../../assets/home/Prison-LOGO-Black.png";
 import WaxMuseum from "../../assets/home/wax-museum-white.png";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const zones = [
   {
@@ -35,7 +36,7 @@ const zones = [
 
 const Places: React.FC = () => {
   return (
-    <div className="w-5/6 lg:h-[100dvh] mx-auto  flex items-center">
+    <div className="w-5/6 lg:h-5/6 mx-auto items-center">
       <div className="flex flex-col md:flex-row gap-16 ">
         {/* Image Grid */}
         
@@ -43,9 +44,9 @@ const Places: React.FC = () => {
           {zones.map((zone, idx) => (
             <div
               key={idx}
-              className="py-8 px-3 rounded-xl pt-12 bg-black flex flex-col justify-center items-center"
+              className="py-8 px-3 rounded-xl pt-12 bg-gradient-to-tr from-black via-[#131313] to-black  flex flex-col justify-center items-center"
             >
-              <div className="w-full flex items-center border rounded-2xl justify-center mb-2">
+              <div className="w-full flex items-center rounded-2xl justify-center mb-2">
                 <img
                   src={zone.image}
                   alt={zone.title}
@@ -54,15 +55,15 @@ const Places: React.FC = () => {
               </div>
 
               <div className="lg:pt-2 px-4 ">
-                <p className="text-highlight/[0.8] font-extralight text-[14px]  mb-4">
+                <p className="text-ternary text-center font-extralight text-[14px]  mb-4">
                   {zone.description}
                 </p>
               </div>
 
-              <div className="lg:mt-2 w-full px-4">
-                <div className="px-4 py-2 w-full border rounded-lg border-white/30 flex justify-center items-center">
-                  <button className="text-secondary font-medium">
-                    Explore
+              <div className="lg:mt-3 w-full px-4">
+                <div className="px-4 py-2 w-full border backdrop-blur-md bg-white/10 rounded-lg border-white/30 flex justify-center items-center">
+                  <button className="text-secondary flex items-center justify-center gap-2  font-medium">
+                    Explore <MdOutlineArrowOutward className="w-5 h-5"/>
                   </button>
                 </div>
               </div>
@@ -73,7 +74,7 @@ const Places: React.FC = () => {
         {/* Description Box */}
         <div className="flex-1 flex flex-col lg:mt-5">
           <div className="">
-            <h1 className="text-primary  leading-12 text-[45px] font-bold">Legacy Meets Luxury, <br /> <span className="text-4xl text-ternary">Ehelepola Walawwa</span> </h1>
+            <h1 className="text-primary  leading-12 text-[52px] font-extrabold tracking-[0.8rem]">Legacy Meets,  <br /> <span className="text-8xl bg-gradient-to-t text-center from-black to-white bg-clip-text text-transparent  tracking-normal">Luxury</span> </h1>
           </div>
           <p className="text-gray-600 text-base leading-relaxed text-justify my-4">
             Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From

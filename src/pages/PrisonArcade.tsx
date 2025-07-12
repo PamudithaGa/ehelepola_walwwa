@@ -8,6 +8,7 @@ import Gallery from "../components/prisonarcade/Gallery";
 import Footer from "../components/common/Footer";
 import NavBar from "../components/common/NavBar";
 import HeroSection from "../components/home/HeroSection";
+import InfoSection from "../components/prisonarcade/InfoSection";
 
 import FooterTopImage from "../assets/footer-image.png";
 const PrisonArcade: React.FC = () => {
@@ -25,16 +26,20 @@ const PrisonArcade: React.FC = () => {
     <>
       {/* header */}
       <section
-        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${
-          showNav ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
-        }`}
+        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${showNav ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+          }`}
       >
-        <NavBar page="home" />
+        <NavBar page="shopping" />
       </section>
 
-      <section className="lg:h-[100dvh]">
+      <section className="lg:h-[80dvh]">
         <Hero />
       </section>
+
+      <section className="lg:h-[100dvh] flex items-center justify-center">
+        <InfoSection />
+      </section>
+
 
       <section className="lg:h-[100dvh] flex items-center justify-center">
         <Choices />

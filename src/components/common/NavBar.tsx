@@ -1,67 +1,82 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router';
+import React from "react";
+import { Link } from "react-router";
 
-interface NavProps {
-  page: string;
+import Logo from "../../assets/logos/ehelepola-walauwwe-logo-black.png";
+
+interface NavbarProps {
+  page: "home" | "about" | "shopping" | "dining" | "entertainment" | "wax" | "contact";
 }
-const NavBar: React.FC<NavProps> = ({ page }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-  const closeMenu = () => setMenuOpen(false);
 
-  const linkClass = (name:string) =>
-    `${page === name
-      ? 'bg-black text-white px-3 py-2 rounded-md'
-      : 'hover:bg-gray-700 hover:text-white px-3 py-1 rounded-md'
-    } transition`;
-
+const Navbar: React.FC<NavbarProps> = ({ page }) => {
   return (
-    <div className="flex justify-center items-center w-full p-10">
-      <nav className="absolute rounded-2xl w-full mx-auto md:w-1/2 z-50 backdrop-blur-md bg-white/10 border-b border-white/20 shadow-md">
-        <div className="w-full px-4 py-3 flex justify-end items-center">
-          {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-6 text-white font-regular justify-center w-full">
-            <li><Link to="/" onClick={closeMenu} className={linkClass('home')}>Home</Link></li>
-            <li><Link to="/about" onClick={closeMenu} className={linkClass('about')}>About</Link></li>
-            <li><Link to="/services" onClick={closeMenu} className={linkClass('services')}>Services</Link></li>
-            <li><Link to="/portfolio" onClick={closeMenu} className={linkClass('portfolio')}>Portfolio</Link></li>
-            <li><Link to="/contact" onClick={closeMenu} className={linkClass('contact')}>Contact</Link></li>
-          </ul>
+    <nav className="sticky top-0 z-50 mt-2 w-3/4 mx-auto relative">
 
-          {/* Hamburger Button */}
-          <button className="md:hidden text-white focus:outline-none" onClick={toggleMenu}>
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+        <div className="flex justify-center items-center py-4 relative z-20">
+          {/* Left Column */}
+          <div className="w-2/5 py-4 flex justify-end items-center h-12 gap-6 bg-gradient-to-l from-white via-white/85 to-transparent
+pr-8">
+            <Link
+              to="/"
+              className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${page === "home" ? "bg-primary text-secondary py-2 px-5 rounded-xl" : ""
+                }`}
             >
-              {menuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="w-full md:hidden px-4 pb-4 pt-2 backdrop-blur-md bg-white/10 text-white">
-            <ul className="flex flex-col gap-4 font-medium items-center">
-              <li><Link to="/" onClick={closeMenu} className={linkClass('home')}>Home</Link></li>
-              <li><Link to="/about" onClick={closeMenu} className={linkClass('about')}>About</Link></li>
-              <li><Link to="/services" onClick={closeMenu} className={linkClass('services')}>Services</Link></li>
-              <li><Link to="/portfolio" onClick={closeMenu} className={linkClass('portfolio')}>Portfolio</Link></li>
-              <li><Link to="/contact" onClick={closeMenu} className={linkClass('contact')}>Contact</Link></li>
-            </ul>
+              Home
+            </Link>
+            <Link
+              to="#"
+              className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${page === "about" ? "bg-primary text-secondary py-2 px-5 rounded-xl" : ""
+                }`}
+            >
+              About
+            </Link>
+            <Link
+              to="/PrisonArcade"
+              className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${page === "shopping" ? "bg-primary text-secondary py-2 px-5 rounded-xl" : ""
+                }`}
+            >
+              Shopping
+            </Link>
+            <Link
+              to="#"
+              className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${page === "dining" ? "bg-primary text-secondary py-2 px-5 rounded-xl" : ""
+                }`}
+            >
+              Dining
+            </Link>
           </div>
-        )}
-      </nav>
-    </div>
+
+          {/* Center Column */}
+          <div className="relative w-1/5 flex justify-center p-5 rounded-2xl h-30 w-30 bg-white">
+            <img src={Logo} alt="Logo" className="absolute h-20 object-contain" />
+          </div>
+
+          {/* Right Column */}
+          <div className="w-2/5 py-4 flex justify-start items-center gap-6 h-12 bg-gradient-to-r from-white via-white/90 to-transparent pl-8">
+            <Link
+              to="#"
+              className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${page === "entertainment" ? "bg-primary text-secondary p-2" : ""
+                }`}
+            >
+              Entertainment
+            </Link>
+            <Link
+              to="#"
+              className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${page === "wax" ? "bg-primary text-secondary py-2 px-5 rounded-xl" : ""
+                }`}
+            >
+              Wax Museum
+            </Link>
+            <Link
+              to="#"
+              className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${page === "contact" ? "bg-primary text-secondary py-2 px-5 rounded-xl" : ""
+                }`}
+            >
+              Contact
+            </Link>
+          </div>
+        </div>
+    </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;
