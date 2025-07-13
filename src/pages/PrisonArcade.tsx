@@ -9,8 +9,8 @@ import Footer from "../components/common/Footer";
 import NavBar from "../components/common/NavBar";
 import PageHero from "../components/common/PageHero";
 import InfoSection from "../components/prisonarcade/InfoSection";
-
 import FooterTopImage from "../assets/footer-image.png";
+
 const PrisonArcade: React.FC = () => {
   const [showNav, setShowNav] = useState(false);
 
@@ -26,8 +26,7 @@ const PrisonArcade: React.FC = () => {
     <>
       {/* header */}
       <section
-        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${showNav ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
-          }`}
+        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out`}
       >
         <NavBar page="shopping" />
       </section>
