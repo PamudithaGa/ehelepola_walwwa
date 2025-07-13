@@ -1,8 +1,8 @@
 // import type { image } from "framer-motion/client";
-import React from "react";
+import React, { useState } from "react";
 
 //Logos
-import Batik from "../../assets/logos/batik.webp";
+ 
 import Ayurweda from "../../assets/logos/ayurveda.webp";
 import Brassware from "../../assets/logos/brassware.webp";
 import clay from "../../assets/logos/clay.webp";
@@ -15,144 +15,172 @@ import Mask from "../../assets/logos/mask.webp";
 import Porcelain from "../../assets/logos/porcelain.webp";
 import Spices from "../../assets/logos/spices.webp";
 
-type ChoiceItemProps = {
-  image: string;
+type Card = {
+  id: number;
   title: string;
+  image: string;
   description: string;
 };
 
-const ChoiceItemMobile: React.FC<ChoiceItemProps> = ({
-  image,
-  title,
-  description,
-}) => (
-  <div className="w-[220px] bg-black rounded-lg p-2 text-white text-center">
-    <img src={image} alt={title} className="w-10 h-10 mx-auto mb-1" />
-    <h3 className="text-xs font-semibold my-1 text-white">{title}</h3>
-    <p className="text-[0.7rem] text-[#ccc]">{description}</p>
-  </div>
-);
+const cardsData: Card[] = [
+  {
+    id: 1,
+    title: "Ayuruweda",
+    image: Ayurweda,
+    description: "Luxury accessories once safeguarded in the vaults.",
+  },
+  {
+    id: 2,
+    title: "Brassware",
+    image: Brassware,
+    description: "Symbol of historic access to secret chambers.",
+  },
+  {
+    id: 3,
+
+    title: "testtitle",
+    image: "/assets/icons/candle.png",
+    description: "Inspired by candle-lit corridors of the past.",
+  },
+  {
+    id: 4,
+
+    title: "testtitle",
+    image: "/assets/icons/helmet.png",
+    description: "Worn by guards of the royal prison arcade.",
+  },
+  {
+    id: 5,
+
+    title: "testtitle",
+    image: "/assets/icons/scroll.png",
+    description: "Ancient trade records once archived here.",
+  },
+  {
+    id: 6,
+
+    title: "testtitle",
+    image: "/assets/icons/balance.png",
+    description: "Justice and design rebalanced with elegance.",
+  },
+  {
+    id: 7,
+
+    title: "testtitle",
+    image: "/assets/icons/watch.png",
+    description: "Timeless fashion, rooted in colonial history.",
+  },
+  {
+    id: 8,
+
+    title: "testtitle",
+    image: "/assets/icons/bag.png",
+    description: "Redefined luxury shopping in an ancient shell.",
+  },
+  {
+    id: 9,
+
+    title: "testtitle",
+    image: "/assets/icons/feather.png",
+    description: "Soft elegance in a strong-walled sanctuary.",
+  },
+  {
+    id: 10,
+    title: "testtitle",
+    image: "/assets/icons/shield.png",
+    description: "Modern brands within a fortress of heritage.",
+  },
+  {
+    id: 11,
+    title: "testtitle",
+    image: "/assets/icons/door.png",
+    description: "Every entrance a story. Every exit an experience.",
+  },
+  {
+    id: 12,
+    title: "testtitle",
+    image: "/assets/icons/tile.png",
+    description: "Textures tell tales of royal footsteps.",
+  },
+  {
+    id: 12,
+    title: "testtitle",
+    image: "/assets/icons/tile.png",
+    description: "Textures tell tales of royal footsteps.",
+  },
+];
+
+const CARDS_PER_PAGE = 12;
 
 const Choices: React.FC = () => {
-  const data = [
-    {
-      image: Ayurweda,
-      title: "Ayurweda",
-      description:
-        "Sri Lanka’s sparkling legacy, straight from the mines to museum-grade displays.",
-    },
-    {
-      image: Batik,
-      title: "Bathik",
-      description:
-        "Dive into Sri Lankan folklore with handcrafted masks full of spirit & story.",
-    },
-    {
-      image: Brassware,
-      title: " Brassware",
-      description:
-        "Grace, drums, and heritage. Witness our cultural rhythm in motion.",
-    },
-    {
-      image: clay,
-      title: "Clay",
-      description:
-        "Sip history. Taste tradition. Discover why Ceylon Tea is world-famous.",
-    },
-    {
-      image: cosmetics,
-      title: "Cosmetics",
-      description:
-        "From cinnamon to curry leaves, journey through our aromatic identity.",
-    },
-    {
-      image: Gems,
-      title: "Gems",
-      description:
-        "Every color has a story — explore the roots of our proud national symbol.",
-    },
-    {
-      image: Handloom,
-      title: "Handloom",
-      description:
-        "Woven, carved, and painted — handmade traditions passed down generations.",
-    },
-    {
-      image: jewellery,
-      title: "Jewellery",
-      description:
-        "Ancient architecture meets spiritual energy — a must-see journey inward.",
-    },
-    {
-      image: Laksha,
-      title: "Laksha",
-      description:
-        "Ancient architecture meets spiritual energy — a must-see journey inward.",
-    },
-    {
-      image: Mask,
-      title: "Mask",
-      description:
-        "Ancient architecture meets spiritual energy — a must-see journey inward.",
-    },
-    {
-      image: Porcelain,
-      title: "Porcelain",
-      description:
-        "Ancient architecture meets spiritual energy — a must-see journey inward.",
-    },
-    {
-      image: Spices,
-      title: "Spices",
-      description:
-        "Ancient architecture meets spiritual energy — a must-see journey inward.",
-    },
-  ];
+  const [currentPage, setCurrentPage] = useState(1);
 
-  // Divide into two rows for mobile
-  const half = Math.ceil(data.length / 2);
-  const firstRow = data.slice(0, half);
-  const secondRow = data.slice(half);
+  const totalPages = Math.ceil(cardsData.length / CARDS_PER_PAGE);
+  const startIndex = (currentPage - 1) * CARDS_PER_PAGE;
+  const currentCards = cardsData.slice(startIndex, startIndex + CARDS_PER_PAGE);
 
   return (
-    <>
-      {/* Desktop grid layout */}
-      <div className="hidden  md:grid grid-cols-4 grid-rows-3 gap-5 w-4/5 mx-auto items-center  justify-center text-white">
-        {data.map((card) => (
-          <div className="grid h-[30dvh] place-items-center rounded-xl bg-black bg-opacity-60 backdrop-blur-md border border-black/30 shadow-lg">
-            <div className="h-20 w-20 mt-8 bg-[#353535] rounded-full flex items-center justify-center">
-              <img src={card.image} alt={card.title} className="p-4" />
-            </div>
-            <h3 className="text-white text-2xl text-center">{card.title}</h3>
-            <p className="text-[#CECECE] px-5 pb-2 text-center text-sm">
-              {card.description}
-            </p>
-          </div>
-        ))}
-      </div>
+    <section className=" text-white px-4 min-h-screen">
+      <div className="max-w-7xl mx-auto space-y-10">
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {currentCards.map((card) => (
+            <div
+              key={card.id}
+              className="bg-gradient-to-tr from-black via-[#0c0c0c] to-black py-8 px-8 rounded-lg shadow-md relative"
+            >
+              {/* Image Circle */}
+              <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center mb-4 overflow-hidden">
+                <img
+                  src={card.image}
+                  alt={`icon ${card.id}`}
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
 
-      {/* Mobile horizontal grid with two rows */}
-      <div className="block md:hidden p-4 overflow-x-auto">
-        <div className="grid grid-rows-2 auto-cols-[220px] grid-flow-col gap-4 w-max">
-          {firstRow.map((item, idx) => (
-            <ChoiceItemMobile
-              key={idx}
-              image={item.image}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
-          {secondRow.map((item, idx) => (
-            <ChoiceItemMobile
-              key={idx + half}
-              image={item.image}
-              title={item.title}
-              description={item.description}
-            />
+              {/* title */}
+              <p className="text-white/70 my-2  text-base">{card.title}</p>
+
+              {/* Description */}
+              <p className="text-white/30 text-sm">{card.description}</p>
+            </div>
           ))}
         </div>
+
+        {/* Pagination */}
+        <div className="flex justify-center items-center gap-3 mt-10">
+          <button
+            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+            disabled={currentPage === 1}
+            className="px-3 py-1 text-sm border bg-primary border-white/20 rounded hover:bg-primary hover:cursor-pointer disabled:opacity-40"
+          >
+            Prev
+          </button>
+
+          {Array.from({ length: totalPages }, (_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentPage(i + 1)}
+              className={`px-3 py-1 text-sm border text-ternary border-ternary rounded hover:bg-ternary hover:cursor-pointer hover:text-white ${
+                currentPage === i + 1 ? "text-white bg-black" : ""
+              }`}
+            >
+              {i + 1}
+            </button>
+          ))}
+
+          <button
+            onClick={() =>
+              setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+            }
+            disabled={currentPage === totalPages}
+            className="px-3 py-1 text-sm border bg-primary border-white/20 rounded hover:bg-primary hover:cursor-pointer disabled:opacity-40"
+          >
+            Next
+          </button>
+        </div>
       </div>
-    </>
+    </section>
   );
 };
 
