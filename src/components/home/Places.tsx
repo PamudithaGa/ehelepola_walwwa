@@ -61,7 +61,7 @@ const Places: React.FC = () => {
               </div>
 
               <div className="lg:mt-3 w-full px-4">
-                <div className="px-4 py-2 w-full border backdrop-blur-md bg-white/10 rounded-lg border-white/30 flex justify-center items-center">
+                <div className="group px-4 py-2 w-full border backdrop-blur-md bg-white/10 rounded-lg border-white/30 flex justify-center items-center hover:cursor-pointer hover:hi">
                   <button className="text-secondary flex items-center justify-center gap-2  font-medium">
                     Explore <MdOutlineArrowOutward className="w-5 h-5"/>
                   </button>
@@ -74,12 +74,12 @@ const Places: React.FC = () => {
         {/* Description Box */}
         <div className="flex-1 flex flex-col lg:mt-5">
           <div className="">
-            <h1 className="text-primary  leading-12 text-[52px] font-extrabold tracking-[0.8rem]">Legacy Meets,  <br /> <span className="text-8xl bg-gradient-to-t text-center from-black to-white bg-clip-text text-transparent  tracking-normal">Luxury</span> </h1>
+            <h1 className="text-primary  leading-12 text-[52px] font-extrabold tracking-[0.8rem]"> </h1>
           </div>
           <p className="text-gray-600 text-base leading-relaxed text-justify my-4">
             Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From
             immersive shopping to artistic entertainment, historical
-            exploration, and royal dining — each zone offers a unique experience
+            exploration, and royal dining — each zone offers a unique experience m
             within these timeless walls. Discover the cultural heart of Sri
             Lanka at Ehelapola Walawwa. From immersive shopping to artistic
             entertainment, historical exploration, and royal dining — each zone

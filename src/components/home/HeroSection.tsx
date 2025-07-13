@@ -21,20 +21,17 @@ const HeroSection: React.FC = () => {
         {/* Top-to-bottom overlay */}
         {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10" /> */}
         {/* Bottom-to-top overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-transparent z-10" />
 
         {/* Content */}
         <div className="relative z-20 w-full h-full flex items-center justify-center  px-6">
           <div className="mt-20 md:mt-68 w-4/5  md:text-left">
             <h1 className="font-bold bg-gradient-to-t text-center from-white to-black/10 bg-clip-text text-transparent text-4xl md:text-8xl mb-4 leading-tight">
-              The Ehelepola Walauwwa
+              Ehelepola Walauwwa
             </h1>
 
-            <p className="text-[#dfdfdf] leading-8 text-center font-extralight md:text-base mb-8 px-24">
-              A timeless heritage reimagined. Nestled in the heart of Kandy,
-              Ehelepola Walawwa stands as a living tribute to Sri Lanka’s noble
-              past. Once home to Ehelepola Nilame — the revered chief of the
-              last Kandyan king, 
+            <p className="text-[#dfdfdf] leading-8 text-center font-extralight md:text-base mb-8 px-36">
+              Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From immersive shopping to artistic entertainment, historical exploration, and royal dining — each zone offers a unique experience m within these timeless walls. 
             </p>
 
             {/* Buttons */}
