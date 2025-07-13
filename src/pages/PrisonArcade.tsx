@@ -7,7 +7,7 @@ import Places from "../components/prisonarcade/Places";
 import Gallery from "../components/prisonarcade/Gallery";
 import Footer from "../components/common/Footer";
 import NavBar from "../components/common/NavBar";
-import HeroSection from "../components/home/HeroSection";
+import PageHero from "../components/common/PageHero";
 import InfoSection from "../components/prisonarcade/InfoSection";
 
 import FooterTopImage from "../assets/footer-image.png";
@@ -33,15 +33,10 @@ const PrisonArcade: React.FC = () => {
       </section>
 
       <section className="lg:h-[80dvh]">
-        <Hero />
+        <PageHero />
       </section>
 
-      <section className="lg:h-[100dvh] flex items-center justify-center">
-        <InfoSection />
-      </section>
-
-
-      <section className="lg:h-[100dvh] flex items-center justify-center">
+      <section className="flex items-center justify-center mt-50">
         <Choices />
       </section>
 
