@@ -10,6 +10,9 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 import PrisonArcade from "./pages/PrisonArcade.tsx";
 import WaxMuseum from "./pages/WaxMuseum.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
+import CourtYard from "./pages/CourtYard.tsx";
+import KingsCourt from "./pages/KingsCourt.tsx";
+
 
 const router = createBrowserRouter([
   {
@@ -21,12 +24,20 @@ const router = createBrowserRouter([
     element: <PrisonArcade />,
   },
   {
+    path: "/courtyard",
+    element: <CourtYard />,
+  },
+  {
     path: "/WaxMuseum",
     element: <WaxMuseum />,
   },
   {
     path: "/ContactUs",
     element: <ContactUs />,
+  },
+  {
+    path: "/kingscourt",
+    element: <KingsCourt />,
   },
 ]);
 
