@@ -5,6 +5,7 @@ import NavBar from '../components/common/NavBar'
 import Footer from '../components/common/Footer'
 import PageHero from '../components/waxmuseum/PageHero'
 import FooterTopImage from '../assets/footer-image.png'
+import Timeline from '../components/waxmuseum/Timeline'
 
 const WaxMuseum:React.FC = () => {
     useEffect(() => {
