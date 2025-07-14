@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
 import { FaRegDotCircle } from "react-icons/fa";
-import ImageOne from '../../assets/gallery/arcade.jpg'
 import { RiArrowDownDoubleFill } from "react-icons/ri";
 import vimaladarmasooriya from '../../assets/images/charactors/wimaladarmasuriya.jpg'
 
@@ -139,7 +138,7 @@ const TimeLine: React.FC = () => {
                   </h3>
                   {/* description */}
                   <div className='overflow-y-auto flex flex-col gap-5 bg-neutral-50 mt-1 h-80 p-5'>
-                    {item.description.map((para, index) => (                  
+                    {item.description.map((para) => (                  
                       <p className=" text-sm sm:text-sm text-justify leading-7">
                         {para}
                       </p>
