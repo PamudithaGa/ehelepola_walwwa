@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router";
+import { FiMenu } from "react-icons/fi";
+import { RxCross2 } from "react-icons/rx";
 
 import Logo from "../../assets/logos/ehelepola-walauwwe-logo-black.png";
 
@@ -15,14 +17,18 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ page }) => {
+  const [isMenuToggle, setIsMenuToggle] = useState(false);
+
+  const openMenu = () => {
+    setIsMenuToggle(!isMenuToggle);
+  };
+
   return (
-    <nav className="sticky top-0 z-50 mt-2 w-3/4 mx-auto">
-      <div className="flex justify-center items-center py-4 relative z-20">
+    <nav className="sticky top-0 z-50 mt-2 w-11/12 lg:w-3/4 mx-auto">
+      {/* Desktop Navbar */}
+      <div className="hidden lg:flex justify-center items-center py-4 relative z-20">
         {/* Left Column */}
-        <div
-          className="w-2/5 py-4 flex justify-end items-center h-12 gap-6 bg-gradient-to-l from-white via-white/85 to-transparent
-pr-8"
-        >
+        <div className="w-2/5 py-4 flex justify-end items-center h-12 gap-6 bg-gradient-to-l from-white via-white/85 to-transparent pr-8">
           <Link
             to="/"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
@@ -34,7 +40,7 @@ pr-8"
             Home
           </Link>
           <Link
-            to="#"
+            to="/aboutUs"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "about"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
@@ -75,7 +81,9 @@ pr-8"
           <Link
             to="/courtyard"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-              page === "entertainment" ? "bg-primary text-secondary py-2 px-5 rounded-xl" : ""
+              page === "entertainment"
+                ? "bg-primary text-secondary py-2 px-5 rounded-xl"
+                : ""
             }`}
           >
             Entertainment
@@ -102,6 +110,55 @@ pr-8"
           </Link>
         </div>
       </div>
+
+      {/* Mobile Top Bar */}
+      <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md">
+        <img src={Logo} alt="Logo" className="h-12 object-contain" />
+        <button onClick={openMenu}>
+          {isMenuToggle ? (
+            <RxCross2 className="w-7 h-7 text-primary hover:text-highlight" />
+          ) : (
+            <FiMenu className="w-7 h-7 text-primary hover:text-hi" />
+          )}
+        </button>
+      </div>
+
+      {/* Mobile slide-in menu */}
+
+      {isMenuToggle && (
+        <div className="lg:hidden fixed top-0 right-0 h-screen w-full bg-white shadow-lg z-50 overflow-y-auto">
+          <div className="flex justify-end p-4">
+            <button onClick={openMenu}>
+              <RxCross2 className="w-6 h-6 text-primary hover:text-highlight" />
+            </button>
+          </div>
+
+          <ul className="flex flex-col gap-2 px-4 py-2 text-lg">
+            {[
+              { label: "Home", path: "/" },
+              { label: "About", path: "/aboutUs" },
+              { label: "Shopping", path: "/PrisonArcade" },
+              { label: "Dining", path: "/kingscourt" },
+              { label: "Entertainment", path: "/courtyard" },
+              { label: "Wax Museum", path: "/WaxMuseum" },
+              { label: "Contact", path: "/ContactUs" },
+            ].map(({ label, path }) => (
+              <li
+                key={label}
+                className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                  page.toLowerCase() === label.toLowerCase().replace(" ", "")
+                    ? "text-highlight font-semibold"
+                    : ""
+                }`}
+              >
+                <Link to={path} onClick={openMenu}>
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

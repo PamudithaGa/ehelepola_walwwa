@@ -1,13 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 //Components
-import Timeline from '../components/waxmuseum/Timeline'
 import NavBar from '../components/common/NavBar'
 import Footer from '../components/common/Footer'
 import PageHero from '../components/waxmuseum/PageHero'
 import FooterTopImage from '../assets/footer-image.png'
 
 const WaxMuseum:React.FC = () => {
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
   <>
       {/* header */}

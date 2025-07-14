@@ -1,8 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-import { FaWhatsapp } from "react-icons/fa";
-import { RiMessengerLine } from "react-icons/ri";
-import { IoMailOutline } from "react-icons/io5";
 
 //Components
 import Hero from "../components/contactus/Hero";
@@ -13,9 +10,12 @@ import Footer from "../components/common/Footer";
 import FooterTopImage from "../assets/footer-image.png";
 
 const ContactUs: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-     {/* header */}
+      {/* header */}
       <section
         className={`absolute w-full z-50 transition-all duration-2000 ease-in-out`}
       >
@@ -25,8 +25,8 @@ const ContactUs: React.FC = () => {
       <section className="-z-1">
         <Hero />
       </section>
-      
-      <section className="z-999">
+
+      <section>
         <ContactForm />
       </section>
 
@@ -34,7 +34,7 @@ const ContactUs: React.FC = () => {
         <Map />
       </section>
 
-       {/* footer */}
+      {/* footer */}
       <section className="">
         <div>
           <img src={FooterTopImage} />
