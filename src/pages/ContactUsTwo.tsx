@@ -7,12 +7,13 @@ import { IoMailOutline } from "react-icons/io5";
 //Components
 import Hero from "../components/contactus/Hero";
 import ContactForm from "../components/contactus/ContactForm";
+import ContactFormTwo from "../components/contactus/ContactFormTwo";
 import Map from "../components/contactus/Map";
 import NavBar from "../components/common/NavBar";
 import Footer from "../components/common/Footer";
 import FooterTopImage from "../assets/footer-image.png";
 
-const ContactUs: React.FC = () => {
+const ContactUsTwo: React.FC = () => {
   return (
     <>
      {/* header */}
@@ -22,15 +23,11 @@ const ContactUs: React.FC = () => {
         <NavBar page="contact" />
       </section>
 
-      <section>
-        <Hero />
-      </section>
-      
-      <section>
-        <ContactForm />
+      <section className="bg-primary pt-25">
+        <ContactFormTwo />
       </section>
 
-      <section>
+      <section className="mt-30 -mb-20 w-5/6 mx-auto">
         <Map />
       </section>
 
@@ -47,4 +44,4 @@ const ContactUs: React.FC = () => {
   );
 };
 
-export default ContactUs;
+export default ContactUsTwo;

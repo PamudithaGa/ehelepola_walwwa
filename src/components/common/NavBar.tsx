@@ -81,7 +81,7 @@ pr-8"
             Entertainment
           </Link>
           <Link
-            to="#"
+            to="/WaxMuseum"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "wax"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
@@ -91,7 +91,7 @@ pr-8"
             Wax Museum
           </Link>
           <Link
-            to="/ContactUs"
+            to="/ContactUsTwo"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "contact"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"

@@ -48,7 +48,7 @@ const Gallery: React.FC = () => {
           {/* Image full screen */}
           {showModal && (
             <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center">
-              <div className="relative max-w-6xl w-full px-4">
+              <div className="relative max-w-6xl  w-full px-4 py-10">
                 {/* Close Button */}
                 <button
                   onClick={() => setShowModal(false)}
