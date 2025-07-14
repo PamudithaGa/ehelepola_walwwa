@@ -153,7 +153,6 @@ const Gallery: React.FC = () => {
           </motion.div>
         </div>
       </div>
-    </div>
   );
 };
 

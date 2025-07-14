@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
+import React from "react";
 
-import { gsap } from "gsap";
+
 import HeroImage from '../../assets/gallery/arcade-with-logo.jpg'
 
 const HeroSlide: React.FC = () => {
