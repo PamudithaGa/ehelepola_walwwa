@@ -1,12 +1,8 @@
-import React from 'react'
 
 import heroImage from "../../assets/gallery/arcade-with-logo.jpg";
 import { FaWhatsapp } from "react-icons/fa";
-import { RiMessengerLine } from "react-icons/ri";
 import { IoMailOutline } from "react-icons/io5";
 import { PiPhoneCall } from "react-icons/pi";
-import BannerImage from "../../assets/gallery/contact_banner_image.png"
-import ContactForm from './ContactForm';
 
 
 const Hero = () => {

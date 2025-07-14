@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 
 //Components
 import Hero from "../components/prisonarcade/Hero";
@@ -13,15 +13,7 @@ const PrisonArcade: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [showNav, setShowNav] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowNav(true);
-    }, 2000); // Delay 5 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
+  // 
 
   return (
     <>

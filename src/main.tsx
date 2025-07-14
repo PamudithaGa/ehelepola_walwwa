@@ -33,12 +33,12 @@ const router = createBrowserRouter([
     path: "/WaxMuseum",
     element: <WaxMuseum />,
   },
+  // {
+  //   path: "/ContactUs",
+  //   element: <ContactUs />,
+  // },
   {
     path: "/ContactUs",
-    element: <ContactUs />,
-  },
-  {
-    path: "/ContactUsTwo",
     element: <ContactUsTwo />,
   },
   {

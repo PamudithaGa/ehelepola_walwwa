@@ -1,5 +1,4 @@
 import React from "react";
-import heroImage from "../../assets/gallery/arcade-with-logo.jpg";
 import HeroSlide from "./HeroSlide";
 
 const PageHero: React.FC = () => {
