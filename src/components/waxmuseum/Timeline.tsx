@@ -1,152 +1,178 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useEffect, useState } from 'react'
 
-export type TimelineItemType = {
-  id: number;
-  term: string;
-  image: string;
-  description: string;
-};
+import { FaRegDotCircle } from "react-icons/fa";
+import ImageOne from '../../assets/gallery/arcade.jpg'
+import { RiArrowDownDoubleFill } from "react-icons/ri";
+import vimaladarmasooriya from '../../assets/images/charactors/wimaladarmasuriya.jpg'
 
-const timelineData: TimelineItemType[] = [
+const timelineData = [
   {
-    id: 1,
-    term: "King Vimaladharmasuriya ii",
-    image: "https://images.unsplash.com/photo-1583394838336-acd977736f90",
-    description: "Description for Term 1. This text explains more in detail.",
+    date: "1594 - 1604 CE",
+    title: "King Vimaladharmasuriya I",
+    description:[
+      "The Kingdom of Kandy, originally initiated by King Senasammatha Vikramabahu, was firmly established by King Vimaladharmasuriya I, who undertook significant measures to safeguard the realm from European colonial powers for over two centuries. Initially under the Portuguese influence, he resisted foreign domination and ascended to the Kandyan throne in 1594 CE,adopting the royal title 'Vimaladharmasuriya In a politically strategic move to legitimize hisclaim to the throne, he married Kusumasana Devi also known as Dona Katharina direct heirof the Karalliyadda royal lineage.",
+
+      "Vimaladharmasuriya I was the son of the nobleman Weerasundara Bandara of the Peradeniyaroyal lineage and fathered six children. One of his most  historically significant contributions was the relocation of the Sacred Tooth Relic of the Buddha from the Delgamuwa Raja Maha Vihara to Kandy. He constructed a two-storied edifice, the Temple of the Tooth Relic (Dalada Maligawa), to enshrine the relic, thereby strengthening both the religious and political legitimacy of his reign.",
+    ],
+    image: vimaladarmasooriya,
   },
   {
-    id: 2,
-    term: "Term 2",
-    image: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d",
-    description: "Description for Term 2. This text explains more in detail.",
+    date: "1594 - 1604 CE",
+    title: "King Vimaladharmasuriya I",
+    description:[
+      "The Kingdom of Kandy, originally initiated by King Senasammatha Vikramabahu, was firmly established by King Vimaladharmasuriya I, who undertook significant measures to safeguard the realm from European colonial powers for over two centuries. Initially under the Portuguese influence, he resisted foreign domination and ascended to the Kandyan throne in 1594 CE,adopting the royal title 'Vimaladharmasuriya In a politically strategic move to legitimize hisclaim to the throne, he married Kusumasana Devi also known as Dona Katharina direct heirof the Karalliyadda royal lineage.",
+
+      "Vimaladharmasuriya I was the son of the nobleman Weerasundara Bandara of the Peradeniyaroyal lineage and fathered six children. One of his most  historically significant contributions was the relocation of the Sacred Tooth Relic of the Buddha from the Delgamuwa Raja Maha Vihara to Kandy. He constructed a two-storied edifice, the Temple of the Tooth Relic (Dalada Maligawa), to enshrine the relic, thereby strengthening both the religious and political legitimacy of his reign.",
+    ],
+    image: vimaladarmasooriya,
   },
   {
-    id: 3,
-    term: "Term 3",
-    image: "https://images.unsplash.com/photo-1552058544-f2b08422138a",
-    description: "Description for Term 3. This text explains more in detail.",
+    date: "1594 - 1604 CE",
+    title: "King Vimaladharmasuriya I",
+    description:[
+      "The Kingdom of Kandy, originally initiated by King Senasammatha Vikramabahu, was firmly established by King Vimaladharmasuriya I, who undertook significant measures to safeguard the realm from European colonial powers for over two centuries. Initially under the Portuguese influence, he resisted foreign domination and ascended to the Kandyan throne in 1594 CE,adopting the royal title 'Vimaladharmasuriya In a politically strategic move to legitimize hisclaim to the throne, he married Kusumasana Devi also known as Dona Katharina direct heirof the Karalliyadda royal lineage.",
+
+      "Vimaladharmasuriya I was the son of the nobleman Weerasundara Bandara of the Peradeniyaroyal lineage and fathered six children. One of his most  historically significant contributions was the relocation of the Sacred Tooth Relic of the Buddha from the Delgamuwa Raja Maha Vihara to Kandy. He constructed a two-storied edifice, the Temple of the Tooth Relic (Dalada Maligawa), to enshrine the relic, thereby strengthening both the religious and political legitimacy of his reign.",
+    ],
+    image: vimaladarmasooriya,
   },
   {
-    id: 4,
-    term: "Term 4",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
-    description: "Description for Term 4. This text explains more in detail.",
+    date: "1594 - 1604 CE",
+    title: "King Vimaladharmasuriya I",
+    description:[
+      "The Kingdom of Kandy, originally initiated by King Senasammatha Vikramabahu, was firmly established by King Vimaladharmasuriya I, who undertook significant measures to safeguard the realm from European colonial powers for over two centuries. Initially under the Portuguese influence, he resisted foreign domination and ascended to the Kandyan throne in 1594 CE,adopting the royal title 'Vimaladharmasuriya In a politically strategic move to legitimize hisclaim to the throne, he married Kusumasana Devi also known as Dona Katharina direct heirof the Karalliyadda royal lineage.",
+
+      "Vimaladharmasuriya I was the son of the nobleman Weerasundara Bandara of the Peradeniyaroyal lineage and fathered six children. One of his most  historically significant contributions was the relocation of the Sacred Tooth Relic of the Buddha from the Delgamuwa Raja Maha Vihara to Kandy. He constructed a two-storied edifice, the Temple of the Tooth Relic (Dalada Maligawa), to enshrine the relic, thereby strengthening both the religious and political legitimacy of his reign.",
+    ],
+    image: vimaladarmasooriya,
   },
   {
-    id: 5,
-    term: "Term 5",
-    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
-    description: "Description for Term 5. This text explains more in detail.",
+    date: "1594 - 1604 CE",
+    title: "King Vimaladharmasuriya I",
+    description:[
+      "The Kingdom of Kandy, originally initiated by King Senasammatha Vikramabahu, was firmly established by King Vimaladharmasuriya I, who undertook significant measures to safeguard the realm from European colonial powers for over two centuries. Initially under the Portuguese influence, he resisted foreign domination and ascended to the Kandyan throne in 1594 CE,adopting the royal title 'Vimaladharmasuriya In a politically strategic move to legitimize hisclaim to the throne, he married Kusumasana Devi also known as Dona Katharina direct heirof the Karalliyadda royal lineage.",
+
+      "Vimaladharmasuriya I was the son of the nobleman Weerasundara Bandara of the Peradeniyaroyal lineage and fathered six children. One of his most  historically significant contributions was the relocation of the Sacred Tooth Relic of the Buddha from the Delgamuwa Raja Maha Vihara to Kandy. He constructed a two-storied edifice, the Temple of the Tooth Relic (Dalada Maligawa), to enshrine the relic, thereby strengthening both the religious and political legitimacy of his reign.",
+    ],
+    image: vimaladarmasooriya,
   },
   {
-    id: 6,
-    term: "Term 6",
-    image: "https://images.unsplash.com/photo-1552058544-f2b08422138a",
-    description: "Description for Term 6. This text explains more in detail.",
+    date: "1594 - 1604 CE",
+    title: "King Vimaladharmasuriya I",
+    description:[
+      "The Kingdom of Kandy, originally initiated by King Senasammatha Vikramabahu, was firmly established by King Vimaladharmasuriya I, who undertook significant measures to safeguard the realm from European colonial powers for over two centuries. Initially under the Portuguese influence, he resisted foreign domination and ascended to the Kandyan throne in 1594 CE,adopting the royal title 'Vimaladharmasuriya In a politically strategic move to legitimize hisclaim to the throne, he married Kusumasana Devi also known as Dona Katharina direct heirof the Karalliyadda royal lineage.",
+
+      "Vimaladharmasuriya I was the son of the nobleman Weerasundara Bandara of the Peradeniyaroyal lineage and fathered six children. One of his most  historically significant contributions was the relocation of the Sacred Tooth Relic of the Buddha from the Delgamuwa Raja Maha Vihara to Kandy. He constructed a two-storied edifice, the Temple of the Tooth Relic (Dalada Maligawa), to enshrine the relic, thereby strengthening both the religious and political legitimacy of his reign.",
+    ],
+    image: vimaladarmasooriya,
   },
-  {
-    id: 7,
-    term: "Term 7",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
-    description: "Description for Term 7. This text explains more in detail.",
-  },
+
 ];
 
-const TimelineCard: React.FC<{
-  item: TimelineItemType;
-  isLeft: boolean;
-  expanded: boolean;
-  onToggle: () => void;
-}> = ({ item, isLeft, expanded, onToggle }) => {
+const TimeLine: React.FC = () => {
+  //top mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const [showAll, setShowAll] = useState(false);
+  const visibleTimeline = showAll ? timelineData : timelineData.slice(0, 4);
+
   return (
-    <div
-      className={`relative flex w-full   justify-${
-        isLeft ? "start" : "end"
-      } items-center`}
-    >
-      <div
-        onClick={onToggle}
-        className={`relative bg-white border  border-gray-200 rounded-lg shadow-md w-1/2 p-4 cursor-pointer transition-transform hover:scale-105 z-10
-          ${isLeft ? "-ml-1 mr-auto" : "ml-auto -mr-2"}
-        `}
-      >
-        {/* Marker ball inside card */}
-        <div
-          className="absolute top-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-white transform -translate-y-1/2"
-          style={{
-            right: isLeft ? "-20px" : undefined,
-            left: !isLeft ? "-20px" : undefined,
-          }}
-        ></div>
+    <>
+      <section className="py-10 md:mt-20 lg:px-4 sm:px-8 lg:px-2 relative lg:mt-20 w-5/6 mx-auto h-auto  mt-10">
+        <section className="w-full lg:w-2/3 flex flex-col gap-5 mt-2 mx-auto justify-center items-center mb-18">
+          <h2 className="text-3xl sm:text-4xl lg:text-[62px] font-bold text-center lg:text-left text-black">
+            Wax Museum
+          </h2>
+          <p className=" text-base lg:text-xl text-center lg:text-center font-normal text-ternary/80">
+            Experience the Kandyan Kingdom like never before where history comes to life in wax. Meet the iconic figures of Sri Lanka’s royal past, reborn in lifelike detail.
+          </p>
+        </section>
 
-        <img
-          src={item.image}
-          alt={item.term}
-          className="w-full h-32 object-cover rounded-md mb-2"
-        />
-        <h3 className="text-lg font-semibold text-gray-800">{item.term}</h3>
+        <div className="absolute left-1/2 mt-15 transform  -translate-x-1/2 bg-primary w-1 top-40 bottom-40 z-0 hidden md:block" />
 
-        <AnimatePresence>
-          {expanded && (
-            <motion.p
-              className="text-gray-600 mt-2"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
+        <div className="space-y-10 sm:space-y-20 lg:space-y-24 relative z-10">
+          {visibleTimeline.map((item, index) => (
+            <div
+              key={index}
+              className={`flex flex-col sm:flex-row lg:h-[500px] items-center gap-4 sm:gap-12 lg:gap-24 ${index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
+                } relative`}
             >
-              {item.description}
-            </motion.p>
-          )}
-        </AnimatePresence>
-      </div>
-    </div>
-  );
-};
+              {/* <img
+                  src={timeline}
+                  alt="Timeline marker"
+                  className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-6 w-20 h-10 z-10"
+                /> */}
+              <FaRegDotCircle className='hidden md:block absolute left-1/2 transform -translate-x-1/2 top-6 w-20 h-10 z-10' />
 
-const Timeline: React.FC = () => {
-  const [visibleCount, setVisibleCount] = useState(5);
-  const [expandedItems, setExpandedItems] = useState<number[]>([]);
+              {/* IMAGE */}
+              <div
+                className={`w-full sm:w-1/2 ${index % 2 === 0
+                    ? "flex justify-end md:pr-5 lg:pr-0"
+                    : "flex justify-start md:pl-5 lg:pl-0"
+                  }`}
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className=" shadow-md w-full max-h-64 sm:max-h-120 object-cover object-top lg:w-full lg:h-[full rounded-xl"
+                />
+              </div>
 
-  const toggleExpand = (id: number) => {
-    setExpandedItems((prev) =>
-      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
-    );
-  };
+              {/* TEXT CONTENT */}
+              <div className="w-full sm:w-1/2 space-y-0">
+                <div
+                  className={`text-center sm:text-left ${index % 2 === 0
+                      ? "sm:text-right pr-2 sm:pr-4 lg:pr-6"
+                      : "sm:text-left pl-2 sm:pl-4 lg:pl-1"
+                    }`}
+                >
+                  <div className="text-3xl sm:text-4xl lg:text-[52px] text-gray-300 font-bold leading-none">
+                    {item.date}
+                  </div>
+                </div>
 
-  return (
-    <div className="relative w-full flex flex-col items-center py-10">
-      {/* Vertical timeline line */}
-      <div className="absolute left-1/2 top-0 h-full w-1 bg-gray-300 z-0"></div>
+                <div className="p-4 pt-3 relative">
+                  <h3 className="text-lg sm:text-xl text-center md:text-left lg:text-2xl font-bold text-primary mb-5">
+                    {item.title}
+                  </h3>
+                  {/* description */}
+                  <div className='overflow-y-auto flex flex-col gap-5 bg-neutral-50 mt-1 h-80 p-5'>
+                    {item.description.map((para, index) => (                  
+                      <p className=" text-sm sm:text-sm text-justify leading-7">
+                        {para}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
 
-      <div className="flex flex-col gap-16 w-full max-w-5xl px-4">
-        {timelineData.slice(0, visibleCount).map((item, index) => {
-          const isLeft = index % 2 === 0;
-          const expanded = expandedItems.includes(item.id);
+        <div className="relative flex flex-col items-center mt-20 lg:mt-16 px-4 py-6">
+          {/* <img
+              src={showmore}
+              alt="Show more"
+              className={`w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 opacity-60 hover:opacity-100 cursor-pointer transition-transform duration-300 z-10 ${
+                showAll ? "rotate-180" : "rotate-0"
+              }`} */}
+          <RiArrowDownDoubleFill
+            className={`w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-10 opacity-60 hover:opacity-100 cursor-pointer transition-transform duration-300 z-10 ${showAll ? "rotate-180" : "rotate-0"
+              }`}
+            onClick={() => setShowAll(!showAll)}
+          />
+          <p
+            className="text-sm sm:text-base text-gray-500 hover:text-black transition-colors cursor-pointer z-10"
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "Show less" : "Show more"}
+          </p>
+        </div>
+      </section>
+    </>
+  )
+}
 
-          return (
-            <TimelineCard
-              key={item.id}
-              item={item}
-              isLeft={isLeft}
-              expanded={expanded}
-              onToggle={() => toggleExpand(item.id)}
-            />
-          );
-        })}
-      </div>
-
-      {visibleCount < timelineData.length && (
-        <button
-          onClick={() => setVisibleCount((prev) => prev + 5)}
-          className="mt-10 px-6 py-3 z-19 bg-blue-500 cursor-pointer text-white rounded-full hover:bg-blue-600 transition"
-        >
-          See More
-        </button>
-      )}
-    </div>
-  );
-};
-
-export default Timeline;
+export default TimeLine

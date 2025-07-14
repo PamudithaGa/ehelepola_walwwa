@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 //Components
 import Hero from "../components/prisonarcade/Hero";
 import Choices from "../components/prisonarcade/Choices";
-import Places from "../components/prisonarcade/Places";
 import Gallery from "../components/prisonarcade/Gallery";
 import Footer from "../components/common/Footer";
 import NavBar from "../components/common/NavBar";
@@ -37,10 +36,6 @@ const PrisonArcade: React.FC = () => {
 
       <section className="flex items-center justify-center mt-50">
         <Choices />
-      </section>
-
-      <section>
-        <Places />
       </section>
 
       <section className="mt-20">

@@ -21,8 +21,12 @@ const WaxMuseum:React.FC = () => {
         <PageHero />
       </section>
 
+       <section className="mt-40 h-auto">
+        <Timeline />
+      </section>
+
       {/* footer */}
-      <section className="mt-10 ">
+      <section className="-mt-20">
         <div>
           <img src={FooterTopImage} />
         </div>

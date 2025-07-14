@@ -33,7 +33,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="bg-black w-full flex items-baseline-last justify-center h-[95dvh]">
+      <section className="bg-black w-full flex items-baseline-last justify-center h-[95dvh] z-0">
         <div className=" w-5/6 mx-auto h-4/5 flex justify-center items-center">
           <div className=" w-1/2 h-full pt-20">
             <h1 className="font-bold text-[80px]  leading-tight flex flex-wrap gap-x-5">

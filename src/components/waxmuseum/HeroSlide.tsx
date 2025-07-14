@@ -1,83 +1,43 @@
 import { useEffect, useRef } from "react";
 
 import { gsap } from "gsap";
-import Image1 from '../../assets/gallery/prison-arcade-banner.jpg'
-
-const images = [
-  Image1,
-  Image1,
-  Image1,
-  Image1,
-  Image1,
-  Image1,
-  Image1,
-  Image1,
-  Image1,
-  Image1,
-  Image1,
-];
+import HeroImage from '../../assets/gallery/arcade-with-logo.jpg'
 
 const HeroSlide: React.FC = () => {
-  const ringRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ring = ringRef.current;
-    if (!ring) return;
-
-    // Setup image rotation
-    const imgs = ring.querySelectorAll<HTMLDivElement>(".img");
-
-    gsap.set(ring, { rotationY: 180 });
-
-    imgs.forEach((img, i) => {
-      gsap.set(img, {
-        rotateY: i * -36,
-        transformOrigin: "50% 50% 500px",
-        z: -500,
-        backgroundImage: `url(${images[i % images.length]})`,
-        backgroundPosition: getBgPos(i),
-        backfaceVisibility: "hidden",
-      });
-    });
-
-    // Animate ring continuously
-    gsap.to(ring, {
-      rotationY: "+=360",
-      ease: "none",
-      duration: 60,
-      repeat: -1,
-      onUpdate: () => {
-        imgs.forEach((img, i) =>
-          gsap.set(img, {
-            backgroundPosition: getBgPos(i),
-          })
-        );
-      },
-    });
-  }, []);
-
-  const getBgPos = (i: number) => {
-    const ringRotation = gsap.getProperty(ringRef.current!, "rotationY") as number;
-    const offset = 100 - (gsap.utils.wrap(0, 360, ringRotation - 180 - i * 36) / 360) * 500;
-    return `${offset}px 0px`;
-  };
 
   return (
-    <div className="w-full h-[100vh] bg-black overflow-hidden flex items-center justify-center">
-      <div className="relative w-[300px] h-[400px] perspective-[2000px]">
-        <div
-          ref={ringRef}
-          className="ring w-full h-full transform-style-preserve-3d cursor-default"
-        >
-          {Array.from({ length: 10 }).map((_, i) => (
-            <div
-              key={i}
-              className="img absolute w-full h-full bg-cover bg-center rounded-xl shadow-lg"
-            ></div>
-          ))}
+    <>
+      <section className="bg-black w-full flex items-baseline-last justify-center h-[95dvh]">
+        <div className=" w-5/6 mx-auto h-4/5 flex justify-center items-center">
+          <div className=" w-1/2 h-full pt-10">
+            <h1 className="font-bold text-[80px] pr-20 leading-tight flex flex-wrap gap-x-2">
+              {"The Wax Museum".split(" ").map((word, i) => (
+                <span
+                  key={i}
+                  className="bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent"
+                >
+                  {word}
+                </span>
+              ))}
+            </h1>
+
+            <p
+              className="text-[15px] text-white/30 mt-5 mb-10 text-justify pr-10">
+              The Wax Museum at Ehelepola Walawwa is a tribute to the legacy of the Kandyan Kingdom, featuring lifelike figures of monarchs, nobles, and historic icons. Set within the restored heritage manor, each exhibit blends artistry with storytelling, offering an immersive journey through Sri Lanka’s regal past. The museum preserves tradition while sparking curiosity for generations to come.
+            </p>
+
+            <p
+              className="text-white">Open 9.00 AM to 8:30 PM</p>
+            <p
+              className="text-sm text-white/20 mt-2">Monday - Saturday</p>
+          </div>
+          <div className="w-1/2 h-full pl-20 rounded-2xl flex justify-center items-center">
+            <img src={HeroImage} alt=""
+              className="rounded-2xl w-full" />
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

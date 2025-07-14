@@ -22,11 +22,11 @@ const ContactUs: React.FC = () => {
         <NavBar page="contact" />
       </section>
 
-      <section>
+      <section className="-z-1">
         <Hero />
       </section>
       
-      <section>
+      <section className="z-999">
         <ContactForm />
       </section>
 
