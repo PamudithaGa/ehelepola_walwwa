@@ -41,7 +41,7 @@ const App: React.FC = () => {
         <Places />
       </section>
 
-      <section className="mt-30">
+      <section className="mt-15">
         <Gallery />
       </section>
 

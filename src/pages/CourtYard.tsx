@@ -23,7 +23,7 @@ const CourtYard: React.FC = () => {
         <PageHero />
       </section>
 
-      <section className="lg:mt-50 mt-20">
+      <section className="lg:mt-50 mt-15">
         <Gallery />
       </section>
 

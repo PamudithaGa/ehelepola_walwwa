@@ -26,13 +26,13 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full h-[100dvh] text-white flex overflow-hidden">
+    <div className="w-full h-[80dvh] text-white flex overflow-hidden">
       {/* Left text section */}
       <div className="w-5/6 mx-auto flex">
-        <div className="flex flex-col w-2/3 justify-center items-center">
-          <div className=" mt-10 pr-10 w-full">
+        <div className="flex flex-col lg:w-2/3 justify-center items-center">
+          <div className="lg:mt-10 lg:pr-10 w-full">
             <h1 className="text-6xl text-black font-bold mb-4">Highlights</h1>
-            <p className="text-base  text-highlight w-2/3">
+            <p className="text-base  text-highlight lg:w-2/3">
               Discover how historic spaces are thoughtfully transformed into luxurious modern landmarks.
             </p>
             {/* Dynamic Preview Image */}
@@ -109,7 +109,7 @@ const Gallery: React.FC = () => {
                   onClick={() =>
                     setCurrentIndex((prev) => (prev + 1) % allImages.length)
                   }
-className="px-4 py-4 border-2 text-black/50 border-black/50 rounded-full cursor-pointer border-black hover:border-black hover:text-black transition  text-sm"                >
+                  className="px-4 py-4 border-2 text-black/50 border-black/50 rounded-full cursor-pointer border-black hover:border-black hover:text-black transition  text-sm"                >
                   <FaArrowRight size={16} />{" "}
                 </button>
               </div>
