@@ -2,7 +2,7 @@ import React from 'react'
 
 import LocationMap from "../contactus/LocationMap";
 import Walawwa from '../../assets/logos/walawwa-building.png'
-import FloatImage from '../../assets/logos/loading-logo-white.png'
+
 
 const Map:React.FC = () => {
   return (
