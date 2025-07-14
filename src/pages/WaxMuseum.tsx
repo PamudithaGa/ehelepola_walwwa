@@ -1,7 +1,6 @@
 import React,{useEffect} from 'react'
 
 //Components
-import Timeline from '../components/waxmuseum/Timeline'
 import NavBar from '../components/common/NavBar'
 import Footer from '../components/common/Footer'
 import PageHero from '../components/waxmuseum/PageHero'

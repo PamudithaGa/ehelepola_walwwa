@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router";
 
 import HeroVideo from "../../assets/videos/hero-video.mp4";
