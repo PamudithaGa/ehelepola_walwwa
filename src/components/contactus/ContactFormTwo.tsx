@@ -137,10 +137,9 @@ const ContactFormTwo: React.FC = () => {
           </div>
         </div>
 
-
         <div className="lg:hidden block flex flex-col lg:flex-row w-full">
           <div className="lg:w-1/3 w-full md:w-full mt-10 md:mt-15 lg:mt-0">
-            <h1 className="font-bold text-[58px] mb-5 leading-tight flex flex-wrap gap-x-5">
+            <h1 className="font-bold text-[56px] mb-5 leading-tight flex flex-wrap gap-x-5">
               {"Contact Us".split(" ").map((word, i) => (
                 <span
                   key={i}
@@ -235,13 +234,8 @@ const ContactFormTwo: React.FC = () => {
             </ul>
           </div>
         </div>
-
-
-
-
-
       </div>
-       <Toaster position="top-right" />
+      <Toaster position="top-right" />
     </div>
   );
 };
