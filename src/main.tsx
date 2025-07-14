@@ -12,6 +12,7 @@ import WaxMuseum from "./pages/WaxMuseum.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
 import CourtYard from "./pages/CourtYard.tsx";
 import KingsCourt from "./pages/KingsCourt.tsx";
+import AboutUs from "./pages/AboutUs.tsx";
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,11 @@ const router = createBrowserRouter([
     path: "/kingscourt",
     element: <KingsCourt />,
   },
+    {
+    path: "/aboutUs",
+    element: <AboutUs />,
+  },
+  
 ]);
 
 createRoot(document.getElementById("root")!).render(
