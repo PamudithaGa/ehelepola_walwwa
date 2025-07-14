@@ -20,17 +20,17 @@ const Gallery: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % allImages.length);
-    }, 4000);
+    }, 4000); // sync with scroll loop timing
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="w-full h-[80dvh] text-white flex overflow-hidden">
+    <div className="w-full lg:h-[100dvh] h-[80dvh] text-white flex overflow-hidden">
       {/* Left text section */}
-      <div className="w-5/6 mx-auto flex">
-        <div className="flex flex-col lg:w-2/3 justify-center items-center">
-          <div className="lg:mt-40 lg:pr-10 w-full">
+      <div className="lg-full lg:w-5/6 mx-auto flex">
+        <div className="flex flex-col lg:w-2/3 w-full justify-center items-center">
+          <div className=" lg:mt-10 lg:p-0 p-5 lg:pr-10 w-full">
             <h1 className="text-6xl text-black font-bold mb-4">Highlights</h1>
             <p className="text-base  text-highlight lg:w-2/3">
               Discover how historic spaces are thoughtfully transformed into
@@ -91,7 +91,7 @@ const Gallery: React.FC = () => {
             )}
 
             {/* Prev/Next */}
-            <div className="mt-12 flex gap-4 lg:ml-[22%] lg:-mt-14 lg:absolute  justify-center  mb-6">
+            <div className="mt-12 flex gap-4  justify-center  mb-6">
               <div>
                 <button
                   onClick={() =>
@@ -110,12 +110,12 @@ const Gallery: React.FC = () => {
                   onClick={() =>
                     setCurrentIndex((prev) => (prev + 1) % allImages.length)
                   }
-                  className="px-4 py-4 border-2 text-black/50  rounded-full cursor-pointer border-black hover:border-black hover:text-black transition  text-sm"                >
+                  className="px-4 py-4 border-2 text-black/50 border-black/50 rounded-full cursor-pointer border-black hover:border-black hover:text-black transition  text-sm"
+                >
                   <FaArrowRight size={16} />{" "}
                 </button>
               </div>
             </div>
-
           </div>
         </div>
 

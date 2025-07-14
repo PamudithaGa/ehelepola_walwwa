@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
 
-import { FaWhatsapp } from "react-icons/fa";
-import { RiMessengerLine } from "react-icons/ri";
-import { IoMailOutline } from "react-icons/io5";
 
 //Components
 import Hero from "../components/contactus/Hero";
@@ -25,7 +22,7 @@ const ContactUs: React.FC = () => {
         <NavBar page="contact" />
       </section>
 
-      <section>
+      <section className="-z-1">
         <Hero />
       </section>
 

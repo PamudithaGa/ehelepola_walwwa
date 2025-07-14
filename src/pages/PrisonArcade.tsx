@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 
 //Components
 import Hero from "../components/prisonarcade/Hero";
 import Choices from "../components/prisonarcade/Choices";
-import Places from "../components/prisonarcade/Places";
 import Gallery from "../components/prisonarcade/Gallery";
 import Footer from "../components/common/Footer";
 import NavBar from "../components/common/NavBar";
@@ -13,15 +12,7 @@ const PrisonArcade: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [showNav, setShowNav] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowNav(true);
-    }, 2000); // Delay 5 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
+  // 
 
   return (
     <>
@@ -40,11 +31,7 @@ const PrisonArcade: React.FC = () => {
         <Choices />
       </section>
 
-      <section>
-        <Places />
-      </section>
-
-      <section className="lg:mt-20 mt-10">
+      <section className="mt-20">
         <Gallery />
       </section>
 

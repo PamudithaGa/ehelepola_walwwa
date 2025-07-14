@@ -168,7 +168,7 @@ const Choices: React.FC = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Split mobile cards into groups of 4
+
   const mobileGroups = [];
   for (let i = 0; i < cardsData.length; i += 4) {
     mobileGroups.push(cardsData.slice(i, i + 4));
@@ -180,7 +180,7 @@ const Choices: React.FC = () => {
         {/* Cards */}
         {!isMobile ? (
           // Desktop Grid
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
             {currentCards.map((card) => (
               <CardItem key={card.id} card={card} />
             ))}
@@ -189,7 +189,7 @@ const Choices: React.FC = () => {
 
           <div
             className="flex snap-x snap-mandatory overflow-x-auto w-full  "
-            style={{ scrollPaddingLeft: 16, scrollPaddingRight: 16 }} // for smooth snap padding
+            style={{ scrollPaddingLeft: 16, scrollPaddingRight: 16 }}
           >
             {mobileGroups.map((group, index) => (
               <div
@@ -244,7 +244,7 @@ const Choices: React.FC = () => {
 };
 
 const CardItem: React.FC<{ card: Card }> = ({ card }) => (
-  <div className="bg-gradient-to-tr from-black via-[#0c0c0c]  to-black w-[90%] py-8 px-8 rounded-lg overflow-x-auto shadow-md relative">
+  <div className="bg-gradient-to-tr from-black via-[#0c0c0c]  to-black lg:w-[100%] w-[90%] py-8 px-8 rounded-lg overflow-x-auto shadow-md relative">
     <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center mb-4 overflow-hidden">
       <img
         src={card.image}
