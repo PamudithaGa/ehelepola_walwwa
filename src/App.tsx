@@ -4,7 +4,7 @@ import { Toaster } from "react-hot-toast";
 
 //Components
 import Places from "./components/home/Places";
-import Gallery from "./components/prisonarcade/Gallery";
+import Gallery from "./components/home/Gallery";
 import Footer from "./components/common/Footer";
 import NavBar from "./components/common/NavBar";
 import HeroSection from "./components/home/HeroSection";
@@ -41,7 +41,7 @@ const App: React.FC = () => {
         <Places />
       </section>
 
-      <section className="mt-20">
+      <section className="mt-30">
         <Gallery />
       </section>
 
