@@ -5,6 +5,7 @@ import NavBar from '../components/common/NavBar'
 import Footer from '../components/common/Footer'
 import PageHero from '../components/waxmuseum/PageHero'
 import FooterTopImage from '../assets/footer-image.png'
+import Timeline from '../components/waxmuseum/Timeline'
 
 const WaxMuseum:React.FC = () => {
     useEffect(() => {
@@ -23,9 +24,9 @@ const WaxMuseum:React.FC = () => {
         <PageHero />
       </section>
 
-       {/* <section className="mt-40 h-auto">
+       <section className="mt-40 h-auto">
         <Timeline />
-      </section> */}
+      </section>
 
       {/* footer */}
       <section className="-mt-20">
