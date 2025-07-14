@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const allImages = [
   "https://images.unsplash.com/photo-1583394838336-acd977736f90",
@@ -26,14 +26,15 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full h-[100dvh] text-white flex overflow-hidden">
+    <div className="w-full h-[80dvh] text-white flex overflow-hidden">
       {/* Left text section */}
       <div className="w-5/6 mx-auto flex">
-        <div className="flex flex-col w-2/3 justify-center items-center">
-          <div className=" mt-10 pr-10 w-full">
+        <div className="flex flex-col lg:w-2/3 justify-center items-center">
+          <div className="lg:mt-40 lg:pr-10 w-full">
             <h1 className="text-6xl text-black font-bold mb-4">Highlights</h1>
-            <p className="text-base  text-highlight w-2/3">
-              Discover how historic spaces are thoughtfully transformed into luxurious modern landmarks.
+            <p className="text-base  text-highlight lg:w-2/3">
+              Discover how historic spaces are thoughtfully transformed into
+              luxurious modern landmarks.
             </p>
             {/* Dynamic Preview Image */}
             <div className="mt-6 w-full h-[440px]  rounded-lg overflow-hidden border border-white/20 shadow-md">
@@ -90,7 +91,7 @@ const Gallery: React.FC = () => {
             )}
 
             {/* Prev/Next */}
-            <div className="mt-12 flex gap-4  justify-center  mb-6">
+            <div className="mt-12 flex gap-4 lg:ml-[22%] lg:-mt-14 lg:absolute  justify-center  mb-6">
               <div>
                 <button
                   onClick={() =>
@@ -109,11 +110,12 @@ const Gallery: React.FC = () => {
                   onClick={() =>
                     setCurrentIndex((prev) => (prev + 1) % allImages.length)
                   }
-                  className="px-4 py-4 border-2 text-black/50 border-black/50 rounded-full cursor-pointer border-black hover:border-black hover:text-black transition  text-sm"                >
+                  className="px-4 py-4 border-2 text-black/50  rounded-full cursor-pointer border-black hover:border-black hover:text-black transition  text-sm"                >
                   <FaArrowRight size={16} />{" "}
                 </button>
               </div>
             </div>
+
           </div>
         </div>
 
@@ -152,7 +154,6 @@ const Gallery: React.FC = () => {
           </motion.div>
         </div>
       </div>
-
     </div>
   );
 };
