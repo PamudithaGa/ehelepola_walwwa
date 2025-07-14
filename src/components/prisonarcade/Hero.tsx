@@ -1,14 +1,45 @@
-  import React from "react";
-  import PrisonArcadeLogo from "../../assets/logos/prison-arcade-logo-black.png";
-  import Walawwa from "../../assets/gallery/arcade.jpg";
+import React from "react";
+import heroImage from "../../assets/gallery/arcade-with-logo.jpg"; // Replace with your actual image path
 
-  const Hero: React.FC = () => {
-    return (
-      <div className="relative bg-[url('./assets/gallery/arcade.jpg')] bg-cover bg-center lg:pb-0 text-white flex lg:flex-row flex-col items-center justify-between h-[90dvh] lg:h-[80dvh] px-3 lg:px-16">
+const Hero: React.FC = () => {
+  return (
+    <section className="bg-black w-full flex items-baseline-last   justify-center lg:h-[90dvh] h-[100dvh]">
+      <div className=" w-5/6 h-full lg:h-4/5 flex flex-col lg:flex-row justify-center items-center">
         
-        <div className="absolute h-[80dvh] inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10" />
-      </div>
-    );
-  };
+        {/* Heading & Para */}
+        <div className=" lg:w-1/2 lg:h-full mt-20  pt-10">
+          <h1 className="font-bold text-[56px] lg:text-[80px]  leading-tight flex flex-wrap gap-x-2">
+            {"The Prison Arcade".split(" ").map((word, i) => (
+              <span
+                key={i}
+                className="bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent"
+              >
+                {word}
+              </span>
+            ))}
+          </h1>
 
-  export default Hero;
+          <p className="text-[15px] text-white/30 mt-5 mb-10 text-justify lg:pr-10">
+            The colonial-era prison was transformed into a distinctive shopping
+            destination, blending history, architecture, and modern retail.
+            While preserving elements of its original design, the space
+            seamlessly integrated luxury boutiques, artisan shops, and art
+            galleries, creating a unique commercial and cultural experience.
+            High-end brands contrasted with the historic setting, while local
+            craftsmen showcased handmade goods, keeping the heritage alive.
+          </p>
+
+          <p className="text-white">Open 9.00 AM to 8:30 PM</p>
+          <p className="text-sm text-white/20 mt-2">Monday - Saturday</p>
+        </div>
+        
+        {/* Image */}
+        <div className="lg:w-1/2 h-full my-5 lg:pl-20 rounded-2xl flex justify-center items-center">
+          <img src={heroImage} alt="" className="rounded-2xl w-full" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

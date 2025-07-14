@@ -20,7 +20,7 @@ const Gallery: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % allImages.length);
-    }, 4000); // sync with scroll loop timing
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
@@ -29,11 +29,11 @@ const Gallery: React.FC = () => {
     <div className="w-full h-[100dvh] bg-black text-white flex overflow-hidden">
       {/* Left text section */}
       <div className="w-5/6 mx-auto flex">
-        <div className="flex flex-col w-2/3 justify-center items-center">
-          <div className=" mt-10 pr-10 w-full">
+        <div className="flex flex-col lg:w-2/3 justify-center items-center">
+          <div className=" lg:mt-10 lg:pr-10 w-full">
             <h1 className="text-6xl font-bold mb-4">Highlights</h1>
-            <p className="text-base  text-white/30 w-2/3">
-              KC Discover how historic spaces are thoughtfully transformed into luxurious modern landmarks.
+            <p className="text-base  text-white/30 lg:w-2/3">
+              Discover how historic spaces are thoughtfully transformed into luxurious modern landmarks.
             </p>
             {/* Dynamic Preview Image */}
             <div className="mt-6 w-full h-[440px]  rounded-lg overflow-hidden border border-white/20 shadow-md">

@@ -1,26 +1,29 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
-import NavBar from '../components/common/NavBar'
-import Footer from '../components/common/Footer'
-import PageHero from '../components/courtyard/PageHero'
-import Gallery from '../components/courtyard/Gallery'
-import FooterTopImage from '../assets/footer-image.png'
+import NavBar from "../components/common/NavBar";
+import Footer from "../components/common/Footer";
+import PageHero from "../components/courtyard/PageHero";
+import Gallery from "../components/courtyard/Gallery";
+import FooterTopImage from "../assets/footer-image.png";
 
 const CourtYard: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-         {/* header */}
+      {/* header */}
       <section
         className={`absolute w-full z-50 transition-all duration-2000 ease-in-out`}
       >
         <NavBar page="entertainment" />
       </section>
 
-      <section className="lg:h-[80dvh]">
+      <section className="lg:h-[80dvh] h-[100dvh]">
         <PageHero />
       </section>
 
-      <section className="mt-50">
+      <section className="lg:mt-50 mt-20">
         <Gallery />
       </section>
 
@@ -34,7 +37,7 @@ const CourtYard: React.FC = () => {
         </section>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default CourtYard
+export default CourtYard;
