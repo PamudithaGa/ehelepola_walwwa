@@ -12,6 +12,7 @@ import WaxMuseum from "./pages/WaxMuseum.tsx";
 import ContactUs from "./pages/ContactUs.tsx";
 import CourtYard from "./pages/CourtYard.tsx";
 import KingsCourt from "./pages/KingsCourt.tsx";
+import ContactUsTwo from "./pages/ContactUsTwo.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/ContactUs",
     element: <ContactUs />,
+  },
+  {
+    path: "/ContactUsTwo",
+    element: <ContactUsTwo />,
   },
   {
     path: "/kingscourt",

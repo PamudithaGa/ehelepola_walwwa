@@ -89,7 +89,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Entertainment
           </Link>
           <Link
-            to="/wax"
+            to="/WaxMuseum"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "wax"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
@@ -99,7 +99,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Wax Museum
           </Link>
           <Link
-            to="/ContactUs"
+            to="/ContactUsTwo"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "contact"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
