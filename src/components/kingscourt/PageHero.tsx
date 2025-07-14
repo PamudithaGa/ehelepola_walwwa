@@ -4,7 +4,7 @@ import heroImage from "../../assets/gallery/arcade-with-logo.jpg"; // Replace wi
 const PageHero: React.FC = () => {
   return (
     <>
-      <section className="bg-black w-full flex items-baseline-last justify-center h-[90dvh]">
+      <section className="bg-black w-full flex items-baseline-last justify-center h-[95dvh]">
         <div className=" w-5/6 mx-auto h-4/5 flex justify-center items-center">
           <div className=" w-1/2 h-full pt-10">
             <h1 className="font-bold text-[80px] pr-20 leading-tight flex flex-wrap gap-x-2">
