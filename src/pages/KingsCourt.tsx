@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
-import NavBar from '../components/common/NavBar'
-import Footer from '../components/common/Footer'
-import PageHero from '../components/kingscourt/PageHero'
-import Gallery from '../components/kingscourt/Gallery'
-import FooterTopImage from '../assets/footer-image.png'
+import NavBar from "../components/common/NavBar";
+import Footer from "../components/common/Footer";
+import PageHero from "../components/kingscourt/PageHero";
+import Gallery from "../components/kingscourt/Gallery";
+import FooterTopImage from "../assets/footer-image.png";
 
 const KingsCourt: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {/* header */}
@@ -16,11 +19,11 @@ const KingsCourt: React.FC = () => {
         <NavBar page="dining" />
       </section>
 
-      <section className="lg:h-[80dvh]">
+      <section className="lg:h-[80dvh] h-[100dvh]">
         <PageHero />
       </section>
 
-      <section className="mt-50">
+      <section className="lg:mt-50 mt-15">
         <Gallery />
       </section>
 
@@ -35,6 +38,6 @@ const KingsCourt: React.FC = () => {
       </section>
     </>
   );
-}
+};
 
-export default KingsCourt
+export default KingsCourt;

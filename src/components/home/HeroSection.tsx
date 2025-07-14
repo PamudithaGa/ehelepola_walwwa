@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Link } from "react-router";
 
 import HeroVideo from "../../assets/videos/hero-video.mp4";
 
@@ -30,26 +31,29 @@ const HeroSection: React.FC = () => {
               Ehelepola Walauwwa
             </h1>
 
-            <p className="text-[#dfdfdf] leading-8 text-center font-extralight md:text-base mb-8 px-36">
-              Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From immersive shopping to artistic entertainment, historical exploration, and royal dining — each zone offers a unique experience m within these timeless walls. 
+            <p className="text-[#dfdfdf] leading-8 text-center font-extralight md:text-base mb-8 lg:px-36">
+              Discover the cultural heart of Sri Lanka at Ehelapola Walawwa.
+              From immersive shopping to artistic entertainment, historical
+              exploration, and royal dining — each zone offers a unique
+              experience m within these timeless walls.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-wrap md:justify-center justify-center gap-4 mt-20">
               {/* Primary Button */}
-              <a
-                href="#"
+              <Link
+                to="aboutUs"
                 className="bg-white text-black px-8 py-2 text-sm md:text-base rounded-md transition-all duration-300 hover:text-white hover:bg-black"
               >
                 More Details
-              </a>
+              </Link>
               {/* Secondary Button */}
-              <a
-                href="#"
+              <Link
+                to="/ContactUs"
                 className="border border-[#7d7d7d] text-[#7d7d7d] px-8 py-2 text-sm md:text-base rounded-md transition-all duration-300 hover:border-white hover:text-white"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
