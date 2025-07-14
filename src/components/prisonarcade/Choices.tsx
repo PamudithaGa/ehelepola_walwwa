@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 
 //Logos
- 
 import Ayurweda from "../../assets/logos/ayurveda.webp";
 import Brassware from "../../assets/logos/brassware.webp";
 import clay from "../../assets/logos/clay.webp";
