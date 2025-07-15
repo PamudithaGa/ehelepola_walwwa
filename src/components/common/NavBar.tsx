@@ -129,7 +129,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
         <div className="lg:hidden fixed top-0 right-0 h-screen w-full bg-white shadow-lg z-50 overflow-y-auto">
           <div className="flex justify-end p-4">
             <button onClick={openMenu}>
-              <RxCross2 className="w-6 h-6 text-primary hover:text-highlight" />
+              <RxCross2 className="w-6 h-6 text-primary   hover:text-highlight" />
             </button>
           </div>
 
@@ -145,9 +145,9 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             ].map(({ label, path }) => (
               <li
                 key={label}
-                className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                className={`py-2 px-4 rounded-2xl  hover:bg-neutral-100 ${
                   page.toLowerCase() === label.toLowerCase().replace(" ", "")
-                    ? "text-highlight font-semibold"
+                    ? "text-secondary  bg-primary"
                     : ""
                 }`}
               >
