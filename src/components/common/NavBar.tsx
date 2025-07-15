@@ -24,9 +24,9 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 mt-2 w-11/12 lg:w-3/4 mx-auto">
+    <nav className="sticky top-0 z-50  w-11/12 lg:w-3/4 mx-auto">
       {/* Desktop Navbar */}
-      <div className="hidden lg:flex justify-center items-center py-4 relative z-20">
+      <div className="absolute hidden  w-full lg:flex justify-center items-center py-4  z-20">
         {/* Left Column */}
         <div className="w-2/5 py-4 flex justify-end items-center h-12 gap-6 bg-gradient-to-l from-white via-white/85 to-transparent pr-8">
           <Link
@@ -114,7 +114,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
       {/* Mobile Top Bar */}
       {/* <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md"> */}
       <div
-        className="flex lg:hidden justify-between items-center py-3 px-4 bg-transparent rounded-xl shadow-md "
+        className="absolute bg-transparent flex lg:hidden justify-between items-center py-3 px-4 w-full  rounded-xl shadow-md "
         style={{
           boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
           WebkitBackdropFilter: "blur(5px)",

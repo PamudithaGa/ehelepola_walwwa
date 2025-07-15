@@ -18,16 +18,16 @@ const PrisonArcade: React.FC = () => {
     <>
       {/* header */}
       <section
-        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out `}
+        className={`w-full z-50 transition-all duration-2000 ease-in-out `}
       >
         <NavBar page="shopping" />
       </section>
 
-      <section className="lg:h-[95dvh] h-[100dvh]">
+      <section className="lg:h-[95dvh] h-auto">
         <Hero />
       </section>
 
-      <section className="flex items-center justify-center lg:mt-50 mt-20">
+      <section className="flex items-center  lg:mt-50 mt-20 justify-center">
         <Choices />
       </section>
 
