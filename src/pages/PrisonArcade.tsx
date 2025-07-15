@@ -27,7 +27,7 @@ const PrisonArcade: React.FC = () => {
         <Hero />
       </section>
 
-      <section className="flex items-center justify-center lg:mt-50 mt-10">
+      <section className="flex items-center justify-center lg:mt-50 mt-20">
         <Choices />
       </section>
 
