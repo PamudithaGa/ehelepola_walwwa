@@ -38,7 +38,8 @@ const ContactFormTwo: React.FC = () => {
 
   return (
     <div>
-      <div className="w-5/6 mx-auto flex justify-center items-center h-auto lg:h-[100vh]">
+      <div className="lg:w-5/6 mx-auto flex justify-center items-center h-auto lg:h-[100vh]">
+        {/* Desktop view */}
         <div className="hidden  lg:flex flex-col-reverse lg:flex-row w-full">
           <div className="w-full lg:w-2/3 flex justify-center items-center">
             <form
@@ -137,8 +138,9 @@ const ContactFormTwo: React.FC = () => {
           </div>
         </div>
 
-        <div className="lg:hidden block flex flex-col lg:flex-row w-full">
-          <div className="lg:w-1/3 w-full md:w-full mt-10 md:mt-15 lg:mt-0">
+        {/* Mobile view */}
+        <div className="lg:hidden  flex flex-col justify-center items-center lg:flex-row w-full">
+          <div className=" w-11/12  items-center px-4 mt-10 md:mt-15 lg:mt-0">
             <h1 className="font-bold text-[56px] mb-5 leading-tight flex flex-wrap gap-x-5">
               {"Contact Us".split(" ").map((word, i) => (
                 <span
@@ -155,7 +157,7 @@ const ContactFormTwo: React.FC = () => {
             </p>
           </div>
 
-          <div className="w-full lg:w-2/3 flex justify-center items-center">
+          <div className="w-11/12  flex justify-center items-center">
             <form
               ref={formRef}
               onSubmit={sendEmail}
@@ -209,7 +211,7 @@ const ContactFormTwo: React.FC = () => {
             </form>
           </div>
 
-          <div className="flex flex-col gap-8 mb-10">
+          <div className="w-11/12 flex flex-col gap-8 mb-10">
             <ul className=" w-full lg:w-full font-normal flex flex-col gap-2 lg:gap-3 lg:flex-col lg:pl-0 lg:justify-between">
               <li className="flex flex-row items-center gap-2 text-body/[0.8]">
                 <CiPhone className="text-gray-200 text- bold text-sm w-10 h-10 p-2 border bg-primary rounded-2xl bg-body hover:border-primary hover:bg-secondary hover:text-primary" />
@@ -233,6 +235,7 @@ const ContactFormTwo: React.FC = () => {
               </li>
             </ul>
           </div>
+
         </div>
       </div>
       <Toaster position="top-right" />
