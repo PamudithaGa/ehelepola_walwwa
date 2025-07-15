@@ -57,97 +57,97 @@ const cardsData: Card[] = [
     id: 5,
     title: "Gems",
     image: Gems,
-    description: "Ancient trade records once archived here.",
+    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
   },
   {
     id: 6,
     title: "Handloom",
     image: Handloom,
-    description: "Justice and design rebalanced with elegance.",
+    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
   },
   {
     id: 7,
     title: "Jewellery",
     image: jewellery,
-    description: "Timeless fashion, rooted in colonial history.",
+    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
   },
   {
     id: 8,
     title: "Laksha",
     image: Laksha,
-    description: "Redefined luxury shopping in an ancient shell.",
+    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
   },
   {
     id: 9,
     title: "Mask",
     image: Mask,
-    description: "Soft elegance in a strong-walled sanctuary.",
+    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
   },
   {
     id: 10,
     title: "Porcelain",
     image: Porcelain,
-    description: "Modern brands within a fortress of heritage.",
+    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
   },
   {
     id: 11,
     title: "Spices",
     image: Spices,
-    description: "Every entrance a story. Every exit an experience.",
+    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
   },
   {
     id: 12,
     title: "Silver",
     image: Silver,
-    description: "Textures tell tales of royal footsteps.",
+    description: "Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 13,
     title: "Stoneware",
     image: Stoneware,
-    description: "Textures tell tales of royal footsteps.",
+    description: "Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 14,
     title: "Tea",
     image: Tea,
-    description: "Textures tell tales of royal footsteps.",
+    description: "Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 15,
     title: "Paintings",
     image: Paintings,
-    description: "Textures tell tales of royal footsteps.",
+    description: "Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 16,
     title: "Papers",
     image: Paper,
-    description: "Textures tell tales of royal footsteps.",
+    description: "Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 17,
     title: "Wood Carving",
     image: Woodcarving,
-    description: "Textures tell tales of royal footsteps.",
+    description: "Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 18,
     title: "Photography",
     image: Photography,
-    description: "Textures tell tales of royal footsteps.",
+    description: "Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 19,
     title: "Batik",
     image: Batik,
-    description: "Textures tell tales of royal footsteps.",
+    description: "Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 20,
     title: "Leather",
     image: Leather,
-    description: "Textures tell tales of royal footsteps.",
+    description: "Luxury accessories once safeguarded in the vaults.",
   },
 ];
 
@@ -168,7 +168,6 @@ const Choices: React.FC = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-
   const mobileGroups = [];
   for (let i = 0; i < cardsData.length; i += 4) {
     mobileGroups.push(cardsData.slice(i, i + 4));
@@ -187,7 +186,7 @@ const Choices: React.FC = () => {
           </div>
         ) : (
           <div
-            className="flex snap-x snap-mandatory overflow-x-auto w-full  "
+            className=" flex snap-x snap-mandatory overflow-x-auto w-full  "
             style={{ scrollPaddingLeft: 16, scrollPaddingRight: 16 }}
           >
             {mobileGroups.map((group, index) => (
@@ -244,15 +243,21 @@ const Choices: React.FC = () => {
 
 const CardItem: React.FC<{ card: Card }> = ({ card }) => (
   <div className="bg-gradient-to-tr from-black via-[#0c0c0c]  to-black lg:w-[100%] w-[90%] py-8 px-8 rounded-lg overflow-x-auto shadow-md relative">
-    <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center mb-4 overflow-hidden">
-      <img
-        src={card.image}
-        alt={card.title}
-        className="w-10 h-10 object-contain"
-      />
+    <div className="h-3/6 ">
+      <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center ">
+        <img
+          src={card.image}
+          alt={card.title}
+          className="w-10 h-10 object-contain"
+        />
+      </div>
     </div>
-    <p className="text-white/70 my-2 text-base">{card.title}</p>
-    <p className="text-white/30 text-sm">{card.description}</p>
+    <div className="h-1/6 ">
+      <p className="text-white/70  text-base">{card.title}</p>
+    </div>
+    <div className="h-2/6 ">
+      <p className="text-white/30 text-sm">{card.description}</p>
+    </div>
   </div>
 );
 export default Choices;

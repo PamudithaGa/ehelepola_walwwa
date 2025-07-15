@@ -19,7 +19,7 @@ const CourtYard: React.FC = () => {
         <NavBar page="entertainment" />
       </section>
 
-      <section className="lg:h-[95dvh] h-[100dvh]">
+      <section className="lg:h-[95dvh] h-auto">
         <PageHero />
       </section>
 
