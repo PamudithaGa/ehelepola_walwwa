@@ -20,11 +20,11 @@ const WaxMuseum:React.FC = () => {
         <NavBar page="wax" />
       </section>
 
-      <section className="lg:h-[80dvh]">
+      <section className="lg:h-[95dvh] h-auto">
         <PageHero />
       </section>
 
-       <section className="mt-40 h-auto">
+       <section className="lg:mt-40 h-auto">
         <Timeline />
       </section>
 

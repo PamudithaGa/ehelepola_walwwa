@@ -3,7 +3,7 @@ import heroImage from "../../assets/gallery/arcade-with-logo.jpg"; // Replace wi
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-black w-full flex items-baseline-last   justify-center lg:h-[90dvh] h-[100dvh]">
+    <section className="bg-black w-full flex items-baseline-last   justify-center lg:h-[95dvh] h-auto">
       <div className=" w-5/6 h-full lg:h-4/5 flex flex-col lg:flex-row justify-center items-center">
         
         {/* Heading & Para */}

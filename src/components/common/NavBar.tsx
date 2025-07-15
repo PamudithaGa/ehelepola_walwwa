@@ -4,7 +4,7 @@ import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 
 import Logo from "../../assets/logos/ehelepola-walauwwe-logo-black.png";
-
+import LogoWhite from "../../assets/logos/ehelepola-walauwwe-logo-white.png"
 interface NavbarProps {
   page:
     | "home"
@@ -24,9 +24,9 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 mt-2 w-11/12 lg:w-3/4 mx-auto">
+    <nav className="sticky top-0 z-50  w-11/12 lg:w-3/4 mx-auto">
       {/* Desktop Navbar */}
-      <div className="hidden lg:flex justify-center items-center py-4 relative z-20">
+      <div className="absolute hidden  w-full lg:flex justify-center items-center py-4  z-20">
         {/* Left Column */}
         <div className="w-2/5 py-4 flex justify-end items-center h-12 gap-6 bg-gradient-to-l from-white via-white/85 to-transparent pr-8">
           <Link
@@ -99,7 +99,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Wax Museum
           </Link>
           <Link
-            to="/ContactUsTwo"
+            to="/ContactUs"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "contact"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
@@ -112,24 +112,30 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
       </div>
 
       {/* Mobile Top Bar */}
-      <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md">
-        <img src={Logo} alt="Logo" className="h-12 object-contain" />
+      {/* <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md"> */}
+      <div
+        className="absolute bg-transparent flex lg:hidden justify-between items-center py-3 px-4 w-full  rounded-xl shadow-md "
+        style={{
+          boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+          WebkitBackdropFilter: "blur(5px)",
+        }}
+      >
+        <img src={LogoWhite} alt="Logo" className="h-16 object-contain" />
         <button onClick={openMenu}>
           {isMenuToggle ? (
             <RxCross2 className="w-7 h-7 text-primary hover:text-highlight" />
           ) : (
-            <FiMenu className="w-7 h-7 text-primary hover:text-hi" />
+            <FiMenu className="w-11 h-11 text-secondary hover:text-hi" />
           )}
         </button>
       </div>
 
       {/* Mobile slide-in menu */}
-
       {isMenuToggle && (
         <div className="lg:hidden fixed top-0 right-0 h-screen w-full bg-white shadow-lg z-50 overflow-y-auto">
           <div className="flex justify-end p-4">
             <button onClick={openMenu}>
-              <RxCross2 className="w-6 h-6 text-primary hover:text-highlight" />
+              <RxCross2 className="w-6 h-6 text-primary   hover:text-highlight" />
             </button>
           </div>
 
@@ -145,9 +151,9 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             ].map(({ label, path }) => (
               <li
                 key={label}
-                className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                className={`py-2 px-4 rounded-2xl  hover:bg-neutral-100 ${
                   page.toLowerCase() === label.toLowerCase().replace(" ", "")
-                    ? "text-highlight font-semibold"
+                    ? "text-secondary  bg-primary"
                     : ""
                 }`}
               >
