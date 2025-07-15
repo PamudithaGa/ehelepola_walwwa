@@ -2,14 +2,15 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { Toaster } from "react-hot-toast";
 
+
 //Components
 import Places from "./components/home/Places";
 import Gallery from "./components/home/Gallery";
 import Footer from "./components/common/Footer";
 import NavBar from "./components/common/NavBar";
 import HeroSection from "./components/home/HeroSection";
-
-import FooterTopImage from './assets/footer-image.png'
+import FooterTopImage from './assets/footer-image.png';
+import NewsSection from "./components/home/NewsSection";
 
 const App: React.FC = () => {
 
@@ -41,6 +42,10 @@ const App: React.FC = () => {
         <Places />
       </section>
 
+       <section className="my-30 bg-primary p-10">
+        <NewsSection />
+      </section>
+
       <section className="mt-15">
         <Gallery />
       </section>
@@ -48,7 +53,7 @@ const App: React.FC = () => {
 
       {/* footer */}
       <section
-        className="mt-10 ">
+        className="">
         <div>
           <img src={FooterTopImage} />
         </div>

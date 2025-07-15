@@ -29,9 +29,9 @@ const Gallery: React.FC = () => {
     <div className="w-11/12 lg:w-5/6 lg:h-[100dvh] h-auto mx-auto text-white flex overflow-hidden">
       {/* Left text section */}
 
-      <div className="flex-1 flex flex-col  lg:w-2/3 justify-center items-center ">
-        <div className=" mt-10 lg:pr-10 w-full">
-          <h1 className="mb-4 lg:text-6xl text-[48px] text-black font-bold">Highlights</h1>
+      <div className="flex-1 flex flex-col w-2/3 justify-center items-center ">
+        <div className="pr-10 w-full">
+          <h1 className="mb-4 text-6xl text-black font-bold">Highlights</h1>
           <p className="text-lg  text-gray-300 max-w-xl">
             An immersive scroll experience — where visuals flow like time.
           </p>
