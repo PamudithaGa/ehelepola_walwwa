@@ -27,14 +27,14 @@ const HeroSection: React.FC = () => {
         {/* Content */}
         <div className="relative z-20 w-full h-full flex items-center justify-center  px-6">
           <div className="mt-20 md:mt-68 w-4/5  md:text-left">
-            <h1 className="font-bold bg-gradient-to-t text-center from-white to-black/10 bg-clip-text text-transparent text-4xl md:text-8xl mb-4 leading-tight">
+            <h1 className="font-bold bg-gradient-to-t text-center from-white to-black/10 bg-clip-text text-transparent lg:text-4xl text-[48px] md:text-8xl mb-4 leading-tight">
               Ehelepola Walauwwa
             </h1>
 
-            <p className="text-[#dfdfdf] leading-8 text-center font-extralight md:text-base mb-8 lg:px-36">
+            <p className="text-[#dfdfdf] leading-8 lg:text-center text-justify font-extralight md:text-base mb-8 lg:px-36">
               Discover the cultural heart of Sri Lanka at Ehelapola Walawwa.
               From immersive shopping to artistic entertainment, historical
-              exploration, and royal dining — each zone offers a unique
+              exploration, and royal dining, each zone offers a unique
               experience m within these timeless walls.
             </p>
 
