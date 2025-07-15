@@ -186,7 +186,6 @@ const Choices: React.FC = () => {
             ))}
           </div>
         ) : (
-
           <div
             className="flex snap-x snap-mandatory overflow-x-auto w-full  "
             style={{ scrollPaddingLeft: 16, scrollPaddingRight: 16 }}
