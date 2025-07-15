@@ -21,7 +21,7 @@ const ContactUsTwo: React.FC = () => {
         <ContactFormTwo />
       </section>
 
-      <section className="mt-30 -mb-20 w-5/6 mx-auto">
+      <section className="lg:mt-30 mt-10 -mb-20 w-5/6 mx-auto">
         <Map />
       </section>
 

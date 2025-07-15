@@ -19,7 +19,7 @@ const KingsCourt: React.FC = () => {
         <NavBar page="dining" />
       </section>
 
-      <section className="lg:h-[80dvh] h-[100dvh]">
+      <section className="lg:h-[95dvh] h-auto">
         <PageHero />
       </section>
 

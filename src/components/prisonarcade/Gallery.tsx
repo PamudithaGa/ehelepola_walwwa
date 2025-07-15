@@ -26,25 +26,24 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full lg:h-[100dvh] h-[80dvh] text-white flex overflow-hidden">
+    <div className="w-11/12 lg:w-5/6 lg:h-[100dvh] h-auto mx-auto text-white flex overflow-hidden">
       {/* Left text section */}
-      <div className="lg-full lg:w-5/6 mx-auto flex">
-        <div className="flex flex-col lg:w-2/3 w-full justify-center items-center">
-          <div className=" lg:mt-10 lg:p-0 p-5 lg:pr-10 w-full">
-            <h1 className="text-6xl text-black font-bold mb-4">Highlights</h1>
-            <p className="text-base  text-highlight lg:w-2/3">
-              Discover how historic spaces are thoughtfully transformed into
-              luxurious modern landmarks.
-            </p>
-            {/* Dynamic Preview Image */}
-            <div className="mt-6 w-full h-[440px]  rounded-lg overflow-hidden border border-white/20 shadow-md">
-              <img
-                src={allImages[currentIndex]}
-                alt={`Preview ${currentIndex}`}
-                className="w-full object-contain transition-all duration-500 cursor-pointer"
-                onClick={() => setShowModal(true)}
-              />
-            </div>
+
+      <div className="flex-1 flex flex-col  lg:w-2/3 justify-center items-center ">
+        <div className=" mt-10 lg:pr-10 w-full">
+          <h1 className="mb-4 lg:text-6xl text-[48px] text-black font-bold">Highlights</h1>
+          <p className="text-lg  text-gray-300 max-w-xl">
+            An immersive scroll experience — where visuals flow like time.
+          </p>
+          {/* Dynamic Preview Image */}
+          <div className="mt-6 w-full h-[440px]  rounded-lg overflow-hidden border border-white/20 shadow-md">
+            <img
+              src={allImages[currentIndex]}
+              alt={`Preview ${currentIndex}`}
+              className="w-full object-contain transition-all duration-500 cursor-pointer"
+              onClick={() => setShowModal(true)}
+            />
+          </div>
 
             {/* Image full screen */}
             {showModal && (
@@ -154,7 +153,6 @@ const Gallery: React.FC = () => {
           </motion.div>
         </div>
       </div>
-    </div>
   );
 };
 
