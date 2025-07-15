@@ -31,7 +31,7 @@ const PrisonArcade: React.FC = () => {
         <Choices />
       </section>
 
-      <section className="mt-20">
+      <section className="">
         <Gallery />
       </section>
 

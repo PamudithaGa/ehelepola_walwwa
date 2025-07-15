@@ -87,7 +87,7 @@ const ContactFormTwo: React.FC = () => {
 
               <button
                 type="submit"
-                className="border-2 border-secondary/20 rounded-2xl text-secondary/20 text-xs md:w-full lg:w-45 lg:text-base hover:border-secondary hover:cursor-pointer hover:text-secondary transition duration-300 ease-in-out xlbg-transparent font-semibold px-3 py-3 flex gap-2 justify-center items-center mt-5"
+                className="border-2 border-secondary rounded-2xl text-secondary text-xs md:w-full lg:w-45 lg:text-base hover:bg-secondary hover:border-primary hover:cursor-pointer hover:text-primary transition duration-300 ease-in-out xlbg-transparent font-semibold px-3 py-3 flex gap-2 justify-center items-center mt-5"
               >
                 Submit
               </button>
@@ -165,7 +165,7 @@ const ContactFormTwo: React.FC = () => {
                 type="text"
                 name="firstName"
                 placeholder="Enter first name"
-                className="w-full text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
                 required
               />
 
@@ -196,13 +196,13 @@ const ContactFormTwo: React.FC = () => {
                 name="message"
                 placeholder="Enter your message here..."
                 rows={6}
-                className="w-full text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 resize-none border-gray-400 text-mainfont focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondary text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 resize-none border-gray-400 text-mainfont focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
                 required
               ></textarea>
 
               <button
                 type="submit"
-                className="border-2 border-secondary/20 rounded-2xl text-secondary/20 text-xs md:w-full lg:w-45 lg:text-base hover:border-secondary hover:cursor-pointer hover:text-secondary transition duration-300 ease-in-out xlbg-transparent font-semibold px-3 py-3 flex gap-2 justify-center items-center mt-5"
+                className="border-2 border-secondary rounded-2xl text-secondary text-xs md:w-full lg:w-45 lg:text-base hover:bg-secondary hover:border-primary hover:cursor-pointer hover:text-primary transition duration-300 ease-in-out xlbg-transparent font-semibold px-3 py-3 flex gap-2 justify-center items-center mt-5"
               >
                 Submit
               </button>
