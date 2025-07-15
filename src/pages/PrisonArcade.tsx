@@ -23,7 +23,7 @@ const PrisonArcade: React.FC = () => {
         <NavBar page="shopping" />
       </section>
 
-      <section className="lg:h-[80dvh] h-[100dvh]">
+      <section className="lg:h-[95dvh] h-[100dvh]">
         <Hero />
       </section>
 

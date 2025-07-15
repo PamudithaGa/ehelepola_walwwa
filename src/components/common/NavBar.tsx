@@ -114,7 +114,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
       {/* Mobile Top Bar */}
       {/* <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md"> */}
       <div
-        className="flex lg:hidden justify-between items-center py-3 px-4 bg-transparent rounded-xl shadow-md border  "
+        className="flex lg:hidden justify-between items-center py-3 px-4 bg-transparent rounded-xl shadow-md "
         style={{
           boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
           WebkitBackdropFilter: "blur(5px)",
@@ -125,7 +125,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           {isMenuToggle ? (
             <RxCross2 className="w-7 h-7 text-primary hover:text-highlight" />
           ) : (
-            <FiMenu className="w-7 h-7 text-secondary hover:text-hi" />
+            <FiMenu className="w-11 h-11 text-secondary hover:text-hi" />
           )}
         </button>
       </div>

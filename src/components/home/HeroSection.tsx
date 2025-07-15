@@ -6,7 +6,7 @@ import HeroVideo from "../../assets/videos/hero-video.mp4";
 const HeroSection: React.FC = () => {
   return (
     <>
-      <section className="relative w-full h-[100dvh] overflow-hidden">
+      <section className="relative w-full lg:h-[100dvh] h-[90dvh] overflow-hidden">
         {/* Background video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -21,17 +21,21 @@ const HeroSection: React.FC = () => {
 
         {/* Top-to-bottom overlay */}
         {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10" /> */}
-        {/* Bottom-to-top overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-transparent z-10" />
+
+        {/*Desktop and Mobile overlay Bottom-to-top */}
+        <div className="block absolute inset-0 bg-gradient-to-t from-black lg:via-black/55 via-black/15 to-transparent z-10" />
+
+        {/*Mobile overlay Bottom-to-top */}
+        <div className="lg:hidden block absolute inset-0 h-full bg-gradient-to-b from-black/80 via-black/45 to-transparent z-10" />
 
         {/* Content */}
         <div className="relative z-20 w-full h-full flex items-center justify-center  px-6">
-          <div className="mt-20 md:mt-68 w-4/5 items-center flex flex-col justify-center">
+          <div className="mt-20 md:mt-68 w-11/12 items-center flex flex-col justify-center">
             {/* <h1 className="font-bold bg-gradient-to-t text-center from-white to-black/10 bg-clip-text text-transparent lg:text-4xl text-[48px] md:text-8xl mb-4 leading-tight">
               Ehelepola Walauwwa
             </h1> */}
 
-            <h1 className="font-bold text-[56px] lg:text-8xl text-center leading-tight flex flex-wrap gap-x-2">
+            <h1 className="font-bold text-[56px] lg:text-8xl justify-center -mt-10 lg:mt-0 items-center text-center leading-tight flex flex-wrap gap-x-2">
               {"Ehelepola Walauwwe".split(" ").map((word, i) => (
                 <span
                   key={i}
@@ -42,7 +46,7 @@ const HeroSection: React.FC = () => {
               ))}
             </h1>
 
-            <p className="text-[#dfdfdf] mt-4 leading-8 lg:text-center text-justify font-extralight md:text-base mb-8 lg:px-36">
+            <p className="text-[#dfdfdf] mt-6 lg:mt-4 leading-8 lg:text-center text-justify font-extralight md:text-base mb-8 lg:px-36">
               Discover the cultural heart of Sri Lanka at Ehelapola Walawwa.
               From immersive shopping to artistic entertainment, historical
               exploration, and royal dining — each zone offers a unique
