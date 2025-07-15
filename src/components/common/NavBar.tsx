@@ -4,7 +4,7 @@ import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 
 import Logo from "../../assets/logos/ehelepola-walauwwe-logo-black.png";
-
+import LogoWhite from "../../assets/logos/ehelepola-walauwwe-logo-white.png"
 interface NavbarProps {
   page:
     | "home"
@@ -112,19 +112,25 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
       </div>
 
       {/* Mobile Top Bar */}
-      <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md">
-        <img src={Logo} alt="Logo" className="h-12 object-contain" />
+      {/* <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md"> */}
+      <div
+        className="flex lg:hidden justify-between items-center py-3 px-4 bg-transparent rounded-xl shadow-md border  "
+        style={{
+          boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+          WebkitBackdropFilter: "blur(5px)",
+        }}
+      >
+        <img src={LogoWhite} alt="Logo" className="h-16 object-contain" />
         <button onClick={openMenu}>
           {isMenuToggle ? (
             <RxCross2 className="w-7 h-7 text-primary hover:text-highlight" />
           ) : (
-            <FiMenu className="w-7 h-7 text-primary hover:text-hi" />
+            <FiMenu className="w-7 h-7 text-secondary hover:text-hi" />
           )}
         </button>
       </div>
 
       {/* Mobile slide-in menu */}
-
       {isMenuToggle && (
         <div className="lg:hidden fixed top-0 right-0 h-screen w-full bg-white shadow-lg z-50 overflow-y-auto">
           <div className="flex justify-end p-4">

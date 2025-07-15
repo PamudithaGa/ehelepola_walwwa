@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
               Ehelepola Walawwa, Raja Veediya, Senkadagala, Mahanuwara
             </p>
             <p className="text-[16px] mb-2 hover:text-white transition-colors duration-300">
-              info@eahelepolawalawwa.com
+              info@ehelepolawalawwa.com{" "}
             </p>
             <p className="text-[16px] mb-2 hover:text-white transition-colors duration-300">
               +94 777 371 464
