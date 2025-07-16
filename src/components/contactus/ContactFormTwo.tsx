@@ -51,7 +51,7 @@ const ContactFormTwo: React.FC = () => {
                 type="text"
                 name="firstName"
                 placeholder="Enter first name"
-                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               />
 
@@ -59,7 +59,7 @@ const ContactFormTwo: React.FC = () => {
                 type="text"
                 name="lastName"
                 placeholder="Enter last name"
-                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondarytext-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               />
 
@@ -67,7 +67,7 @@ const ContactFormTwo: React.FC = () => {
                 type="email"
                 name="email"
                 placeholder="Enter email address"
-                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondarytext-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               />
 
@@ -75,14 +75,14 @@ const ContactFormTwo: React.FC = () => {
                 type="text"
                 name="subject"
                 placeholder="Subject (optional)"
-                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondarytext-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
               />
 
               <textarea
                 name="message"
                 placeholder="Enter your message here..."
                 rows={6}
-                className="w-full text-secondary text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 resize-none border-gray-400 text-mainfont focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondarytext-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 resize-none border-gray-400 text-mainfont focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               ></textarea>
 
@@ -167,7 +167,7 @@ const ContactFormTwo: React.FC = () => {
                 type="text"
                 name="firstName"
                 placeholder="Enter first name"
-                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               />
 
@@ -175,7 +175,7 @@ const ContactFormTwo: React.FC = () => {
                 type="text"
                 name="lastName"
                 placeholder="Enter last name"
-                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               />
 
@@ -183,7 +183,7 @@ const ContactFormTwo: React.FC = () => {
                 type="email"
                 name="email"
                 placeholder="Enter email address"
-                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               />
 
@@ -191,14 +191,14 @@ const ContactFormTwo: React.FC = () => {
                 type="text"
                 name="subject"
                 placeholder="Subject (optional)"
-                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
               />
 
               <textarea
                 name="message"
                 placeholder="Enter your message here..."
                 rows={6}
-                className="w-full text-secondary text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 resize-none border-gray-400 text-mainfont focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-base"
+                className="w-full text-secondary text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 resize-none border-gray-400 text-mainfont focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               ></textarea>
 
