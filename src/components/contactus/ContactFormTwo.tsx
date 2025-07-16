@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 import { GoLocation } from "react-icons/go";
 import { IoMailOutline } from "react-icons/io5";
 import { CiPhone } from "react-icons/ci";
+import PeraheraArt from "../../assets/gallery/perahera-art.png"
 
 const ContactFormTwo: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -37,7 +38,12 @@ const ContactFormTwo: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="relative">
+      <div
+        className="absolute right-5 scale-x-[-1] bottom-0 h-60 opacity-12">
+        <img src={PeraheraArt} alt="" className="h-full" />
+      </div>
+
       <div className="lg:w-5/6 mx-auto flex justify-center items-center h-auto lg:h-[100vh]">
         {/* Desktop view */}
         <div className="hidden  lg:flex flex-col-reverse lg:flex-row w-full">

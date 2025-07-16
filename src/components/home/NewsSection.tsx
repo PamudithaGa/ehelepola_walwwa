@@ -104,7 +104,7 @@ const NewsSection: React.FC = () => {
           historic legacy.
         </p>
       </div>
-      <Slider {...settings}>
+      <Slider {...settings} className="z-50">
         {updates.map((item, index) => (
           <div key={index} className="px-2 lg:px-5">
             <NewsCard {...item} />
