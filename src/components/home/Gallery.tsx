@@ -1,40 +1,41 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaEye } from "react-icons/fa";
 
 // For scroll bars
 const SilderImages = [
   new URL("../../assets/gallery/B17A21732.jpg", import.meta.url).href,
-  new URL("../../assets/gallery/prison-arcade-banner2.jpg", import.meta.url).href,
+  new URL("../../assets/gallery/prison-arcade-banner2.jpg", import.meta.url)
+    .href,
   new URL("../../assets/gallery/wallwwa11.png", import.meta.url).href,
   new URL("../../assets/gallery/walawwa112.png", import.meta.url).href,
   new URL("../../assets/gallery/outside.JPG", import.meta.url).href,
 ];
 
+//Main images
 const AnimateImages = [
   {
-    src: new URL("../../assets/gallery/arcade-with-logo.jpg", import.meta.url)
-      .href,
-    description: "Main entrance of the Walawwa — classic colonial elegance.",
+    src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
+    description: "Main entrance of the Walawwa classic colonial elegance.",
   },
   {
     src: new URL("../../assets/gallery/B17A2217.JPG", import.meta.url).href,
-    description: "Restored prison arcade — blending history with modernity.",
+    description: "Restored prison arcade blending history with modernity.",
   },
   {
     src: new URL(
       "../../assets/gallery/prison-arcade-banner.jpg",
       import.meta.url
     ).href,
-    description: "Front courtyard — a peaceful blend of heritage and greenery.",
+    description: "Front courtyard a peaceful blend of heritage and greenery.",
   },
   {
     src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
-    description: "Vintage hallway — echoes of the past in every step.",
+    description: "Vintage hallway echoes of the past in every step.",
   },
   {
     src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
-    description: "Lush surroundings — serenity beyond the walls.",
+    description: "Lush surroundings serenity beyond the walls.",
   },
 ];
 
@@ -70,20 +71,25 @@ const Gallery: React.FC = () => {
 
           {/* Dynamic Preview Image - For Desktop */}
           <div className="hidden lg:block mt-6 w-full h-[440px] relative rounded-lg overflow-hidden border border-white/20 shadow-md">
-            {/* Dark overlay */}
-            <div className="absolute inset-0 h-full bg-gradient-to-t from-black/80 via-black/45 to-transparent z-10" />
+            <div
+              className="cursor-pointer absolute top-5 right-5 hover:bg-primary rounded-full h-10 w-10 flex items-center justify-center bg-white/10 backdrop-blur-md border border-white/20 shadow-lg  transition"
+              onClick={() => setShowModal(true)}
+            >
+              <FaEye className="text-white" />
+            </div>
 
+            {/* Dark overlay */}
+            <div className="absolute inset-0 h-2/3 bottom-0 flex self-baseline-last bg-gradient-to-t from-black/80 via-black/45 to-transparent z-10" />
             {/* Image */}
             <img
               src={AnimateImages[currentIndex].src}
               alt={`Preview ${currentIndex}`}
-              className="w-full object-contain transition-all duration-500 cursor-pointer"
-              onClick={() => setShowModal(true)}
+              className="w-full object-contain transition-all duration-500 "
             />
 
             {/* Description*/}
             <div className="absolute bottom-8 left-4 text-center right-4 z-20">
-              <span className="text-2xl bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent text-center">
+              <span className="text-xl bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent text-center">
                 {AnimateImages[currentIndex].description}
               </span>
             </div>
@@ -104,7 +110,7 @@ const Gallery: React.FC = () => {
 
             {/* Description*/}
             <div className="absolute bottom-8 left-4 text-center right-4 z-20">
-              <span className="text-2xl bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent text-center">
+              <span className="text-lg bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent text-center">
                 {AnimateImages[currentIndex].description}
               </span>
             </div>
@@ -144,10 +150,10 @@ const Gallery: React.FC = () => {
                   <FaArrowRight size={16} />{" "}
                 </button>
 
-                {/* Fullscreen Image */}
+
                 <img
-                  src={AnimateImages[currentIndex]}
-                  alt="Fullscreen Preview"
+                  src={AnimateloopedImages[currentIndex].src}
+                  alt={AnimateloopedImages[currentIndex].description}
                   className="w-full h-auto max-h-[90vh] object-contain rounded-lg shadow-xl"
                 />
               </div>
@@ -168,7 +174,6 @@ const Gallery: React.FC = () => {
                 <FaArrowLeft size={16} />
               </button>
             </div>
-
             <div>
               <button
                 onClick={() =>
@@ -183,7 +188,7 @@ const Gallery: React.FC = () => {
         </div>
       </div>
 
-      {/* Scrolling image columns */}
+      {/* Scrolling image columns - Desktop*/}
       <div className="lg:flex justify-end w-1/3 gap-6 hidden">
         {/* Left Column: Scroll Down */}
         <motion.div
