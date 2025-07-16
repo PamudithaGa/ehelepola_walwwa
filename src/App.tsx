@@ -12,6 +12,8 @@ import HeroSection from "./components/home/HeroSection";
 import FooterTopImage from './assets/footer-image.png';
 import NewsSection from "./components/home/NewsSection";
 
+import DancerArt from "./assets/gallery/dancer-art.png"
+
 const App: React.FC = () => {
 
   const [showNav, setShowNav] = useState(false);
@@ -33,16 +35,22 @@ const App: React.FC = () => {
       >
         <NavBar page="home" />
       </section>
-
+      
       <section className="w-full">
         <HeroSection />
       </section>
-
-      <section className="flex items-center justify-center w-full mt-30">
+      
+      <section className="flex items-center justify-center w-full mt-30 -z-10">
         <Places />
       </section>
 
-       <section className="my-30 bg-primary p-10">
+      <div
+      className="absolute right-5 top-325 ">
+        <img src={DancerArt} alt="" 
+        className="w-105 z-0"/>
+      </div>
+
+       <section className="my-30 bg-primary/90 p-10">
         <NewsSection />
       </section>
 

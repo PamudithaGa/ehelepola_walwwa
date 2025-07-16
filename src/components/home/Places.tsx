@@ -82,7 +82,7 @@ const Places: React.FC = () => {
         {/* Description Box */}
         <div className="flex-1 flex flex-col lg:mt-5 ">
           <div className="">
-            <h1 className="text-primary leading-15  lg:text-6xl text-[42px] text-center font-bold ">The Noble Heart of Kandy</h1>
+            <h1 className="text-primary leading-15  lg:text-6xl text-[42px] font-bold ">The Noble Heart of Kandy</h1>
           </div>
           <p className="text-gray-600 text-base leading-relaxed text-justify my-4">
             Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From
