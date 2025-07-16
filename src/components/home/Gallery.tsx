@@ -61,7 +61,7 @@ const Gallery: React.FC = () => {
       {/* Left text section */}
 
       <div className="flex-1 flex flex-col  lg:w-2/3 justify-center items-center ">
-        <div className=" mt-10 lg:pr-10 w-full">
+        <div className=" lg:mt-10 lg:pr-10 w-full">
           <h1 className="mb-4 lg:text-6xl text-[48px] text-black font-bold">
             Highlights
           </h1>
