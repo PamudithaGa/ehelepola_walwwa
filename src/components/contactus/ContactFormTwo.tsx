@@ -7,7 +7,9 @@ import toast from "react-hot-toast";
 import { GoLocation } from "react-icons/go";
 import { IoMailOutline } from "react-icons/io5";
 import { CiPhone } from "react-icons/ci";
-import PeraheraArt from "../../assets/gallery/perahera-art.png"
+import PeraheraArt from "../../assets/gallery/perahera-art.png";
+
+import Walawwa from "../../assets/logos/sketch-white.png";
 
 const ContactFormTwo: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -39,8 +41,7 @@ const ContactFormTwo: React.FC = () => {
 
   return (
     <div className="relative">
-      <div
-        className="absolute right-5 scale-x-[-1] bottom-0 h-60 opacity-12">
+      <div className="absolute right-5 scale-x-[-1] bottom-0 h-60 opacity-12">
         <img src={PeraheraArt} alt="" className="h-full" />
       </div>
 
@@ -157,9 +158,12 @@ const ContactFormTwo: React.FC = () => {
                 </span>
               ))}
             </h1>
-            <p className="mb-3 text-gray-500">
+            <div className="-mt-3 mb-5">
+              <img src={Walawwa} alt="" className="lg:hidden block" />
+            </div>
+            <p className="mb-3 text-gray-500 text-justify">
               Every great journey starts with a conversation. Here’s how you can
-              reach us — whichever way suits you best.
+              reach us whichever way suits you best.
             </p>
           </div>
 
@@ -241,7 +245,6 @@ const ContactFormTwo: React.FC = () => {
               </li>
             </ul>
           </div>
-
         </div>
       </div>
       <Toaster position="top-right" />

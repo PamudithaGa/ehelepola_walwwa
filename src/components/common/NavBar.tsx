@@ -4,7 +4,7 @@ import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 
 import Logo from "../../assets/logos/ehelepola-walauwwe-logo-black.png";
-import LogoWhite from "../../assets/logos/ehelepola-walauwwe-logo-white.png"
+import LogoWhite from "../../assets/logos/ehelepola-walauwwe-logo-white.png";
 interface NavbarProps {
   page:
     | "home"
@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Home
           </Link>
           <Link
-            to="/aboutUs"
+            to="#"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "about"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
@@ -50,7 +50,17 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             About
           </Link>
           <Link
-            to="/PrisonArcade"
+            to="#"
+            className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
+              page === "dining"
+                ? "bg-primary text-secondary py-2 px-5 rounded-xl"
+                : ""
+            }`}
+          >
+            Wax Museum
+          </Link>
+          <Link
+            to="#"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "shopping"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
@@ -59,16 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           >
             Shopping
           </Link>
-          <Link
-            to="/kingscourt"
-            className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-              page === "dining"
-                ? "bg-primary text-secondary py-2 px-5 rounded-xl"
-                : ""
-            }`}
-          >
-            Dining
-          </Link>
+          
         </div>
 
         {/* Center Column */}
@@ -79,9 +80,19 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
         {/* Right Column */}
         <div className="w-2/5 py-4 flex justify-start items-center gap-6 h-12 bg-gradient-to-r from-white via-white/90 to-transparent pl-8">
           <Link
-            to="/courtyard"
+            to="#"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "entertainment"
+                ? "bg-primary text-secondary py-2 px-5 rounded-xl"
+                : ""
+            }`}
+          >
+            Dining
+          </Link>
+          <Link
+            to="#"
+            className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
+              page === "wax"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
                 : ""
             }`}
@@ -89,14 +100,14 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Entertainment
           </Link>
           <Link
-            to="/WaxMuseum"
+            to="#"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "wax"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
                 : ""
             }`}
           >
-            Wax Museum
+            Blogs
           </Link>
           <Link
             to="/ContactUs"
@@ -142,11 +153,12 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           <ul className="flex flex-col gap-2 px-4 py-2 text-lg">
             {[
               { label: "Home", path: "/" },
-              { label: "About", path: "/aboutUs" },
-              { label: "Shopping", path: "/PrisonArcade" },
-              { label: "Dining", path: "/kingscourt" },
-              { label: "Entertainment", path: "/courtyard" },
-              { label: "Wax Museum", path: "/WaxMuseum" },
+              { label: "About", path: "#" },
+              { label: "Wax Museum", path: "#" },
+              { label: "Shopping", path: "#" },
+              { label: "Dining", path: "#" },
+              { label: "Entertainment", path: "#" },
+              { label: "Blogs", path: "#" },
               { label: "Contact", path: "/ContactUs" },
             ].map(({ label, path }) => (
               <li

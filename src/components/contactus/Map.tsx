@@ -12,11 +12,11 @@ const Map:React.FC = () => {
               <h2 className="lg:text-6xl text-[48px] font-bold text-center  text-primary md:pt-0 lg:pt-0">
               Our Location
             </h2>
-              <img src={Walawwa} alt="" />
+              <img src={Walawwa} alt="" className='hidden lg:block' />
             </div>
           <div className="lg:w-1/2 text-center">
             
-            <p className="text-gray-400 font-normal text-base mt-8 mb-10 w-full leading-7">
+            <p className="text-gray-400 font-normal text-base lg:mt-8 mb-10 w-full leading-7">
               {" "}
               Find your way to a place where history resides and heritage breathes
             </p>
