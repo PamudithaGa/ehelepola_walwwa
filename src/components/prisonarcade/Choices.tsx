@@ -242,7 +242,7 @@ const Choices: React.FC = () => {
 };
 
 const CardItem: React.FC<{ card: Card }> = ({ card }) => (
-  <div className="bg-gradient-to-tr from-black via-[#0c0c0c]  to-black lg:w-[100%] w-[90%] py-8 px-8 rounded-lg overflow-x-auto shadow-md relative">
+  <div className="bg-gradient-to-tr from-black via-[#0c0c0c]  to-black lg:w-[100%] w-[90%] lg:py-8 py-6 px-8 rounded-lg overflow-x-auto shadow-md relative">
     <div className="h-3/6 ">
       <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center ">
         <img
@@ -252,10 +252,10 @@ const CardItem: React.FC<{ card: Card }> = ({ card }) => (
         />
       </div>
     </div>
-    <div className="h-1/6 ">
+    <div className="h-1/6 pt-2 lg:pt-1">
       <p className="text-white/70  text-base">{card.title}</p>
     </div>
-    <div className="h-2/6 ">
+    <div className="h-2/6 pt-3 lg:pt-1">
       <p className="text-white/30 text-sm">{card.description}</p>
     </div>
   </div>

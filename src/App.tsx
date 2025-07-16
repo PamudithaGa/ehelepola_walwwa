@@ -2,20 +2,18 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { Toaster } from "react-hot-toast";
 
-
 //Components
 import Places from "./components/home/Places";
 import Gallery from "./components/home/Gallery";
 import Footer from "./components/common/Footer";
 import NavBar from "./components/common/NavBar";
 import HeroSection from "./components/home/HeroSection";
-import FooterTopImage from './assets/footer-image.png';
+import FooterTopImage from "./assets/footer-image.png";
 import NewsSection from "./components/home/NewsSection";
 
-import DancerArt from "./assets/gallery/dancer-art.png"
+import DancerArt from "./assets/gallery/dancer-art.png";
 
 const App: React.FC = () => {
-
   const [showNav, setShowNav] = useState(false);
 
   useEffect(() => {
@@ -27,30 +25,29 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <> 
+    <>
       {/* header */}
       <section
-        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${showNav ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'
-          }`}
+        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${
+          showNav ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+        }`}
       >
         <NavBar page="home" />
       </section>
-      
+
       <section className="w-full">
         <HeroSection />
       </section>
-      
+
       <section className="flex items-center justify-center w-full mt-30 -z-10">
         <Places />
       </section>
 
-      <div
-      className="absolute right-5 top-325 ">
-        <img src={DancerArt} alt="" 
-        className="w-105 z-0"/>
+      <div className="absolute right-5 top-325 ">
+        <img src={DancerArt} alt="" className="w-105 z-0" />
       </div>
 
-       <section className="my-30 bg-primary/90 p-10">
+      <section className="h-auto mt-20 lg:my-30 bg-primary/90 p-3 lg:p-10">
         <NewsSection />
       </section>
 
@@ -58,22 +55,18 @@ const App: React.FC = () => {
         <Gallery />
       </section>
 
-
       {/* footer */}
-      <section
-        className="">
+      <section className="">
         <div>
           <img src={FooterTopImage} />
         </div>
-        <section
-          className="bg-primary z-10">
+        <section className="bg-primary z-10">
           <Footer />
         </section>
       </section>
-       <Toaster position="top-right" />
-
+      <Toaster position="top-right" />
     </>
   );
-}
+};
 
 export default App;
