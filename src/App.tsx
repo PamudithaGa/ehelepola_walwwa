@@ -11,7 +11,8 @@ import HeroSection from "./components/home/HeroSection";
 import FooterTopImage from "./assets/footer-image.png";
 import NewsSection from "./components/home/NewsSection";
 
-import DancerArt from "./assets/gallery/dancer-art.png";
+import PatternArt from "./assets/gallery/pattern-art.png"
+import PeraheraArt from "./assets/gallery/perahera-art.png"
 
 const App: React.FC = () => {
   const [showNav, setShowNav] = useState(false);
@@ -35,20 +36,29 @@ const App: React.FC = () => {
         <NavBar page="home" />
       </section>
 
+
       <section className="w-full">
         <HeroSection />
       </section>
+
 
       <section className="flex items-center justify-center w-full mt-30 -z-10">
         <Places />
       </section>
 
-      <div className="absolute right-5 top-325 ">
-        <img src={DancerArt} alt="" className="w-105 z-0" />
-      </div>
+      {/*dancer art*/}
+      {/* <div
+        className="absolute right-5 top-325 ">
+        <img src={DancerArt} alt=""
+          className="w-105 z-0" />
+      </div> */}
 
-      <section className="h-auto mt-20 lg:my-30 bg-primary/90 p-3 lg:p-10">
+      <section className="relative my-30 bg-primary p-10 z-0">
         <NewsSection />
+
+        {/*pattern art*/}
+        <img src={PatternArt} alt=""
+          className="absolute w-105 right-0 top-0 h-full object-cover z-10 opacity-30" />
       </section>
 
       <section className="mt-15">
@@ -60,11 +70,20 @@ const App: React.FC = () => {
         <div>
           <img src={FooterTopImage} />
         </div>
-        <section className="bg-primary z-10">
+
+        {/* footer body */}
+        <section
+          className="bg-primary relative z-10">
+          <div
+            className="absolute h-11/12 py-5 right-0 opacity-7">
+            <img src={PeraheraArt} alt="" className="h-full" />
+          </div>
+
           <Footer />
         </section>
       </section>
       <Toaster position="top-right" />
+
     </>
   );
 };

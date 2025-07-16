@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 import HeroVideo from "../../assets/videos/hero-video.mp4";
+import WalawwaBlock from "../../assets/logos/sketch-white.png"
 
 const HeroSection: React.FC = () => {
   return (
@@ -23,7 +24,7 @@ const HeroSection: React.FC = () => {
         {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10" /> */}
 
         {/*Desktop and Mobile overlay Bottom-to-top */}
-        <div className="block absolute inset-0 bg-gradient-to-t from-black lg:via-black/55 via-black/15 to-transparent z-10" />
+        <div className="block absolute inset-0 bg-gradient-to-t from-black lg:via-black/75 via-black/15 to-transparent z-10" />
 
         {/*Mobile overlay Bottom-to-top */}
         <div className="lg:hidden block absolute inset-0 h-full bg-gradient-to-b from-black/80 via-black/45 to-transparent z-10" />
@@ -53,8 +54,13 @@ const HeroSection: React.FC = () => {
               experience m within these timeless walls.
             </p>
 
+              {/* sketch walauwwe */}
+            <div className="w-1/2">
+              <img src={WalawwaBlock} alt="" className="opacity-70"/>
+            </div>
+
             {/* Buttons */}
-            <div className="flex flex-wrap md:justify-center justify-center gap-4 mt-20">
+            <div className="flex hidden flex-wrap md:justify-center justify-center gap-4 mt-20">
               {/* Primary Button */}
               <Link
                 to="aboutUs"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+
 import {
   FaFacebookSquare,
   FaInstagramSquare,
@@ -8,10 +9,14 @@ import {
 import FooterLogo from "../../assets/logos/footer-logo-white.webp";
 import ShadeLogo from "../../assets/logos/loading-logo-white.png";
 
+
 const Footer: React.FC = () => {
   return (
     <>
       <footer className="relative overflow-hidden text-[#7d7d7d] lg:w-5/6 mx-auto py-6 z-20">
+        {/* line art */}
+       
+
         <div className="absolute block lg:hidden  w-200 h-150 top-100 overflow-hidden md:top-90  left-5">
           <img src={ShadeLogo} alt="" className="opacity-5 w-full h-full" />
         </div>
@@ -77,7 +82,7 @@ const Footer: React.FC = () => {
                   to="#"
                   className="hover:text-white transition-colors duration-300"
                 >
-                  Blogs
+                  Our Blogs
                 </Link>
               </li>
             </ul>
