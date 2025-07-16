@@ -4,7 +4,7 @@ import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 
 import Logo from "../../assets/logos/ehelepola-walauwwe-logo-black.png";
-import LogoWhite from "../../assets/logos/ehelepola-walauwwe-logo-white.png";
+import LogoWhite from "../../assets/logos/seondary-logo.png";
 interface NavbarProps {
   page:
     | "home"
@@ -125,18 +125,13 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
       {/* Mobile Top Bar */}
       {/* <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md"> */}
       <div
-        className="absolute bg-transparent flex lg:hidden justify-between items-center py-3 px-4 w-full  rounded-xl shadow-md "
-        style={{
-          boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-          WebkitBackdropFilter: "blur(5px)",
-        }}
-      >
+        className="absolute  flex lg:hidden justify-between items-center py-3 w-full  rounded-xl ">
         <img src={LogoWhite} alt="Logo" className="h-16 object-contain" />
         <button onClick={openMenu}>
           {isMenuToggle ? (
             <RxCross2 className="w-7 h-7 text-primary hover:text-highlight" />
           ) : (
-            <FiMenu className="w-11 h-11 text-secondary hover:text-hi" />
+            <FiMenu className="w-8 h-8 text-secondary hover:text-hi" />
           )}
         </button>
       </div>

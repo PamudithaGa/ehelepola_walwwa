@@ -148,11 +148,11 @@ const ContactFormTwo: React.FC = () => {
         {/* Mobile view */}
         <div className="lg:hidden  flex flex-col justify-center items-center lg:flex-row w-full">
           <div className=" w-11/12  items-center px-4 mt-10 md:mt-15 lg:mt-0">
-            <h1 className="font-bold text-[56px] mb-5 leading-tight flex flex-wrap gap-x-5">
+            <h1 className="font-bold  justify-center items-center text-center text-[56px] mb-5 leading-tight flex flex-wrap gap-x-5">
               {"Contact Us".split(" ").map((word, i) => (
                 <span
                   key={i}
-                  className="bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent"
+                  className="bg-gradient-to-t text-center  from-white to-transparent bg-clip-text text-transparent"
                 >
                   {word}
                 </span>
