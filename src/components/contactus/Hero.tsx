@@ -1,4 +1,3 @@
-import heroImage from "../../assets/gallery/arcade-with-logo.jpg";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 import { PiPhoneCall } from "react-icons/pi";
