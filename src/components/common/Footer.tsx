@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           {/* Feature Place Links */}
           <div className="w-full md:w-1/3 lg:w-1/5 lg:mt-8 flex flex-col">
             <h3 className="text-white text-[18px] font-semibold mb-4">
-              Feature Place
+              Important Links
             </h3>
             <ul className="flex flex-col gap-2 text-[16px]">
               <li>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
                   to="#"
                   className="hover:text-white transition-colors duration-300"
                 >
-                  Feature Place
+                  Blogs
                 </Link>
               </li>
             </ul>
