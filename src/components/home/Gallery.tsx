@@ -126,7 +126,7 @@ const Gallery: React.FC = () => {
                 <button
                   onClick={() =>
                     setCurrentIndex((prev) =>
-                      prev === 0 ? allImages.length - 1 : prev - 1
+                      prev === 0 ? AnimateImages.length - 1 : prev - 1
                     )
                   }
                   className="absolute left-4 top-1/2 -translate-y-1/2 text-black text-2xl bg-white/10 hover:bg-white/20 rounded-full p-2 z-50"
@@ -137,7 +137,7 @@ const Gallery: React.FC = () => {
                 {/* Next Button */}
                 <button
                   onClick={() =>
-                    setCurrentIndex((prev) => (prev + 1) % allImages.length)
+                    setCurrentIndex((prev) => (prev + 1) % AnimateImages.length)
                   }
                   className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-2xl bg-white/10 hover:bg-white/20 rounded-full p-2 z-50"
                 >
