@@ -201,7 +201,7 @@ const Gallery: React.FC = () => {
               key={`col1-${idx}`}
               src={src}
               alt={`col1-${idx}`}
-              className="w-40 bg-green-500 h-160 object-fill rounded-md opacity-80 hover:opacity-100 transition"
+              className="w-40 h-160 object-fill rounded-md opacity-80 hover:opacity-100 transition"
             />
           ))}
         </motion.div>
