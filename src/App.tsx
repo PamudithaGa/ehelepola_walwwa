@@ -2,21 +2,19 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { Toaster } from "react-hot-toast";
 
-
 //Components
 import Places from "./components/home/Places";
 import Gallery from "./components/home/Gallery";
 import Footer from "./components/common/Footer";
 import NavBar from "./components/common/NavBar";
 import HeroSection from "./components/home/HeroSection";
-import FooterTopImage from './assets/footer-image.png';
+import FooterTopImage from "./assets/footer-image.png";
 import NewsSection from "./components/home/NewsSection";
 
 import PatternArt from "./assets/gallery/pattern-art.png"
 import PeraheraArt from "./assets/gallery/perahera-art.png"
 
 const App: React.FC = () => {
-
   const [showNav, setShowNav] = useState(false);
 
   useEffect(() => {
@@ -31,15 +29,18 @@ const App: React.FC = () => {
     <>
       {/* header */}
       <section
-        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${showNav ? 'translate-y-0 opacity-100' : '-translate-y-10 opacity-0'
-          }`}
+        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${
+          showNav ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+        }`}
       >
         <NavBar page="home" />
       </section>
 
+
       <section className="w-full">
         <HeroSection />
       </section>
+
 
       <section className="flex items-center justify-center w-full mt-30 -z-10">
         <Places />
@@ -64,10 +65,8 @@ const App: React.FC = () => {
         <Gallery />
       </section>
 
-
       {/* footer */}
-      <section
-        className="">
+      <section className="">
         <div>
           <img src={FooterTopImage} />
         </div>
@@ -87,6 +86,6 @@ const App: React.FC = () => {
 
     </>
   );
-}
+};
 
 export default App;
