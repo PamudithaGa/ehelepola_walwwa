@@ -5,12 +5,13 @@ import ContactFormTwo from "../components/contactus/ContactFormTwo";
 import Map from "../components/contactus/Map";
 import NavBar from "../components/common/NavBar";
 import Footer from "../components/common/Footer";
+
 import FooterTopImage from "../assets/footer-image.png";
 
 const ContactUsTwo: React.FC = () => {
   return (
     <>
-     {/* header */}
+      {/* header */}
       <section
         className={`absolute w-full z-50 transition-all duration-2000 ease-in-out`}
       >
@@ -25,7 +26,7 @@ const ContactUsTwo: React.FC = () => {
         <Map />
       </section>
 
-       {/* footer */}
+      {/* footer */}
       <section className="">
         <div>
           <img src={FooterTopImage} />

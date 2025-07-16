@@ -12,8 +12,8 @@ import HeroSection from "./components/home/HeroSection";
 import FooterTopImage from './assets/footer-image.png';
 import NewsSection from "./components/home/NewsSection";
 
-import DancerArt from "./assets/gallery/dancer-art.png"
 import PatternArt from "./assets/gallery/pattern-art.png"
+import PeraheraArt from "./assets/gallery/perahera-art.png"
 
 const App: React.FC = () => {
 
@@ -57,7 +57,7 @@ const App: React.FC = () => {
 
         {/*pattern art*/}
         <img src={PatternArt} alt=""
-            className="absolute w-105 right-0 top-0 h-full object-cover z-10 opacity-30" />
+          className="absolute w-105 right-0 top-0 h-full object-cover z-10 opacity-30" />
       </section>
 
       <section className="mt-15">
@@ -71,8 +71,15 @@ const App: React.FC = () => {
         <div>
           <img src={FooterTopImage} />
         </div>
+
+        {/* footer body */}
         <section
-          className="bg-primary z-10">
+          className="bg-primary relative z-10">
+          <div
+            className="absolute h-11/12 py-5 right-0 opacity-7">
+            <img src={PeraheraArt} alt="" className="h-full" />
+          </div>
+
           <Footer />
         </section>
       </section>
