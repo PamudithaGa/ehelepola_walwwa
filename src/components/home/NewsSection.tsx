@@ -84,14 +84,14 @@ const NewsSection: React.FC = () => {
   };
 
   return (
-    <div className="p-6 w-11/12 mx-auto ">
+    <div className="p-6 w-11/12 mx-auto">
       <div className="mt-5 mb-10">
         <h1 className="text-secondary leading-15  lg:text-6xl text-[42px] font-bold ">Recents News</h1>
-        <p className="text-gray-600 text-base leading-relaxed mt-2 w-5/6 pr-10">
+        <p className="text-gray-600 text-base leading-relaxed mt-2 w-5/6 pr-30">
           Stay updated with the latest announcements, stories, and happenings from Ehelepola Walawwe where heritage meets today. Explore event highlights, restoration updates, and cultural moments that honor its historic legacy.
         </p>
       </div>
-      <Slider {...settings}>
+      <Slider {...settings} className="z-50">
         {updates.map((item, index) => (
           <div key={index} className="px-5">
             <NewsCard {...item} />
