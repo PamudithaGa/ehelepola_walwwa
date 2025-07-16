@@ -7,6 +7,7 @@ import ContactForm from "../components/contactus/ContactForm";
 import Map from "../components/contactus/Map";
 import NavBar from "../components/common/NavBar";
 import Footer from "../components/common/Footer";
+
 import FooterTopImage from "../assets/footer-image.png";
 
 const ContactUs: React.FC = () => {
