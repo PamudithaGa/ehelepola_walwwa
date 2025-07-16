@@ -9,7 +9,6 @@ import NavBar from "../components/common/NavBar";
 import Footer from "../components/common/Footer";
 
 import FooterTopImage from "../assets/footer-image.png";
-import PeraheraArt from "../assets/gallery/perahera-art.png"
 
 const ContactUs: React.FC = () => {
   useEffect(() => {
