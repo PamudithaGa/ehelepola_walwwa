@@ -103,7 +103,7 @@ const ContactFormTwo: React.FC = () => {
           </div>
 
           <div className="lg:w-1/3 w-full md:w-full mt-20 md:mt-15 lg:mt-0">
-            <h1 className="font-bold text-[80px]  leading-tight flex flex-wrap gap-x-5">
+            <h1 className="font-bold text-[75px]  leading-tight flex flex-wrap gap-x-5">
               {"Contact Us".split(" ").map((word, i) => (
                 <span
                   key={i}
