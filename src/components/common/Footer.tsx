@@ -8,7 +8,6 @@ import {
 } from "react-icons/fa";
 import FooterLogo from "../../assets/logos/footer-logo-white.webp";
 import ShadeLogo from "../../assets/logos/loading-logo-white.png";
-import FooterArt from '../../assets/gallery/footer-01.png'
 
 
 const Footer: React.FC = () => {
