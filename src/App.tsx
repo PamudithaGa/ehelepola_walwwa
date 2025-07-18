@@ -12,7 +12,6 @@ import FooterTopImage from "./assets/footer-image.png";
 import NewsSection from "./components/home/NewsSection";
 
 import PatternArt from "./assets/gallery/pattern-art.png"
-import PeraheraArt from "./assets/gallery/perahera-art.png"
 import FooterArt from './assets/gallery/footer-01.png'
 
 

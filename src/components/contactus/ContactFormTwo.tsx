@@ -7,7 +7,6 @@ import toast from "react-hot-toast";
 import { GoLocation } from "react-icons/go";
 import { IoMailOutline } from "react-icons/io5";
 import { CiPhone } from "react-icons/ci";
-import PeraheraArt from "../../assets/gallery/perahera-art.png"
 import PatternArt from "../../assets/gallery/footer-01.png"
 
 const ContactFormTwo: React.FC = () => {
