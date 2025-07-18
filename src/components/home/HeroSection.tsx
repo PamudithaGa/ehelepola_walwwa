@@ -36,6 +36,8 @@ const HeroSection: React.FC = () => {
               Ehelepola Walauwwa
             </h1> */}
 
+
+
             <h1 className="font-bold text-[56px] lg:text-8xl justify-center -mt-10 lg:mt-0 items-center text-center leading-tight flex flex-wrap gap-x-2">
               {"Ehelepola Walauwwe".split(" ").map((word, i) => (
                 <span
@@ -55,12 +57,12 @@ const HeroSection: React.FC = () => {
             </p>
 
               {/* sketch walauwwe */}
-            <div className="w-1/2">
+            <div className="lg:block hidden mt-4 lg:mt-0 lg:w-1/2">
               <img src={WalawwaBlock} alt="" className="opacity-70"/>
             </div>
 
             {/* Buttons */}
-            <div className="flex hidden flex-wrap md:justify-center justify-center gap-4 mt-20">
+            <div className="flex lg:hidden flex-wrap md:justify-center justify-center gap-4 mt-20">
               {/* Primary Button */}
               <Link
                 to="aboutUs"

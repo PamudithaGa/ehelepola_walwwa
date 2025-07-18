@@ -1,9 +1,7 @@
-
-import heroImage from "../../assets/gallery/arcade-with-logo.jpg";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 import { PiPhoneCall } from "react-icons/pi";
-
+import Walawwa from "../../assets/logos/walawwa-building.png";
 
 const Hero = () => {
   /* contact feature */
@@ -21,7 +19,7 @@ const Hero = () => {
     window.open(whatsappLink, "_blank");
   };
 
-   //via phone
+  //via phone
   const phoneNumber = "+947073714674";
   const handleCallClick = () => {
     window.location.href = `tel:${phoneNumber}`;
@@ -42,52 +40,46 @@ const Hero = () => {
                 </span>
               ))}
             </h1>
-
-            <p
-              className="text-[15px] text-white/30 mt-5 mb-10 text-justify pr-10">
-              Let’s talk we’re always ready to welcome you into the legacy of Ehelepola Walawwa. Whether you're seeking stories of the past, planning your visit, or exploring collaboration, our doors and history are open to you.
+            <div className="bg-amber-400 lg:hidden block">
+              <img src={Walawwa} alt="" className="lg:hidden block" />
+            </div>
+            <p className="text-[15px] text-white/30 mt-5 mb-10 text-justify pr-10">
+              Let’s talk we’re always ready to welcome you into the legacy of
+              Ehelepola Walawwa. Whether you're seeking stories of the past,
+              planning your visit, or exploring collaboration, our doors and
+              history are open to you.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex gap-4 md:gap-5 mt-6 md:mt-9 text-sm print:hidden">
               <button
                 onClick={handleEmailClick}
-                className="group border backdrop-blur-md bg-white/10 rounded-lg border-white/30 text-white text-sm md:text-base w-12 h-12 md:w-15 md:h-15 flex items-center justify-center hover:bg-white transition hover:cursor-pointer">
+                className="group border backdrop-blur-md bg-white/10 rounded-lg border-white/30 text-white text-sm md:text-base w-12 h-12 md:w-15 md:h-15 flex items-center justify-center hover:bg-white transition hover:cursor-pointer"
+              >
                 <IoMailOutline className="text-2xl  group-hover:text-black" />
               </button>
 
               <button
                 onClick={handleWhatsAppClick}
-                className="group border backdrop-blur-md bg-white/10 rounded-lg border-white/30 text-white text-sm md:text-base w-12 h-12 md:w-15 md:h-15 flex items-center justify-center hover:bg-white transition hover:cursor-pointer">
+                className="group border backdrop-blur-md bg-white/10 rounded-lg border-white/30 text-white text-sm md:text-base w-12 h-12 md:w-15 md:h-15 flex items-center justify-center hover:bg-white transition hover:cursor-pointer"
+              >
                 <FaWhatsapp className="text-2xl group-hover:text-black" />
               </button>
 
               <button
                 onClick={handleCallClick}
-                className="group border backdrop-blur-md bg-white/10 rounded-lg border-white/30 text-white text-sm md:text-base w-12 h-12 md:w-15 md:h-15 flex items-center justify-center hover:bg-white transition hover:cursor-pointer">
+                className="group border backdrop-blur-md bg-white/10 rounded-lg border-white/30 text-white text-sm md:text-base w-12 h-12 md:w-15 md:h-15 flex items-center justify-center hover:bg-white transition hover:cursor-pointer"
+              >
                 <PiPhoneCall className="text-2xl group-hover:text-black" />
               </button>
             </div>
           </div>
-          
-          <div className="w-1/2 h-4/6 flex flex-col justify-center items-center gap-8">
-            <div className="flex h-1/2 gap-8">
-              <img src={heroImage} alt=""
-                className="w-1/2 rounded-lg" />
-              <img src={heroImage} alt=""
-                className="w-1/2 rounded-lg" />
-            </div>
-            <div className='flex h-1/2 gap-8'>
-              <img src={heroImage} alt=""
-                className="w-1/2 rounded-lg" />
-              <img src={heroImage} alt=""
-                className="w-1/2 rounded-lg" />
-            </div>
-          </div>
+
+
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

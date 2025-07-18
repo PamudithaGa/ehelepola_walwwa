@@ -7,7 +7,7 @@ import Gallery from "../components/prisonarcade/Gallery";
 import Footer from "../components/common/Footer";
 import NavBar from "../components/common/NavBar";
 import FooterTopImage from "../assets/footer-image.png";
-
+import FooterArt from "../assets/logos/ehelepola-walauwwe-logo-white.png";
 const PrisonArcade: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,11 +36,17 @@ const PrisonArcade: React.FC = () => {
       </section>
 
       {/* footer */}
-      <section className="mt-10 ">
+      <section className="">
         <div>
           <img src={FooterTopImage} />
         </div>
-        <section className="bg-primary z-10">
+
+        {/* footer body */}
+        <section className="bg-primary relative z-10 overflow-hidden">
+          <div className="absolute h-11/12 py-5 -right-78 top-90 w-170 opacity-5">
+            <img src={FooterArt} alt="" className="h-140 w-200 lg:hidden" />
+          </div>
+
           <Footer />
         </section>
       </section>

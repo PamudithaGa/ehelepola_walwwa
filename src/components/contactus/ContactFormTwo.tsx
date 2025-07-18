@@ -8,6 +8,7 @@ import { GoLocation } from "react-icons/go";
 import { IoMailOutline } from "react-icons/io5";
 import { CiPhone } from "react-icons/ci";
 import PatternArt from "../../assets/gallery/footer-01.png"
+import Walawwa from "../../assets/logos/sketch-white.png";
 
 const ContactFormTwo: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -65,7 +66,7 @@ const ContactFormTwo: React.FC = () => {
                 type="text"
                 name="lastName"
                 placeholder="Enter last name"
-                className="w-full text-secondarytext-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
+                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               />
 
@@ -73,7 +74,7 @@ const ContactFormTwo: React.FC = () => {
                 type="email"
                 name="email"
                 placeholder="Enter email address"
-                className="w-full text-secondarytext-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
+                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               />
 
@@ -81,14 +82,14 @@ const ContactFormTwo: React.FC = () => {
                 type="text"
                 name="subject"
                 placeholder="Subject (optional)"
-                className="w-full text-secondarytext-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
+                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
               />
 
               <textarea
                 name="message"
                 placeholder="Enter your message here..."
                 rows={6}
-                className="w-full text-secondarytext-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 resize-none border-gray-400 text-mainfont focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
+                className="w-full text-secondary text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 resize-none border-gray-400 text-mainfont focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               ></textarea>
 
@@ -102,7 +103,7 @@ const ContactFormTwo: React.FC = () => {
           </div>
 
           <div className="lg:w-1/3 w-full md:w-full mt-20 md:mt-15 lg:mt-0">
-            <h1 className="font-bold text-[80px]  leading-tight flex flex-wrap gap-x-5">
+            <h1 className="font-bold text-[75px]  leading-tight flex flex-wrap gap-x-5">
               {"Contact Us".split(" ").map((word, i) => (
                 <span
                   key={i}
@@ -147,19 +148,22 @@ const ContactFormTwo: React.FC = () => {
         {/* Mobile view */}
         <div className="lg:hidden  flex flex-col justify-center items-center lg:flex-row w-full">
           <div className=" w-11/12  items-center px-4 mt-10 md:mt-15 lg:mt-0">
-            <h1 className="font-bold text-[56px] mb-5 leading-tight flex flex-wrap gap-x-5">
+            <h1 className="font-bold  justify-center items-center text-center text-[56px] mb-5 leading-tight flex flex-wrap gap-x-5">
               {"Contact Us".split(" ").map((word, i) => (
                 <span
                   key={i}
-                  className="bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent"
+                  className="bg-gradient-to-t text-center  from-white to-transparent bg-clip-text text-transparent"
                 >
                   {word}
                 </span>
               ))}
             </h1>
-            <p className="mb-3 text-gray-500">
+            <div className="-mt-3 mb-5">
+              <img src={Walawwa} alt="" className="lg:hidden block" />
+            </div>
+            <p className="mb-3 text-gray-500 text-justify">
               Every great journey starts with a conversation. Here’s how you can
-              reach us — whichever way suits you best.
+              reach us whichever way suits you best.
             </p>
           </div>
 
@@ -241,7 +245,6 @@ const ContactFormTwo: React.FC = () => {
               </li>
             </ul>
           </div>
-
         </div>
       </div>
       <Toaster position="top-right" />
