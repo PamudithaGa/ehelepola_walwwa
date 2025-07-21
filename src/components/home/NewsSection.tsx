@@ -3,7 +3,7 @@ import NewsCard from "./NewsCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import ImageTest from "../../assets/gallery/arcade.jpg";
+//Image
 import PrithCeremonies from "../../assets/news/pirith.jpg";
 import PresidentialInauguration from "../../assets/news/prasident.jpg"
 import Tourits from "../../assets/news/Tousrists.jpg"
