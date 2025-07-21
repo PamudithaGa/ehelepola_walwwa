@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 
-import HeroVideo from "../../assets/videos/hero-video.mp4";
+// import HeroVideo from "../../assets/videos/hero-video.mp4";
+import HeroVideo from "../../assets/videos/ehelepola.mp4";
 import WalawwaBlock from "../../assets/logos/sketch-white.png";
 
 const HeroSection: React.FC = () => {
@@ -56,7 +57,7 @@ const HeroSection: React.FC = () => {
 
             {/* sketch walauwwe */}
             <div className="lg:block hidden mt-4 lg:mt-0 lg:w-1/2">
-              <img src={WalawwaBlock} alt="" className="opacity-70" />
+              <img src={WalawwaBlock} alt="" className="opacity-45" />
             </div>
 
             {/* Buttons */}
