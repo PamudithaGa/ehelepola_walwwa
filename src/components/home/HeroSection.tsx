@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 import HeroVideo from "../../assets/videos/hero-video.mp4";
-import WalawwaBlock from "../../assets/logos/sketch-white.png"
+import WalawwaBlock from "../../assets/logos/sketch-white.png";
 
 const HeroSection: React.FC = () => {
   return (
@@ -36,8 +36,6 @@ const HeroSection: React.FC = () => {
               Ehelepola Walauwwa
             </h1> */}
 
-
-
             <h1 className="font-bold text-[56px] lg:text-8xl justify-center -mt-10 lg:mt-0 items-center text-center leading-tight flex flex-wrap gap-x-2">
               {"Ehelepola Walauwwe".split(" ").map((word, i) => (
                 <span
@@ -50,15 +48,15 @@ const HeroSection: React.FC = () => {
             </h1>
 
             <p className="text-[#dfdfdf] mt-6 lg:mt-4 leading-8 lg:text-center text-justify font-extralight md:text-base mb-8 lg:px-36">
-              Discover the cultural heart of Sri Lanka at Ehelapola Walawwa.
-              From immersive shopping to artistic entertainment, historical
-              exploration, and royal dining — each zone offers a unique
-              experience m within these timeless walls.
+              Step into the legendary Ehelepola Walauwa, where Sri Lanka's regal
+              heritage comes alive through four extraordinary experiences:
+              Prison Arcade shopping, Wax Museum exhibitions, Courtyard
+              serenity, and Kings Court dining.
             </p>
 
-              {/* sketch walauwwe */}
+            {/* sketch walauwwe */}
             <div className="lg:block hidden mt-4 lg:mt-0 lg:w-1/2">
-              <img src={WalawwaBlock} alt="" className="opacity-70"/>
+              <img src={WalawwaBlock} alt="" className="opacity-70" />
             </div>
 
             {/* Buttons */}

@@ -9,13 +9,11 @@ import {
 import FooterLogo from "../../assets/logos/footer-logo-white.webp";
 import ShadeLogo from "../../assets/logos/loading-logo-white.png";
 
-
 const Footer: React.FC = () => {
   return (
     <>
       <footer className="relative overflow-hidden text-[#7d7d7d] lg:w-5/6 mx-auto py-6 z-20">
         {/* line art */}
-       
 
         <div className="absolute block lg:hidden  w-200 h-150 top-100 overflow-hidden md:top-90  left-5">
           <img src={ShadeLogo} alt="" className="opacity-5 w-full h-full" />
@@ -31,11 +29,11 @@ const Footer: React.FC = () => {
               alt="Ehelepola walawwe"
             />
             <p className="text-[16px] leading-7 text-justify lg:pr-10">
-              Discover the timeless legacy of a historic 19th-century manor in
-              the heart of Kandy. Once the ancestral home of Ehelepola Nilame
-              and later repurposed as a colonial prison, today it stands
-              restored as a cultural heritage site—celebrating Sri Lanka's rich
-              history and architecture.
+              Ehelepola Walauwa, the ancestral home of noble Ehelepola Nilame,
+              stands as Sri Lanka's premier heritage destination in Kandy. This
+              meticulously restored walauwa in Sri Lanka combines shopping,
+              dining, museums, and cultural experiences, celebrating our rich
+              traditional Sri Lankan architecture and royal legacy.
             </p>
           </div>
 
