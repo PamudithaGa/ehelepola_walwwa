@@ -8,8 +8,8 @@ type CardProps = {
 
 const NewsCard: React.FC<CardProps> = ({ title, description, image, date, month }) => {
   return (
-    <div className="bg-white shadow-md rounded-xl overflow-hidden h-110">
-      <img src={image} alt={title} className="h-40 w-full object-cover" />
+    <div className="bg-white shadow-md rounded-xl overflow-hidden h-115">
+      <img src={image} alt={title} className="h-45 w-full object-cover" />
       <div className="px-2 lg:p-4 flex gap-5 w-full mt-2">
         <div
         className="bg-primary w-1/3 h-20 flex flex-col rounded-2xl justify-center items-center ">
