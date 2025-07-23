@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Home
           </Link>
           <Link
-            to="#"
+            to="/aboutUs"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "about"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
@@ -50,9 +50,9 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             About
           </Link>
           <Link
-            to="#"
+            to="/WaxMuseum"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-              page === "dining"
+              page === "wax"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
                 : ""
             }`}
@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Wax Museum
           </Link>
           <Link
-            to="#"
+            to="/PrisonArcade"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "shopping"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
@@ -80,9 +80,9 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
         {/* Right Column */}
         <div className="w-2/5 py-4 flex justify-start items-center gap-6 h-12 bg-gradient-to-r from-white via-white/90 to-transparent pl-8">
           <Link
-            to="#"
+            to="/kingscourt"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-              page === "entertainment"
+              page === "dining"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
                 : ""
             }`}
@@ -90,9 +90,9 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Dining
           </Link>
           <Link
-            to="#"
+            to="/courtyard"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-              page === "wax"
+              page === "entertainment"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
                 : ""
             }`}
