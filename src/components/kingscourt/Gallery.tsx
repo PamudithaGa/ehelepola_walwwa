@@ -66,7 +66,8 @@ const Gallery: React.FC = () => {
             Highlights
           </h1>
           <p className="text-lg  text-gray-300 max-w-xl">
-            An immersive scroll experience — where visuals flow like time.
+            Experience authentic Kandyan culture through architecture, wax
+            figures, and heritage.
           </p>
 
           {/* Dynamic Preview Image - For Desktop */}
@@ -88,11 +89,11 @@ const Gallery: React.FC = () => {
             />
 
             {/* Description*/}
-            <div className="absolute bottom-8 left-4 text-center right-4 z-20">
+            {/* <div className="absolute bottom-8 left-4 text-center right-4 z-20">
               <span className="text-xl bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent text-center">
                 {AnimateImages[currentIndex].description}
               </span>
-            </div>
+            </div> */}
           </div>
 
           {/* Dynamic Preview Image - For Mobile */}
@@ -149,7 +150,6 @@ const Gallery: React.FC = () => {
                 >
                   <FaArrowRight size={16} />{" "}
                 </button>
-
 
                 <img
                   src={AnimateloopedImages[currentIndex].src}

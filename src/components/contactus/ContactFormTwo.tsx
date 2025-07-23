@@ -114,8 +114,7 @@ const ContactFormTwo: React.FC = () => {
               ))}
             </h1>
             <p className="mb-3 text-gray-500">
-              Every great journey starts with a conversation. Here’s how you can
-              reach us — whichever way suits you best.
+Connect with Ehelepola Walauwa for inquiries about visits, events, heritage tours, shopping experiences, and cultural programs in historic Kandy.
             </p>
 
             <div className="flex flex-col gap-8 mt-10">
@@ -162,8 +161,7 @@ const ContactFormTwo: React.FC = () => {
               <img src={Walawwa} alt="" className="lg:hidden block" />
             </div>
             <p className="mb-3 text-gray-500 text-justify">
-              Every great journey starts with a conversation. Here’s how you can
-              reach us whichever way suits you best.
+Connect with Ehelepola Walauwa for inquiries about visits, events, heritage tours, shopping experiences, and cultural programs in historic Kandy.
             </p>
           </div>
 
