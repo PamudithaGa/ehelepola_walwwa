@@ -13,28 +13,28 @@ const zones = [
     image: Prison,
     title: "Old Prison Cells",
     description:
-      "Step into the eerie world of historic incarceration. Explore the chilling past within the dim corridors of the old prison block.",
+      "Where history meets retail therapy, forty shopping cells house luxury brands like Maliban, PG Martin, and Silani in a uniquely transformed heritage space.",
     link: "/PrisonArcade",
   },
   {
     image: MadaMidula,
     title: "Mada Midula Garden",
     description:
-      "A serene escape within stone walls. Discover nature's touch through lush greenery and ancient botanical secrets.",
+      "A tranquil sanctuary where ancient stone walls whisper tales of yesteryear, offering visitors peaceful moments amidst beautifully landscaped heritage gardens.",
     link: "/courtyard",
   },
   {
     image: WaxMuseum,
     title: "Wax Museum",
     description:
-      "Meet the past face-to-face. From kings to rebels, this zone brings history to life with stunningly realistic wax figures.",
+      "Thirty-five lifelike figures bring Sri Lanka's greatest heroes to life, surrounded by exhibits showcasing Kandyan architecture, royal customs, and traditional crafts.",
     link: "/WaxMuseum",
   },
   {
     image: KingCourt,
     title: "The King's Court",
     description:
-      "Where justice, politics, and power once echoed. Walk the grand halls where noblemen debated and rulers reigned.",
+      "Authentic royal dining experience recreating ancient culinary traditions, where traditional flavors meet regal ambiance in a restaurant fit for royalty.",
     link: "/kingscourt",
   },
 ];
@@ -82,25 +82,27 @@ const Places: React.FC = () => {
         {/* Description Box */}
         <div className="flex-1 flex flex-col lg:mt-5 ">
           <div className="">
-            <h1 className="text-primary leading-15  lg:text-6xl text-[42px] font-bold ">The Noble Heart of Kandy</h1>
+            <h1 className="text-primary leading-15  lg:text-6xl text-[42px] font-bold ">
+              The Noble Heart of Kandy
+            </h1>
           </div>
           <p className="text-gray-600 text-base leading-relaxed text-justify my-4">
-            Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From
-            immersive shopping to artistic entertainment, historical
-            exploration, and royal dining — each zone offers a unique experience
-            m within these timeless walls. Discover the cultural heart of Sri
-            Lanka at Ehelapola Walawwa. From immersive shopping to artistic
-            entertainment, historical exploration, and royal dining — each zone
-            offers a unique experience within these timeless walls.
+            Nestled in the ancient kingdom's heart, Ehelepola Walauwa stands as
+            Kandy's crown jewel, where colonial architecture Sri Lanka meets
+            traditional craftsmanship. This heritage walauwa Sri Lanka has
+            witnessed centuries of royal intrigue, serving the noble Ehelepola
+            Nilame family. Today, cultural tourism Sri Lanka finds its perfect
+            destination in this meticulously restored mansion, showcasing
+            authentic Kandyan heritage sites.
             <br />
             <br />
-            Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From
-            immersive shopping to artistic entertainment, historical
-            exploration, and royal dining — each zone offers a unique experience
-            within these timeless walls. Discover the cultural heart of Sri
-            Lanka at Ehelapola Walawwa. From immersive shopping to artistic
-            entertainment, historical exploration, and royal dining — each zone
-            offers a unique experience within these timeless walls.
+            The ancestral home of the legendary Ehelepola Disawe transforms
+            history into living experiences. This historic mansion in Sri Lanka,
+            once echoing with political conversations and family gatherings, now
+            houses four distinct projects that celebrate our rich past.
+            Traditional Sri Lankan architecture merges seamlessly with modern
+            attractions, creating an immersive journey through time where
+            visitors experience authentic walauwa in Sri Lanka.
             {/* <br />
             <br />
             Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From

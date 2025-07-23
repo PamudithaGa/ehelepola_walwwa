@@ -18,7 +18,7 @@ const Map:React.FC = () => {
             
             <p className="text-gray-400 font-normal text-base lg:mt-8 mb-10 w-full leading-7">
               {" "}
-              Find your way to a place where history resides and heritage breathes
+              Located in Kandy's heritage district, it is easily accessible near Sacred Tooth Relic Temple and city center.
             </p>
           </div>
           <div className="w-full gap-5 flex">
