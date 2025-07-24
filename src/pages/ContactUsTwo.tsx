@@ -1,5 +1,4 @@
-import React from "react";
-
+import React,{useEffect} from "react";
 
 import ContactFormTwo from "../components/contactus/ContactFormTwo";
 import Map from "../components/contactus/Map";
@@ -9,6 +8,9 @@ import Footer from "../components/common/Footer";
 import FooterTopImage from "../assets/footer-image.png";
 import FooterArt from "../assets/logos/ehelepola-walauwwe-logo-white.png";
 const ContactUsTwo: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {/* header */}
