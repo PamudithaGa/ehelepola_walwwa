@@ -57,7 +57,7 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-11/12 lg:w-5/6 lg:h-[100dvh] h-auto lg:mb-8 mx-auto  text-white flex overflow-hidden">
+    <div className="w-11/12 lg:w-5/6 lg:h-[100dvh] h-auto lg:mb-8 mx-auto bg-red-600 text-white flex overflow-hidden">
       {/* Left text section */}
 
       <div className="flex-1 lg:h-full flex flex-col  lg:w-2/3 justify-center items-center ">
