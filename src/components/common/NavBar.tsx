@@ -40,7 +40,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           >
             Home
           </Link>
-            {/* <Link
+            <Link
               to="/aboutUs"
               className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
                 page === "about"
@@ -49,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
               }`}
             >
               About
-            </Link> */}
+            </Link>
           <Link
             to="/WaxMuseum"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
