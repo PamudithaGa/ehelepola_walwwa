@@ -40,16 +40,16 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           >
             Home
           </Link>
-          <Link
-            to="/aboutUs"
-            className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-              page === "about"
-                ? "bg-primary text-secondary py-2 px-5 rounded-xl"
-                : ""
-            }`}
-          >
-            About
-          </Link>
+            <Link
+              to="/aboutUs"
+              className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
+                page === "about"
+                  ? "bg-primary text-secondary py-2 px-5 rounded-xl"
+                  : ""
+              }`}
+            >
+              About
+            </Link>
           <Link
             to="/WaxMuseum"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
