@@ -35,7 +35,7 @@ const CourtYard: React.FC = () => {
 
         {/* footer body */}
         <section className="bg-primary relative z-10 overflow-hidden">
-          <div className="absolute h-11/12 py-5 -right-78 top-90 w-170 opacity-5">
+          <div className="absolute h-11/12 py-5 -right-78 top-105 w-170 opacity-5">
             <img src={FooterArt} alt="" className="h-140 w-200 lg:hidden" />
           </div>
 
