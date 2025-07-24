@@ -51,7 +51,8 @@ const Places: React.FC = () => {
               key={idx}
               className="py-8 px-3 rounded-xl pt-12 bg-gradient-to-tr from-black via-[#131313] to-black  flex flex-col justify-center items-center"
             >
-              <div className="w-full flex items-center rounded-2xl justify-center mb-2">
+
+              <div className="w-full h-3/10 flex items-center rounded-2xl justify-center mb-2">
                 <img
                   src={zone.image}
                   alt={zone.title}
@@ -59,13 +60,13 @@ const Places: React.FC = () => {
                 />
               </div>
 
-              <div className="lg:pt-2 px-4 ">
+              <div className="h-5/10 lg:pt-2 px-4 ">
                 <p className="text-ternary text-center font-extralight text-[14px]  mb-4">
                   {zone.description}
                 </p>
               </div>
 
-              <div className="lg:mt-3 w-full px-4">
+              <div className="h-2/10 lg:mt-3 w-full px-4">
                 <div className="group px-4 py-2 w-full border backdrop-blur-md bg-white/10 rounded-lg border-white/30 flex justify-center items-center hover:cursor-pointer hover:hi">
                   <Link
                     to={zone.link}
@@ -75,6 +76,7 @@ const Places: React.FC = () => {
                   </Link>
                 </div>
               </div>
+
             </div>
           ))}
         </div>
@@ -103,13 +105,6 @@ const Places: React.FC = () => {
             Traditional Sri Lankan architecture merges seamlessly with modern
             attractions, creating an immersive journey through time where
             visitors experience authentic walauwa in Sri Lanka.
-            {/* <br />
-            <br />
-            Discover the cultural heart of Sri Lanka at Ehelapola Walawwa. From
-            immersive shopping to artistic entertainment, historical
-            exploration, and royal dining Discover the cultural heart of Sri
-            Lanka at Ehelapola Walawwa. From immersive shopping to artistic
-            entertainment, historical exploration, and royal dining */}
           </p>
 
           <div className="flex gap-4 pt-5 ">
@@ -127,6 +122,7 @@ const Places: React.FC = () => {
             </Link>
           </div>
         </div>
+         
       </div>
     </div>
   );
