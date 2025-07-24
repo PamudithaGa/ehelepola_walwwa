@@ -24,7 +24,7 @@ const WaxMuseum:React.FC = () => {
         <PageHero />
       </section>
 
-       <section className="lg:mt-40 h-auto">
+       <section className=" h-auto">
         <Timeline />
       </section>
 

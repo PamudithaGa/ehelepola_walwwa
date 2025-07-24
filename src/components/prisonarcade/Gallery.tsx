@@ -57,11 +57,12 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-11/12 lg:w-5/6 lg:h-[100dvh] h-auto mx-auto text-white flex overflow-hidden">
+    <div className="w-11/12 lg:w-5/6 lg:h-[100dvh] h-auto lg:mb-8 mx-auto text-white flex overflow-hidden">
       {/* Left text section */}
 
-      <div className="flex-1 flex flex-col  lg:w-2/3 justify-center items-center ">
-        <div className=" mt-10 lg:pr-10 w-full">
+      <div className="flex-1 lg:h-full flex flex-col  lg:w-2/3 justify-center items-center ">
+        <div className="border lg:p-6  lg:mt-5 lg:pr-10  w-full">
+          {/*  */}
           <h1 className="mb-4 lg:text-6xl text-[48px] text-black font-bold">
             Highlights
           </h1>
@@ -71,7 +72,7 @@ const Gallery: React.FC = () => {
           </p>
 
           {/* Dynamic Preview Image - For Desktop */}
-          <div className="hidden lg:block mt-6 w-full h-[440px] relative rounded-lg overflow-hidden border border-white/20 shadow-md">
+          <div className="hidden lg:block mt-6 w-full   h-[440px] relative rounded-lg overflow-hidden border border-white/20 shadow-md">
             <div
               className="cursor-pointer absolute top-5 right-5 hover:bg-primary rounded-full h-10 w-10 flex items-center justify-center bg-white/10 backdrop-blur-md border border-white/20 shadow-lg  transition"
               onClick={() => setShowModal(true)}
@@ -161,7 +162,7 @@ const Gallery: React.FC = () => {
           )}
 
           {/* Prev/Next */}
-          <div className="mt-12 flex gap-4  justify-center  mb-6">
+          <div className="mt-12 lg:mt-5 flex gap-4  justify-center  mb-6">
             <div>
               <button
                 onClick={() =>
@@ -201,7 +202,7 @@ const Gallery: React.FC = () => {
               key={`col1-${idx}`}
               src={src}
               alt={`col1-${idx}`}
-              className="w-40 h-160 object-fill rounded-md opacity-80 hover:opacity-100 transition"
+              className="w-40  h-160 object-fill rounded-md opacity-80 hover:opacity-100 transition"
             />
           ))}
         </motion.div>
