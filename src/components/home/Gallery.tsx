@@ -125,7 +125,7 @@ const Gallery: React.FC = () => {
                 {/* Close Button */}
                 <button
                   onClick={() => setShowModal(false)}
-                  className="absolute top-4 right-4 text-white text-3xl z-50 hover:text-gray-300"
+                  className="absolute top-4 right-4 text-white text-3xl z-50 cursor-pointer hover:text-gray-300"
                 >
                   &times;
                 </button>
@@ -137,7 +137,7 @@ const Gallery: React.FC = () => {
                       prev === 0 ? AnimateImages.length - 1 : prev - 1
                     )
                   }
-                  className="absolute left-4 top-1/2 -translate-y-1/2 text-black text-2xl bg-white/10 hover:bg-white/20 rounded-full p-2 z-50"
+                  className="absolute cursor-pointer left-4 top-1/2 -translate-y-1/2 text-black text-2xl bg-white/10 hover:bg-white/20 rounded-full p-2 z-50"
                 >
                   <FaArrowLeft size={16} />
                 </button>
@@ -147,7 +147,7 @@ const Gallery: React.FC = () => {
                   onClick={() =>
                     setCurrentIndex((prev) => (prev + 1) % AnimateImages.length)
                   }
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-white text-2xl bg-white/10 hover:bg-white/20 rounded-full p-2 z-50"
+                  className="absolute cursor-pointer right-4 top-1/2 -translate-y-1/2 text-white text-2xl bg-white/10 hover:bg-white/20 rounded-full p-2 z-50"
                 >
                   <FaArrowRight size={16} />{" "}
                 </button>
@@ -175,6 +175,7 @@ const Gallery: React.FC = () => {
                 <FaArrowLeft size={16} />
               </button>
             </div>
+            
             <div>
               <button
                 onClick={() =>
