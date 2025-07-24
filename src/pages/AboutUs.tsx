@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { FaTools } from "react-icons/fa";
 import { Link } from "react-router";
 
 const AboutUs:React.FC = () => {
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div>
        <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4">
