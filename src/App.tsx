@@ -17,7 +17,9 @@ import { GoArrowRight } from "react-icons/go";
 
 const App: React.FC = () => {
   const [showNav, setShowNav] = useState(false);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowNav(true);
@@ -90,10 +92,8 @@ const App: React.FC = () => {
         </div>
 
         {/* footer body */}
-        <section
-          className="bg-primary relative z-10">
-          <div
-            className="absolute h-11/12 py-5 right-0 w-[500px] opacity-6 scale-x-[-1] scale-y-[-1]">
+        <section className="bg-primary relative z-10">
+          <div className="absolute h-11/12 py-5 right-0 w-[500px] opacity-6 scale-x-[-1] scale-y-[-1]">
             <img src={FooterArt} alt="" className="h-full w-full" />
           </div>
 
