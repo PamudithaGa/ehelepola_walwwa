@@ -66,8 +66,8 @@ const Places: React.FC = () => {
                 </p>
               </div>
 
-              <div className="h-2/10 lg:mt-3 w-full px-4">
-                <div className="group px-4 py-2 w-full border backdrop-blur-md bg-white/10 rounded-lg border-white/30 flex justify-center items-center hover:cursor-pointer hover:hi">
+              <div className="lg:mt-3 w-full px-4">
+                <div className="group px-4 py-2 w-full border backdrop-blur-md bg-white/10 rounded-lg border-white/30 flex justify-center items-center hover:cursor-pointer hover:bg-white/20">
                   <Link
                     to={zone.link}
                     className="text-secondary flex items-center justify-center gap-2  font-medium"
