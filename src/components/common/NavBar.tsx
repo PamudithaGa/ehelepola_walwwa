@@ -13,6 +13,7 @@ interface NavbarProps {
     | "dining"
     | "entertainment"
     | "wax"
+    | "blog"
     | "contact";
 }
 
@@ -102,7 +103,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           <Link
             to="#"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-              page === "wax"
+              page === "blog"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
                 : ""
             }`}
@@ -148,11 +149,11 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           <ul className="flex flex-col gap-2 px-4 py-2 text-lg">
             {[
               { label: "Home", path: "/" },
-              { label: "About", path: "#" },
-              { label: "Wax Museum", path: "#" },
-              { label: "Shopping", path: "#" },
-              { label: "Dining", path: "#" },
-              { label: "Entertainment", path: "#" },
+              { label: "About", path: "/aboutUs" },
+              { label: "Wax Museum", path: "/WaxMuseum" },
+              { label: "Shopping", path: "/PrisonArcade" },
+              { label: "Dining", path: "/kingscourt" },
+              { label: "Entertainment", path: "/courtyard" },
               { label: "Blogs", path: "#" },
               { label: "Contact", path: "/ContactUs" },
             ].map(({ label, path }) => (

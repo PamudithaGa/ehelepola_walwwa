@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       <div className=" w-5/6 h-full lg:h-4/5 flex flex-col lg:flex-row justify-center items-center">
         
         {/* Heading & Para */}
-        <div className=" lg:w-1/2 lg:h-full mt-10  pt-10">
+        <div className=" lg:w-1/2 lg:h-full lg:mt-10 mt-20  pt-10">
           <h1 className="font-bold text-[56px] lg:text-[80px]  leading-tight flex flex-wrap gap-x-2">
             {"The Prison Arcade".split(" ").map((word, i) => (
               <span
