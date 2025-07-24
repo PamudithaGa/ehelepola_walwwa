@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             <ul className="flex flex-col gap-2 text-[16px]">
               <li>
                 <Link
-                  to="/WaxMuseum"
+                  to=""
                   className="hover:text-white transition-colors duration-300"
                 >
                   Wax Museum
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
-                  to="/PrisonArcade"
+                  to=""
                   className="hover:text-white transition-colors duration-300"
                 >
                   Prison Arcade
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
-                  to="/kingscourt"
+                  to=""
                   className="hover:text-white transition-colors duration-300"
                 >
                   Kings Court
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
-                  to="/courtyard"
+                  to=""
                   className="hover:text-white transition-colors duration-300"
                 >
                   Court Yard
