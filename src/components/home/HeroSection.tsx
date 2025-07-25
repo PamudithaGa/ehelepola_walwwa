@@ -8,7 +8,7 @@ import WalawwaBlock from "../../assets/logos/sketch-white.png";
 const HeroSection: React.FC = () => {
   return (
     <>
-      <section className="relative w-full lg:h-[100dvh] h-[90dvh] overflow-hidden">
+      <section className="relative w-full lg:h-[100dvh] h-[90dvh] overflow-hidden z-10">
         {/* Background video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
 
         {/* Content */}
         <div className="relative z-20 w-full h-full flex items-center justify-center  px-6">
-          <div className="mt-20 md:mt-68 w-11/12 items-center flex flex-col justify-center">
+          <div className="mt-20 md:mt-60 w-11/12 items-center flex flex-col justify-center">
             {/* <h1 className="font-bold bg-gradient-to-t text-center from-white to-black/10 bg-clip-text text-transparent lg:text-4xl text-[48px] md:text-8xl mb-4 leading-tight">
               Ehelepola Walauwwa
             </h1> */}
