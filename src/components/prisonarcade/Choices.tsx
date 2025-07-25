@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
+// import { Link } from "react-router";
+import StoreModal from "./StoreModal";
 //Logos of choices
 import Ayurweda from "../../assets/logos/ayurveda.webp";
 import Brassware from "../../assets/logos/brassware.webp";
@@ -32,7 +35,6 @@ import SpaCelonLogo from "../../assets/prisonarcade/spacelonLOgo.jpg";
 //Promo Banners
 import spacelonPromo from "../../assets/prisonarcade/spacelonBannerHorizontal.png";
 import EarthboundCreationsPromo from "../../assets/prisonarcade/EarthboundCreationsBannerHorizontal.png";
-// import AnotherLogo from "../../assets/prisonarcade/dilmateaBanner.png";
 
 const promoImages = [spacelonPromo, EarthboundCreationsPromo];
 
@@ -41,210 +43,331 @@ type Card = {
   title: string;
   name: string;
   image: string;
-  // link: string;
+  shellnumber: string;
   description: string;
   backImage: string;
-  moreDetails: string;
+  moreDetails: string; //back side description
+  popup: string;
+  address: string;
+  number: string;
+  email: string;
 };
 
 const cardsData: Card[] = [
   {
     id: 1,
+    address: "Katugasthota Road, Kandy",
+    number: "0112369871",
+    email: "info@gmail.com",
     title: "Cosmetics",
     name: "Spa Ceylon",
     image: cosmetics,
-    // link:"",
+    shellnumber: "001",
     description: "Worn by guards of the royal royal prison arcade.",
     backImage: SpaCelonLogo,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
 
   {
     id: 2,
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
     title: "Tea",
     name: "Dilmah",
     image: Tea,
+    shellnumber: "2",
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: DelmahLogo,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
 
   {
     id: 3,
     title: "Clay",
     name: "Spa Ceylon",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
     image: clay,
+    shellnumber: "3",
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 4,
     title: "Ayuruweda",
     name: "Spa Ceylon",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
     image: Ayurweda,
+    shellnumber: "4",
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: SpaCelonLogo,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 5,
     title: "Gems",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
     name: "Spa Ceylon",
-
     image: Gems,
+    shellnumber: "5",
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 6,
     title: "Handloom",
     name: "Spa Ceylon",
-
     image: Handloom,
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
+    shellnumber: "6",
+
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 7,
     title: "Jewellery",
     image: jewellery,
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
     name: "Spa Ceylon",
+    shellnumber: "7",
 
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 8,
     title: "Laksha",
     image: Laksha,
     name: "Spa Ceylon",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
+    shellnumber: "8",
 
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 9,
     title: "Mask",
     name: "Spa Ceylon",
-
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
     image: Mask,
+    shellnumber: "9",
+
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 10,
     title: "Porcelain",
     name: "Spa Ceylon",
-
     image: Porcelain,
+    shellnumber: "1",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
+
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 11,
     title: "Spices",
     name: "Spa Ceylon",
-
     image: Spices,
+    shellnumber: "1",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 12,
     title: "Silver",
     name: "Spa Ceylon",
-
     image: Silver,
+    shellnumber: "1",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
+
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 13,
     title: "Stoneware",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
     name: "Spa Ceylon",
-
     image: Stoneware,
+    shellnumber: "1",
+
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 14,
     title: "Brassware",
     name: "Spa Ceylon",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
+    shellnumber: "1",
 
     image: Brassware,
     description: "Symbol of historic access to secret chambers.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 15,
     title: "Paintings",
     name: "Spa Ceylon",
     image: Paintings,
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
+    shellnumber: "1",
+
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 16,
     title: "Papers",
-    name: "Spa Ceylon",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
+    shellnumber: "1",
 
+    name: "Spa Ceylon",
     image: Paper,
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 17,
     title: "Wood Carving",
     name: "Spa Ceylon",
-
     image: Woodcarving,
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
+    shellnumber: "1",
+
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 18,
     title: "Photography",
     name: "Spa Ceylon",
-
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
     image: Photography,
+    shellnumber: "1",
+
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 19,
     title: "Batik",
     name: "Spa Ceylon",
-
     image: Batik,
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
+    shellnumber: "1",
+
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
   {
     id: 20,
     title: "Leather",
     name: "Spa Ceylon",
-
+    shellnumber: "1",
+    address: "Address 1, Address 2",
+    number: "0112369871",
+    email: "info@gmail.com",
     image: Leather,
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
 ];
 
@@ -269,7 +392,13 @@ const Choices: React.FC = () => {
   for (let i = 0; i < cardsData.length; i += 4) {
     mobileGroups.push(cardsData.slice(i, i + 4));
   }
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCard, setSelectedCard] = useState<Card | null>(null);
 
+  const handleOpenModal = (card: Card) => {
+    setSelectedCard(card);
+    setIsModalOpen(true);
+  };
   return (
     <section className="text-white px-4 lg:min-h-screen overflow-x-auto ">
       <div
@@ -279,7 +408,7 @@ const Choices: React.FC = () => {
         {/* Cards */}
         {!isMobile ? (
           // Desktop Grid
-          <div className="flex gap-2">
+          <div className="flex gap-2 ">
             <div className="w-1/4  rounded-2xl overflow-hidden">
               <Swiper
                 modules={[Autoplay]}
@@ -302,9 +431,21 @@ const Choices: React.FC = () => {
             </div>
 
             <div className="w-3/4 grid grid-cols-1 lg:grid-cols-3  lg:gap-3">
-              {currentCards.map((card) => (
+              {/* {currentCards.map((card) => (
                 <CardItem key={card.id} card={card} />
+              ))} */}
+              {currentCards.map((card) => (
+                <CardItem
+                  key={card.id}
+                  card={card}
+                  onVisitStore={() => handleOpenModal(card)}
+                />
               ))}
+              <StoreModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                card={selectedCard}
+              />
             </div>
           </div>
         ) : (
@@ -386,53 +527,97 @@ const Choices: React.FC = () => {
     </section>
   );
 };
+interface CardItemProps {
+  card: Card;
+  onVisitStore: () => void;
+}
+// const CardItem: React.FC<{ card: Card }> = ({ card }) => {
+const CardItem: React.FC<CardItemProps> = ({ card, onVisitStore }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-const CardItem: React.FC<{ card: Card }> = ({ card }) => (
-  <div className="flip-card-container w-[90%] lg:w-[100%]">
-    <div className="flip-card">
-      {/* Front Side */}
-      <div className="flip-card-front bg-gradient-to-tr from-black via-[#0c0c0c] to-black lg:py-8 py-6 px-8 rounded-lg overflow-x-auto shadow-md">
-        <div className="h-3/6">
-          <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center">
-            <img
-              src={card.image}
-              alt={card.title}
-              className="w-10 h-10 object-contain"
-            />
+  return (
+    <>
+      <div className="flip-card-container w-[90%] lg:w-[100%]">
+        <div className="flip-card">
+          {/* Front Side */}
+          <div className="flip-card-front bg-gradient-to-tr from-black via-[#0c0c0c] to-black lg:py-8 py-6 px-8 rounded-lg overflow-x-auto shadow-md">
+            <div className="h-3/6">
+              <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
+            </div>
+            <div className="h-1/6 pt-2 lg:pt-1">
+              <p className="text-white/70 text-base">{card.title}</p>
+            </div>
+            <div className="h-2/6 pt-3 lg:pt-1">
+              <p className="text-white/30 text-sm">{card.description}</p>
+            </div>
           </div>
-        </div>
-        <div className="h-1/6 pt-2 lg:pt-1">
-          <p className="text-white/70 text-base">{card.title}</p>
-        </div>
-        <div className="h-2/6 pt-3 lg:pt-1">
-          <p className="text-white/30 text-sm">{card.description}</p>
+
+          {/* Back Side */}
+
+          {/* <div className="flip-card-back bg-gradient-to-tr from-[#1a1a1a] via-[#111] to-[#000] lg:py-8 py-6 px-8 rounded-lg overflow-x-auto shadow-md text-white">
+            <div className="flex items-center  justify-between">
+              <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center">
+                <img
+                  src={card.backImage}
+                  alt={card.title}
+                  className="w-full h-full object-contain rounded-full"
+                />
+              </div>
+              <div className="flex items-center justify-center ">
+                <button
+                  onClick={() => setIsModalOpen(true)}
+                  className="flex px-3 py-2 bg-white rounded-xl text-black text-xs cursor-pointer hover:bg-white/90 shadow-2xl shadow-white/30"
+                >
+                  Visit Store <MdOutlineArrowOutward className="w-3 h-3 ml-1" />
+                </button>
+              </div>
+            </div>
+
+            <div className="h-1/6 pt-2 lg:pt-1">
+              <p className="text-white/70 text-base">{card.name}</p>
+            </div>
+            <div className="h-2/6 pt-3 lg:pt-1">
+              <p className="text-white/30 text-sm">{card.moreDetails}</p>
+            </div>
+          </div> */}
+          <div className="flip-card-back bg-gradient-to-tr from-[#1a1a1a] via-[#111] to-[#000] lg:py-8 py-6 px-8 rounded-lg overflow-x-auto shadow-md text-white">
+            <div className="flex items-center justify-between">
+              <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center">
+                <img
+                  src={card.backImage}
+                  alt={card.title}
+                  className="w-full h-full object-contain rounded-full"
+                />
+              </div>
+              <div className="flex items-center justify-center">
+                <button
+                  onClick={onVisitStore}
+                  className="flex px-3 py-2 bg-white rounded-xl text-black text-xs cursor-pointer hover:bg-white/90 shadow-2xl shadow-white/30"
+                >
+                  Visit Store <MdOutlineArrowOutward className="w-3 h-3 ml-1" />
+                </button>
+              </div>
+            </div>
+
+            <div className="h-1/6 pt-2 lg:pt-1">
+              <p className="text-white/70 text-base">{card.name}</p>
+            </div>
+            <div className="h-2/6 pt-3 lg:pt-1">
+              <p className="text-white/30 text-sm">{card.moreDetails}</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Back Side */}
-      <div className="flip-card-back bg-gradient-to-tr from-[#1a1a1a] via-[#111] to-[#000] lg:py-8 py-6 px-8 rounded-lg overflow-x-auto shadow-md text-white">
-        <div className="flex justify-between">
-          <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center">
-            <img
-              src={card.backImage}
-              alt={card.title}
-              className="w-full h-full object-contain rounded-full"
-            />
-          </div>
-          <div className="flex items-center justify-center">
-            <button>hjgjfjgj</button>
-          </div>
-        </div>
-
-        <div className="h-1/6 pt-2 lg:pt-1">
-          <p className="text-white/70 text-base">{card.name}</p>
-        </div>
-        <div className="h-2/6 pt-3 lg:pt-1">
-          <p className="text-white/30 text-sm">{card.moreDetails}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-);
-
+      {/* Modal */}
+      <StoreModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
+  );
+};
 export default Choices;
