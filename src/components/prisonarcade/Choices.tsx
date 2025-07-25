@@ -41,6 +41,7 @@ type Card = {
   title: string;
   name: string;
   image: string;
+  // link: string;
   description: string;
   backImage: string;
   moreDetails: string;
@@ -52,6 +53,7 @@ const cardsData: Card[] = [
     title: "Cosmetics",
     name: "Spa Ceylon",
     image: cosmetics,
+    // link:"",
     description: "Worn by guards of the royal royal prison arcade.",
     backImage: SpaCelonLogo,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
@@ -409,13 +411,19 @@ const CardItem: React.FC<{ card: Card }> = ({ card }) => (
 
       {/* Back Side */}
       <div className="flip-card-back bg-gradient-to-tr from-[#1a1a1a] via-[#111] to-[#000] lg:py-8 py-6 px-8 rounded-lg overflow-x-auto shadow-md text-white">
-        <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center">
-          <img
-            src={card.backImage}
-            alt={card.title}
-            className="w-full h-full object-contain rounded-full"
-          />
+        <div className="flex justify-between">
+          <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center">
+            <img
+              src={card.backImage}
+              alt={card.title}
+              className="w-full h-full object-contain rounded-full"
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <button>hjgjfjgj</button>
+          </div>
         </div>
+
         <div className="h-1/6 pt-2 lg:pt-1">
           <p className="text-white/70 text-base">{card.name}</p>
         </div>
