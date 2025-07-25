@@ -81,7 +81,7 @@ const Gallery: React.FC = () => {
             </div>
 
             {/* Dark overlay */}
-            <div className="absolute inset-0 h-2/3 bottom-0 flex self-baseline-last bg-gradient-to-t from-black/80 via-black/45 to-transparent z-10" />
+            <div className="absolute inset-0 h-full bottom-0 flex self-baseline-last bg-gradient-to-t from-black/80 via-black/35 to-transparent z-10" />
             {/* Image */}
             <img
               src={AnimateImages[currentIndex].src}
