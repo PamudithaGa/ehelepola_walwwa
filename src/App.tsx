@@ -11,8 +11,9 @@ import HeroSection from "./components/home/HeroSection";
 import FooterTopImage from "./assets/footer-image.png";
 import NewsSection from "./components/home/NewsSection";
 
-import PatternArt from "./assets/gallery/pattern-art.png";
-import FooterArt from "./assets/gallery/footer-01.png";
+import PatternArt from "./assets/gallery/pattern-art.png"
+import FooterArt from './assets/gallery/footer-01.png'
+import { GoArrowRight } from "react-icons/go";
 
 const App: React.FC = () => {
   const [showNav, setShowNav] = useState(false);
@@ -22,7 +23,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowNav(true);
-    }, 2000); // Delay 5 seconds
+    }, 2000); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -33,16 +34,39 @@ const App: React.FC = () => {
       <section
         className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${
           showNav ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
-        }`}
-      >
+        }`}>
         <NavBar page="home" />
       </section>
 
       <section className="w-full">
         <HeroSection />
+
+        {/* reservation */}
+        <section 
+        className="bg-black flex gap-40 justify-center h-40 pt-15 px-10  w-3/4 shadow-2xl rounded-2xl -mt-5 z-50 absolute left-1/2 transform -translate-x-1/2 mx-auto">
+          <div
+          className="w-auto">
+            <h2
+            className="text-white z-50 text-2xl">School Student Reservation</h2>
+            <p 
+            className="text-white/40 text-sm mt-2">
+              Don't miss out on this exclusive opportunity. Slots fill up fast reserve your visit today!
+            </p>        
+          </div>
+
+          <div
+          className="w-auto">
+            <button
+            className="backdrop-blur-md bg-white/10 rounded-lg border border-white/30 text-white px-5 py-5 rounded-2xl flex items-center gap-2 hover:cursor-pointer hover:bg-white/20 transition duration-300">
+              Click here to book reservation
+              <GoArrowRight />
+            </button>
+          </div>
+
+        </section>
       </section>
 
-      <section className="flex items-center justify-center w-full mt-15 lg:mt-30 -z-10">
+      <section className="flex items-center justify-center w-full mt-15 lg:mt-60 -z-10">
         <Places />
       </section>
 
