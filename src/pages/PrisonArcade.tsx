@@ -1,4 +1,7 @@
-import { useEffect} from "react";
+import React, { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 //Components
 import Hero from "../components/prisonarcade/Hero";
@@ -8,11 +11,17 @@ import Footer from "../components/common/Footer";
 import NavBar from "../components/common/NavBar";
 import FooterTopImage from "../assets/footer-image.png";
 import FooterArt from "../assets/logos/ehelepola-walauwwe-logo-white.png";
+
+//Promo Banners
+import spacelonPromo from "../assets/prisonarcade/spa.png";
+import EarthboundCreationsPromo from "../assets/prisonarcade/EarthboundCreations.jpg";
+
+const promoImages = [spacelonPromo, EarthboundCreationsPromo];
 const PrisonArcade: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  // 
+  //
 
   return (
     <>
@@ -23,7 +32,7 @@ const PrisonArcade: React.FC = () => {
         <NavBar page="shopping" />
       </section>
 
-      <section className="lg:h-[95dvh] h-auto">
+      <section className="lg:h-[100dvh] h-auto">
         <Hero />
       </section>
 
@@ -31,7 +40,31 @@ const PrisonArcade: React.FC = () => {
         <Choices />
       </section>
 
-      <section className="mt-20">
+      {/* Only mobile */}
+      <section className="lg:hidden block h-[40dvh] mt-[10%] ">
+        <div className="w-full h-full rounded-2xl overflow-hidden p-5 ">
+          <Swiper
+            modules={[Autoplay]}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            loop
+            speed={800}
+            slidesPerView={1}
+            className="rounded-2xl"
+          >
+            {promoImages.map((img, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={img}
+                  alt={`Promo ${index + 1}`}
+                  className="w-full h-full rounded-2xl"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </section>
+
+      <section className="lg:mt-10 mt-0">
         <Gallery />
       </section>
 
