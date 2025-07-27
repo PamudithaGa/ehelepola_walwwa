@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, EffectFade, EffectCube } from "swiper/modules";
+import { Autoplay} from "swiper/modules";
 
 const heroImages: string[] = [
   new URL("../../assets/gallery/arcade-with-logo.jpg", import.meta.url).href,
