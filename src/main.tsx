@@ -14,6 +14,7 @@ import CourtYard from "./pages/CourtYard.tsx";
 import KingsCourt from "./pages/KingsCourt.tsx";
 import ContactUsTwo from "./pages/ContactUsTwo.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
+import StudentReservation from "./pages/StudentReservation.tsx";
 
 
 const router = createBrowserRouter([
@@ -33,10 +34,10 @@ const router = createBrowserRouter([
     path: "/WaxMuseum",
     element: <WaxMuseum />,
   },
-  // {
-  //   path: "/ContactUs",
-  //   element: <ContactUs />,
-  // },
+  {
+    path: "/reservation",
+    element: <StudentReservation />,
+  },
   {
     path: "/ContactUs",
     element: <ContactUsTwo />,
