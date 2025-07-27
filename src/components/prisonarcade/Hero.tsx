@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, EffectFade } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/effect-fade";
+import { Autoplay, Pagination, EffectFade, EffectCube } from "swiper/modules";
 
-// import PrisionarcadeLogo from "../../assets/logos/prison-arcade-logo-white.png"; // Replace with your actual image path
-// DilmahTea
 const heroImages: string[] = [
   new URL("../../assets/gallery/arcade-with-logo.jpg", import.meta.url).href,
   new URL("../../assets/prisonarcade/spaceylonBanner.png", import.meta.url)
@@ -53,7 +48,9 @@ const Hero: React.FC = () => {
           </p>
 
           <p className="text-white">Open 9.00 AM to 8:30 PM</p>
-          <p className="text-sm text-white/20 mt-2 lg:mb-0 mb-6">Monday - Saturday</p>
+          <p className="text-sm text-white/20 mt-2 lg:mb-0 mb-6">
+            Monday - Saturday
+          </p>
         </div>
 
         {/* Image */}
@@ -63,15 +60,15 @@ const Hero: React.FC = () => {
             alt={`Slide ${currentIndex + 1}`}
             className="rounded-2xl w-full h-full object-cover transition-all duration-1000 ease-in-out"
           />
-
         </div>
         <div className="hidden lg:block relative lg:w-1/2 bg-black h-[90%] lg:my-5 lg:pl-20 rounded-2xl overflow-hidden">
           <Swiper
-            modules={[Autoplay, Pagination, EffectFade]}
-            effect="fade"
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            modules={[Autoplay]}
+            autoplay={{ delay: 6000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             loop={true}
+            speed={800}
+            slidesPerView={1}
             className="w-full h-full rounded-2xl"
           >
             {heroImages.map((image, index) => (

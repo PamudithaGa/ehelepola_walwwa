@@ -26,7 +26,7 @@ const StoreModal: React.FC<StoreModalProps> = ({ isOpen, onClose, card }) => {
 
   return (
     <>
-    {/* for desktop */}
+      {/* for desktop */}
       <div className="hidden fixed inset-0 z-50 lg:flex items-center justify-center bg-black/50 px-4 shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-md border border-white/30">
         <div className="bg-white rounded-2xl px-30 shadow-2xl w-[80vw] h-[80vh] overflow-y-auto relative">
           <button
@@ -86,12 +86,12 @@ const StoreModal: React.FC<StoreModalProps> = ({ isOpen, onClose, card }) => {
         </div>
       </div>
 
-{/* For Mobile */}
+      {/* For Mobile */}
       <div className="lg:hidden  fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-md border border-white/30">
         <div className="bg-white rounded-2xl shadow-2xl w-[90vw] h-[90vh] overflow-y-auto relative flex flex-col md:flex-row">
           <button
             onClick={onClose}
-            className="absolute top-3 right-4 text-black text-2xl font-bold cursor-pointer hover:text-red-500 z-10"
+            className="absolute top-3 right-4 text-white text-2xl font-bold cursor-pointer hover:text-red-500 z-10"
           >
             &times;
           </button>

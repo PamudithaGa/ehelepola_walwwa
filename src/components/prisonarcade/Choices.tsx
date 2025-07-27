@@ -31,6 +31,17 @@ import Leather from "../../assets/logos/leather.webp";
 //Logos of companies
 import DelmahLogo from "../../assets/prisonarcade/DilmahLogoColour.jpg";
 import SpaCelonLogo from "../../assets/prisonarcade/spacelonLOgo.jpg";
+import PintannaLogo from "../../assets/prisonarcade/pintannaLogo.jpg";
+import PGMartinLogo from "../../assets/prisonarcade/PGMartinLogo.jpg";
+import MalibanLogo from "../../assets/prisonarcade/MalibanLogo.png";
+import CycleIncenseLogo from "../../assets/prisonarcade/CycleIncenseLogo.jpg";
+import SunshineLogo from "../../assets/prisonarcade/SunshileLogo.jpg";
+import FreelanLogon from "../../assets/prisonarcade/FreelanLogo.jpg";
+import EarthboundCreationsLogo from "../../assets/prisonarcade/EarthboundCreationsLogo.png";
+import CeylonCinnamonLegendsLogo from "../../assets/prisonarcade/CeylonCinnamonLegendsLogo.jpg";
+import ApeBatikLogo from "../../assets/prisonarcade/ApeBatikLogo.jpg";
+import RoyalTouchLogo from "../../assets/prisonarcade/RoyalTouchLogo.jpg";
+import APicLogo from "../../assets/prisonarcade/A-picturesLogo.jpg";
 
 //Promo Banners
 import spacelonPromo from "../../assets/prisonarcade/spacelonBannerHorizontal.png";
@@ -56,51 +67,56 @@ type Card = {
 const cardsData: Card[] = [
   {
     id: 1,
-    address: "Katugasthota Road, Kandy",
-    number: "0112369871",
-    email: "info@gmail.com",
-    title: "Cosmetics",
-    name: "Spa Ceylon",
-    image: cosmetics,
-    shellnumber: "001",
+    address: "35, Galhena road, Gangodawila, Nugegoda, Colombo, Sri Lanka",
+    number: "0117 054 054",
+    email: "info.plantations@pintanna.lk",
+    title: "Agricultural Service",
+    name: "Pintanna Plantations Pvt Ltd",
+    image: Ayurweda,
+    shellnumber: "001 & 002",
     description: "Worn by guards of the royal royal prison arcade.",
-    backImage: SpaCelonLogo,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    backImage: PintannaLogo,
+    moreDetails: "A Harvest That Secures Your Future!",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
 
+  // P.G.Martin
   {
     id: 2,
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
+    title: "Shopping & retail",
+    name: "P. G. Martin",
+    address: "Galle Road,, Colombo, Sri Lanka",
+    number: "072 768 4522",
+    email: "info@pgmartin.lk",
+    image: Leather,
+    shellnumber: "003",
+    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
+    backImage: PGMartinLogo,
+    moreDetails:
+      "Premium Leather Bags, Wallets, Belts, Handbags & Luggage 🇱🇰 | Since 1948 👜",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
+  },
+  // Delmah
+  {
+    id: 3,
+    address: "111 Negombo Road, Peliyagoda, Colombo, Sri Lanka",
+    number: "0114 822 000",
+    email: "info@dilmahtea.com",
     title: "Tea",
-    name: "Dilmah",
+    name: "Dilmah Tea",
     image: Tea,
-    shellnumber: "2",
+    shellnumber: "004 & 005",
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: DelmahLogo,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    moreDetails:
+      "We're a family tea company spreading love for Ceylon tea, and infusing the world with kindness.",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
 
-  {
-    id: 3,
-    title: "Clay",
-    name: "Spa Ceylon",
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
-    image: clay,
-    shellnumber: "3",
-    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
-    backImage: Brassware,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
-    popup:
-      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  },
+  // No info for Hettigoda Industry
   {
     id: 4,
     title: "Ayuruweda",
@@ -116,37 +132,44 @@ const cardsData: Card[] = [
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  // Maliban
   {
     id: 5,
-    title: "Gems",
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
-    name: "Spa Ceylon",
-    image: Gems,
-    shellnumber: "5",
+    title: "Food Services",
+    address: "P.O.Box - 389,Galle Road, Ratmalana, Sri Lanka",
+    number: "+94 71 914 5555",
+    email: "cic@malibanbiscuit.com",
+    name: "Maliban Biscuits ",
+    image: Spices,
+    shellnumber: "007",
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
-    backImage: Brassware,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    backImage: MalibanLogo,
+    moreDetails:
+      "The classic biscuits and cookie range that you know and love 70 years of inspiring goodness.",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  // Cycle Pure Incense
   {
     id: 6,
-    title: "Handloom",
-    name: "Spa Ceylon",
+    title: "Pure Incense",
+    name: "Cycle Pure Incense",
     image: Handloom,
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
-    shellnumber: "6",
-
+    address: "No. 692, Rice Mill Road, Katunayake, Sri Lanka",
+    number: "076 967 8678",
+    email: "info@suwanda.lk",
+    shellnumber: "008",
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
-    backImage: Brassware,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    backImage: CycleIncenseLogo,
+    moreDetails:
+      "Zero Carbon Certified Cycle Pure Incense Sticks are a 100% Sri Lankan product!",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //No info for Indigo
   {
     id: 7,
     title: "Jewellery",
@@ -155,14 +178,15 @@ const cardsData: Card[] = [
     number: "0112369871",
     email: "info@gmail.com",
     name: "Spa Ceylon",
-    shellnumber: "7",
-
+    shellnumber: "009 &010",
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //No info for Eligance
   {
     id: 8,
     title: "Laksha",
@@ -179,6 +203,8 @@ const cardsData: Card[] = [
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //No info for Linan Sales
   {
     id: 9,
     title: "Mask",
@@ -187,32 +213,52 @@ const cardsData: Card[] = [
     number: "0112369871",
     email: "info@gmail.com",
     image: Mask,
-    shellnumber: "9",
-
+    shellnumber: "012",
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  // P.G.Martin
   {
     id: 10,
-    title: "Porcelain",
-    name: "Spa Ceylon",
-    image: Porcelain,
-    shellnumber: "1",
+    title: "Shopping & retail",
+    name: "P. G. Martin",
+    address: "Galle Road,, Colombo, Sri Lanka",
+    number: "072 768 4522",
+    email: "info@pgmartin.lk",
+    image: Leather,
+    shellnumber: "013",
+    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
+    backImage: PGMartinLogo,
+    moreDetails:
+      "Premium Leather Bags, Wallets, Belts, Handbags & Luggage 🇱🇰 | Since 1948 👜",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
+  },
+
+  //No info for Biso
+  {
+    id: 11,
+    title: "Spices",
+    name: "Biso jewellers",
+    image: jewellery,
+    shellnumber: "014",
     address: "Address 1, Address 2",
     number: "0112369871",
     email: "info@gmail.com",
-
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
     backImage: Brassware,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //No info
   {
-    id: 11,
+    id: 12,
     title: "Spices",
     name: "Spa Ceylon",
     image: Spices,
@@ -220,21 +266,6 @@ const cardsData: Card[] = [
     address: "Address 1, Address 2",
     number: "0112369871",
     email: "info@gmail.com",
-    description: "Inspired by candle-lit hhfgfhj corridors of the past.",
-    backImage: Brassware,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
-    popup:
-      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  },
-  {
-    id: 12,
-    title: "Silver",
-    name: "Spa Ceylon",
-    image: Silver,
-    shellnumber: "1",
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
 
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: Brassware,
@@ -242,86 +273,96 @@ const cardsData: Card[] = [
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  // Sunshine Tea
   {
     id: 13,
-    title: "Stoneware",
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
-    name: "Spa Ceylon",
-    image: Stoneware,
-    shellnumber: "1",
-
+    title: "Tea",
+    address: "754/5, Kandy Road, Wedamulla, Kelaniya , Colombo, Sri Lanka",
+    number: "077 340 3866",
+    email: "sunshinetea@sunshinetea.lk",
+    name: "Sunshine Tea Pvt Ltd",
+    image: Tea,
+    shellnumber: "016 & 017",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: Brassware,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    backImage: SunshineLogo,
+    moreDetails:
+      "Sunshine Tea is a leading solution provider for all tea needs around the world.",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //Freaalan
   {
     id: 14,
-    title: "Brassware",
-    name: "Spa Ceylon",
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
-    shellnumber: "1",
-
-    image: Brassware,
+    title: "Spices",
+    name: "Matara Freelan ",
+    address: "No. 38, Gunawardana Mawatha,Navimana South, Matara, Sri Lanka",
+    number: "077 231 4205",
+    email: "info@freelanmatara.com",
+    shellnumber: "018",
+    image: Spices,
     description: "Symbol of historic access to secret chambers.",
-    backImage: Brassware,
+    backImage: FreelanLogon,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //Earthbound Creations
   {
     id: 15,
-    title: "Paintings",
-    name: "Spa Ceylon",
-    image: Paintings,
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
-    shellnumber: "1",
-
+    title: "Arts & Crafts Store",
+    name: "Earthbound Creations",
+    image: Woodcarving,
+    address: "27/98, Augustawatta, Udaperadeniya, (20404) Sri Lanka.",
+    number: "071 020 5556",
+    email: "ranga@ebcsl.com",
+    shellnumber: "019 & 020",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: Brassware,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    backImage: EarthboundCreationsLogo,
+    moreDetails:
+      "#earthboundlk reflecting the beauty of nature through eco-friendly, recycled, handmade crafts.",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //Ceylon Cinnamon Legends
   {
     id: 16,
-    title: "Papers",
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
-    shellnumber: "1",
+    title: "Conmetics",
+    address: "ONE GALLE FACE MALL COLOMBO LEVEL 4, Colombo, Sri Lanka",
+    number: "0112 703 000",
+    email: "info@ceyloncinnamonlegends.com",
+    shellnumber: "021",
 
-    name: "Spa Ceylon",
-    image: Paper,
+    name: "Ceylon Cinnamon Legends ",
+    image: cosmetics,
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: Brassware,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    backImage: CeylonCinnamonLegendsLogo,
+    moreDetails: "Cinnamon Value Added Products",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //Ape Bathik
   {
     id: 17,
-    title: "Wood Carving",
-    name: "Spa Ceylon",
-    image: Woodcarving,
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
-    shellnumber: "1",
-
+    title: "Batik",
+    name: "Apé Batik",
+    image: Batik,
+    address: "Colombo, Sri Lanka",
+    number: "077 595 8148",
+    email: "apebatikstore@gmail.com",
+    shellnumber: "022",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: Brassware,
+    backImage: ApeBatikLogo,
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //No info for Eligance
   {
     id: 18,
     title: "Photography",
@@ -330,7 +371,7 @@ const cardsData: Card[] = [
     number: "0112369871",
     email: "info@gmail.com",
     image: Photography,
-    shellnumber: "1",
+    shellnumber: "023",
 
     description: "Luxury accessories once safeguarded in the vaults.",
     backImage: Brassware,
@@ -338,37 +379,53 @@ const cardsData: Card[] = [
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //A-pictures
   {
     id: 19,
-    title: "Batik",
-    name: "Spa Ceylon",
-    image: Batik,
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
-    shellnumber: "1",
-
+    title: "Photography",
+    name: "A-pictures ",
+    image: Photography,
+    address: "No L1-12,Kandy City Centre,Kandy, Kandy, Sri Lanka",
+    number: "070 440 0400",
+    email: "apictureskcc@gmail.com",
+    shellnumber: "024",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: Brassware,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    backImage: APicLogo,
+    moreDetails:
+      "A Pictures, We are Specialized in Cameras & High-End Electronics! We offer branded cameras, accessories, telescopes, microscopes, binoculars, spotting scopes, cash counting machines, mobile & computer accessories—all under one roof!",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+  //Royal Touch Ceylon Tea
   {
     id: 20,
-    title: "Leather",
-    name: "Spa Ceylon",
-    shellnumber: "1",
-    address: "Address 1, Address 2",
-    number: "0112369871",
-    email: "info@gmail.com",
-    image: Leather,
+    title: "Tea",
+    name: "Royal Touch Ceylon Tea",
+    shellnumber: "025",
+    address: "38/8,Rajapihilla mawatha , Kandy, Sri Lanka",
+    number: "076 853 9889",
+    email: "info@royaltouchceylontea.com",
+    image: Tea,
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: Brassware,
-    moreDetails: "Luxury accessories once safeguarded in the vaults.",
+    backImage: RoyalTouchLogo,
+    moreDetails: "Refreshing your life",
     popup:
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
+
+
+
+
+
+
+
+
+
+
+
+  
 ];
 
 const CARDS_PER_PAGE = 9;
