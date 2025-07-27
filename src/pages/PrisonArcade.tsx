@@ -40,7 +40,7 @@ const PrisonArcade: React.FC = () => {
         <Choices />
       </section>
 
-      {/* Only mobile */}
+      {/* Only mobile - Advertisement*/}
       <section className="lg:hidden block h-[40dvh] mt-[10%] ">
         <div className="w-full h-full rounded-2xl overflow-hidden p-5 ">
           <Swiper

@@ -429,9 +429,6 @@ const Choices: React.FC = () => {
                 ))}
               </Swiper>
             </div>
-            {/* {currentCards.map((card) => (
-                <CardItem key={card.id} card={card} />
-              ))} */}
 
             <div className="w-3/4 grid grid-cols-1 lg:grid-cols-3  lg:gap-3">
               {currentCards.map((card) => (
@@ -458,9 +455,6 @@ const Choices: React.FC = () => {
                 key={index}
                 className="flex-shrink-0 snap-start flex flex-col gap-4  overflow-x-auto"
               >
-                {/* {group.map((card) => (
-                  <CardItem key={card.id} card={card} />
-                ))} */}
                 {group.map((card) => (
                   <CardItem
                     key={card.id}
@@ -530,7 +524,11 @@ const Choices: React.FC = () => {
           </div>
         )}
       </div>
-      <div></div>
+      <StoreModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        card={selectedCard}
+      />
     </section>
   );
 };
@@ -538,11 +536,7 @@ interface CardItemProps {
   card: Card;
   onVisitStore: () => void;
 }
-// const CardItem: React.FC<{ card: Card }> = ({ card }) => {
 const CardItem: React.FC<CardItemProps> = ({ card, onVisitStore }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedCard] = useState<Card | null>(null);
-
   return (
     <>
       <div className="flip-card-container w-[90%] lg:w-[100%]">
@@ -596,14 +590,6 @@ const CardItem: React.FC<CardItemProps> = ({ card, onVisitStore }) => {
           </div>
         </div>
       </div>
-
-      {/* Modal */}
-      {/* <StoreModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
-      <StoreModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        card={selectedCard}
-      />
     </>
   );
 };
