@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { Toaster } from "react-hot-toast";
+import { Link } from "react-router";
 
 //Components
 import Places from "./components/home/Places";
@@ -54,6 +55,7 @@ const App: React.FC = () => {
             </p>        
           </div>
 
+          <Link to="/reservation">
           <div
           className="w-auto">
             <button
@@ -62,6 +64,7 @@ const App: React.FC = () => {
               <GoArrowRight />
             </button>
           </div>
+          </Link>
 
         </section>
       </section>
