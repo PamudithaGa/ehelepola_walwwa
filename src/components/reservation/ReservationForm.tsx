@@ -3,11 +3,11 @@ import React, { useRef, useState } from "react";
 import { Toaster } from "react-hot-toast";
 import toast from "react-hot-toast";
 
-// Icons
-import { GoLocation } from "react-icons/go";
-import { IoMailOutline } from "react-icons/io5";
-import { CiPhone } from "react-icons/ci";
-import Walawwa from "../../assets/logos/sketch-white.png";
+// // Icons
+// import { GoLocation } from "react-icons/go";
+// import { IoMailOutline } from "react-icons/io5";
+// import { CiPhone } from "react-icons/ci";
+// import Walawwa from "../../assets/logos/sketch-white.png";
 
 import {
     TextField,
