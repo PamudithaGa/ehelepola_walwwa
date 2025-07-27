@@ -14,7 +14,8 @@ interface NavbarProps {
     | "entertainment"
     | "wax"
     | "blog"
-    | "contact";
+    | "contact"
+    | "other";
 }
 
 const Navbar: React.FC<NavbarProps> = ({ page }) => {
