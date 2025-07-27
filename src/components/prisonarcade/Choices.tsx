@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import "swiper/css";
+// import "swiper/css";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 // import { Link } from "react-router";
@@ -47,8 +47,8 @@ type Card = {
   description: string;
   backImage: string;
   moreDetails: string; //back side description
-  popup: string;
-  address: string;
+  popup: string; //popup
+  address: string; //description
   number: string;
   email: string;
 };
@@ -429,11 +429,11 @@ const Choices: React.FC = () => {
                 ))}
               </Swiper>
             </div>
-
-            <div className="w-3/4 grid grid-cols-1 lg:grid-cols-3  lg:gap-3">
-              {/* {currentCards.map((card) => (
+            {/* {currentCards.map((card) => (
                 <CardItem key={card.id} card={card} />
               ))} */}
+
+            <div className="w-3/4 grid grid-cols-1 lg:grid-cols-3  lg:gap-3">
               {currentCards.map((card) => (
                 <CardItem
                   key={card.id}
@@ -458,8 +458,15 @@ const Choices: React.FC = () => {
                 key={index}
                 className="flex-shrink-0 snap-start flex flex-col gap-4  overflow-x-auto"
               >
-                {group.map((card) => (
+                {/* {group.map((card) => (
                   <CardItem key={card.id} card={card} />
+                ))} */}
+                {group.map((card) => (
+                  <CardItem
+                    key={card.id}
+                    card={card}
+                    onVisitStore={() => handleOpenModal(card)}
+                  />
                 ))}
               </div>
             ))}
@@ -534,6 +541,7 @@ interface CardItemProps {
 // const CardItem: React.FC<{ card: Card }> = ({ card }) => {
 const CardItem: React.FC<CardItemProps> = ({ card, onVisitStore }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCard] = useState<Card | null>(null);
 
   return (
     <>
@@ -560,32 +568,6 @@ const CardItem: React.FC<CardItemProps> = ({ card, onVisitStore }) => {
 
           {/* Back Side */}
 
-          {/* <div className="flip-card-back bg-gradient-to-tr from-[#1a1a1a] via-[#111] to-[#000] lg:py-8 py-6 px-8 rounded-lg overflow-x-auto shadow-md text-white">
-            <div className="flex items-center  justify-between">
-              <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center">
-                <img
-                  src={card.backImage}
-                  alt={card.title}
-                  className="w-full h-full object-contain rounded-full"
-                />
-              </div>
-              <div className="flex items-center justify-center ">
-                <button
-                  onClick={() => setIsModalOpen(true)}
-                  className="flex px-3 py-2 bg-white rounded-xl text-black text-xs cursor-pointer hover:bg-white/90 shadow-2xl shadow-white/30"
-                >
-                  Visit Store <MdOutlineArrowOutward className="w-3 h-3 ml-1" />
-                </button>
-              </div>
-            </div>
-
-            <div className="h-1/6 pt-2 lg:pt-1">
-              <p className="text-white/70 text-base">{card.name}</p>
-            </div>
-            <div className="h-2/6 pt-3 lg:pt-1">
-              <p className="text-white/30 text-sm">{card.moreDetails}</p>
-            </div>
-          </div> */}
           <div className="flip-card-back bg-gradient-to-tr from-[#1a1a1a] via-[#111] to-[#000] lg:py-8 py-6 px-8 rounded-lg overflow-x-auto shadow-md text-white">
             <div className="flex items-center justify-between">
               <div className="w-15 h-15 rounded-full bg-white/30 backdrop-blur-md border border-white/30 shadow-lg flex items-center justify-center">
@@ -616,7 +598,12 @@ const CardItem: React.FC<CardItemProps> = ({ card, onVisitStore }) => {
       </div>
 
       {/* Modal */}
-      <StoreModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {/* <StoreModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
+      <StoreModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        card={selectedCard}
+      />
     </>
   );
 };
