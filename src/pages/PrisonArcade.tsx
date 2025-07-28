@@ -7,6 +7,7 @@ import "swiper/swiper-bundle.css";
 import Hero from "../components/prisonarcade/Hero";
 import Choices from "../components/prisonarcade/Choices";
 import Gallery from "../components/prisonarcade/Gallery";
+import Banner from "../components/prisonarcade/Banner";
 import Footer from "../components/common/Footer";
 import NavBar from "../components/common/NavBar";
 import FooterTopImage from "../assets/footer-image.png";
@@ -66,6 +67,10 @@ const PrisonArcade: React.FC = () => {
 
       <section className="lg:mt-10 mt-0">
         <Gallery />
+      </section>
+
+      <section className="w-full flex items-center justify-center lg:mt-20">
+        <Banner/>
       </section>
 
       {/* footer */}
