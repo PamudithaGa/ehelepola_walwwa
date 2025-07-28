@@ -415,17 +415,107 @@ const cardsData: Card[] = [
       "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
   },
 
+  //No info for shell 26
+  {
+    id: 21,
+    title: "Tea",
+    name: "Royal Touch Ceylon Tea",
+    shellnumber: "026",
+    address: "38/8,Rajapihilla mawatha , Kandy, Sri Lanka",
+    number: "076 853 9889",
+    email: "info@royaltouchceylontea.com",
+    image: Tea,
+    description: "Luxury accessories once safeguarded in the vaults.",
+    backImage: RoyalTouchLogo,
+    moreDetails: "Refreshing your life",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
+  },
 
+  //No info Nadeesha jewelers
+  {
+    id: 22,
+    title: "Tea",
+    name: "Royal Touch Ceylon Tea",
+    shellnumber: "029",
+    address: "38/8,Rajapihilla mawatha , Kandy, Sri Lanka",
+    number: "076 853 9889",
+    email: "info@royaltouchceylontea.com",
+    image: Tea,
+    description: "Luxury accessories once safeguarded in the vaults.",
+    backImage: RoyalTouchLogo,
+    moreDetails: "Refreshing your life",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
+  },
 
+  //No info wasdas lanka
+  {
+    id: 23,
+    title: "Tea",
+    name: "Royal Touch Ceylon Tea",
+    shellnumber: "030",
+    address: "38/8,Rajapihilla mawatha , Kandy, Sri Lanka",
+    number: "076 853 9889",
+    email: "info@royaltouchceylontea.com",
+    image: Tea,
+    description: "Luxury accessories once safeguarded in the vaults.",
+    backImage: RoyalTouchLogo,
+    moreDetails: "Refreshing your life",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
+  },
 
+  //No info wasdas lanka
+  {
+    id: 24,
+    title: "Tea",
+    name: "Royal Touch Ceylon Tea",
+    shellnumber: "030",
+    address: "38/8,Rajapihilla mawatha , Kandy, Sri Lanka",
+    number: "076 853 9889",
+    email: "info@royaltouchceylontea.com",
+    image: Tea,
+    description: "Luxury accessories once safeguarded in the vaults.",
+    backImage: RoyalTouchLogo,
+    moreDetails: "Refreshing your life",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
+  },
 
+  //No info eco vibe center
+  {
+    id: 25,
+    title: "Tea",
+    name: "Royal Touch Ceylon Tea",
+    shellnumber: "031",
+    address: "38/8,Rajapihilla mawatha , Kandy, Sri Lanka",
+    number: "076 853 9889",
+    email: "info@royaltouchceylontea.com",
+    image: Tea,
+    description: "Luxury accessories once safeguarded in the vaults.",
+    backImage: RoyalTouchLogo,
+    moreDetails: "Refreshing your life",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
+  },
 
-
-
-
-
-
-  
+  //No info thilakawardhana gems
+  {
+    id: 26,
+    title: "Tea",
+    name: "Royal Touch Ceylon Tea",
+    shellnumber: "032",
+    address: "38/8,Rajapihilla mawatha , Kandy, Sri Lanka",
+    number: "076 853 9889",
+    email: "info@royaltouchceylontea.com",
+    image: Tea,
+    description: "Luxury accessories once safeguarded in the vaults.",
+    backImage: RoyalTouchLogo,
+    moreDetails: "Refreshing your life",
+    popup:
+      "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
+  },
 ];
 
 const CARDS_PER_PAGE = 9;
@@ -504,13 +594,13 @@ const Choices: React.FC = () => {
           </div>
         ) : (
           <div
-            className=" flex snap-x snap-mandatory overflow-x-auto w-full  "
+            className=" flex snap-x snap-mandatory overflow-x-auto w-full "
             style={{ scrollPaddingLeft: 16, scrollPaddingRight: 16 }}
           >
             {mobileGroups.map((group, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 snap-start flex flex-col gap-4  overflow-x-auto"
+                className="flex-shrink-0 snap-start flex flex-col gap-4 overflow-x-auto"
               >
                 {group.map((card) => (
                   <CardItem
