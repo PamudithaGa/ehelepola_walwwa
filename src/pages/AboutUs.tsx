@@ -1,33 +1,44 @@
-import React,{useEffect} from 'react'
-import { FaTools } from "react-icons/fa";
-import { Link } from "react-router";
+import React, { useEffect } from 'react'
 
-const AboutUs:React.FC = () => {
-      useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+import NavBar from '../components/common/NavBar';
+import HeroSection from '../components/aboutus/HeroSection';
+import Footer from "../components/common/Footer";
+
+import FooterTopImage from "../assets/footer-image.png";
+import FooterArt from "../assets/logos/ehelepola-walauwwe-logo-white.png";
+
+const AboutUs: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div>
-       <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4">
-      <div className="bg-white shadow-xl rounded-2xl p-10 text-center max-w-lg animate-fade-in">
-        <div className="flex justify-center mb-6 text-primary">
-          <FaTools className="text-6xl animate-bounce-slow" />
+    <>
+      <section
+        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out`}
+      >
+        <NavBar page="about" />
+      </section>
+
+      <section className="-z-1">
+        <HeroSection />
+      </section>
+
+      {/* footer */}
+      <section className="">
+        <div>
+          <img src={FooterTopImage} />
         </div>
-        <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-3">
-          This Page is Under Development
-        </h1>
-        <p className="text-gray-600 text-base mb-6">
-          We’re working hard to build this section. Please check back soon!
-        </p>
-        <Link 
-        to="/"
-          className="inline-block mt-4 px-6 py-2 rounded-lg bg-primary text-white font-semibold hover:bg-highlight transition-all duration-300"
-        >
-          Back to Home
-        </Link>
-      </div>
-    </div>
-    </div>
+
+        {/* footer body */}
+        <section className="bg-primary relative z-10 overflow-hidden">
+          <div className="absolute h-11/12 py-5 -right-78 top-90 w-170 opacity-5">
+            <img src={FooterArt} alt="" className="h-140 w-200 lg:hidden" />
+          </div>
+
+          <Footer />
+        </section>
+      </section>
+    </>
   )
 }
 
