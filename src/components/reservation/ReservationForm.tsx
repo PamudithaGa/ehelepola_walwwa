@@ -76,14 +76,14 @@ const ReservationForm = () => {
 
     return (
         <>
-            <div className="relative py-5">
+            <div className="relative py-5 w-11/12 lg:w-full mx-auto">
                 <div className="lg:w-5/6 mx-auto flex justify-center items-center h-auto lg:h-[100vh]">
                     {/* Desktop view */}
                     <div className="flex gap-10 lg:gap-1 p-3 flex-col lg:flex-row w-full">
                         {/* content */}
                         <div className="lg:w-1/3 w-full md:w-full mt-0 md:mt-15 lg:mt-0">
-                            <h1 className="font-bold text-[75px]  leading-tight flex flex-wrap gap-x-5">
-                                {"School Reservation".split(" ").map((word, i) => (
+                            <h1 className="font-bold text-[60px] lg:text-[75px]  leading-tight flex flex-wrap gap-x-5">
+                                {"Reservation For School".split(" ").map((word, i) => (
                                     <span
                                         key={i}
                                         className="bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent"
