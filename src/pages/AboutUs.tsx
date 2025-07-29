@@ -3,9 +3,14 @@ import React, { useEffect } from 'react'
 import NavBar from '../components/common/NavBar';
 import HeroSection from '../components/aboutus/HeroSection';
 import Footer from "../components/common/Footer";
+import Places from '../components/aboutus/Places';
+import History from '../components/aboutus/History';
+
 
 import FooterTopImage from "../assets/footer-image.png";
 import FooterArt from "../assets/logos/ehelepola-walauwwe-logo-white.png";
+import PatternArt from "../assets/gallery/pattern-art.png"
+
 
 const AboutUs: React.FC = () => {
   useEffect(() => {
@@ -19,9 +24,26 @@ const AboutUs: React.FC = () => {
         <NavBar page="about" />
       </section>
 
+
       <section className="-z-1">
         <HeroSection />
       </section>
+
+      <section className="-z-1 mt-20 lg:mt-30">
+        <History />
+      </section>
+
+      <section className="relative -z-1 bg-black mt-30 py-10 h-auto">
+        <Places />
+
+        {/*pattern art*/}
+        <img
+          src={PatternArt}
+          alt=""
+          className=" hidden lg:absolute w-150 left-0 bottom-0 lg:top-0 lg:h-full object-cover -z-2 opacity-30 lg:rotate-0 rotate-180 h-1/2"
+        />
+      </section>
+
 
       {/* footer */}
       <section className="">
