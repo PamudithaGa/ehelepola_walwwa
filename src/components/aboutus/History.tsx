@@ -6,23 +6,23 @@ const History = () => {
   return (
     <>
       <section
-        className='flex w-5/6 mx-auto gap-5 '>
+        className='flex lg:flex-row flex-col-reverse w-5/6 mx-auto gap-5 '>
         <div
-          className='w-1/2 flex flex-col gap-5'>
+          className='w-full lg:w-1/2 flex flex-col gap-5'>
           <div className='w-full'>
             <img src={ImageTest} alt="" className='rounded-2xl' />
           </div>
 
           <div
-            className='flex justify-between w-full'>
-            <img src={ImageTest} alt="" className='w-49 rounded-2xl ' />
-            <img src={ImageTest} alt="" className='w-49 rounded-2xl ' />
-            <img src={ImageTest} alt="" className='w-49 rounded-2xl ' />
+            className='flex justify-between w-full gap-2'>
+            <img src={ImageTest} alt="" className='w-1/3 lg:w-49 rounded-2xl ' />
+            <img src={ImageTest} alt="" className='w-1/3 lg:w-49 rounded-2xl ' />
+            <img src={ImageTest} alt="" className='w-1/3 lg:w-49 rounded-2xl ' />
           </div>
         </div>
 
         {/* content */}
-        <div className="flex-1 flex flex-col lg:mt-5 w-1/2 pl-10">
+        <div className="flex-1 flex flex-col lg:mt-5 lg:w-1/2 w-full lg:pl-10">
           <div className="">
             <h1 className="text-primary leading-15  lg:text-6xl text-[42px] font-bold ">
               History Re-Making
