@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
             craftsmen showcased handmade goods, keeping the heritage alive.
           </p>
 
-          <p className="text-white">Open 9.00 AM to 8:30 PM</p>
+          <p className="text-white">Open 9.00 AM to 6:00 PM</p>
           <p className="text-sm text-white/20 mt-2 lg:mb-0 mb-6">
             Monday - Saturday
           </p>
