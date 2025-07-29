@@ -13,7 +13,7 @@ import FooterTopImage from "./assets/footer-image.png";
 import NewsSection from "./components/home/NewsSection";
 
 import PatternArt from "./assets/gallery/pattern-art.png"
-import FooterArt from './assets/gallery/perahera-art.webp'
+import FooterArt from './assets/gallery/perahera-art.png'
 import { GoArrowRight } from "react-icons/go";
 
 const App: React.FC = () => {
@@ -114,7 +114,7 @@ const App: React.FC = () => {
 
         {/* footer body */}
         <section className="bg-primary relative z-10">
-          <div className="absolute h-11/12 py-5 right.-0 opacity-5 scale-x-[-1]">
+          <div className="absolute h-11/12 py-5 right-0 opacity-5 scale-x-[-1]">
             <img src={FooterArt} alt="" className="h-full w-full" />
           </div>
 

@@ -1,15 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 import WaxLogo from '../../assets/logos/wax-museum-logo-black.png'
 import PrisonLogo from '../../assets/logos/prison-arcade-logo-black.png'
 import KingsLogo from '../../assets/logos/kings-court-logo-black.png'
-import CourtYard from '../../pages/CourtYard'
+import CourtYard from '../../assets/logos/mada-midula-logo-black.png'
+
+import { MdOutlineArrowOutward } from "react-icons/md";
+
+
 
 const Places: React.FC = () => {
     return (
         <>
             <section
-                className='w-5/6 mx-auto h-[60dvh]'>
+                className='w-5/6 z-20 mx-auto h-auto lg:h-[60dvh]'>
                 <div
                     className='h-2/5 flex flex-col'>
                     <h1 className="text-secondary leading-15  lg:text-6xl text-[42px] font-bold ">
@@ -22,36 +27,83 @@ const Places: React.FC = () => {
                 </div>
 
                 <div
-                    className='h-3/5 flex gap-8'>
+                    className='h-auto lg:h-3/5 flex lg:flex-row justify-center items-center mt-10 lg:mt-0 flex-col gap-8'>
                     <div
-                        className='w-1/4 bg-white h-full rounded-2xl flex items-center justify-center'>
+                        className='w-5/6 py-5 lg:py-0 lg:w-1/4 bg-white flex flex-col gap-5 h-full rounded-2xl flex items-center justify-center'>
                         <img 
                         src={WaxLogo } 
                         alt="" 
                         className='w-30'/>
 
+                        <p
+                        className='text-sm text-center w-4/5'>
+                            Lifelike legends meet timeless artistry in our premium wax showcase
+                        </p>
+
+                        <Link to="" className='w-full'>
+                            <button
+                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white'>
+                                Explore Here <MdOutlineArrowOutward className="w-5 h-5" />
+                            </button>
+                        </Link>
                         
                     </div>
                     <div
-                        className='w-1/4 bg-white h-full rounded-2xl flex items-center justify-center'>
+                        className='w-5/6 py-5 lg:py-0 lg:w-1/4 bg-white flex flex-col gap-5 h-full rounded-2xl flex items-center justify-center'>
                         <img 
                         src={PrisonLogo } 
                         alt="" 
                         className='w-30'/>
+
+                        <p
+                        className='text-sm text-center w-4/5'>
+                            A premium shopping mall built inside a reimagined royal prison
+                        </p>
+
+                        <Link to="" className='w-full'>
+                            <button
+                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white'>
+                                Explore Here <MdOutlineArrowOutward className="w-5 h-5" />
+                            </button>
+                        </Link>
                     </div>
                     <div
-                        className='w-1/4 bg-white h-full rounded-2xl flex items-center justify-center'>
+                        className='w-5/6 py-5 lg:py-0 lg:w-1/4 bg-white flex flex-col gap-5 h-full rounded-2xl flex items-center justify-center'>
                         <img 
                         src={KingsLogo } 
                         alt="" 
-                        className='w-30'/>
+                        className='h-20 w-30'/>
+
+                         <p
+                        className='text-sm text-center w-4/5'>
+                            Experience royal dining in a majestic, king-era inspired restaurant
+                        </p>
+
+                        <Link to="" className='w-full'>
+                            <button
+                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white'>
+                                Explore Here <MdOutlineArrowOutward className="w-5 h-5" />
+                            </button>
+                        </Link>
                     </div>
                     <div
-                        className='w-1/4 bg-white h-full rounded-2xl flex items-center justify-center'>
+                        className='w-5/6 py-5 lg:py-0 lg:w-1/4 bg-white flex flex-col gap-5 h-full rounded-2xl flex items-center justify-center'>
                         <img 
-                        src={WaxLogo } 
+                        src={CourtYard} 
                         alt="" 
-                        className='w-30'/>
+                        className='w-20'/>
+
+                         <p
+                        className='text-sm text-center w-4/5'>
+                            Historic elegance meets fun with live shows, games, and entertainment.
+                        </p>
+
+                        <Link to="" className='w-full'>
+                            <button
+                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white'>
+                                Explore Here <MdOutlineArrowOutward className="w-5 h-5" />
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>
