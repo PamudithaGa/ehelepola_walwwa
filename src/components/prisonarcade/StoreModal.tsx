@@ -39,7 +39,7 @@ const StoreModal: React.FC<StoreModalProps> = ({ isOpen, onClose, card }) => {
           <div className="flex h-full">
             <div className="w-3/10 bg-black h-full flex flex-col justify-center items-center px-2 gap-5">
               <div className="flex justify-center items-center">
-                <h2 className="text-4xl mb-5  font-bold text-secondary">
+                <h2 className="text-4xl mb-5 text-center font-bold text-secondary">
                   {card.name}
                 </h2>
               </div>
@@ -78,7 +78,7 @@ const StoreModal: React.FC<StoreModalProps> = ({ isOpen, onClose, card }) => {
                 </div>
                 <div className="bg-white/20 border border-white/30 rounded-xl shadow-sm h-2/3 backdrop-blur-md p-5 px-4 w-1/3 items-center justify-center flex flex-col">
                   <h2 className="font-bold">Email</h2>
-                  <p>{card.email}</p>
+                  <p className="w-full text-center break-words">{card.email}</p>
                 </div>
               </div>
             </div>

@@ -3,14 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
 const bannerImages: string[] = [
-  new URL("../../assets/prisonarcade/examples (1).png", import.meta.url).href,
-  new URL("../../assets/prisonarcade/examples (2).png", import.meta.url).href,
-  new URL("../../assets/prisonarcade/examples (3).png", import.meta.url).href,
+    new URL("../../assets/prisonarcade/AdVertical2.png", import.meta.url).href,
+    new URL("../../assets/prisonarcade/AdVertical3.png", import.meta.url).href,
+  // new URL("../../assets/prisonarcade/examples (2).png", import.meta.url).href,
+  // new URL("../../assets/prisonarcade/examples (3).png", import.meta.url).href,
 ];
 
 const Banner: React.FC = () => {
   return (
-    <div className="lg:w-5/6 hidden lg:block w-11/12 h-60 rounded-2xl overflow-hidden mx-auto">
+    <div className="lg:w-5/6 hidden lg:block mt-10 mb-10 w-11/12 h-60 rounded-2xl overflow-hidden mx-auto">
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         autoplay={{ delay: 6000, disableOnInteraction: false }}

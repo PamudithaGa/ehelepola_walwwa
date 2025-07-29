@@ -69,7 +69,7 @@ const PrisonArcade: React.FC = () => {
         <Gallery />
       </section>
 
-      <section className="w-full flex items-center justify-center lg:mt-20">
+      <section className="w-full flex items-center justify-center lg:mt-20 bg-black">
         <Banner/>
       </section>
 
