@@ -40,9 +40,9 @@ const Places: React.FC = () => {
                             Lifelike legends meet timeless artistry in our premium wax showcase
                         </p>
 
-                        <Link to="" className='w-full'>
+                        <Link to="/WaxMuseum" className='w-full'>
                             <button
-                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white'>
+                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white  hover:cursor-pointer hover:bg-black/90'>
                                 Explore Here <MdOutlineArrowOutward className="w-5 h-5" />
                             </button>
                         </Link>
@@ -60,9 +60,9 @@ const Places: React.FC = () => {
                             A premium shopping mall built inside a reimagined royal prison
                         </p>
 
-                        <Link to="" className='w-full'>
+                        <Link to="/PrisonArcade" className='w-full'>
                             <button
-                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white'>
+                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white  hover:cursor-pointer hover:bg-black/90'>
                                 Explore Here <MdOutlineArrowOutward className="w-5 h-5" />
                             </button>
                         </Link>
@@ -79,9 +79,9 @@ const Places: React.FC = () => {
                             Experience royal dining in a majestic, king-era inspired restaurant
                         </p>
 
-                        <Link to="" className='w-full'>
+                        <Link to="/kingscourt" className='w-full'>
                             <button
-                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white'>
+                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white  hover:cursor-pointer hover:bg-black/90'>
                                 Explore Here <MdOutlineArrowOutward className="w-5 h-5" />
                             </button>
                         </Link>
@@ -98,9 +98,9 @@ const Places: React.FC = () => {
                             Historic elegance meets fun with live shows, games, and entertainment.
                         </p>
 
-                        <Link to="" className='w-full'>
+                        <Link to="/courtyard" className='w-full         '>
                             <button
-                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white'>
+                            className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white  hover:cursor-pointer hover:bg-black/90'>
                                 Explore Here <MdOutlineArrowOutward className="w-5 h-5" />
                             </button>
                         </Link>

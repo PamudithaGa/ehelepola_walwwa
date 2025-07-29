@@ -28,7 +28,7 @@ import ACLawrie from "../../assets/images/charactors/ACLawrie.jpg";
 import KapuwatteAdikaram from "../../assets/images/charactors/KapuwatteAdikaram.jpg";
 import VenWariyapolaSriSumangala from "../../assets/images/charactors/VenWariyapolaSriSumangala.jpg";
 
-import Noimage from "../../assets/images/charactors/noimage.png";
+import Noimage from "../../assets/gallery/no-preview.jpeg";
 
 const timelineData = [
   {
