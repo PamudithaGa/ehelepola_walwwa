@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 import { GoLocation } from "react-icons/go";
 import { IoMailOutline } from "react-icons/io5";
 import { CiPhone } from "react-icons/ci";
-import PatternArt from "../../assets/gallery/footer-01.png"
+import PatternArt from "../../assets/gallery/footer-01.png";
 import Walawwa from "../../assets/logos/sketch-white.png";
 
 const ContactFormTwo: React.FC = () => {
@@ -27,22 +27,24 @@ const ContactFormTwo: React.FC = () => {
       )
       .then(
         (result) => {
-          console.log("Message sent:", result.text);
-          toast.success("Message sent successfully!");
+          console.log("Email sent:", result.text);
+          toast("Message sent successfully!");
           formRef.current?.reset();
         },
         (error) => {
-          console.error("Failed to send:", error.text);
-          toast.error("Something went wrong. Try again");
+          console.error("Email failed:", error.text);
+          toast("Failed to send. Try again later.");
         }
       );
   };
-
   return (
     <div className="relative">
-      <div
-        className="absolute right-5 scale-y-[-1] bottom-0 h-100  opacity-12">
-        <img src={PatternArt} alt="" className="h-full scale-x-[-1] w-[500px]" />
+      <div className="absolute right-5 scale-y-[-1] bottom-0 h-100  opacity-12">
+        <img
+          src={PatternArt}
+          alt=""
+          className="h-full scale-x-[-1] w-[500px]"
+        />
       </div>
 
       <div className="lg:w-5/6 mx-auto flex justify-center items-center h-auto lg:h-[100vh]">
@@ -58,7 +60,7 @@ const ContactFormTwo: React.FC = () => {
                 type="text"
                 name="firstName"
                 placeholder="Enter first name"
-                className="w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
+                className="input-field w-full text-secondary text-mainfont text-base lg:w-full lg:text-base py-3 px-2 rounded-2xl border-2 border-gray-400 focus:ring-1 focus:ring-secondary focus:outline-none focus:border-primary placeholder:text-[#949494] placeholder:text-xs lg:placeholder:text-sm"
                 required
               />
 
@@ -114,7 +116,9 @@ const ContactFormTwo: React.FC = () => {
               ))}
             </h1>
             <p className="mb-3 text-gray-500">
-Connect with Ehelepola Walauwa for inquiries about visits, events, heritage tours, shopping experiences, and cultural programs in historic Kandy.
+              Connect with Ehelepola Walauwa for inquiries about visits, events,
+              heritage tours, shopping experiences, and cultural programs in
+              historic Kandy.
             </p>
 
             <div className="flex flex-col gap-8 mt-10">
@@ -161,7 +165,9 @@ Connect with Ehelepola Walauwa for inquiries about visits, events, heritage tour
               <img src={Walawwa} alt="" className="lg:hidden block" />
             </div>
             <p className="mb-3 text-gray-500 text-justify">
-Connect with Ehelepola Walauwa for inquiries about visits, events, heritage tours, shopping experiences, and cultural programs in historic Kandy.
+              Connect with Ehelepola Walauwa for inquiries about visits, events,
+              heritage tours, shopping experiences, and cultural programs in
+              historic Kandy.
             </p>
           </div>
 
