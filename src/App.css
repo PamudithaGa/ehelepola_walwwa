@@ -1,0 +1,7 @@
+/* swiper handle */
+.custom-swiper .swiper-pagination {
+  top: 0;
+  position: absolute; 
+  background-color: chartreuse;
+  margin-top: 100px;
+}
