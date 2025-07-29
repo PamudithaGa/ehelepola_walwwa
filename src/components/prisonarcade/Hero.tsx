@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay} from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 const heroImages: string[] = [
-  new URL("../../assets/gallery/arcade-with-logo.jpg", import.meta.url).href,
-  new URL("../../assets/prisonarcade/spaceylonBanner.png", import.meta.url)
-    .href,
-  new URL("../../assets/prisonarcade/dilmateaBanner.png", import.meta.url).href,
+  // new URL("../../assets/gallery/arcade-with-logo.jpg", import.meta.url).href,
+  new URL("../../assets/prisonarcade/AdSquare.png", import.meta.url).href,
+  new URL("../../assets/prisonarcade/AdSquare2.png", import.meta.url).href,
+  // new URL("../../assets/prisonarcade/dilmateaBanner.png", import.meta.url).href,
 ];
 
 const Hero: React.FC = () => {
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
           <img
             src={currentImage}
             alt={`Slide ${currentIndex + 1}`}
-            className="rounded-2xl w-full h-full object-cover transition-all duration-1000 ease-in-out"
+            className="rounded-2xl w-full  h-full object-cover transition-all duration-1000 ease-in-out"
           />
         </div>
         <div className="hidden lg:block relative lg:w-1/2 bg-black h-[90%] lg:my-5 lg:pl-20 rounded-2xl overflow-hidden">

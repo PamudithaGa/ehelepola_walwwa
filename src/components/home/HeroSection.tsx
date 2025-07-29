@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 // import HeroVideo from "../../assets/videos/hero-video.mp4";
-import HeroVideo from "../../assets/videos/ehelepola.mp4";
+import HeroVideo from "../../assets/videos/ehalepolaNew.mp4";
 import WalawwaBlock from "../../assets/logos/sketch-white.png";
 
 const HeroSection: React.FC = () => {

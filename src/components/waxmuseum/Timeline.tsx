@@ -29,7 +29,6 @@ import KapuwatteAdikaram from "../../assets/images/charactors/KapuwatteAdikaram.
 import VenWariyapolaSriSumangala from "../../assets/images/charactors/VenWariyapolaSriSumangala.jpg";
 import Noimage from "../../assets/images/charactors/noimage.png";
 
-
 const timelineData = [
   {
     date: "1500 - 1595 CE",
