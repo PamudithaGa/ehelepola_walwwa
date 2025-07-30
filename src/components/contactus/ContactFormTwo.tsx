@@ -52,6 +52,11 @@ const ContactFormTwo: React.FC = () => {
 
           toast("Message sent successfully!");
           formRef.current?.reset();
+          setEmail("");
+          setMessage("");
+          setSubject("");
+          setfirstName("");
+          setlastName("");
         },
         (error) => {
           console.error("Email failed:", error.text);
@@ -311,7 +316,6 @@ const ContactFormTwo: React.FC = () => {
                 </li>
               </ul>
             </div>
-
           </div>
 
           <div className="lg:w-2/5 w-11/12 h-full md:w-full mt-10 md:mt-10 lg:-mt-30">
@@ -361,7 +365,6 @@ const ContactFormTwo: React.FC = () => {
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </div>

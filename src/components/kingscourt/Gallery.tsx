@@ -4,37 +4,46 @@ import { FaArrowLeft, FaArrowRight, FaEye } from "react-icons/fa";
 
 // For scroll bars
 const SilderImages = [
-  new URL("../../assets/gallery/B17A21732.jpg", import.meta.url).href,
-  new URL("../../assets/gallery/prison-arcade-banner2.jpg", import.meta.url)
+  new URL("../../assets/gallery/kingsCourt/KingsCourtAreaVertical.png", import.meta.url).href,
+  new URL("../../assets/gallery/kingsCourt/KingsCourtNameVertical.png", import.meta.url)
     .href,
-  new URL("../../assets/gallery/wallwwa11.png", import.meta.url).href,
-  new URL("../../assets/gallery/walawwa112.png", import.meta.url).href,
-  new URL("../../assets/gallery/outside.JPG", import.meta.url).href,
+  new URL("../../assets/gallery/kingsCourt/KingsCourtPlatesVertical.png", import.meta.url).href,
+  new URL("../../assets/gallery/kingsCourt/KingsCourtPotsVertical.png", import.meta.url).href,
+  new URL("../../assets/gallery/kingsCourt/KingsCourtTableVertical.png", import.meta.url).href,
 ];
 
 //Main images
 const AnimateImages = [
   {
-    src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
+    src: new URL(
+      "../../assets/gallery/kingsCourt/KingsCourtArea.png",
+      import.meta.url
+    ).href,
     description: "Main entrance of the Walawwa classic colonial elegance.",
   },
   {
-    src: new URL("../../assets/gallery/B17A2217.JPG", import.meta.url).href,
+    src: new URL(
+      "../../assets/gallery/kingsCourt/KingsCourtName.png",
+      import.meta.url
+    ).href,
     description: "Restored prison arcade blending history with modernity.",
   },
   {
     src: new URL(
-      "../../assets/gallery/prison-arcade-banner.jpg",
+      "../../assets/gallery/kingsCourt/KingsCourtPlates.png",
       import.meta.url
     ).href,
     description: "Front courtyard a peaceful blend of heritage and greenery.",
   },
   {
-    src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
+    src: new URL(
+      "../../assets/gallery/kingsCourt/KingsCourtPots.png",
+      import.meta.url
+    ).href,
     description: "Vintage hallway echoes of the past in every step.",
   },
   {
-    src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
+    src: new URL("../../assets/gallery/kingsCourt/KingsCourtTable.png", import.meta.url).href,
     description: "Lush surroundings serenity beyond the walls.",
   },
 ];
@@ -175,7 +184,7 @@ const Gallery: React.FC = () => {
                 <FaArrowLeft size={16} />
               </button>
             </div>
-            
+
             <div>
               <button
                 onClick={() =>

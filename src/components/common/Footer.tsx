@@ -28,17 +28,23 @@ const Footer: React.FC = () => {
               className="w-50 lg:w-60 h-auto mb-8"
               alt="Ehelepola walawwe"
             />
-            <p className="text-[16px] leading-7 text-justify lg:pr-10">
+            <p className="text-[16px] hidden lg:block leading-7 text-justify lg:pr-10">
               Ehelepola Walauwa, the ancestral home of noble Ehelepola Nilame,
               stands as Sri Lanka's premier heritage destination in Kandy. This
               meticulously restored walauwa in Sri Lanka combines shopping,
               dining, museums, and cultural experiences, celebrating our rich
               traditional Sri Lankan architecture and royal legacy.
             </p>
+
+            {/* mobile para */}
+            <p className="text-[16px] md:hidden block leading-7 text-center lg:pr-10">
+              Ehelepola Walauwa, the ancestral home of noble Ehelepola Nilame,
+              stands as Sri Lanka's premier heritage destination in Kandy.
+            </p>
           </div>
 
           {/* Feature Place Links */}
-          <div className="w-full md:w-1/3 lg:w-1/5 lg:mt-8 flex flex-col">
+          <div className="w-full md:w-1/3 lg:w-1/5 lg:mt-8 hidden lg:flex flex flex-col">
             <h3 className="text-white text-[18px] font-semibold mb-4">
               Important Links
             </h3>
@@ -87,7 +93,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="w-full md:w-1/3 lg:w-1/5 lg:mt-8 flex flex-col">
+          <div className="w-full hidden lg:flex md:w-1/3 lg:w-1/5 lg:mt-8 flex flex-col">
             <h3 className="text-white text-[18px] font-semibold mb-4">
               Quick Links
             </h3>
@@ -136,7 +142,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="w-full md:w-1/3 lg:w-1/5 lg:mt-8">
+          <div className="w-full hidden lg:block md:w-1/3 lg:w-1/5 lg:mt-8">
             <h3 className="text-white text-[18px] font-semibold mb-4">
               Contact Info
             </h3>
@@ -153,6 +159,79 @@ const Footer: React.FC = () => {
               +94 707 371 464
             </p>
           </div>
+
+
+          {/* mobile ---------------------------------------------------------------------------*/}
+          <div className="md:hidden flex">
+            {/* Feature Place Links */}
+            <div className="w-full md:w-1/3 lg:w-1/5 lg:mt-8 flex flex-col">
+              <h3 className="text-white text-center text-[18px] font-semibold mb-4">
+                Important Links
+              </h3>
+              <ul className="flex flex-wrap justify-center gap-2 text-[16px]">
+                <li>
+                  <Link
+                    to="/WaxMuseum"
+                    className="hover:text-white transition-colors duration-300"
+                  >
+                    Wax Museum
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/PrisonArcade"
+                    className="hover:text-white transition-colors duration-300"
+                  >
+                    Prison Arcade
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/kingscourt"
+                    className="hover:text-white transition-colors duration-300"
+                  >
+                    Kings Court
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/courtyard"
+                    className="hover:text-white transition-colors duration-300"
+                  >
+                    Court Yard
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="#"
+                    className="hover:text-white transition-colors duration-300"
+                  >
+                    Our Blogs
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Contact Info - mobile */}
+          <div className="w-full md:hidden text-center md:w-1/3 lg:w-1/5 lg:mt-8">
+            <h3 className="text-white text-[18px] font-semibold mb-4">
+              Contact Info
+            </h3>
+            <p className="text-[16px] mb-2">
+              Ehelepola Walawwa, Raja Veediya, Senkadagala, Mahanuwara
+            </p>
+            <p className="text-[16px] mb-2 hover:text-white transition-colors duration-300">
+              info@ehelepolawalawwa.com{" "}
+            </p>
+            <p className="text-[16px] mb-2 hover:text-white transition-colors duration-300">
+              +94 777 371 464
+            </p>
+            <p className="text-[16px] mb-2 hover:text-white transition-colors duration-300">
+              +94 707 371 464
+            </p>
+          </div>
+
         </div>
       </footer>
 
