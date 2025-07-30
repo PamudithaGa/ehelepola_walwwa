@@ -75,7 +75,7 @@ const Places: React.FC = () => {
                         </div>
                         <div
                             className='h-1/4 w-full flex justify-center items-center'>
-                            <Link to="/WaxMuseum" className='w-full'>
+                            <Link to="/PrisonArcade" className='w-full'>
                                 <button
                                     className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white  hover:cursor-pointer hover:bg-black/90'>
                                     Explore Here <MdOutlineArrowOutward className="w-5 h-5" />
@@ -103,7 +103,7 @@ const Places: React.FC = () => {
                         </div>
                         <div
                             className='h-1/4 w-full flex justify-center items-center'>
-                            <Link to="/WaxMuseum" className='w-full'>
+                            <Link to="/kingscourt" className='w-full'>
                                 <button
                                     className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white  hover:cursor-pointer hover:bg-black/90'>
                                     Explore Here <MdOutlineArrowOutward className="w-5 h-5" />
@@ -131,7 +131,7 @@ const Places: React.FC = () => {
                         </div>
                         <div
                             className='h-1/4 w-full flex justify-center items-center'>
-                            <Link to="/WaxMuseum" className='w-full'>
+                            <Link to="/courtyard" className='w-full'>
                                 <button
                                     className='bg-black w-auto flex items-center justify-cenetr gap-2 mx-auto px-5 py-3 rounded-2xl text-white  hover:cursor-pointer hover:bg-black/90'>
                                     Explore Here <MdOutlineArrowOutward className="w-5 h-5" />

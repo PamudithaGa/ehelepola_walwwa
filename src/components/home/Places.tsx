@@ -51,7 +51,6 @@ const Places: React.FC = () => {
               key={idx}
               className="py-8 px-3 rounded-xl pt-12 bg-gradient-to-tr from-black via-[#131313] to-black  flex flex-col justify-center items-center"
             >
-
               <div className="w-full h-3/10 flex items-center rounded-2xl justify-center mb-2">
                 <img
                   src={zone.image}
@@ -67,16 +66,15 @@ const Places: React.FC = () => {
               </div>
 
               <div className="lg:mt-3 w-full px-4">
-                <div className="group px-4 py-2 w-full border backdrop-blur-md bg-white/10 rounded-lg border-white/30 flex justify-center items-center hover:cursor-pointer hover:bg-white/20">
-                  <Link
-                    to={zone.link}
-                    className="text-secondary flex items-center justify-center gap-2  font-medium"
-                  >
+                <Link
+                  to={zone.link}
+                  className="text-secondary flex items-center justify-center gap-2  font-medium"
+                >
+                  <div className="group px-4 py-2 w-full border backdrop-blur-md bg-white/10 rounded-lg border-white/30 flex justify-center items-center hover:cursor-pointer hover:bg-white/20">
                     Explore <MdOutlineArrowOutward className="w-5 h-5" />
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               </div>
-
             </div>
           ))}
         </div>
@@ -122,7 +120,6 @@ const Places: React.FC = () => {
             </Link>
           </div>
         </div>
-         
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ interface NavbarProps {
     | "shopping"
     | "dining"
     | "entertainment"
-    | "wax"
+    | "Wax_Museum"
     | "blog"
     | "contact"
     | "other";
@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           <Link
             to="/WaxMuseum"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-              page === "wax"
+              page === "Wax_Museum"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
                 : ""
             }`}
@@ -127,7 +127,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
       {/* Mobile Top Bar */}
       {/* <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md"> */}
       <div
-        className="absolute  flex lg:hidden justify-between items-center py-3 w-full  rounded-xl ">
+        className="absolute  flex lg:hidden justify-between items-center py-3 w-full z-555  rounded-xl ">
         <img src={LogoWhite} alt="Logo" className="h-16 object-contain" />
         <button onClick={openMenu}>
           {isMenuToggle ? (
@@ -140,18 +140,18 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
 
       {/* Mobile slide-in menu */}
       {isMenuToggle && (
-        <div className="lg:hidden fixed top-0 right-0 h-screen w-full bg-white shadow-lg z-50 overflow-y-auto">
+        <div className="lg:hidden fixed top-0 right-0 h-screen w-full bg-white shadow-lg z-665 overflow-y-auto ">
           <div className="flex justify-end p-4">
             <button onClick={openMenu}>
               <RxCross2 className="w-6 h-6 text-primary   hover:text-highlight" />
             </button>
           </div>
 
-          <ul className="flex flex-col gap-2 px-4 py-2 text-lg">
+          <ul className="flex flex-col gap-2 px-4 py-2 text-lg z-775">
             {[
               { label: "Home", path: "/" },
               { label: "About", path: "/aboutUs" },
-              { label: "Wax Museum", path: "/WaxMuseum" },
+              { label: "Wax_Museum", path: "/WaxMuseum" },
               { label: "Shopping", path: "/PrisonArcade" },
               { label: "Dining", path: "/kingscourt" },
               { label: "Entertainment", path: "/courtyard" },
