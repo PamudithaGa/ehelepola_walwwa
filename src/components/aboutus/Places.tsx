@@ -18,7 +18,7 @@ const Places: React.FC = () => {
                 <div
                     className='h-2/5 flex flex-col'>
                     <h1 className="text-secondary leading-15  lg:text-6xl text-[42px] font-bold ">
-                        Our Premium Places
+                        Premium Places
                     </h1>
                     <p className="text-base text-white/50 leading-relaxed mt-2 w-full lg:w-5/6 ">
                         From lifelike wax figures to shopping delights, thrilling entertainment, and a majestic ceremonial court—our spaces are designed to inspire, engage, and elevate your experience.
@@ -72,7 +72,7 @@ const Places: React.FC = () => {
                         <img 
                         src={KingsLogo } 
                         alt="" 
-                        className='h-20 w-30'/>
+                        className='w-30'/>
 
                          <p
                         className='text-sm text-center w-4/5'>
