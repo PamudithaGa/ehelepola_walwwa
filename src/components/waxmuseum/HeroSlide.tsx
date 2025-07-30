@@ -22,17 +22,11 @@ const HeroSlide: React.FC = () => {
           </h1>
 
           <p className="text-[15px] text-white/30 mt-5 mb-10 text-justify lg:pr-10">
-            The colonial-era prison was transformed into a distinctive shopping
-            destination, blending history, architecture, and modern retail.
-            While preserving elements of its original design, the space
-            seamlessly integrated luxury boutiques, artisan shops, and art
-            galleries, creating a unique commercial and cultural experience.
-            High-end brands contrasted with the historic setting, while local
-            craftsmen showcased handmade goods, keeping the heritage alive.
+            Enter a realm where Sri Lanka's most celebrated heroes come to life through thirty-five masterfully crafted wax figures. Each figure is positioned within carefully curated exhibits that showcase authentic Kandyan architecture, from intricate wood carvings to traditional roof designs. Marvel at displays featuring royal customs, ceremonial attire, and time-honored crafts that define our cultural identity.
           </p>
 
           <p className="text-white">Open 9.00 AM to 6:00 PM</p>
-          <p className="text-sm text-white/20 mt-2">Monday - Saturday</p>
+          <p className="text-sm text-white/20 mt-2">Open Daily (Monday - Sunday)</p>
         </div>
         
         {/* Image */}

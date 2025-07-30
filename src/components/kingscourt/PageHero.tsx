@@ -22,17 +22,11 @@ const PageHero: React.FC = () => {
             </h1>
 
             <p className="text-[15px] text-white/30 mt-5 mb-10 text-justify lg:pr-10">
-              The colonial-era prison was transformed into a distinctive shopping
-              destination, blending history, architecture, and modern retail.
-              While preserving elements of its original design, the space
-              seamlessly integrated luxury boutiques, artisan shops, and art
-              galleries, creating a unique commercial and cultural experience.
-              High-end brands contrasted with the historic setting, while local
-              craftsmen showcased handmade goods, keeping the heritage alive.
+              Culminate your royal journey with an extraordinary dining experience that faithfully recreates the culinary traditions of ancient Sri Lankan royalty. This authentic restaurant transports you to an era of royal banquets, where traditional recipes passed down through generations are prepared using time-honored techniques and locally sourced ingredients. The restaurant's regal ambiance, complete with carved wooden furniture, traditional brass serving vessels, and soft candlelight, creates an atmosphere truly fit for royalty. 
             </p>
 
             <p className="text-white">Open 9.00 AM to 6:00 PM</p>
-            <p className="text-sm text-white/20 mt-2">Monday - Saturday</p>
+            <p className="text-sm text-white/20 mt-2">Open Daily (Monday - Sunday)</p>
           </div>
 
           <div className="lg:w-1/2 h-full my-5 lg:pl-5 rounded-2xl flex justify-center items-center">
