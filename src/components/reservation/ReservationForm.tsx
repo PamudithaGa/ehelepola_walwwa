@@ -445,6 +445,7 @@ const ReservationForm = () => {
                                                 color: 'black',
                                                 borderColor: 'white',
                                             },
+                                            fontSize: '16px',
                                         }}
                                     >
                                         Submit Reserversion

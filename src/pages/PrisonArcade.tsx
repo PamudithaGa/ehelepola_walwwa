@@ -12,6 +12,7 @@ import Footer from "../components/common/Footer";
 import NavBar from "../components/common/NavBar";
 
 import FooterTopImage from "../assets/footer-image.png";
+import FootetrtTopImageMobile from '../assets/footer-image-mobile.png'
 import FooterArt2 from '../assets/gallery/perahera-art.png'
 import FooterArt from "../assets/logos/ehelepola-walauwwe-logo-white.png";
 
@@ -75,17 +76,18 @@ const PrisonArcade: React.FC = () => {
         <Banner />
       </section>
 
-      {/* footer */}
+      {/* footer top */}
       <section className="">
         <div>
-          <img src={FooterTopImage} />
+          <img src={FooterTopImage} className='hidden md:block ' />
+          <img src={FootetrtTopImageMobile} className='md:hidden block' />
         </div>
 
-       {/* footer body */}
+        {/* footer body */}
         <section className="bg-primary relative z-10">
           <div className="absolute h-11/12 py-5 right-0 opacity-5 scale-x-[-1]">
             <img src={FooterArt2} alt="" className="h-full w-full hidden lg:block" />
-            <img src={FooterArt} alt="" className="h-140 w-200 lg:hidden" />
+            <img src={FooterArt} alt="" className="h-140 w-200 hidden" />
           </div>
 
           <Footer />
