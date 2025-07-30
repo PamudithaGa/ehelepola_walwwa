@@ -8,7 +8,7 @@ import KingsCourtVideo from "../assets/videos/Kings court.mp4";
 import FooterTopImage from "../assets/footer-image.png";
 import FooterArt2 from '../assets/gallery/perahera-art.png'
 import FooterArt from "../assets/logos/ehelepola-walauwwe-logo-white.png";
-
+import LineArtBlack from "../assets/gallery/pattern-artBlack.png"
 const KingsCourt: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,7 +33,7 @@ const KingsCourt: React.FC = () => {
       <section className="w-full h-[90dvh] relative bg-black flex mt-30 items-center overflow-hidden justify-center">
 
         {/* Pattern */}
-         <div className="absolute right-0 z-10 h-full">
+         <div className="absolute  right-0 z-10 h-full">
           <img src={LineArtBlack} alt="" className="opacity-20"/>
         </div>
 
