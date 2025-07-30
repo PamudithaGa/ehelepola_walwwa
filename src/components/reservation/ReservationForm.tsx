@@ -114,30 +114,7 @@ const ReservationForm: React.FC = () => {
                 your spot!
               </p>
 
-              <div className="flex flex-col gap-8 mt-10">
-                {/* <ul className=" w-full lg:w-full font-normal flex flex-col gap-2 lg:gap-3 lg:flex-col lg:pl-0 lg:justify-between">
-                                    <li className="flex flex-row items-center gap-2 text-body/[0.8]">
-                                        <CiPhone className="text-gray-200 text- bold text-sm w-10 h-10 p-2 border bg-primary rounded-2xl bg-body hover:border-primary hover:bg-secondary hover:text-primary" />
-                                        <div className="text-gray-500">
-                                            <p>+94 777 371 464 | +94 707 371 464</p>
-                                        </div>
-                                    </li>
-                                    <li className="flex flex-row items-center gap-2 text-gray-500/[0.8]">
-                                        <IoMailOutline className="text-gray-200 text- bold text-sm w-10 h-10 p-2 border bg-primary rounded-2xl bg-body hover:border-primary hover:bg-secondary hover:text-primary" />
-                                        <div className="text-gray-500">
-                                            <p>info@eahelepolawalawwa.com</p>
-                                        </div>
-                                    </li>
-                                    <li className="flex flex-row items-center gap-2 text-gray-500/[0.8]">
-                                        <GoLocation className="text-gray-200 text- bold text-sm w-10 h-10 p-2 border bg-primary rounded-2xl bg-body hover:border-primary hover:bg-secondary hover:text-primary" />
-                                        <div className="text-gray-500">
-                                            <p>
-                                                Ehelepola Walawwa, Raja Veediya, Senkadagala, Mahanuwara
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul> */}
-              </div>
+              <div className="flex flex-col gap-8 mt-10"></div>
             </div>
 
             {/* from */}
@@ -490,6 +467,7 @@ const ReservationForm: React.FC = () => {
                         color: "black",
                         borderColor: "white",
                       },
+                      fontSize: "16px",
                     }}
                   >
                     Submit Reserversion

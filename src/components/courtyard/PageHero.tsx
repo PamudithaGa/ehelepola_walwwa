@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../../assets/gallery/arcade-with-logo.jpg"; // Replace with your actual image path
+import heroImage from "../../assets/gallery/courtBanner.png"; // Replace with your actual image path
 
 const PageHero: React.FC = () => {
   return (

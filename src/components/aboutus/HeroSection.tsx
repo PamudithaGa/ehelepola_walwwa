@@ -1,8 +1,8 @@
 import React from 'react'
 
-import testImage from '../../assets/gallery/prison.jpg'
+import testImage from '../../assets/gallery/kingsCourt/KingsCourtAreaVertical.png'
 import testImage1 from '../../assets/gallery/B17A2196.jpg'
-import testImage2 from '../../assets/gallery/B17A2214.jpg'
+import testImage2 from '../../assets/gallery/courtYard/halfVertical.jpg'
 
 const HeroSection: React.FC = () => {
     return (
@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
                 <div className=" w-5/6 h-full lg:h-4/5 lg:gap-10 flex flex-col lg:flex-row justify-center items-center">
                     {/* Heading & Para */}
                     <div className=" lg:w-1/2 lg:h-full pt-30  lg:pt-20">
-                        <h1 className="font-bold text-[56px] lg:text-[80px]  leading-tight flex flex-wrap gap-x-2">
+                        <h1 className="font-bold text-[48px] lg:text-[80px]  leading-tight flex flex-wrap gap-x-2">
                             {"About Us".split(" ").map((word, i) => (
                                 <span
                                     key={i}
@@ -23,17 +23,11 @@ const HeroSection: React.FC = () => {
                         </h1>
 
                         <p className="text-[15px] text-white/30 mt-5 mb-10 text-justify lg:pr-10">
-                            The colonial-era prison was transformed into a distinctive shopping
-                            destination, blending history, architecture, and modern retail.
-                            While preserving elements of its original design, the space
-                            seamlessly integrated luxury boutiques, artisan shops, and art
-                            galleries, creating a unique commercial and cultural experience.
-                            High-end brands contrasted with the historic setting, while local
-                            craftsmen showcased handmade goods, keeping the heritage alive.
+                           Welcome to Ehelepola Walauwwe, a treasure of Sri Lanka’s rich heritage in the heart of Kandy. Once the grand residence of a legendary nobleman, this historic mansion now invites you to step back in time and experience the glory and tragedy of the Kandyan Kingdom.
                         </p>
 
                         <p className="text-white">Open 9.00 AM to 6:00 PM</p>
-                        <p className="text-sm text-white/20 mt-2">Monday - Saturday</p>
+                        <p className="text-sm text-white/20 mt-2">Open Daily (Monday - Sunday)</p>
                     </div>
 
                     {/* Image */}
