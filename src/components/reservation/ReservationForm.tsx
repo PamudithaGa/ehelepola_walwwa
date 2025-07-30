@@ -15,7 +15,7 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { Dayjs } from "dayjs";
 
-const ReservationForm = () => {
+const ReservationForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [date, setDate] = React.useState<Dayjs | null>(null);
   const [timeSlot, setTimeSlot] = React.useState("");
