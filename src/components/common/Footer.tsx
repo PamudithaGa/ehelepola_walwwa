@@ -240,7 +240,7 @@ const Footer: React.FC = () => {
         <div className="w-5/6 mx-auto flex flex-col-reverse sm:flex-row justify-between items-center gap-4">
           {/* Copyright */}
           <div className="text-[12px] text-center lg:text-justify">
-            Powered by All In One IT Solutions © 2025 All Rights Reserved.
+            <a href="https://www.allinoneholdings.com/" className="hover:cursor-pointer hover:text-white">Powered by All In One IT Solutions © 2025 All Rights Reserved.</a> 
           </div>
 
           {/* Social Icons */}
