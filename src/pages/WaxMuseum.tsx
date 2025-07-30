@@ -21,7 +21,7 @@ const WaxMuseum: React.FC = () => {
       <section
         className={`absolute w-full z-50 transition-all duration-2000 ease-in-out`}
       >
-        <NavBar page="wax" />
+        <NavBar page="Wax_Museum" />
       </section>
 
       <section className="lg:h-[95dvh] h-auto">

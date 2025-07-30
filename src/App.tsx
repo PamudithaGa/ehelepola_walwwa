@@ -69,7 +69,7 @@ const App: React.FC = () => {
 
 
         {/* reservation for Mobile*/}
-        <section className="lg:hidden -mt-15 bg-black rounded-2xl shadow-2xl absolute z-50 left-1/2 transform -translate-x-1/2 w-[90%] max-w-md px-6 py-8 space-y-6">
+        <section className="lg:hidden -mt-15 bg-black rounded-2xl shadow-2xl absolute z-10 left-1/2 transform -translate-x-1/2 w-[90%] max-w-md px-6 py-8 space-y-6">
           <div>
             <h2 className="text-white text-xl font-semibold">
               School Student Reservation

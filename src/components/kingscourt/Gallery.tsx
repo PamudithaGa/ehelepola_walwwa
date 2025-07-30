@@ -120,7 +120,7 @@ const Gallery: React.FC = () => {
             />
 
             {/* Description*/}
-            <div className="absolute bottom-8 left-4 text-center right-4 z-20">
+            <div className="absolute hidden bottom-8 left-4 text-center right-4 z-20">
               <span className="text-lg bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent text-center">
                 {AnimateImages[currentIndex].description}
               </span>
