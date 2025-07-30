@@ -38,18 +38,12 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-[15px] text-white/30 mt-5 mb-10 text-justify lg:pr-10">
-            The colonial-era prison was transformed into a distinctive shopping
-            destination, blending history, architecture, and modern retail.
-            While preserving elements of its original design, the space
-            seamlessly integrated luxury boutiques, artisan shops, and art
-            galleries, creating a unique commercial and cultural experience.
-            High-end brands contrasted with the historic setting, while local
-            craftsmen showcased handmade goods, keeping the heritage alive.
+            Step into Sri Lanka's most extraordinary shopping destination, where forty meticulously restored heritage cells have been transformed into boutique stores. Here, history meets retail therapy as you browse through luxury brands including Maliban, PG Martin, Unanduwa, Silani, and Telak. Each cell tells its own story while housing premium products, creating an unparalleled shopping experience where colonial architecture frames modern commerce.
           </p>
 
           <p className="text-white">Open 9.00 AM to 6:00 PM</p>
           <p className="text-sm text-white/20 mt-2 lg:mb-0 mb-6">
-            Monday - Saturday
+            Open Daily (Monday - Sunday)
           </p>
         </div>
 
