@@ -1,5 +1,3 @@
-import React from 'react'
-
 import mainImage from '../../assets/gallery/home/Droneshot.jpg'
 import shortImg1 from '../../assets/gallery/shortImg1.png'
 import shortImg2 from '../../assets/gallery/home/Outside.jpg'

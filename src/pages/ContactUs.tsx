@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 
 //Components
 import Hero from "../components/contactus/Hero";
-import ContactForm from "../components/contactus/ContactForm";
 import Map from "../components/contactus/Map";
 import NavBar from "../components/common/NavBar";
 import Footer from "../components/common/Footer";
@@ -28,9 +27,7 @@ const ContactUs: React.FC = () => {
         <Hero />
       </section>
 
-      <section>
-        <ContactForm />
-      </section>
+    
 
       <section>
         <Map />
