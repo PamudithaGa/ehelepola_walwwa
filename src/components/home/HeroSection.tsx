@@ -8,7 +8,7 @@ import WalawwaBlock from "../../assets/logos/sketch-white.png";
 const HeroSection: React.FC = () => {
   return (
     <>
-      <section className="relative w-full lg:h-[100dvh] h-[90dvh] overflow-hidden z-10">
+      <section className="relative w-full lg:h-[100dvh] h-[95dvh] overflow-hidden z-10">
         {/* Background video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
