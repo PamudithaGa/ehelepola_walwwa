@@ -16,7 +16,6 @@ interface Card {
   number: string;
   email: string;
   shopimage: string;
-
 }
 
 interface StoreModalProps {
@@ -60,23 +59,10 @@ const StoreModal: React.FC<StoreModalProps> = ({ isOpen, onClose, card }) => {
             </div>
 
             <div className="w-7/10 h-4/5 flex my-auto  flex-col pl-15 ">
-              {/* <div className="h-1/6">
-                <h2 className="text-4xl text-primary ">
-                  Shell Number #{" "}
-                  <span className="font-bold">{card.shellnumber}</span>
-                </h2>
-              </div>
-              
-              <div className="h-2/6">
-                <p className="text-gray-700 whitespace-pre-line text-left ">
-                  {card.popup}
-                </p>
-              </div> */}
-
               <div className="flex flex-wrap items-center justify-between gap-10 p-4 bg-white rounded-lg ">
                 <div className="flex-1 min-w-[250px]">
                   <h2 className="text-3xl md:text-4xl text-primary mb-2">
-                    Shell Number #
+                    Cell Number #
                     <span className="font-bold">{card.shellnumber}</span>
                   </h2>
                   <p className="text-gray-700 whitespace-pre-line text-justify">
@@ -145,7 +131,7 @@ const StoreModal: React.FC<StoreModalProps> = ({ isOpen, onClose, card }) => {
           <div className="md:w-7/10 w-full flex flex-col gap-6 px-6 py-8">
             <div>
               <h2 className="text-2xl md:text-4xl text-primary">
-                Shell Number #{" "}
+                Cell Number #{" "}
                 <span className="font-bold">{card.shellnumber}</span>
               </h2>
             </div>

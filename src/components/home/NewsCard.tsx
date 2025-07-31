@@ -8,7 +8,7 @@ type CardProps = {
   month: string;
 };
 
-const NewsCard: React.FC<CardProps> = ({ title, description, image, date, month }) => {
+const NewsCard: React.FC<CardProps> = ({ title, description, image }) => {
   return (
     <div className="bg-white shadow-md rounded-xl overflow-hidden h-115">
       <img src={image} alt={title} className="h-45 w-full object-cover" />

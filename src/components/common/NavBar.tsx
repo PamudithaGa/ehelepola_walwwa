@@ -41,16 +41,16 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           >
             Home
           </Link>
-            <Link
-              to="/aboutUs"
-              className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-                page === "about"
-                  ? "bg-primary text-secondary py-2 px-5 rounded-xl"
-                  : ""
-              }`}
-            >
-              About
-            </Link>
+          <Link
+            to="/aboutUs"
+            className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
+              page === "about"
+                ? "bg-primary text-secondary py-2 px-5 rounded-xl"
+                : ""
+            }`}
+          >
+            About
+          </Link>
           <Link
             to="/WaxMuseum"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
@@ -71,7 +71,6 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           >
             Shopping
           </Link>
-          
         </div>
 
         {/* Center Column */}
@@ -126,8 +125,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
 
       {/* Mobile Top Bar */}
       {/* <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md"> */}
-      <div
-        className="absolute  flex lg:hidden justify-between items-center py-3 w-full z-555  rounded-xl ">
+      <div className="absolute  flex lg:hidden justify-between items-center py-3 w-full z-555  rounded-xl ">
         <img src={LogoWhite} alt="Logo" className="h-16 object-contain" />
         <button onClick={openMenu}>
           {isMenuToggle ? (
@@ -148,29 +146,106 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           </div>
 
           <ul className="flex flex-col gap-2 px-4 py-2 text-lg z-775">
-            {[
-              { label: "Home", path: "/" },
-              { label: "About", path: "/aboutUs" },
-              { label: "Wax_Museum", path: "/WaxMuseum" },
-              { label: "Shopping", path: "/PrisonArcade" },
-              { label: "Dining", path: "/kingscourt" },
-              { label: "Entertainment", path: "/courtyard" },
-              { label: "Blogs", path: "#" },
-              { label: "Contact", path: "/ContactUs" },
-            ].map(({ label, path }) => (
-              <li
-                key={label}
-                className={`py-2 px-4 rounded-2xl  hover:bg-neutral-100 ${
-                  page.toLowerCase() === label.toLowerCase().replace(" ", "")
-                    ? "text-secondary  bg-primary"
-                    : ""
-                }`}
-              >
-                <Link to={path} onClick={openMenu}>
-                  {label}
-                </Link>
-              </li>
-            ))}
+            <li
+              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                page.toLowerCase() === "home" ? "text-secondary bg-primary" : ""
+              }`}
+            >
+              <Link to="/" onClick={openMenu}>
+                Home
+              </Link>
+            </li>
+
+            <li
+              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                page.toLowerCase() === "about"
+                  ? "text-secondary bg-primary"
+                  : ""
+              }`}
+            >
+              <Link to="/aboutUs" onClick={openMenu}>
+                About
+              </Link>
+            </li>
+
+            {/* <li
+              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                page.toLowerCase() === "waxmuseum"
+                  ? "text-secondary bg-primary"
+                  : ""
+              }`}
+            >
+              <Link to="/WaxMuseum" onClick={openMenu}>
+                Wax Museum
+              </Link>
+            </li> */}
+            <Link
+              to="/WaxMuseum"
+              onClick={openMenu}
+              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100  ${
+                page === "Wax_Museum"
+                  ? "bg-primary text-secondary py-2 px-5 rounded-xl"
+                  : ""
+              }`}
+            >
+              Wax Museum
+            </Link>
+
+            <li
+              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                page.toLowerCase() === "shopping"
+                  ? "text-secondary bg-primary"
+                  : ""
+              }`}
+            >
+              <Link to="/PrisonArcade" onClick={openMenu}>
+                Shopping
+              </Link>
+            </li>
+            <li
+              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                page.toLowerCase() === "dining"
+                  ? "text-secondary bg-primary"
+                  : ""
+              }`}
+            >
+              <Link to="/kingscourt" onClick={openMenu}>
+                Dining
+              </Link>
+            </li>
+            <li
+              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                page.toLowerCase() === "entertainment"
+                  ? "text-secondary bg-primary"
+                  : ""
+              }`}
+            >
+              <Link to="/courtyard" onClick={openMenu}>
+                Entertainment
+              </Link>
+            </li>
+            <li
+              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                page.toLowerCase() === "blogs"
+                  ? "text-secondary bg-primary"
+                  : ""
+              }`}
+            >
+              <Link to="#" onClick={openMenu}>
+                Blogs
+              </Link>
+            </li>
+            <li
+              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
+                page.toLowerCase() === "contact"
+                  ? "text-secondary bg-primary"
+                  : ""
+              }`}
+            >
+              <Link to="/ContactUs" onClick={openMenu}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       )}

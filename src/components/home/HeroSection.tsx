@@ -49,10 +49,7 @@ const HeroSection: React.FC = () => {
             </h1>
 
             <p className="text-[#dfdfdf] mt-6 lg:mt-4 leading-8 lg:text-center text-justify font-extralight md:text-base mb-8 lg:px-36">
-              Step into the legendary Ehelepola Walauwa, where Sri Lanka's regal
-              heritage comes alive through four extraordinary experiences:
-              Prison Arcade shopping, Wax Museum exhibitions, Courtyard
-              serenity, and Kings Court dining.
+              Step into the legendary Ehelepola Walauwa, where Sri Lanka's regal heritage comes alive through four extraordinary experiences: shopping at the Prison Arcade, exploring exhibitions at the Wax Museum, enjoying the serenity of the Courtyard, and dining at the Kings Court
             </p>
 
             {/* sketch walauwwe */}
