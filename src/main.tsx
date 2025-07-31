@@ -9,12 +9,12 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 // Pages
 import PrisonArcade from "./pages/PrisonArcade.tsx";
 import WaxMuseum from "./pages/WaxMuseum.tsx";
-// import ContactUs from "./pages/ContactUs.tsx";
 import CourtYard from "./pages/CourtYard.tsx";
 import KingsCourt from "./pages/KingsCourt.tsx";
 import ContactUsTwo from "./pages/ContactUsTwo.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import StudentReservation from "./pages/StudentReservation.tsx";
+import Blogs from "./pages/Blogs.tsx";
 
 
 const router = createBrowserRouter([
@@ -46,9 +46,13 @@ const router = createBrowserRouter([
     path: "/kingscourt",
     element: <KingsCourt />,
   },
-    {
+  {
     path: "/aboutUs",
     element: <AboutUs />,
+  },
+  {
+    path: "/blogs",
+    element: <Blogs />,
   },
   
 ]);

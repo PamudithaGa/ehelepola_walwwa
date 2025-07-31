@@ -13,7 +13,7 @@ interface NavbarProps {
     | "dining"
     | "entertainment"
     | "Wax_Museum"
-    | "blog"
+    | "blogs"
     | "contact"
     | "other";
 }
@@ -101,9 +101,9 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Entertainment
           </Link>
           <Link
-            to="#"
+            to="/blogs"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-              page === "blog"
+              page === "blogs"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
                 : ""
             }`}
@@ -231,7 +231,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
                   : ""
               }`}
             >
-              <Link to="#" onClick={openMenu}>
+              <Link to="/blogs" onClick={openMenu}>
                 Blogs
               </Link>
             </li>
