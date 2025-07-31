@@ -36,8 +36,15 @@ const App: React.FC = () => {
     <>
       {/* header */}
       <section
-        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${showNav ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+        className={`hidden lg:block absolute w-full z-50 transition-all duration-2000 ease-in-out ${showNav ? "hidden lg:block translate-y-0 opacity-100" : "hidden lg:block -translate-y-10 opacity-0"
           }`}
+      >
+        <NavBar page="home" />
+      </section>
+
+      {/* header mobile */}
+      <section
+        className={`absolute block lg:hidden w-full z-50 transition-all duration-2000 ease-in-out`}
       >
         <NavBar page="home" />
       </section>
@@ -69,7 +76,7 @@ const App: React.FC = () => {
 
 
         {/* reservation for Mobile*/}
-        <section className="-z-1 lg:hidden mt-10 bg-black rounded-2xl shadow-2xl absolute left-1/2 transform -translate-x-1/2 w-[90%] max-w-md px-6 py-8 space-y-6">
+        <section className="z-[-1]  lg:hidden mt-10 bg-black rounded-2xl shadow-2xl absolute left-1/2 transform -translate-x-1/2 w-[90%] max-w-md px-6 py-8 space-y-6">
           <div>
             <h2 className="text-white text-xl font-semibold">
               School Student Reservation
@@ -89,7 +96,7 @@ const App: React.FC = () => {
         </section>
       </section>
 
-      <section className="-z-1 flex items-center justify-center w-full mt-75 lg:mt-60 ">
+      <section className="z-[-1] flex items-center justify-center w-full mt-75 lg:mt-60 ">
         <Places />
       </section>
 
