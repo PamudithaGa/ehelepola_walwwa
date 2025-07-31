@@ -27,8 +27,6 @@ const ContactUs: React.FC = () => {
         <Hero />
       </section>
 
-    
-
       <section>
         <Map />
       </section>
