@@ -4,12 +4,11 @@ import NavBar from "../components/common/NavBar";
 import Footer from "../components/common/Footer";
 import PageHero from "../components/kingscourt/PageHero";
 import Gallery from "../components/kingscourt/Gallery";
-import KingsCourtVideo from "../assets/videos/Kings court.mp4";
 import FooterTopImage from "../assets/footer-image.png";
 import FootetrtTopImageMobile from '../assets/footer-image-mobile.png'
 import FooterArt2 from '../assets/gallery/perahera-art.png'
 import FooterArt from "../assets/logos/ehelepola-walauwwe-logo-white.png";
-import LineArtBlack from "../assets/gallery/pattern-artBlack.png"
+
 const KingsCourt: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
   };
 
   return (
-    <nav className="sticky top-0 z-50  w-11/12 lg:w-3/4 mx-auto">
+    <nav className="sticky top-0 z-50 w-11/12 lg:w-3/4 mx-auto">
       {/* Desktop Navbar */}
       <div className="absolute hidden  w-full lg:flex justify-center items-center py-4  z-20">
         {/* Left Column */}
