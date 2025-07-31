@@ -36,19 +36,26 @@ const App: React.FC = () => {
     <>
       {/* header */}
       <section
-        className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${showNav ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
+        className={`hidden lg:block absolute w-full z-50 transition-all duration-2000 ease-in-out ${showNav ? "hidden lg:block translate-y-0 opacity-100" : "hidden lg:block -translate-y-10 opacity-0"
           }`}
       >
         <NavBar page="home" />
       </section>
 
-      <section className="w-full">
+      {/* header mobile */}
+      <section
+        className={`absolute block lg:hidden w-full z-50 transition-all duration-2000 ease-in-out`}
+      >
+        <NavBar page="home" />
+      </section>
+
+      <section className="w-full -z-1">
         <HeroSection />
 
         {/* reservation for desktop*/}
-        <section className="hidden bg-black lg:flex gap-40 justify-center h-40 pt-15 px-10  w-3/4 shadow-2xl rounded-2xl -mt-5 z-50 absolute left-1/2 transform -translate-x-1/2 mx-auto">
+        <section className="hidden bg-black lg:flex gap-40 justify-center h-40 pt-15 px-10  w-3/4 shadow-2xl rounded-2xl -mt-5 absolute left-1/2 transform -translate-x-1/2 mx-auto">
           <div className="w-auto">
-            <h2 className="text-white z-50 text-2xl">
+            <h2 className="text-white text-2xl">
               School Student Reservation
             </h2>
             <p className="text-white/40 text-sm mt-2">
@@ -69,7 +76,7 @@ const App: React.FC = () => {
 
 
         {/* reservation for Mobile*/}
-        <section className="lg:hidden mt-10 bg-black rounded-2xl shadow-2xl absolute z-50 left-1/2 transform -translate-x-1/2 w-[90%] max-w-md px-6 py-8 space-y-6">
+        <section className="z-[-1]  lg:hidden mt-10 bg-black rounded-2xl shadow-2xl absolute left-1/2 transform -translate-x-1/2 w-[90%] max-w-md px-6 py-8 space-y-6">
           <div>
             <h2 className="text-white text-xl font-semibold">
               School Student Reservation
@@ -89,11 +96,11 @@ const App: React.FC = () => {
         </section>
       </section>
 
-      <section className="flex items-center justify-center w-full mt-75 lg:mt-60 -z-10">
+      <section className="z-[-1] flex items-center justify-center w-full mt-75 lg:mt-60 ">
         <Places />
       </section>
 
-      <section className="relative my-15 lg:my-30 bg-primary p-5 lg:p-10 z-0">
+      <section className="-z-1 relative my-15 lg:my-30 bg-primary p-5 lg:p-10">
         <NewsSection />
 
         {/*pattern art*/}
@@ -104,7 +111,7 @@ const App: React.FC = () => {
         />
       </section>
 
-      <section className="lg:mt-15 ">
+      <section className="-z-1 lg:mt-15 ">
         <Gallery />
       </section>
 
