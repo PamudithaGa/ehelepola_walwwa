@@ -107,7 +107,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Entertainment
           </Link>
           <Link
-            to="/blogs"
+            to="#"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "blogs"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
@@ -239,7 +239,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
                   : ""
               }`}
             >
-              <Link to="/blogs" onClick={openMenu}>
+              <Link to="#" onClick={openMenu}>
                 Blogs
               </Link>
             </li>
