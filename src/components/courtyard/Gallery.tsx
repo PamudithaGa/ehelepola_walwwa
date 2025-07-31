@@ -4,41 +4,48 @@ import { FaArrowLeft, FaArrowRight, FaEye } from "react-icons/fa";
 
 // For scroll bars
 const SilderImages = [
-  new URL("../../assets/gallery/courtYard/halfVertical.jpg", import.meta.url).href,
+  new URL("../../assets/gallery/courtYard/halfVertical.jpg", import.meta.url)
+    .href,
   new URL("../../assets/gallery/courtYard/yardVertical.JPG", import.meta.url)
     .href,
-  new URL("../../assets/gallery/courtYard/sideVertical.JPG", import.meta.url).href,
-  new URL("../../assets/gallery/courtYard/conerVertical.jpg", import.meta.url).href,
-  new URL("../../assets/gallery/courtYard/doorVertical.jpg", import.meta.url).href,
+  new URL("../../assets/gallery/courtYard/sideVertical.JPG", import.meta.url)
+    .href,
+  new URL("../../assets/gallery/courtYard/conerVertical.jpg", import.meta.url)
+    .href,
+  new URL("../../assets/gallery/courtYard/doorVertical.jpg", import.meta.url)
+    .href,
 ];
 
 //Main images
 const AnimateImages = [
   {
-    src: new URL("../../assets/gallery/courtYard/half.jpg", import.meta.url).href,
+    src: new URL("../../assets/gallery/courtYard/half.jpg", import.meta.url)
+      .href,
     description: "Main entrance of the Walawwa classic colonial elegance.",
   },
   {
-    src: new URL("../../assets/gallery/courtYard/yard.JPG", import.meta.url).href,
+    src: new URL("../../assets/gallery/courtYard/yard.JPG", import.meta.url)
+      .href,
     description: "Restored prison arcade blending history with modernity.",
   },
   {
-    src: new URL(
-      "../../assets/gallery/courtYard/side.JPG",
-      import.meta.url
-    ).href,
+    src: new URL("../../assets/gallery/courtYard/side.JPG", import.meta.url)
+      .href,
     description: "Front courtyard a peaceful blend of heritage and greenery.",
   },
   {
-    src: new URL("../../assets/gallery/courtYard/coner.jpg", import.meta.url).href,
+    src: new URL("../../assets/gallery/courtYard/coner.jpg", import.meta.url)
+      .href,
     description: "Vintage hallway echoes of the past in every step.",
   },
   {
-    src: new URL("../../assets/gallery/courtYard/wall.JPG", import.meta.url).href,
+    src: new URL("../../assets/gallery/courtYard/wall.JPG", import.meta.url)
+      .href,
     description: "Lush surroundings serenity beyond the walls.",
   },
-    {
-    src: new URL("../../assets/gallery/courtYard/door.jpg", import.meta.url).href,
+  {
+    src: new URL("../../assets/gallery/courtYard/door.jpg", import.meta.url)
+      .href,
     description: "Lush surroundings serenity beyond the walls.",
   },
 ];
@@ -179,7 +186,7 @@ const Gallery: React.FC = () => {
                 <FaArrowLeft size={16} />
               </button>
             </div>
-            
+
             <div>
               <button
                 onClick={() =>

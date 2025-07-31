@@ -4,10 +4,12 @@ import { FaArrowLeft, FaArrowRight, FaEye } from "react-icons/fa";
 
 // For scroll bars
 const SilderImages = [
-  new URL("../../assets/gallery/home/OutSideVertical.png", import.meta.url).href,
+  new URL("../../assets/gallery/home/OutSideVertical.png", import.meta.url)
+    .href,
   new URL("../../assets/gallery/home/DroneshotVertical4.png", import.meta.url)
     .href,
-  new URL("../../assets/gallery/home/BuildingVertical.png", import.meta.url).href,
+  new URL("../../assets/gallery/home/BuildingVertical.png", import.meta.url)
+    .href,
   new URL("../../assets/gallery/walawwa112.png", import.meta.url).href,
   new URL("../../assets/gallery/outside.JPG", import.meta.url).href,
 ];
@@ -15,18 +17,17 @@ const SilderImages = [
 //Main images
 const AnimateImages = [
   {
-    src: new URL("../../assets/gallery/home/Droneshot.jpg", import.meta.url).href,
+    src: new URL("../../assets/gallery/home/Droneshot.jpg", import.meta.url)
+      .href,
     description: "Main entrance of the Walawwa classic colonial elegance.",
   },
   {
-    src: new URL("../../assets/gallery/home/Building.jpg", import.meta.url).href,
+    src: new URL("../../assets/gallery/home/Building.jpg", import.meta.url)
+      .href,
     description: "Restored prison arcade blending history with modernity.",
   },
   {
-    src: new URL(
-      "../../assets/gallery/home/Outside.jpg",
-      import.meta.url
-    ).href,
+    src: new URL("../../assets/gallery/home/Outside.jpg", import.meta.url).href,
     description: "Front courtyard a peaceful blend of heritage and greenery.",
   },
   {
@@ -175,7 +176,7 @@ const Gallery: React.FC = () => {
                 <FaArrowLeft size={16} />
               </button>
             </div>
-            
+
             <div>
               <button
                 onClick={() =>

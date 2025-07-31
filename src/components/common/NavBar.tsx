@@ -74,9 +74,15 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
         </div>
 
         {/* Center Column */}
-        <div className="relative w-1/5 flex justify-center p-5 rounded-2xl h-30 w-30 bg-white">
-          <img src={Logo} alt="Logo" className="absolute h-20 object-contain" />
-        </div>
+        <Link to="/">
+          <div className="relative w-1/5 flex justify-center p-5 rounded-2xl h-30 w-30 bg-white">
+            <img
+              src={Logo}
+              alt="Logo"
+              className="absolute h-20 object-contain"
+            />
+          </div>
+        </Link>
 
         {/* Right Column */}
         <div className="w-2/5 py-4 flex justify-start items-center gap-6 h-12 bg-gradient-to-r from-white via-white/90 to-transparent pl-8">
@@ -126,7 +132,8 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
       {/* Mobile Top Bar */}
       {/* <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md"> */}
       <div className="absolute  flex lg:hidden justify-between items-center py-3 w-full z-555  rounded-xl ">
-        <img src={LogoWhite} alt="Logo" className="h-16 object-contain" />
+        <Link to="/">
+        <img src={LogoWhite} alt="Logo" className="h-16 object-contain" /></Link>
         <button onClick={openMenu}>
           {isMenuToggle ? (
             <RxCross2 className="w-7 h-7 text-primary hover:text-highlight" />
@@ -213,6 +220,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
                 Dining
               </Link>
             </li>
+
             <li
               className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
                 page.toLowerCase() === "entertainment"
@@ -235,6 +243,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
                 Blogs
               </Link>
             </li>
+
             <li
               className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
                 page.toLowerCase() === "contact"

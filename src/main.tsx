@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import "./index.css";
-import './style/fonts.css'
+import "./style/fonts.css";
 import App from "./App.tsx";
 import { RouterProvider, createBrowserRouter } from "react-router";
 
@@ -15,8 +15,7 @@ import KingsCourt from "./pages/KingsCourt.tsx";
 import ContactUsTwo from "./pages/ContactUsTwo.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import StudentReservation from "./pages/StudentReservation.tsx";
-
-
+import FAQ from "./pages/FAQ.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,11 +45,15 @@ const router = createBrowserRouter([
     path: "/kingscourt",
     element: <KingsCourt />,
   },
-    {
+
+  {
     path: "/aboutUs",
     element: <AboutUs />,
   },
-  
+  {
+    path: "/FAQ",
+    element: <FAQ />,
+  },
 ]);
 
 createRoot(document.getElementById("root")!).render(

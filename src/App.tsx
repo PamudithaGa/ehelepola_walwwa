@@ -37,7 +37,7 @@ const App: React.FC = () => {
       {/* header */}
       <section
         className={`absolute w-full z-50 transition-all duration-2000 ease-in-out ${showNav ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0"
-          }`}
+          }`} 
       >
         <NavBar page="home" />
       </section>
