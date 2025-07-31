@@ -1,6 +1,6 @@
 import React from "react";
 
-import HeroImage from "../../assets/gallery/arcade-with-logo.jpg";
+import HeroImage from "../../assets/gallery/waxBanner.png";
 
 const HeroSlide: React.FC = () => {
   return (

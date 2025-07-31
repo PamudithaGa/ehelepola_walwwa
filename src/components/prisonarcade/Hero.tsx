@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
 const heroImages: string[] = [
-  // new URL("../../assets/gallery/arcade-with-logo.jpg", import.meta.url).href,
+  new URL("../../assets/gallery/arcade-with-logo.jpg", import.meta.url).href,
   new URL("../../assets/prisonarcade/AdSquare.png", import.meta.url).href,
   new URL("../../assets/prisonarcade/AdSquare2.png", import.meta.url).href,
   // new URL("../../assets/prisonarcade/dilmateaBanner.png", import.meta.url).href,

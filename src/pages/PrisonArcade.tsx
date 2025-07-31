@@ -68,7 +68,7 @@ const PrisonArcade: React.FC = () => {
         </div>
       </section>
 
-      <section className="lg:mt-10 mt-0">
+      <section className="lg:mt-30 mt-0">
         <Gallery />
       </section>
 
