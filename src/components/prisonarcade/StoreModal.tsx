@@ -1,4 +1,6 @@
 import React from "react";
+// import ShopImage from "../../assets/prisonarcade/shops/shop_karma.png";
+// import Noimage from "../../assets/gallery/no-preview.jpeg";
 
 interface Card {
   id: number;
@@ -13,6 +15,8 @@ interface Card {
   address: string;
   number: string;
   email: string;
+  shopimage: string;
+
 }
 
 interface StoreModalProps {
@@ -28,7 +32,7 @@ const StoreModal: React.FC<StoreModalProps> = ({ isOpen, onClose, card }) => {
     <>
       {/* for desktop */}
       <div className="hidden fixed inset-0 z-50 lg:flex items-center justify-center bg-black/50 px-4 shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-md border border-white/30">
-        <div className="bg-white rounded-2xl px-30 shadow-2xl w-[80vw] h-[80vh] overflow-y-auto relative">
+        <div className="bg-white rounded-2xl pl-30 pr-15 shadow-2xl w-[80vw] h-[80vh] overflow-y-auto relative">
           <button
             onClick={onClose}
             className="absolute top-3 right-4 text-black text-2xl font-bold cursor-pointer hover:text-red-500"
@@ -56,18 +60,44 @@ const StoreModal: React.FC<StoreModalProps> = ({ isOpen, onClose, card }) => {
             </div>
 
             <div className="w-7/10 h-4/5 flex my-auto  flex-col pl-15 ">
-              <div className="h-1/6">
+              {/* <div className="h-1/6">
                 <h2 className="text-4xl text-primary ">
                   Shell Number #{" "}
                   <span className="font-bold">{card.shellnumber}</span>
                 </h2>
               </div>
+              
               <div className="h-2/6">
                 <p className="text-gray-700 whitespace-pre-line text-left ">
                   {card.popup}
                 </p>
+              </div> */}
+
+              <div className="flex flex-wrap items-center justify-between gap-10 p-4 bg-white rounded-lg ">
+                <div className="flex-1 min-w-[250px]">
+                  <h2 className="text-3xl md:text-4xl text-primary mb-2">
+                    Shell Number #
+                    <span className="font-bold">{card.shellnumber}</span>
+                  </h2>
+                  <p className="text-gray-700 whitespace-pre-line text-justify">
+                    {card.popup}
+                  </p>
+                </div>
+
+                <div className="w-full sm:w-auto">
+                  <div className="h-40 md:h-48 w-32 md:w-36 mx-auto rounded-t-full   bg-white overflow-hidden shadow-md">
+                    <img
+                      src={card.shopimage}
+                      alt="Shell"
+                      className="w-full h-full object-cover rounded-t-full"
+                    />
+                  </div>
+
+                  {/* <div className="h-2 w-36 mx-auto bg-[#8B4513] rounded-b-md mt-[8px]"></div> */}
+                </div>
               </div>
-              <div className=" flex flex-col-3 gap-6 text-black h-3/6 ">
+
+              <div className=" flex flex-col-3 mt-6 gap-6 text-black h-3/6 ">
                 <div className="bg-white/20 border border-white/30 rounded-xl shadow-sm h-2/3 backdrop-blur-md p-5 px-4 w-1/3 items-center justify-center flex flex-col">
                   <h2 className="font-bold">Address</h2>
                   <p className="text-center">{card.address}</p>

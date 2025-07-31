@@ -364,20 +364,7 @@ const timelineData = [
     ],
     image: EllepolaMahaNilame,
   },
-
-  {
-    date: "1745  - 1818 CE. ",
-    title: "Ellepola Maha Nilame",
-    description: [
-      "Kahanda Mahanthe Navaratne Wickramasinghe Mudiyanse, also known as Kahanda Dissawa, is most famously recognized as Ellepola Maha Nilame. He was born between 1745 – 1750 CE and he served as the Chief Secretary to King Sri Vikrama Rajasinghe. In addition to this prestigious role, he held several influential positions within the Kandyan Kingdom, including Dissawa (Provincial governor) of Thun Korale and Matale-Godapola, as well as the post of Diva Nilame or Diyawadana Nilame of the Temple of the Tooth Relic in Kandy.",
-
-      "Furthermore, in 1814 CE, he was appointed as the Second Adikaram (second-in-command) of the Kandyan Kingdom, a position he attained due to his long and devoted service to the Kandyan Kingdom. Over the years, he held numerous other significant offices and in 1817 CE was designated as the Basnayake Nilame (Chief Custodian) of the Natha Devale at Kandy under British rule. However from the very beginning he harbored deep resentment towards British colonial rule. On February 20, 1818 CE. he resigned from all his official positions under the British administration and joined the resistance movement against colonial rule.",
-
-      "During the Uva-Wellassa Rebellion, on October 6, 1818 CE, he was captured along with his wife and his brother called Kasare Bandara. Though he was sentenced to death by hanging by the British military tribunal, he requested to be executed in accordance with the traditional laws of his homeland which dictated beheading instead of hanging. He also expressed his regret for failing to liberate his country from British rule and fulfill his duty to his nation. As a final act of defiance, he requested that after his beheading, his body be dismembered and fed to the dogs and Crows. His request was granted by the tribunal and on the morning of October 27, 1818 CE, at 8:00 AM he was beheaded. His final wish was that courageous warriors like him would continue to be born on Sri Lankan Motherland forever.",
-    ],
-    image: EllepolaMahaNilame,
-  },
-
+  
   {
     date: "1770 - 1818 CE. ",
     title: "  Kivulegedara Mohottala",

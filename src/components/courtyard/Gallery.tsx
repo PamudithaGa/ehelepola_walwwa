@@ -4,37 +4,41 @@ import { FaArrowLeft, FaArrowRight, FaEye } from "react-icons/fa";
 
 // For scroll bars
 const SilderImages = [
-  new URL("../../assets/gallery/B17A21732.jpg", import.meta.url).href,
-  new URL("../../assets/gallery/prison-arcade-banner2.jpg", import.meta.url)
+  new URL("../../assets/gallery/courtYard/halfVertical.jpg", import.meta.url).href,
+  new URL("../../assets/gallery/courtYard/yardVertical.JPG", import.meta.url)
     .href,
-  new URL("../../assets/gallery/wallwwa11.png", import.meta.url).href,
-  new URL("../../assets/gallery/walawwa112.png", import.meta.url).href,
-  new URL("../../assets/gallery/outside.JPG", import.meta.url).href,
+  new URL("../../assets/gallery/courtYard/sideVertical.JPG", import.meta.url).href,
+  new URL("../../assets/gallery/courtYard/conerVertical.jpg", import.meta.url).href,
+  new URL("../../assets/gallery/courtYard/doorVertical.jpg", import.meta.url).href,
 ];
 
 //Main images
 const AnimateImages = [
   {
-    src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
+    src: new URL("../../assets/gallery/courtYard/half.jpg", import.meta.url).href,
     description: "Main entrance of the Walawwa classic colonial elegance.",
   },
   {
-    src: new URL("../../assets/gallery/B17A2217.JPG", import.meta.url).href,
+    src: new URL("../../assets/gallery/courtYard/yard.JPG", import.meta.url).href,
     description: "Restored prison arcade blending history with modernity.",
   },
   {
     src: new URL(
-      "../../assets/gallery/prison-arcade-banner.jpg",
+      "../../assets/gallery/courtYard/side.JPG",
       import.meta.url
     ).href,
     description: "Front courtyard a peaceful blend of heritage and greenery.",
   },
   {
-    src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
+    src: new URL("../../assets/gallery/courtYard/coner.jpg", import.meta.url).href,
     description: "Vintage hallway echoes of the past in every step.",
   },
   {
-    src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
+    src: new URL("../../assets/gallery/courtYard/wall.JPG", import.meta.url).href,
+    description: "Lush surroundings serenity beyond the walls.",
+  },
+    {
+    src: new URL("../../assets/gallery/courtYard/door.jpg", import.meta.url).href,
     description: "Lush surroundings serenity beyond the walls.",
   },
 ];
@@ -111,7 +115,7 @@ const Gallery: React.FC = () => {
             />
 
             {/* Description*/}
-            <div className="absolute bottom-8 left-4 text-center right-4 z-20">
+            <div className="absolute hidden bottom-8 left-4 text-center right-4 z-20">
               <span className="text-lg bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent text-center">
                 {AnimateImages[currentIndex].description}
               </span>

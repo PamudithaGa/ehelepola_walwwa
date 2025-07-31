@@ -1,8 +1,8 @@
 import React from 'react'
 
-import testImage from '../../assets/gallery/prison.jpg'
+import testImage from '../../assets/gallery/kingsCourt/KingsCourtAreaVertical.png'
 import testImage1 from '../../assets/gallery/B17A2196.jpg'
-import testImage2 from '../../assets/gallery/B17A2214.jpg'
+import testImage2 from '../../assets/gallery/courtYard/halfVertical.jpg'
 
 const HeroSection: React.FC = () => {
     return (
