@@ -13,7 +13,7 @@ interface NavbarProps {
     | "dining"
     | "entertainment"
     | "Wax_Museum"
-    | "blog"
+    | "blogs"
     | "contact"
     | "other";
 }
@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
   };
 
   return (
-    <nav className="sticky top-0 z-50  w-11/12 lg:w-3/4 mx-auto">
+    <nav className="relative top-0 z-50 w-11/12 lg:w-3/4 mx-auto">
       {/* Desktop Navbar */}
       <div className="absolute hidden  w-full lg:flex justify-center items-center py-4  z-20">
         {/* Left Column */}
@@ -75,11 +75,11 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
 
         {/* Center Column */}
         <Link to="/">
-          <div className="relative w-1/5 flex justify-center p-5 rounded-2xl h-30 w-30 bg-white">
+          <div className="relative w-1/5 flex justify-center p-2 rounded-2xl h-30 w-30 bg-white">
             <img
               src={Logo}
               alt="Logo"
-              className="absolute h-20 object-contain"
+              className="absolute h-26 object-contain"
             />
           </div>
         </Link>
@@ -107,9 +107,9 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Entertainment
           </Link>
           <Link
-            to="#"
+            to="/blogs"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
-              page === "blog"
+              page === "blogs"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
                 : ""
             }`}
@@ -138,17 +138,17 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
           {isMenuToggle ? (
             <RxCross2 className="w-7 h-7 text-primary hover:text-highlight" />
           ) : (
-            <FiMenu className="w-8 h-8 text-secondary hover:text-hi" />
+            <FiMenu className="w-8 h-8 text-secondary hover:text-highlight" />
           )}
         </button>
       </div>
 
       {/* Mobile slide-in menu */}
       {isMenuToggle && (
-        <div className="lg:hidden fixed top-0 right-0 h-screen w-full bg-white shadow-lg z-665 overflow-y-auto ">
+        <div className="lg:hidden bg-white fixed top-0 left-0 w-full h-screen shadow-lg z-50 ">
           <div className="flex justify-end p-4">
             <button onClick={openMenu}>
-              <RxCross2 className="w-6 h-6 text-primary   hover:text-highlight" />
+              <RxCross2 className="w-6 h-6 text-primary  hover:text-highlight" />
             </button>
           </div>
 
@@ -239,7 +239,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
                   : ""
               }`}
             >
-              <Link to="#" onClick={openMenu}>
+              <Link to="/blogs" onClick={openMenu}>
                 Blogs
               </Link>
             </li>
