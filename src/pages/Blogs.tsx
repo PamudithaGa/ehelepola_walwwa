@@ -19,6 +19,11 @@ const Blogs = () => {
                     </h1>
                 </div>
 
+                <div
+                className='bg-green-600 mt-30'>
+                    Blog card section
+                </div>
+
             </section>
         </>
     )
