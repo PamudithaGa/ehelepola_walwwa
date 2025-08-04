@@ -83,10 +83,10 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/faq"
                   className="hover:text-white transition-colors duration-300"
                 >
-                  Our Blogs
+                  FAQs
                 </Link>
               </li>
             </ul>
@@ -160,7 +160,6 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-
           {/* mobile ---------------------------------------------------------------------------*/}
           <div className="md:hidden flex">
             {/* Feature Place Links */}
@@ -203,6 +202,14 @@ const Footer: React.FC = () => {
                 </li>
                 <li>
                   <Link
+                    to="/faq"
+                    className="hover:text-white transition-colors duration-300"
+                  >
+                    FAQs
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="#"
                     className="hover:text-white transition-colors duration-300"
                   >
@@ -231,7 +238,6 @@ const Footer: React.FC = () => {
               +94 707 371 464
             </p>
           </div>
-
         </div>
       </footer>
 
@@ -240,7 +246,12 @@ const Footer: React.FC = () => {
         <div className="w-5/6 mx-auto flex flex-col-reverse sm:flex-row justify-between items-center gap-4">
           {/* Copyright */}
           <div className="text-[12px] text-center lg:text-justify">
-            <a href="https://www.allinoneholdings.com/" className="hover:cursor-pointer hover:text-white">Powered by All In One IT Solutions © 2025 All Rights Reserved.</a> 
+            <a
+              href="https://www.allinoneholdings.com/"
+              className="hover:cursor-pointer hover:text-white"
+            >
+              Powered by All In One IT Solutions © 2025 All Rights Reserved.
+            </a>
           </div>
 
           {/* Social Icons */}

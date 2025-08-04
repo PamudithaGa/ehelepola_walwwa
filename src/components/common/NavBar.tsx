@@ -15,6 +15,7 @@ interface NavbarProps {
     | "Wax_Museum"
     | "blogs"
     | "contact"
+    | "faq"
     | "other";
 }
 
@@ -131,7 +132,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
 
       {/* Mobile Top Bar */}
       {/* <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md"> */}
-      <div className="absolute  flex lg:hidden justify-between items-center py-3 w-full z-555  rounded-xl ">
+      <div className="absolute  flex lg:hidden justify-between items-center py-3 w-full z-10  rounded-xl ">
         <Link to="/">
         <img src={LogoWhite} alt="Logo" className="h-16 object-contain" /></Link>
         <button onClick={openMenu}>
@@ -175,17 +176,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
               </Link>
             </li>
 
-            {/* <li
-              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
-                page.toLowerCase() === "waxmuseum"
-                  ? "text-secondary bg-primary"
-                  : ""
-              }`}
-            >
-              <Link to="/WaxMuseum" onClick={openMenu}>
-                Wax Museum
-              </Link>
-            </li> */}
+
             <Link
               to="/WaxMuseum"
               onClick={openMenu}
