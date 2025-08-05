@@ -5,6 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 
 import Logo from "../../assets/logos/ehelepola-walauwwe-logo-black.png";
 import LogoWhite from "../../assets/logos/seondary-logo.png";
+
 interface NavbarProps {
   page:
     | "home"
@@ -108,7 +109,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
             Entertainment
           </Link>
           <Link
-            to="#"
+            to="/blogs"
             className={`text-base text-black transition-all duration-500 hover:underline hover:cursor-pointer ${
               page === "blogs"
                 ? "bg-primary text-secondary py-2 px-5 rounded-xl"
@@ -230,7 +231,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
                   : ""
               }`}
             >
-              <Link to="#" onClick={openMenu}>
+              <Link to="/blogs" onClick={openMenu}>
                 Blogs
               </Link>
             </li>
