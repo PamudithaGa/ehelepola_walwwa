@@ -24,6 +24,8 @@ const HeroSection: React.FC = () => {
 
                         <p className="text-[15px] text-white/30 mt-5 mb-10 text-justify lg:pr-10">
                            Welcome to Ehelepola Walauwwe, a treasure of Sri Lanka’s rich heritage in the heart of Kandy. Once the grand residence of a legendary nobleman, this historic mansion now invites you to step back in time and experience the glory and tragedy of the Kandyan Kingdom.
+
+                           Ehelepola Walauwwe offers an unforgettable journey for history lovers, families, and travelers. Come witness where the past meets the present right in the heart of Kandy.
                         </p>
 
                         <p className="text-white">Open 9.00 AM to 6:00 PM</p>

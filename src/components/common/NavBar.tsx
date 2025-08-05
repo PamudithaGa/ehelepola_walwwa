@@ -16,6 +16,7 @@ interface NavbarProps {
     | "Wax_Museum"
     | "blogs"
     | "contact"
+    | "faq"
     | "other";
 }
 
@@ -176,17 +177,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
               </Link>
             </li>
 
-            {/* <li
-              className={`py-2 px-4 rounded-2xl hover:bg-neutral-100 ${
-                page.toLowerCase() === "waxmuseum"
-                  ? "text-secondary bg-primary"
-                  : ""
-              }`}
-            >
-              <Link to="/WaxMuseum" onClick={openMenu}>
-                Wax Museum
-              </Link>
-            </li> */}
+
             <Link
               to="/WaxMuseum"
               onClick={openMenu}
