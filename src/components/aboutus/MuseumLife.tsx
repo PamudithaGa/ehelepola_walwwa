@@ -1,6 +1,5 @@
 import React from "react";
-import { GiPrisoner, GiImperialCrown, GiArtificialHive } from "react-icons/gi";
-import { FaChessKing } from "react-icons/fa";
+import { GiPrisoner} from "react-icons/gi";
 import { IoLogoReact } from "react-icons/io5";
 import crown from "../../assets/crown.svg";
 
