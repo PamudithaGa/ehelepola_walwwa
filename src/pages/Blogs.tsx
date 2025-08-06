@@ -172,11 +172,11 @@ const Blogs = () => {
                                 <div className='w-2/3 flex flex-col pt-2'>
                                     <h4 className='mb-3 font-semibold text-lg lg:text-xl'>{blog.title}</h4>
                                     {/* description limit 35 words */}
-                                    <p className='hidden md:block text-primary/80 text-sm lg:text-lg text-justify'>
+                                    <p className='hidden md:block text-primary/80 text-sm lg:text-base text-justify'>
                                         {blog.p1.split(' ').slice(0, 20).join(' ')}{blog.p1.split(' ').length > 20 ? '...' : ''}
                                     </p>
 
-                                    <p className='lg:hidden block text-primary/80 text-sm lg:text-lg text-justify'>
+                                    <p className='lg:hidden block text-primary/80 text-sm lg:text-base text-justify'>
                                         {blog.p1.split(' ').slice(0, 10).join(' ')}{blog.p1.split(' ').length > 10 ? '...' : ''}
                                     </p>
                                     <Link to="#"
