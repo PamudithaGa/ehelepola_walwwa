@@ -4,48 +4,37 @@ import { FaArrowLeft, FaArrowRight, FaEye } from "react-icons/fa";
 
 // For scroll bars
 const SilderImages = [
-  new URL("../../assets/gallery/courtYard/halfVertical.jpg", import.meta.url)
-    .href,
-  new URL("../../assets/gallery/courtYard/yardVertical.JPG", import.meta.url)
-    .href,
-  new URL("../../assets/gallery/courtYard/sideVertical.JPG", import.meta.url)
-    .href,
-  new URL("../../assets/gallery/courtYard/conerVertical.jpg", import.meta.url)
-    .href,
-  new URL("../../assets/gallery/courtYard/doorVertical.jpg", import.meta.url)
-    .href,
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/halfVertical.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/yardVertical.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/sideVertical.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/conerVertical.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/doorVertical.webp",
 ];
 
 //Main images
 const AnimateImages = [
   {
-    src: new URL("../../assets/gallery/courtYard/half.jpg", import.meta.url)
-      .href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/half.webp",
     description: "Main entrance of the Walawwa classic colonial elegance.",
   },
   {
-    src: new URL("../../assets/gallery/courtYard/yard.JPG", import.meta.url)
-      .href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/yard.webp",
     description: "Restored prison arcade blending history with modernity.",
   },
   {
-    src: new URL("../../assets/gallery/courtYard/side.JPG", import.meta.url)
-      .href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/side.webp",
     description: "Front courtyard a peaceful blend of heritage and greenery.",
   },
   {
-    src: new URL("../../assets/gallery/courtYard/coner.jpg", import.meta.url)
-      .href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/coner.webp",
     description: "Vintage hallway echoes of the past in every step.",
   },
   {
-    src: new URL("../../assets/gallery/courtYard/wall.JPG", import.meta.url)
-      .href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/wall.webp",
     description: "Lush surroundings serenity beyond the walls.",
   },
   {
-    src: new URL("../../assets/gallery/courtYard/door.jpg", import.meta.url)
-      .href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/door.webp",
     description: "Lush surroundings serenity beyond the walls.",
   },
 ];

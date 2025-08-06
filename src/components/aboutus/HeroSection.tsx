@@ -1,9 +1,5 @@
 import React from 'react'
 
-import testImage from '../../assets/gallery/kingsCourt/KingsCourtAreaVertical.png'
-import testImage1 from '../../assets/gallery/B17A2196.jpg'
-import testImage2 from '../../assets/gallery/courtYard/halfVertical.jpg'
-
 const HeroSection: React.FC = () => {
     return (
         <>
@@ -36,21 +32,21 @@ const HeroSection: React.FC = () => {
                     <div className="lg:w-1/2 gap-5 mt-10 lg:mt-0 lg:gap-8 h-[30dvh] lg:h-full mb-3 lg:mb-0 lg:py-15 rounded-2xl flex justify-center items-center">
                         <div 
                         className='w-1/3 h-full flex items-start mb-3 lg:mb-0justify-center'>
-                            <img src={testImage} alt="" 
+                            <img src="https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtAreaVertical.webp" alt="" 
                             className='w-full rounded-2xl h-11/12 object-cover' />
                         </div>
                         <div 
                         className='w-1/3 h-full flex items-end justify-center'>
-                            <img src={testImage1} alt="" 
+                            <img src="https://assets.ehelepolawalawwa.lk/assets/assets/gallery/B17A2196.webp" alt="" 
                             className='w-full rounded-2xl h-11/12 object-cover' />
                         </div>
                         <div 
                         className='w-1/3 h-full flex items-start justify-center'>
-                            <img src={testImage2} alt="" 
+                            <img src="https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtYard/halfVertical.webp" alt="" 
                             className='w-full rounded-2xl h-11/12 object-cover' />
                         </div>
-
                     </div>
+                    
                 </div>
             </section>
         </>

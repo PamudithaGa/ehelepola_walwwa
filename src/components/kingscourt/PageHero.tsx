@@ -1,6 +1,5 @@
 import React from "react";
-// import heroImage from "../../assets/gallery/arcade-with-logo.jpg";
-import KingsCourtHeroVideo from "../../assets/videos/KingsCourt.mp4"
+
 
 const PageHero: React.FC = () => {
   return (
@@ -30,7 +29,6 @@ const PageHero: React.FC = () => {
           </div>
 
           <div className="lg:w-1/2 h-full my-5 lg:pl-5 rounded-2xl flex justify-center items-center">
-            {/* <img src={heroImage} alt="" className="rounded-2xl w-full" /> */}
             <video
               className="w-full rounded-2xl "
               autoPlay
@@ -38,7 +36,7 @@ const PageHero: React.FC = () => {
               loop
               playsInline
             >
-              <source src={KingsCourtHeroVideo} type="video/mp4" />
+              <source src="https://assets.ehelepolawalawwa.lk/assets/assets/videos/KingsCourt.mp4" type="video/mp4" />
             </video>
           </div>
 

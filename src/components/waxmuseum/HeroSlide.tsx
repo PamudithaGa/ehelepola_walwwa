@@ -1,7 +1,5 @@
 import React from "react";
 
-import HeroImage from "../../assets/gallery/waxBanner.png";
-
 const HeroSlide: React.FC = () => {
   return (
     <>
@@ -31,7 +29,7 @@ const HeroSlide: React.FC = () => {
         
         {/* Image */}
         <div className="lg:w-1/2 h-full my-5 lg:pl-20 rounded-2xl flex justify-center items-center">
-          <img src={HeroImage} alt="" className="rounded-2xl w-full" />
+          <img src="https://assets.ehelepolawalawwa.lk/assets/assets/gallery/waxBanner.webp" alt="" className="rounded-2xl w-full" />
         </div>
       </div>
     </section>

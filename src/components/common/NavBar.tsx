@@ -3,9 +3,6 @@ import { Link } from "react-router";
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 
-import Logo from "../../assets/logos/ehelepola-walauwwe-logo-black.png";
-import LogoWhite from "../../assets/logos/seondary-logo.png";
-
 interface NavbarProps {
   page:
     | "home"
@@ -79,7 +76,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
         <Link to="/">
           <div className="relative w-1/5 flex justify-center p-2 rounded-2xl h-30 w-30 bg-white">
             <img
-              src={Logo}
+              src="https://assets.ehelepolawalawwa.lk/assets/assets/logos/ehelepola-walauwwe-logo-black.webp"
               alt="Logo"
               className="absolute h-26 object-contain"
             />
@@ -135,7 +132,7 @@ const Navbar: React.FC<NavbarProps> = ({ page }) => {
       {/* <div className="flex lg:hidden justify-between items-center py-3 px-4 bg-white rounded-xl shadow-md"> */}
       <div className="absolute  flex lg:hidden justify-between items-center py-3 w-full z-10  rounded-xl ">
         <Link to="/">
-        <img src={LogoWhite} alt="Logo" className="h-16 object-contain" /></Link>
+        <img src="https://assets.ehelepolawalawwa.lk/assets/assets/logos/seondary-logo.webp" alt="Logo" className="h-16 object-contain" /></Link>
         <button onClick={openMenu}>
           {isMenuToggle ? (
             <RxCross2 className="w-7 h-7 text-primary hover:text-highlight" />

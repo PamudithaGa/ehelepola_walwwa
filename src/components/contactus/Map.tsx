@@ -1,7 +1,5 @@
 import React from 'react'
-
 import LocationMap from "../contactus/LocationMap";
-import Walawwa from '../../assets/logos/walawwa-building.png'
 
 
 const Map:React.FC = () => {
@@ -12,7 +10,7 @@ const Map:React.FC = () => {
               <h2 className="lg:text-6xl text-[48px] font-bold text-center  text-primary md:pt-0 lg:pt-0">
               Our Location
             </h2>
-              <img src={Walawwa} alt="" className='hidden lg:block' />
+              <img src="https://assets.ehelepolawalawwa.lk/assets/assets/logos/walawwa-building.webp" alt="" className='hidden lg:block' />
             </div>
           <div className="lg:w-1/2 text-center">
             

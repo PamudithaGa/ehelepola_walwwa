@@ -1,11 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
 
-import WaxLogo from "../../assets/logos/wax-museum-logo-black.png";
-import PrisonLogo from "../../assets/logos/prison-arcade-logo-black.png";
-import KingsLogo from "../../assets/logos/kings-court-logo-black.png";
-import CourtYard from "../../assets/logos/mada-midula-logo-black.png";
-
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Places: React.FC = () => {
@@ -27,7 +22,7 @@ const Places: React.FC = () => {
           {/* wax */}
           <div className="w-5/6 py-2 lg:py-5 lg:w-1/4 bg-white flex flex-col gap-1 h-60 lg:h-full rounded-2xl flex items-center justify-center">
             <div className="h-2/4 w-full flex justify-center items-center">
-              <img src={WaxLogo} alt="" className="w-30" />
+              <img src= "https://assets.ehelepolawalawwa.lk/assets/assets/logos/wax-museum-logo-black.webp" alt="" className="w-30" />
             </div>
             <div className="h-1/4 w-full flex justify-center items-center">
               <p className="text-sm text-center w-4/5">
@@ -47,7 +42,7 @@ const Places: React.FC = () => {
           {/*prison */}
           <div className="w-5/6 py-2 lg:py-5 lg:w-1/4 bg-white flex flex-col gap-1 h-60 lg:h-full rounded-2xl flex items-center justify-center">
             <div className="h-2/4 w-full flex justify-center items-center">
-              <img src={PrisonLogo} alt="" className="w-30" />
+              <img src= "https://assets.ehelepolawalawwa.lk/assets/assets/logos/prison-arcade-logo-black.webp" alt="" className="w-30" />
             </div>
             <div className="h-1/4 w-full flex justify-center items-center">
               <p className="text-sm text-center w-4/5">
@@ -67,7 +62,7 @@ const Places: React.FC = () => {
           {/* kings */}
           <div className="w-5/6 py-2 lg:py-5 lg:w-1/4 bg-white flex flex-col gap-1 h-60 lg:h-full rounded-2xl flex items-center justify-center">
             <div className="h-2/4 w-full flex justify-center items-center">
-              <img src={KingsLogo} alt="" className="w-30" />
+              <img src="https://assets.ehelepolawalawwa.lk/assets/assets/logos/kings-court-logo-black.webp" alt="" className="w-30" />
             </div>
             <div className="h-1/4 w-full flex justify-center items-center">
               <p className="text-sm text-center w-4/5">
@@ -87,7 +82,7 @@ const Places: React.FC = () => {
           {/* court */}
           <div className="w-5/6 py-2 lg:py-5 lg:w-1/4 bg-white flex flex-col gap-1 h-60 lg:h-full rounded-2xl flex items-center justify-center">
             <div className="h-2/4 w-full flex justify-center items-center">
-              <img src={CourtYard} alt="" className="w-20" />
+              <img src="https://assets.ehelepolawalawwa.lk/assets/assets/logos/mada-midula-logo-black.webp" alt="" className="w-20" />
             </div>
             <div className="h-1/4 w-full flex justify-center items-center">
               <p className="text-sm text-center w-4/5">

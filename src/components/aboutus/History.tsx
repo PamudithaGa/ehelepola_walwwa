@@ -1,8 +1,3 @@
-import mainImage from '../../assets/gallery/home/Droneshot.jpg'
-import shortImg1 from '../../assets/gallery/shortImg1.png'
-import shortImg2 from '../../assets/gallery/home/Outside.jpg'
-import shortImg3 from '../../assets/gallery/shortImg3.png'
-
 const History = () => {
   return (
     <>
@@ -11,14 +6,14 @@ const History = () => {
         <div
           className='w-full lg:w-1/2 flex flex-col gap-5'>
           <div className='w-full'>
-            <img src={mainImage} alt="" className='rounded-2xl' />
+            <img src="https://assets.ehelepolawalawwa.lk/assets/assets/gallery/home/Droneshot.webp" alt="" className='rounded-2xl' />
           </div>
 
           <div
             className='flex justify-between w-full gap-2'>
-            <img src={shortImg1} alt="" className='w-1/3 lg:w-49 rounded-2xl ' />
-            <img src={shortImg2} alt="" className='w-1/3 lg:w-49 rounded-2xl ' />
-            <img src={shortImg3} alt="" className='w-1/3 lg:w-49 rounded-2xl ' />
+            <img src="https://assets.ehelepolawalawwa.lk/assets/assets/gallery/shortImg1.webp" alt="" className='w-1/3 lg:w-49 rounded-2xl ' />
+            <img src= "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/home/Outside.webp" alt="" className='w-1/3 lg:w-49 rounded-2xl ' />
+            <img src="https://assets.ehelepolawalawwa.lk/assets/assets/gallery/shortImg3.webp" alt="" className='w-1/3 lg:w-49 rounded-2xl ' />
           </div>
         </div>
 
