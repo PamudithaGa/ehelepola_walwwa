@@ -1,4 +1,6 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-router";
+
 import emailjs from "@emailjs/browser";
 import { Toaster } from "react-hot-toast";
 import toast from "react-hot-toast";
@@ -10,6 +12,7 @@ import { CiPhone } from "react-icons/ci";
 import { TextField, Button } from "@mui/material";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { GoArrowRight } from "react-icons/go";
 
 
 const ContactFormTwo: React.FC = () => {
@@ -313,7 +316,7 @@ const ContactFormTwo: React.FC = () => {
           </div>
 
           <div className="lg:w-2/5 w-11/12 h-full md:w-full mt-10 md:mt-10 lg:-mt-30">
-            <h1 className="font-bold lg:text-[75px] text-[72px] leading-tight flex flex-wrap gap-x-5">
+            <h1 className="font-bold lg:text-left text-center lg:text-[75px] text-[72px] leading-tight flex flex-wrap gap-x-5">
               {"Contact Us".split(" ").map((word, i) => (
                 <span
                   key={i}
@@ -328,11 +331,35 @@ const ContactFormTwo: React.FC = () => {
               <img src="https://assets.ehelepolawalawwa.lk/assets/assets/assets/logos/walawwa-building.webp" alt="" />
             </div>
 
-            <p className="mb-3 text-gray-500 ">
+            <p className="mb-3 text-gray-500 lg:text-left text-center">
               Connect with Ehelepola Walauwa for inquiries about visits, events,
               heritage tours, shopping experiences, and cultural programs in
               historic Kandy.
             </p>
+
+            <div
+            className="flex items-center justify-center block lg:hidden ">
+              {/* reservation for Mobile*/}
+              <section className="bg-black rounded-2xl shadow-2xl w-[90%] max-w-md px-6 py-8 space-y-6">
+                <div
+                  className="text-center">
+                  <h2 className="text-white text-xl font-semibold">
+                    School Student Reservation
+                  </h2>
+                  <p className="text-white/60 text-sm mt-2">
+                    Don't miss out on this exclusive opportunity. Slots fill up fast
+                    reserve your visit today!
+                  </p>
+                </div>
+
+                <Link to="/reservation">
+                  <button className="w-full backdrop-blur-md bg-white/10 border border-white/30 text-white px-4 py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-white/20 transition duration-300">
+                    Click here to book reservation
+                    <GoArrowRight />
+                  </button>
+                </Link>
+              </section>
+            </div>
 
             {/* Contact Info for desktop*/}
             <div className=" hidden lg:flex flex-col gap-8 mt-10 h-full ">
