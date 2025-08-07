@@ -29,7 +29,7 @@ const PageHero: React.FC = () => {
         
         {/* Image */}
         <div className="lg:w-1/2 h-full my-5 lg:pl-20 rounded-2xl flex justify-center items-center">
-          <img src="https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtBanner.png" alt="" className="rounded-2xl w-full" />
+          <img src="https://assets.ehelepolawalawwa.lk/assets/assets/gallery/courtBanner.webp" alt="" className="rounded-2xl w-full" />
         </div>
       </div>
     </section>
