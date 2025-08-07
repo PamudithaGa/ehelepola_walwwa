@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router";
 
+
+import HeroVideo from '../../assets/videos/ehalepolaNew.mp4';
+
 const HeroSection: React.FC = () => {
   return (
     <>
@@ -13,7 +16,7 @@ const HeroSection: React.FC = () => {
           loop
           playsInline
         >
-          <source src="https://assets.ehelepolawalawwa.lk/assets/assets/videos/ehalepolaNew.mp4" type="video/mp4" />
+          <source src={HeroVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
