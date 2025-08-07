@@ -18,6 +18,7 @@ const App: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowNav(true);
