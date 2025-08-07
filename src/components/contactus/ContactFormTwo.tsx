@@ -35,8 +35,6 @@ const ContactFormTwo: React.FC = () => {
       message: data.get("message"),
     };
 
-    console.log("Before Contact Data:", contactData);
-
     emailjs
       .sendForm(
         "service_jakx4qq",
@@ -45,9 +43,7 @@ const ContactFormTwo: React.FC = () => {
         "XANFY_YY290qHq7ZO"
       )
       .then(
-        (result) => {
-          console.log("Email sent:", result.text);
-          console.log("After Contact Data:", contactData);
+        () => {
 
           toast("Message sent successfully!");
           formRef.current?.reset();
@@ -57,8 +53,7 @@ const ContactFormTwo: React.FC = () => {
           setfirstName("");
           setlastName("");
         },
-        (error) => {
-          console.error("Email failed:", error.text);
+        () => {
           toast("Failed to send. Try again later.");
         }
       );
