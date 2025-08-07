@@ -4,46 +4,33 @@ import { FaArrowLeft, FaArrowRight, FaEye } from "react-icons/fa";
 
 // For scroll bars
 const SilderImages = [
-  new URL("../../assets/gallery/kingsCourt/KingsCourtAreaVertical.png", import.meta.url).href,
-  new URL("../../assets/gallery/kingsCourt/KingsCourtNameVertical.png", import.meta.url)
-    .href,
-  new URL("../../assets/gallery/kingsCourt/KingsCourtPlatesVertical.png", import.meta.url).href,
-  new URL("../../assets/gallery/kingsCourt/KingsCourtPotsVertical.png", import.meta.url).href,
-  new URL("../../assets/gallery/kingsCourt/KingsCourtTableVertical.png", import.meta.url).href,
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtAreaVertical.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtNameVertical.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtPlatesVertical.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtPotsVertical.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtTableVertical.webp",
 ];
 
 //Main images
 const AnimateImages = [
   {
-    src: new URL(
-      "../../assets/gallery/kingsCourt/KingsCourtArea.png",
-      import.meta.url
-    ).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtArea.webp",
     description: "Main entrance of the Walawwa classic colonial elegance.",
   },
   {
-    src: new URL(
-      "../../assets/gallery/kingsCourt/KingsCourtName.png",
-      import.meta.url
-    ).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtName.webp",
     description: "Restored prison arcade blending history with modernity.",
   },
   {
-    src: new URL(
-      "../../assets/gallery/kingsCourt/KingsCourtPlates.png",
-      import.meta.url
-    ).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtPlates.webp",
     description: "Front courtyard a peaceful blend of heritage and greenery.",
   },
   {
-    src: new URL(
-      "../../assets/gallery/kingsCourt/KingsCourtPots.png",
-      import.meta.url
-    ).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtPots.webp",
     description: "Vintage hallway echoes of the past in every step.",
   },
   {
-    src: new URL("../../assets/gallery/kingsCourt/KingsCourtTable.png", import.meta.url).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/kingsCourt/KingsCourtTable.webp",
     description: "Lush surroundings serenity beyond the walls.",
   },
 ];

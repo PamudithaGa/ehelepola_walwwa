@@ -1,6 +1,5 @@
 import React from "react";
-// import ShopImage from "../../assets/prisonarcade/shops/shop_karma.png";
-// import Noimage from "../../assets/gallery/no-preview.jpeg";
+
 
 interface Card {
   id: number;

@@ -4,38 +4,33 @@ import { FaArrowLeft, FaArrowRight, FaEye } from "react-icons/fa";
 
 // For scroll bars
 const SilderImages = [
-  new URL("../../assets/gallery/home/OutSideVertical.png", import.meta.url)
-    .href,
-  new URL("../../assets/gallery/home/DroneshotVertical4.png", import.meta.url)
-    .href,
-  new URL("../../assets/gallery/home/BuildingVertical.png", import.meta.url)
-    .href,
-  new URL("../../assets/gallery/walawwa112.png", import.meta.url).href,
-  new URL("../../assets/gallery/outside.JPG", import.meta.url).href,
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/home/OutSideVertical.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/home/DroneshotVertical4.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/home/BuildingVertical.webp", 
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/walawwa112.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/outside.webp",
 ];
 
 //Main images
 const AnimateImages = [
   {
-    src: new URL("../../assets/gallery/home/Droneshot.jpg", import.meta.url)
-      .href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/home/Droneshot.webp", 
     description: "Main entrance of the Walawwa classic colonial elegance.",
   },
   {
-    src: new URL("../../assets/gallery/home/Building.jpg", import.meta.url)
-      .href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/home/Building.webp",
     description: "Restored prison arcade blending history with modernity.",
   },
   {
-    src: new URL("../../assets/gallery/home/Outside.jpg", import.meta.url).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/home/Outside.webp",
     description: "Front courtyard a peaceful blend of heritage and greenery.",
   },
   {
-    src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/prison.webp", 
     description: "Vintage hallway echoes of the past in every step.",
   },
   {
-    src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/prison.webp",
     description: "Lush surroundings serenity beyond the walls.",
   },
 ];
@@ -90,12 +85,6 @@ const Gallery: React.FC = () => {
               className="w-full object-contain transition-all duration-500 "
             />
 
-            {/* Description*/}
-            {/* <div className="absolute bottom-8 left-4 text-center right-4 z-20">
-              <span className="text-xl bg-gradient-to-t from-white to-transparent bg-clip-text text-transparent text-center">
-                {AnimateImages[currentIndex].description}
-              </span>
-            </div> */}
           </div>
 
           {/* Dynamic Preview Image - For Mobile */}

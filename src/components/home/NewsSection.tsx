@@ -3,17 +3,12 @@ import NewsCard from "./NewsCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-//Image
-import PrithCeremonies from "../../assets/news/pirith.jpg";
-import PresidentialInauguration from "../../assets/news/prasident.jpg"
-import Tourits from "../../assets/news/Tousrists.jpg"
-
 const updates = [
   {
     title: "Presidential Inauguration Ceremony ",
     description:
       "President Anura Kumara Dissanayake officially opened the Wax Museum at historic Ehelepola Walawwa the first ever wax museum in Sri Lanka on the 17th of July 2025, marking a significant milestone in Sri Lanka's cultural tourism development and heritage preservation efforts in the ancient capital.",
-    image: PresidentialInauguration,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/news/prasident.webp",
     date: "17",
     month: "July",
   },
@@ -21,7 +16,7 @@ const updates = [
     title: "Sacred Restoration Complete ",
     description:
       "Under Temple of the Sacred Tooth Relic Stewardship, Ehelepola Walauwa's restoration was blessed through Pirith chanting ceremonies on June 30 and July 01, honoring ancestral traditions while embracing modernity.",
-    image: PrithCeremonies,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/news/pirith.webp",
     date: "30",
     month: "June",
   },
@@ -29,42 +24,11 @@ const updates = [
     title: "Heritage Tourism Milestone Achieved ",
     description:
       "The transformation of this 400-year-old heritage walauwa Sri Lanka into a premier cultural destination represents a groundbreaking achievement in preserving historic mansions in Sri Lanka for future generations.",
-    image: Tourits,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/news/Tousrists.webp",
     date: "22",
     month: "March",
   },
-  // {
-  //   title: "Ehelepola Walawwa Receives National Recognition",
-  //   description:
-  //     "The iconic building is now listed as a protected heritage site, preserving its cultural significance for future generations. This designation not only safeguards its architectural integrity but also highlights its vital role in the region’s historical narrative. ",
-  //   image: ImageTest,
-  //   date: "22",
-  //   month: "July",
-  // },
-  // {
-  //   title: "Ehelepola Walawwa Receives National Recognition",
-  //   description:
-  //     "The iconic building is now listed as a protected heritage site, preserving its cultural significance for future generations. This designation not only safeguards its architectural integrity but also highlights its vital role in the region’s historical narrative. ",
-  //   image: ImageTest,
-  //   date: "22",
-  //   month: "July",
-  // },
-  // {
-  //   title: "Ehelepola Walawwa Receives National Recognition",
-  //   description:
-  //     "The iconic building is now listed as a protected heritage site, preserving its cultural significance for future generations. This designation not only safeguards its architectural integrity but also highlights its vital role in the region’s historical narrative. ",
-  //   image: ImageTest,
-  //   date: "22",
-  //   month: "July",
-  // },
-  // {
-  //   title: "Ehelepola Walawwa Receives National Recognition",
-  //   description:
-  //     "The iconic building is now listed as a protected heritage site, preserving its cultural significance for future generations. This designation not only safeguards its architectural integrity but also highlights its vital role in the region’s historical narrative. ",
-  //   image: ImageTest,
-  //   date: "22",
-  //   month: "July",
-  // },
+ 
 ];
 
 const NewsSection: React.FC = () => {

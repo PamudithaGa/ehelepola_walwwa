@@ -4,34 +4,30 @@ import { FaArrowLeft, FaArrowRight, FaEye } from "react-icons/fa";
 
 // For scroll bars
 const SilderImages = [
-  new URL("../../assets/gallery/B17A21732.jpg", import.meta.url).href,
-  new URL("../../assets/gallery/prison-arcade-banner2.jpg", import.meta.url)
-    .href,
-  new URL("../../assets/gallery/prisionArcade/IMG_0050.jpg", import.meta.url).href,
-  new URL("../../assets/gallery/walawwa112.png", import.meta.url).href,
-  new URL("../../assets/gallery/prisionArcade/IMG_0055.jpg", import.meta.url).href,
+    "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/B17A21732.webp",
+    "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/prison-arcade-banner2.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/prisionArcade/IMG_0050.webp",
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/walawwa112.webp", 
+  "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/prisionArcade/IMG_0055.webp", 
 ];
 
 //Main images
 const AnimateImages = [
   {
-    src: new URL("../../assets/gallery/prison.jpg", import.meta.url).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/prison.webp", 
     description: "Main entrance of the Walawwa classic colonial elegance.",
   },
   {
-    src: new URL("../../assets/gallery/prisionArcade/IMG_0069.jpg", import.meta.url).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/prisionArcade/IMG_0069.webp", 
     description: "Restored prison arcade blending history with modernity.",
   },
   {
-    src: new URL(
-      "../../assets/gallery/B17A2217.JPG",
-      import.meta.url
-    ).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/B17A2217.webp",
     description: "Front courtyard a peaceful blend of heritage and greenery.",
   },
 
   {
-    src: new URL("../../assets/gallery/prisionArcade/IMG_0046.jpg", import.meta.url).href,
+    src: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/prisionArcade/IMG_0046.webp",
     description: "Lush surroundings serenity beyond the walls.",
   },
 ];

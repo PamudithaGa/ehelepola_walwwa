@@ -11,7 +11,6 @@ import { TextField, Button } from "@mui/material";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
-import Walawwa from "../../assets/logos/sketch-white.png";
 
 const ContactFormTwo: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -326,7 +325,7 @@ const ContactFormTwo: React.FC = () => {
             </h1>
 
             <div className="lg:hidden block mt-5 mb-5">
-              <img src={Walawwa} alt="" />
+              <img src="https://assets.ehelepolawalawwa.lk/assets/assets/assets/logos/walawwa-building.webp" alt="" />
             </div>
 
             <p className="mb-3 text-gray-500 ">

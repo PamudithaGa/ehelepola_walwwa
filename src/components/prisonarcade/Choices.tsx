@@ -1,60 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-// import "swiper/css";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
-// import { Link } from "react-router";
 import StoreModal from "./StoreModal";
 
 //Logos of choices
-import Ayurweda from "../../assets/logos/ayurveda.webp";
-import cosmetics from "../../assets/logos/cosmetics.webp";
-import Handloom from "../../assets/logos/handloom.webp";
-import Spices from "../../assets/logos/spices.webp";
-import Tea from "../../assets/logos/tea.webp";
-import Woodcarving from "../../assets/logos/wood-carving.webp";
-import Photography from "../../assets/logos/photography.webp";
-import Batik from "../../assets/logos/batik.webp";
-import Leather from "../../assets/logos/leather.webp";
 
-// import Brassware from "../../assets/logos/brassware.webp";
-// import Gems from "../../assets/logos/gems.webp";
-// import jewellery from "../../assets/logos/jewellery.webp";
-// import Laksha from "../../assets/logos/laksha.webp";
-// import Mask from "../../assets/logos/mask.webp";
-// import clay from "../../assets/logos/clay.webp";
-// import Silver from "../../assets/logos/silver.webp";
-// import Stoneware from "../../assets/logos/stoneware.webp";
-// import Paintings from "../../assets/logos/paintings.webp";
-// import Paper from "../../assets/logos/paper.webp";
-// import Porcelain from "../../assets/logos/porcelain.webp";
-
-//Logos of companies
-import DelmahLogo from "../../assets/prisonarcade/DilmahLogoColour.jpg";
-import PintannaLogo from "../../assets/prisonarcade/pintannaLogo.jpg";
-import PGMartinLogo from "../../assets/prisonarcade/PGMartinLogo.jpg";
-import MalibanLogo from "../../assets/prisonarcade/MalibanLogo.png";
-import CycleIncenseLogo from "../../assets/prisonarcade/CycleIncenseLogo.jpg";
-import SunshineLogo from "../../assets/prisonarcade/SunshileLogo.jpg";
-import FreelanLogon from "../../assets/prisonarcade/FreelanLogo.jpg";
-import EarthboundCreationsLogo from "../../assets/prisonarcade/EarthboundCreationsLogo.png";
-import CeylonCinnamonLegendsLogo from "../../assets/prisonarcade/CeylonCinnamonLegendsLogo.jpg";
-import ApeBatikLogo from "../../assets/prisonarcade/ApeBatikLogo.jpg";
-import RoyalTouchLogo from "../../assets/prisonarcade/RoyalTouchLogo.jpg";
-import APicLogo from "../../assets/prisonarcade/A-picturesLogo.jpg";
-import indigoByKaramaLogo from "../../assets/prisonarcade/indigoByKaramaLogo.jpg";
-import SiddhalepaLogo from "../../assets/prisonarcade/suiddalepaLogo.jpg";
-
-//Shops
-import Noimage from "../../assets/gallery/no-preview.jpeg";
-import Unanduwa from "../../assets/prisonarcade/shops/unanduwa.png";
-
-//Promo Banners
-import AdBanner from "../../assets/prisonarcade/AdHorizontal.png";
-import AdBanner2 from "../../assets/prisonarcade/AdHorizontal2.png";
-
-const promoImages = [AdBanner, AdBanner2];
+// import Brassware from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/brassware.webp";
+// import Gems from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/gems.webp";
+// import jewellery from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/jewellery.webp";
+// import Laksha from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/laksha.webp";
+// import Mask from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/mask.webp";
+// import clay from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/clay.webp";
+// import Silver from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/silver.webp";
+// import Stoneware from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/stoneware.webp";
+// import Paintings from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/paintings.webp";
+// import Paper from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/paper.webp";
+// import Porcelain from "https://assets.ehelepolawalawwa.lk/assets/assets/logos/porcelain.webp";
+ 
+const promoImages = ["https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/AdHorizontal.webp", "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/AdHorizontal2.webp"
+];
 
 type Card = {
   id: number;
@@ -81,14 +47,14 @@ const cardsData: Card[] = [
     email: "info.plantations@pintanna.lk",
     title: "Agriculture",
     name: "Pintanna Plantations Pvt Ltd",
-    image: Ayurweda,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/ayurveda.webp",
     shellnumber: "001 & 002",
     description: "Worn by guards of the royal royal prison arcade.",
-    backImage: PintannaLogo,
+    backImage:"https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/pintannaLogo.webp",
     moreDetails: "A Harvest That Secures Your Future!",
     popup:
       "Pintanna Plantations (Pvt) Ltd is a Sri Lankan company specializing in Wallapatta (Agarwood) cultivation and Oud oil production. Operating over 1,500 acres, they offer investment plans and produce high-end perfumes under the Silani brand. The company also established Sri Lanka’s first Wallapatta Museum and distillation facility in Ayagama.",
-    shopimage: Unanduwa,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/shops/unanduwa.webp",
   },
 
   //P.G.Martin
@@ -99,14 +65,14 @@ const cardsData: Card[] = [
     address: "Galle Road,, Colombo, Sri Lanka",
     number: "072 768 4522",
     email: "info@pgmartin.lk",
-    image: Leather,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/leather.webp",
     shellnumber: "003",
     description: "Inspired by candle-lit corridors of the past.",
-    backImage: PGMartinLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/PGMartinLogo.webp",
     moreDetails:
       "Premium Leather Bags, Wallets, Belts, Handbags & Luggage 🇱🇰 | Since 1948 👜",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //Delmah
@@ -117,14 +83,14 @@ const cardsData: Card[] = [
     email: "info@dilmahtea.com",
     title: "Tea",
     name: "Dilmah Tea",
-    image: Tea,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/logos/tea.webp",
     shellnumber: "004 & 005",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: DelmahLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/DilmahLogoColour.webp",
     moreDetails:
       "We're a family tea company spreading love for Ceylon tea, and infusing the world with kindness.",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //Siddhalepa
@@ -135,14 +101,14 @@ const cardsData: Card[] = [
     address: "33/3, Sri Dharmarama Road, Ratmalana, Sri Lanka",
     number: "0112 736 910",
     email: "info@siddhalepa.com",
-    image: Ayurweda,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/logos/ayurveda.webp",
     shellnumber: "006",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: SiddhalepaLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/suiddalepaLogo.webp",
     moreDetails: "",
     popup:
       "This is the first Ayurvedic Manufacturing Company in East Asia to have been awarded the prestigious ISO 9001 Quality Standards Certification.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   // Maliban
@@ -153,14 +119,14 @@ const cardsData: Card[] = [
     number: "+94 71 914 5555",
     email: "cic@malibanbiscuit.com",
     name: "Maliban Biscuits ",
-    image: Spices,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/logos/spices.webp",
     shellnumber: "007",
     description: "Inspired by candle-lit corridors of the past.",
-    backImage: MalibanLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/MalibanLogo.webp",
     moreDetails:
       "The classic biscuits and cookie range that you know and love 70 years of inspiring goodness.",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //6 Cycle Pure Incense
@@ -168,34 +134,34 @@ const cardsData: Card[] = [
     id: 6,
     title: "Pure Incense",
     name: "Cycle Pure Incense",
-    image: Handloom,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/handloom.webp",
     address: "No. 692, Rice Mill Road, Katunayake, Sri Lanka",
     number: "076 967 8678",
     email: "info@suwanda.lk",
     shellnumber: "008",
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
-    backImage: CycleIncenseLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/CycleIncenseLogo.webp",
     moreDetails:
       "Zero Carbon Certified Cycle Pure Incense Sticks are a 100% Sri Lankan product!",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //Indigo by karma
   {
     id: 7,
     title: "Linan",
-    image: Handloom,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/handloom.webp",
     address: "NO 07, Ward Street, Galle Bazaar,, Galle, Sri Lanka",
     number: "071 285 3114",
     email: "admin@indigobykarma.com",
     name: "Indigo by karma",
     shellnumber: "009 &010",
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
-    backImage: indigoByKaramaLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/indigoByKaramaLogo.webp",
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //No info for elegance consortium lanka
@@ -213,7 +179,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Luxury accessories once safeguarded in the vaults.",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -232,7 +198,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Luxury accessories once safeguarded in the vaults.",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -244,14 +210,14 @@ const cardsData: Card[] = [
     address: "Galle Road,, Colombo, Sri Lanka",
     number: "072 768 4522",
     email: "info@pgmartin.lk",
-    image: Leather,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/leather.webp",
     shellnumber: "013",
     description: "Inspired by candle-lit hhfgfhj corridors of the past.",
-    backImage: PGMartinLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/PGMartinLogo.webp",
     moreDetails:
       "Premium Leather Bags, Wallets, Belts, Handbags & Luggage 🇱🇰 | Since 1948 👜",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //No info for Biso jewellers
@@ -269,7 +235,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Luxury accessories once safeguarded in the vaults.",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -289,7 +255,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Luxury accessories once safeguarded in the vaults.",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -301,14 +267,14 @@ const cardsData: Card[] = [
     number: "077 340 3866",
     email: "sunshinetea@sunshinetea.lk",
     name: "Sunshine Tea Pvt Ltd",
-    image: Tea,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/tea.webp",
     shellnumber: "016 & 017",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: SunshineLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/SunshileLogo.webp",
     moreDetails:
       "Sunshine Tea is a leading solution provider for all tea needs around the world.",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //Freaalan
@@ -320,12 +286,12 @@ const cardsData: Card[] = [
     number: "077 231 4205",
     email: "info@freelanmatara.com",
     shellnumber: "018",
-    image: Spices,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/logos/spices.webp",
     description: "Symbol of historic access to secret chambers.",
-    backImage: FreelanLogon,
+    backImage:  "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/FreelanLogo.webp",
     moreDetails: "Luxury accessories once safeguarded in the vaults.",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //Earthbound Creations
@@ -333,17 +299,17 @@ const cardsData: Card[] = [
     id: 15,
     title: "Arts & Crafts Store",
     name: "Earthbound Creations",
-    image: Woodcarving,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/logos/wood-carving.webp",
     address: "27/98, Augustawatta, Udaperadeniya, (20404) Sri Lanka.",
     number: "071 020 5556",
     email: "ranga@ebcsl.com",
     shellnumber: "019 & 020",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: EarthboundCreationsLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/EarthboundCreationsLogo.webp",
     moreDetails:
       "Earthboundlk reflecting the beauty of nature through eco-friendly, recycled, handmade crafts.",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //Ceylon Cinnamon Legends
@@ -355,28 +321,28 @@ const cardsData: Card[] = [
     email: "info@ceyloncinnamonlegends.com",
     shellnumber: "021",
     name: "Ceylon Cinnamon Legends ",
-    image: cosmetics,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/cosmetics.webp",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: CeylonCinnamonLegendsLogo,
+    backImage:  "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/CeylonCinnamonLegendsLogo.webp",
     moreDetails: "Cinnamon Value Added Products",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
   //Ape Bathik
   {
     id: 17,
     title: "Batik",
     name: "Apé Batik",
-    image: Batik,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/batik.webp",
     address: "Colombo, Sri Lanka",
     number: "077 595 8148",
     email: "apebatikstore@gmail.com",
     shellnumber: "022",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: ApeBatikLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/ApeBatikLogo.webp",
     moreDetails: "",
     popup: "ore details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //No info for Eligance consortium Lanka
@@ -394,7 +360,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Luxury accessories once safeguarded in the vaults.",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -403,17 +369,17 @@ const cardsData: Card[] = [
     id: 19,
     title: "Photography",
     name: "A-pictures ",
-    image: Photography,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/photography.webp",
     address: "No L1-12,Kandy City Centre,Kandy, Kandy, Sri Lanka",
     number: "070 440 0400",
     email: "apictureskcc@gmail.com",
     shellnumber: "024",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: APicLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/A-picturesLogo.webp",
     moreDetails: "",
     popup:
       "A Pictures, We are Specialized in Cameras & High-End Electronics! We offer branded cameras, accessories, telescopes, microscopes, binoculars, spotting scopes, cash counting machines, mobile & computer accessories all under one roof!",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //Royal Touch Ceylon Tea
@@ -425,12 +391,12 @@ const cardsData: Card[] = [
     address: "38/8,Rajapihilla mawatha , Kandy, Sri Lanka",
     number: "076 853 9889",
     email: "info@royaltouchceylontea.com",
-    image: Tea,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/tea.webp",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: RoyalTouchLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/RoyalTouchLogo.webp",
     moreDetails: "Refreshing your life",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //No info for ද ක්රාෆ්ට් මේමියම් ජුවලර්ස්
@@ -448,7 +414,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Refreshing your life",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -467,7 +433,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Refreshing your life",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //           shopimage:Noimage,
+  //           shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -486,7 +452,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Refreshing your life",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -505,7 +471,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Refreshing your life",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //   shopimage:Noimage,
+  //   shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -524,7 +490,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Refreshing your life",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //            shopimage:Noimage,
+  //            shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -543,7 +509,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Refreshing your life",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -562,7 +528,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Refreshing your life",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -581,7 +547,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Refreshing your life",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -594,12 +560,12 @@ const cardsData: Card[] = [
     address: "38/8,Rajapihilla mawatha , Kandy, Sri Lanka",
     number: "076 853 9889",
     email: "info@royaltouchceylontea.com",
-    image: Photography,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/logos/photography.webp",
     description: "Luxury accessories once safeguarded in the vaults.",
-    backImage: RoyalTouchLogo,
+    backImage: "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/RoyalTouchLogo.webp",
     moreDetails: "More details to come.",
     popup: "More details to come.",
-    shopimage: Noimage,
+    shopimage: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   //No info Lankathilaka Gems
@@ -617,7 +583,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Refreshing your life",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //         shopimage:Noimage,
+  //         shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -636,7 +602,7 @@ const cardsData: Card[] = [
   //   moreDetails: "",
   //   popup:
   //     "",
-  //          shopimage:Noimage,
+  //          shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 
@@ -655,7 +621,7 @@ const cardsData: Card[] = [
   //   moreDetails: "Refreshing your life",
   //   popup:
   //     "Luxury accessories once safeguarded in the vaults. Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.Luxury accessories once safeguarded in the vaults.",
-  //           shopimage:Noimage,
+  //           shopimage:"https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
 
   // },
 ];

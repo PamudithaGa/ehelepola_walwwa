@@ -1,10 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
 
-// import HeroVideo from "../../assets/videos/hero-video.mp4";
-import HeroVideo from "../../assets/videos/ehalepolaNew.mp4";
-import WalawwaBlock from "../../assets/logos/sketch-white.png";
-
 const HeroSection: React.FC = () => {
   return (
     <>
@@ -17,7 +13,7 @@ const HeroSection: React.FC = () => {
           loop
           playsInline
         >
-          <source src={HeroVideo} type="video/mp4" />
+          <source src="https://assets.ehelepolawalawwa.lk/assets/assets/videos/ehalepolaNew.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -47,7 +43,7 @@ const HeroSection: React.FC = () => {
 
             {/* sketch walauwwe mobile only*/}
             <div className="lg:block hidden mt-4 lg:mt-0 lg:w-1/2">
-              <img src={WalawwaBlock} alt="" className="opacity-45" />
+              <img src="https://assets.ehelepolawalawwa.lk/assets/assets/logos/sketch-white.webp" alt="" className="opacity-45" />
             </div>
 
             {/* Buttons mobile only*/}

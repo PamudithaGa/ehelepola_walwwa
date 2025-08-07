@@ -3,33 +3,6 @@ import React, { useEffect, useState } from "react";
 import { FaRegDotCircle } from "react-icons/fa";
 import { RiArrowDownDoubleFill } from "react-icons/ri";
 
-import vimaladarmasooriya from "../../assets/images/charactors/King1.jpg";
-import HiripitiyaRala from "../../assets/images/charactors/hiripitiyaRala.jpg";
-import QueenKusumasana from "../../assets/images/charactors/QueenKusumasana2.jpg";
-import KingRajasinghe2 from "../../assets/images/charactors/KingRajasinghe2.jpg";
-import RobertKnox from "../../assets/images/charactors/RobertKnox.jpg";
-import LewkeRala from "../../assets/images/charactors/LewkeRala.jpg";
-import PilimatalauwaMahaAdikaram from "../../assets/images/charactors/PilimatalauwaMahaAdikaram.jpg";
-import SriVikramaRajasinghe from "../../assets/images/charactors/SriVikramaRajasinghe.jpg";
-import QueenVenkathaRangammal from "../../assets/images/charactors/QueenVenkathaRangammal.jpg";
-import DevendraMoolachariya from "../../assets/images/charactors/DevendraMoolachariya.jpg";
-import SirJohnDOyly from "../../assets/images/charactors/SirJohnD’Oyly.jpg";
-import SirRobertBrownrigg from "../../assets/images/charactors/SirRobertBrownrigg.jpg";
-import MonarawilaKeppetipolaDisawe from "../../assets/images/charactors/MonarawilaKeppetipolaDisawe.jpg";
-import MadugalleUdaGabadaNilame from "../../assets/images/charactors/MadugalleUdaGabadaNilame.jpg";
-import EllepolaMahaNilame from "../../assets/images/charactors/EllepolaMahaNilame.jpg";
-import KivulegedaraMohottala from "../../assets/images/charactors/KivulegedaraMohottala.jpg";
-import EhelepolaMahaAdhikaram from "../../assets/images/charactors/EhelepolaMahaAdhikaram.jpg";
-import EhelepolaKumarihami from "../../assets/images/charactors/EhelepolaKumarihami.jpg";
-import LokuBandaraEhelepola from "../../assets/images/charactors/LokuBandaraEhelepola.jpg";
-import MaddumaBandaraEhelepola from "../../assets/images/charactors/MaddumaBandaraEhelepola.jpg";
-import EhelepolaTikiriKumarihami from "../../assets/images/charactors/EhelepolaTikiriKumarihami.jpg";
-import ACLawrie from "../../assets/images/charactors/ACLawrie.jpg";
-import KapuwatteAdikaram from "../../assets/images/charactors/KapuwatteAdikaram.jpg";
-import VenWariyapolaSriSumangala from "../../assets/images/charactors/VenWariyapolaSriSumangala.jpg";
-
-import Noimage from "../../assets/gallery/no-preview.jpeg";
-
 const timelineData = [
   {
     date: "1500 - 1595 CE",
@@ -39,7 +12,7 @@ const timelineData = [
 
       "He safeguarded the Sacred Tooth Relic at the Delgamuwa Raja Maha Viharaya for a period of 43 years consistently performing the requisite rituals and monastic duties associated with its veneration. Furthermore, he played a vital role in organizing and participating in 11 processions (Peraheras) in collaboration with the king, underscoring his unwavering commitment to the preservation and public reverence of the relic. Among his principal disciples were Ven. Devanagala Rathanalankara Thero (also known as Galagoda Thero) and Ven. Ellepola Mangala Thero, both of whom along with Hiripitiye Rala worked closely with him. Significantly, it was under Ven. Mahindalankara Thero’s guidance that the Sacred Tooth Relic was eventually transferred to the Kingdom of Kandy (Udarata) and ceremonially presented to King Vimaladharmasuriya I, marking a defining moment in Sri Lanka’s religious and political history.",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -52,7 +25,7 @@ const timelineData = [
 
       "Throughout his lifetime, Hiripitiyē Rala demonstrated unparalleled dedication and valor, risking his own life to protect the Sacred Tooth Relic from foreign threats. His unwavering commitment played a pivotal role in securing the relic for the Kandyan Kingdom, earning him a distinguished place in history for his invaluable service to the nation and Buddhism.",
     ],
-    image: HiripitiyaRala,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/hiripitiyaRala.webp",
   },
 
   {
@@ -67,7 +40,7 @@ const timelineData = [
 
       "Militarily, he successfully defended the Kandyan Kingdom from Portuguese aggression, notably in the battles of Danture and Balana, thereby preserving the sovereignty of the hill country. His reign was marked by a synthesis of religious revival, military resistance and economic reform. King Vimaladharmasuriya I passed away in the month of May in the year 1604 CE, leaving behind a legacy of resilience, devotion and nation-building.",
     ],
-    image: vimaladarmasooriya,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/King1.webp",
   },
 
   {
@@ -80,7 +53,7 @@ const timelineData = [
 
       "She bore six children with King Wimaladharmasuriya I—among them were daughters Suriya and Sama and sons who later held high-ranking titles such as Rajasinghe Maha Asthane (who died in 1612 CE), Udamale Asthane (who died young), Vijayapala and Prince Kumarasinghe of Uva. Following the death of King Wimaladharmasuriya I, she married his cousin and successor, King Senarath, in January 1606 CE. With Senarath, she had three more children, including the future King Rajasinghe II—known in his youth as Prince Deva Rajasinghe—bringing the total number of her offspring to eight. Throughout her life, Queen Kusumasana Devi displayed a deep commitment to the welfare and independence of the Kandyan Kingdom. Her final days were spent in Valimannathota, Kegalle, where she passed away on the 20th of July, 1613 CE. Her life remains emblematic of resilience, political acumen and unwavering loyalty to her people and heritage.",
     ],
-    image: QueenKusumasana,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/QueenKusumasana2.webp",
   },
 
   {
@@ -91,7 +64,7 @@ const timelineData = [
 
       "Beyond his military achievements, King Senarath’s reign saw significant cultural and religious revival within the Kandyan Kingdom. His contributions included the restoration and renovation of major Buddhist temples and the construction of a two-storied shrine in Kandy to enshrine the Sacred Tooth Relic, a vital symbol of legitimate kingship. Towards the end of his reign, King Senarath divided the kingdom among his three sons: Prince Vijayapala, who was assigned Matale; Prince Kumarasinghe, who was given Uva; and Prince Rajasinghe, who ruled Senkadagala. In 1635 CE, Prince Rajasinghe succeeded him as king, reigning as King Rajasinghe II (1635–1687 CE).",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -106,7 +79,7 @@ const timelineData = [
 
       "Beyond his military and cultural contributions, King Rajasinghe II invested considerable effort in the restoration and renovation of prominent religious institutions, including the revered Temple of the Tooth (Dalada Maligawa). His prolonged and influential reign concluded with his death on November 25, 1687 CE. His remains were interred following cremation at the Asgiri Maha Viharaya, Kandy cremation grounds.",
     ],
-    image: KingRajasinghe2,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/KingRajasinghe2.webp",
   },
 
   {
@@ -119,7 +92,7 @@ const timelineData = [
 
       "In 1681 CE, upon returning to England, Knox published his firsthand account titled An Historical Relation of the Island of Ceylon. This work, based on his extensive observations and personal experiences, holds the distinction of being the first English-language book written about Sri Lanka by a European. His narrative provides invaluable insights into the socio-political structure, culture, religious practices, and daily life of 17th-century Sri Lanka, and remains a key source for early modern South Asian studies. Robert Knox passed away on 19 June 1720 CE at the age of 79.",
     ],
-    image: RobertKnox,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/RobertKnox.webp",
   },
 
   {
@@ -132,7 +105,7 @@ const timelineData = [
 
       "In 1693 CE, King Vimaladharmasuriya II dispatched a religious delegation to Rakkhanga (Rakhine in present-day Myanmar) to invite Theravāda monks to reestablish the higher ordination (upasampadā) in Sri Lanka, which had lapsed by that time. Upon his death on June 4, 1707 CE, he was succeeded by his son King Veera Parakrama Narendrasinghe, who reigned from 1707 to 1739 CE.",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -147,7 +120,7 @@ const timelineData = [
 
       "Sri Veera Parakrama Narendrasinghe passed away on Friday, 13 May 1739 CE, after a reign marked by religious devotion, cultural patronage and relative political stability. Personal artifacts such as his royal shirt, specs and a ceremonial sword are still preserved at the Kundasale Sri Veera Parakrama Narendrasinghe Raja Maha Viharaya, a temple he founded—serving as lasting material testimonies of his enduring legacy.",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -162,7 +135,7 @@ const timelineData = [
 
       "Despite political complexities, including Dutch control over island trade and internal factionalism, King Sri Vijaya Rajasinghe maintained stability and reinforced the role of Buddhism in the Kandyan Kingdom. He ruled for eight years and passed away in 1747 CE.",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -173,7 +146,7 @@ const timelineData = [
 
       "In recognition of his loyalty and service, he gifted his personal firearm to King Sri Vijaya Rajasinghe. This weapon was subsequently seized by the Dutch and is now exhibited at the Rijksmuseum in the Netherlands. During the reign of King Kirti Sri Rajasinghe, Lewke Disava served officially as the Dissava (provincial governor) of Sathara Korale. Historical records indicate that he experienced periods of royal disfavor. His son, Lewke Vijayasundara Rajakaruna Herath Senewiratne Mudiyanse, succeeded him and also served as the Dissava of Sathara Korale under King Sri Vikrama Rajasinghe. Like his father, he was highly accomplished in both administrative and martial fields. Portraits and artistic representations of the Lewke Dissavas remain visible today in temples throughout the region, preserving their enduring legacy in the cultural heritage of the Kandyan Kingdom.",
     ],
-    image: LewkeRala,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/LewkeRala.webp",
   },
 
   {
@@ -182,7 +155,7 @@ const timelineData = [
     description: [
       "During the Kandyan period, the Buddhist monastic order had once again fallen into decline. To restore its lost glory, King Kirti Sri Rajasinghe reintroduced higher ordination (Upasampada) from Siam (Present day Thailand) in 1753 CE, thereby rejuvenating the Buddhist clergy. Following this revival, King Kirti Sri Rajasinghe formally appointed Ven. Urulewatte Sri Priyadarsi Dharmasiddhi Maha Nayaka Thero as the Mahanayaka (Chief Prelate) of the Asgiri Maha Viharaya, bestowing upon him the prestigious title of Upasangharaja along with an official royal decree (Nila Vijinipatha). Ven. Urulewatte Thero was a principal disciple of Asgiri Gana Detunayaka Golahenwatte Rajaguru Dharmakirti Thero. His ordination took place in the first Seema Malaka (ordination hall) of the Asgiri Maha Vihara, under the guidance of the Siamese Upali Thero, who served as the Upajjhaya (preceptor), while Mahaprajna Thero and Brahmajoti Thero officiated as the Karmacharyas (ritual instructors). This historic event occurred on Sunday, the 8th of August 2296; Buddhist Era. Urulewatte Sri Priyadarsi Dharmasiddhi Thero was a highly erudite scholar, proficient in both Grantha Dhura (scriptural exegesis) and Vidarsana Dhura (meditative practice). His profound knowledge and intellectual prowess earned him great recognition within the monastic community. He continued to serve as the Mahanayaka Thero of the Asgiri Maha Vihara until his demise in the year 1778 CE.",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -191,7 +164,7 @@ const timelineData = [
     description: [
       "The Buddhist Order in Sri Lanka has experienced both advancements and declines throughout history. By the mid-18th century CE, the monastic discipline had significantly deteriorated. In response, King Kirti Sri Rajasinghe revived the Buddhist monastic order by reintroducing higher ordination (Upasampada) from Siam (present-day Thailand). Following the establishment of the Siamese Upasampada lineage in 1753 CE, the first Mahanayaka (chief prelate) of the Malwathu Maha Vihara faction was none other than Ven. Tibbatuwawe Sri Siddhartha Buddharakkhita Maha Nayaka Thero. He was one of the five prominent ordained disciples of Ven. Welivita Saranankara Sangharaja Thero and was considered the foremost among them. According to the Mandarampuwata Kawya (Verse), King Kirti Sri Rajasinghe formally conferred upon him the prestigious title of Upasangharaja along with an official royal decree (Nila Vijinipatha). Ven. Tibbatuwawe Sri Siddhartha Buddharakkhita Thero made significant contributions to Buddhist scholarship. He compiled the Sri Saddharmavada Sangrahaya, a treatise on the virtues of the Lord Buddha. Additionally he played a pivotal role in the translation and preservation of Buddhist texts such as the Saddhammopayana, the Sathipatthana Sutta Sannaya and the Siamoupasampadawatha (History of the Siamese Ordination). One of his most distinguished achievements was overseeing the compilation of the Mahavamsa (the Great Chronicle), ensuring its continuity from the Kurunegala period (13th–14th century CE) to the era of King Kirti Sri Rajasinghe in Kandyan Period. The manuscript of the Mahavamsa, written in his own handwriting, has now been recognized as a UNESCO World Heritage document and is preserved in the main library of the University of Peradeniya. After serving as the esteemed Mahanayaka Thero for two decades, he passed away in 1773 CE.",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -200,7 +173,7 @@ const timelineData = [
     description: [
       "Ven. Pravara Upali Maha Thero was a distinguished senior monastic leader in a Sangha (Monk) lineage that originated from the Maha Vihara of Anuradhapura in Sri Lanka and later flourished in Siam (Thailand). With the patronage of King Phra Maha Dharmaraja Paramakosa (1733–1759 CE) of Thailand, he led a group of ordained monks to Sri Lanka with the primary objective of re-establishing the Upasampadā (higher ordination) lineage in the country. Arriving in Sri Lanka via Trincomalee, Ven. Pravara Upali Maha Thero played a pivotal role in the formal reestablishment of the Siyam Upasampadā tradition. On the Esala Poya day of the year 1753 CE, within the Visungama Sīmā (the consecrated boundary) of the Malwathu Maha Vihara, he conferred higher ordination upon a group of Sri Lankan monks, including Ven. Welivita Saranankara Thero. This significant event marked the revival of the Siyam Nikaya ordination lineage in Sri Lanka under his leadership. Ven. Pravara Upali Maha Thero passed away in February 1775 CE within the Uposatha Hall of the Malwathu Vihara, leaving behind an enduring legacy in the history of Sri Lankan Buddhism.",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -211,7 +184,7 @@ const timelineData = [
 
       "Apart from his monastic and administrative contributions, Välivita Saranankara Thero was a distinguished scholar and prolific writer. His works include Muniguna Alankāra, Sārārtha Saṅgrahaya, Abhisambodhi Alankāra, Madhurārtha Prakāsanīya, Rūpamālā and Bhēsajja Manjusā Sannaya. His literary and doctrinal contributions greatly enriched Buddhist studies and helped revive the study of Dhamma and Vinaya (doctrine and monastic discipline) in Sri Lanka. Furthermore, he took an active role in establishing and restoring numerous Buddhist monasteries and temples across the island. In recognition of his exceptional service to the Buddhist monastic tradition, King Kirti Sri Rajasinghe officially conferred upon him the title of Sangharaja (Supreme Patriarch of the Buddhist Order) in 1760 CE. After dedicating his life to the restoration and advancement of Buddhism in Sri Lanka, Wälivita Sri Saranankara Sangharaja Thero passed away on July 18, 1778 CE, at the Malwathu Maha Vihara. It is said that in his final moments, he listened to a sermon (āsanna bana) delivered by Ven. Kamburupitiye Gunaratana Thero, remaining fully conscious and composed as he peacefully passed away. ",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -230,7 +203,7 @@ const timelineData = [
 
       "King Kirti Sri Rajasinha vigorously defended the Kandyan Kingdom from Dutch aggression and remained committed to religious merit-making until his death in 1782 CE. A statue believed to be sculpted during his lifetime remains enshrined at the Dambulla Viharaya, symbolizing his enduring legacy.",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -241,7 +214,7 @@ const timelineData = [
 
       "As a devout patron of Buddhism, the king restored several temples, donated land to the Sangha, and oversaw the completion of the Degaldoruwa Royal Temple. He famously illuminated the Temple of the Sacred Tooth Relic with fifty thousand oil lamps and commissioned a Buddha statue modeled after his own form, symbolizing personal spiritual aspiration. King Rajadhi Rajasinha passed away on 26 July 1798 CE. With no designated heir, a succession crisis followed, leading to the enthronement of Prince Kannasamy as King Sri Wickrama Rajasinha. A rare painting of Rajadhi Rajasinha and his brother is preserved at Babarakanda Rajamaha Vihara.",
     ],
-    image: Noimage,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
   },
 
   {
@@ -256,7 +229,7 @@ const timelineData = [
 
       "Despite his earlier loyalty and service, Pilimatalauwa Maha Adikaram later orchestrated several unsuccessful plots to assassinate King Sri Vikrama Rajasinghe. These conspiracies led to his conviction for high treason. On August 26, 1811 CE, Pilimatalauwa, along with his fellow conspirators, was publicly executed at the execution grounds in the presence of the king and his trusted officials. His legacy endures in the form of a well-preserved portrait displayed at the Wijesundararamaya Temple in Kandy.",
     ],
-    image: PilimatalauwaMahaAdikaram,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/PilimatalauwaMahaAdikaram.webp",
   },
 
   {
@@ -273,7 +246,7 @@ const timelineData = [
 
       "However, due to the strategic machinations of the British and the betrayals within his own ministerial council, Sri Vikrama Rajasinha was ultimately dethroned. On January 24, 1816 CE, he was exiled to Vellore, India. While in exile, he had two children and endured 17 years of captivity before passing away on January 30, 1832 CE, at the age of 52. Even today, the graves of the king and queen in Vellore are respected and visited by the public as a mark of honor.",
     ],
-    image: SriVikramaRajasinghe,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/SriVikramaRajasinghe.webp",
   },
 
   {
@@ -282,7 +255,7 @@ const timelineData = [
     description: [
       "Venkatha Rangammal, a queen belonging to the Madurai royal lineage of South India, was born around 1782 CE. At the age of sixteen, in 1798 CE, she was married to Sri Vikrama Rajasinghe, the last king of the Kandyan Kingdom and Sri Lanka. Queen Rangammal was known for her deep devotion to religion and was regarded as a virtuous woman. She resided within the royal palace along with her younger sister, who became the king’s second queen. A portrait of Queen Rangammal, painted in 1800 CE by William De Daniell, provides a visual representation of her appearance. Another painting depicting her alongside the king further corroborates her likeness, allowing for an accurate identification of her image. Following the British annexation of the Kandyan Kingdom in 1815 CE, both queens were captured along with King Sri Vikrama Rajasinghe. The final attire worn by Queen Rangammal is presently preserved in the Colombo National Museum. On January 24, 1816 CE, the king was exiled to Vellore aboard the ship named “Cornwallis” and Queen Rangammal was exiled along with him. She was ultimately laid to rest at the same site where Sri Vikrama Rajasinha was buried and their tombs in Vellore continue to be honored by the public to this day.",
     ],
-    image: QueenVenkathaRangammal,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/QueenVenkathaRangammal.webp",
   },
 
   {
@@ -299,7 +272,7 @@ const timelineData = [
 
       "In recognition of his loyal and exemplary service, King Sri Vikrama Rajasinghe granted him the rare privilege of wearing the white Thuppottiya (A ceremonial garment traditionally reserved for the nobility) during official state occasions. This extraordinary gesture reflected the king’s deep respect and admiration for Moolachariya’s invaluable contributions to the architectural and cultural legacy of the Kandyan Kingdom.",
     ],
-    image: DevendraMoolachariya,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/DevendraMoolachariya.webp",
   },
 
   {
@@ -316,7 +289,7 @@ const timelineData = [
 
       "He earned the trust of the Kandyan people and made every effort to ease their discontent under British imperial rule. When he passed away unexpectedly from a fever on May 25, 1824 CE, in Kandy, he was 49 years old and unmarried. His grave can be seen in the cemetery located behind the Temple of the Sacred Tooth Relic (Dalada Maligawa).",
     ],
-    image: SirJohnDOyly,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/SirJohnD’Oyly.webp",
   },
 
   {
@@ -329,7 +302,7 @@ const timelineData = [
 
       "However, his brutal suppression of the Kandyan Uprising in 1818 CE has left an indelible black mark on the legacy of British colonial rule in Sri Lanka. After retiring from the governorship in 1820 CE, he returned to England. In 1823 CE, he was appointed Governor of Landguard Fort in Suffolk, a position he held until his death in 1833 CE at Helston.",
     ],
-    image: SirRobertBrownrigg,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/SirRobertBrownrigg.webp",
   },
 
   {
@@ -338,7 +311,7 @@ const timelineData = [
     description: [
       "Monarawila Rajapakse Wickramasekara Bandaranayake Keppetipola served as the Disawe (provincial governor) of Uva region under King Sri Vikrama Rajasinghe. He was born between 1880 CE and 1882 CE. His father, Keppetipola Golahale Nilame, was a prominent official, while his mother was Monarawila Kumarihamy. Ehelopola Maha Nilame’s wife was his sister and his own wife was Delwala Ethana Kumarihamy. He had two sons named Keppetipola Loku Banda and Kalu Banda. At the time of Keppetipola Disawe’s execution in 1818 CE, his elder son was only nine years old, while the younger was six years. He met his tragic end at the hands of British colonial rulers, being beheaded on November 26, 1818 CE, at the young age of approximately 36 or 37 Years. His execution was a consequence of leading the 1818 CE Uva-Wellassa rebellion against British rule. Today, Sri Lankans revere and remember him as a national hero who courageously sacrificed his life for his homeland. His skull has been preserved and honored as a tribute to his valiant service and unwavering patriotism.",
     ],
-    image: MonarawilaKeppetipolaDisawe,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/MonarawilaKeppetipolaDisawe.webp",
   },
 
   {
@@ -349,7 +322,7 @@ const timelineData = [
 
       "At the age of 53, Madugalle Nilame became involved in the 1818 CE rebellion against British colonial rule. He was captured and convicted of treason. Consequently, on November 26, 1818 CE, he was executed by beheading at Bogambara. During the execution, Keppetipola Nilame was beheaded first, followed by Madugalle Nilame. The severed heads of both leaders were initially preserved at the Kandy Hospital and later taken to England. Madugalle Nilame is remembered as a valiant warrior who sacrificed his life for his motherland, securing an indelible place in Sri Lankan history.",
     ],
-    image: MadugalleUdaGabadaNilame,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/MadugalleUdaGabadaNilame.webp",
   },
 
   {
@@ -362,7 +335,7 @@ const timelineData = [
 
       "During the Uva-Wellassa Rebellion, on October 6, 1818 CE, he was captured along with his wife and his brother called Kasare Bandara. Though he was sentenced to death by hanging by the British military tribunal, he requested to be executed in accordance with the traditional laws of his homeland which dictated beheading instead of hanging. He also expressed his regret for failing to liberate his country from British rule and fulfill his duty to his nation. As a final act of defiance, he requested that after his beheading, his body be dismembered and fed to the dogs and Crows. His request was granted by the tribunal and on the morning of October 27, 1818 CE, at 8:00 AM he was beheaded. His final wish was that courageous warriors like him would continue to be born on Sri Lankan Motherland forever.",
     ],
-    image: EllepolaMahaNilame,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/EllepolaMahaNilame.webp",
   },
   
   {
@@ -373,7 +346,7 @@ const timelineData = [
 
       "Subsequently, he played a significant role in orchestrating and leading the Uva–Wellassa uprising aimed at reclaiming the country's independence. His efforts were ultimately thwarted when he was captured by the British and sentenced to death. He was executed on December 18, 1818 CE. Despite his death, he became venerated among local communities and was deified as Punchi Aluth Bandara Deviyan, a local guardian deity symbolizing resistance and national pride.",
     ],
-    image: KivulegedaraMohottala,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/KivulegedaraMohottala.webp",
   },
 
   {
@@ -388,7 +361,7 @@ const timelineData = [
 
       "Ehelepola, despite sacrificing his family for his personal political aspirations, did not realize his ambition of ascending to the throne with British support. After the failure of the 1818 CE Uva Rebellion, the British exiled him to Mauritius, where he died in 5th April 1829 CE.",
     ],
-    image: EhelepolaMahaAdhikaram,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/EhelepolaMahaAdhikaram.webp",
   },
 
   {
@@ -403,7 +376,7 @@ const timelineData = [
 
       "British accounts and contemporary dissenting writers later highlighted this incident to portray King Sri Vickrama Rajasinghe as a cruel and tyrannical ruler. However, historical analysis reveals that the king’s actions were primarily driven by the decisions of the royal council in response to perceived acts of treachery during a period of political instability. Despite various interpretations, the undeniable historical fact remains that in May 1814 CE, Ehelepola Kumaríhamí was executed by being drowned in a lake—an event etched into Sri Lanka’s history as a symbol of monarchical justice intertwined with tragedy.",
     ],
-    image: EhelepolaKumarihami,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/EhelepolaKumarihami.webp",
   },
 
   {
@@ -412,7 +385,7 @@ const timelineData = [
     description: [
       "Loku Bandara, the eldest son of Kumarihami and Maha Adhikaram of Ehelepola, was born in 1803 CE and was the firstborn child in the family. Due to his father’s strained relationship with King Sri Vikrama Rajasinghe of the Kandyan Kingdom, compounded by his alignment with the British against the monarch, the family was charged with treason. As a consequence, Loku Bandara and his family were subjected to severe punishment. During this period, Madduma Bandara, Loku Bandara’s younger brother, who was only nine years old, was executed first. Subsequently, Loku Bandara, who was eleven years old at the time, was sacrificed his life for his father and he too became a martyr of the nation.",
     ],
-    image: LokuBandaraEhelepola,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/LokuBandaraEhelepola.webp",
   },
 
   {
@@ -423,7 +396,7 @@ const timelineData = [
 
       "At the time of his death in 1814 CE , Madduma Bandara was only nine years old. His courage in the face of imminent death, especially his fearless declaration—“Brother, do not be afraid. I will show you how to die”.—made him a symbol of youthful bravery and patriotism. While his elder brother faltered in fear, Madduma Bandara’s unwavering resolve in the moments before his execution immortalized him as a heroic figure not only in the history of the Kandyan Kingdom but in the broader narrative of Sri Lankan national identity. His sacrifice, offered in the name of loyalty and familial duty, has since been enshrined as a defining example of courage for future generations",
     ],
-    image: MaddumaBandaraEhelepola,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/MaddumaBandaraEhelepola.webp",
   },
 
   {
@@ -434,7 +407,7 @@ const timelineData = [
 
       "As there was no historical precedent or legal custom within Kandyan law or Sri Lankan tradition for executing female children by beheading, Tikiri Kumarihami was subjected to a different and equally brutal method of execution—she was bound with stones and drowned in a lake. Her death remains one of the most tragic episodes in Sri Lankan history, reflecting the harsh realities of political retribution during the final years of the Kandyan Kingdom.",
     ],
-    image: EhelepolaTikiriKumarihami,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/EhelepolaTikiriKumarihami.webp",
   },
 
   {
@@ -447,7 +420,7 @@ const timelineData = [
 
       "On several occasions, Lawrie performed duties as Acting Chief Justice. However, he was never formally appointed to the office of Chief Justice. He retired from judicial service in 1901 CE. Following his retirement, Lawrie was appointed as a member of the Royal Colonial Institute and was knighted by King Edward VII in recognition of his service. Sir A. C. Lawrie passed away on May 11, 1914 CE, at Dumbogin, Scotland, at the age of seventy-seven. ",
     ],
-    image: ACLawrie,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/ACLawrie.webp",
   },
 
   {
@@ -456,7 +429,7 @@ const timelineData = [
     description: [
       "The Kapuwatte Maha Nilame married a Kobbekaduwe Kumarihami, and their daughter married Pilimatalavuva Adigaram. Kapuwatte Maha Nilame held the office of Uda Gampahe Adigar and was appointed Diyawadana Nilame of the Sri Dalada Maligawa by King Sri Wickrama Rajasinghe (1798– 1815) in 1814 AD circa. He served in this esteemed position until his death in 1824 A.D. When the Kandyan Kingdom came to an end with its annexation by the British Empire on 2nd March 1815 A.D., through the signing of the Kandyan Convention, the British appointed Kapuwatte Diyawadana Nilame as the Second Adigar as well. With John D’Oyly’s assistance, he was responsible for bringing the Sacred Tooth Relic from the Pusulpitiya Raja Maha Viharaya to the Temple of the Tooth in Kandy in a grand procession on 24 April 1815 A.D. During the freedom struggle, commonly known as the Uva Rebellion in 1818 A.D., Venerable Wariyapola Sri Sumangala Anunayaka Thero removed the Sacred Tooth Relic for safekeeping. It was later reinstated at the Sri Dalada Maligawa through the mediation of Kapuwatte Diyawadana Nilame.",
     ],
-    image: KapuwatteAdikaram,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/KapuwatteAdikaram.webp",
   },
 
   {
@@ -465,7 +438,7 @@ const timelineData = [
     description: [
       "Ven. Wariyapola Sri Sumangala Anunayake Thero born in Wariyapola Bamunakotuwa, Wariyapola Sumangala Thero's father was Herath Mudiyanselage Bamunakotuwa Rala. Before he entered the monastic life, he was known as Bamunakotuwa Ralage Kiri Hami from his childhood.  The Thero, who was passionate about religion, received ordination from the most respected Idatalu Goda Dhammapala Mahanayake Thero of the Asgiri Chapter of the Siam Maha Nikaya and resided at the Suduhumpola Viharaya. Later, the Thero, who held the title of Anunayake Thero of the Asgiri Chapter, was fortunate enough to take care of the Tooth Relic during the reigns of Kings Rajadhi Rajasinghe and Sri Vickrama Rajasinghe. On March 2, 1815 CE, before signing the treaty of surrender of the Kandyan Kingdom to the British, the Thero was brave enough to protest against the hoisting of the English flag by a British soldier at the historic Magul Maduwa (Royal Court) and to lower the British flag and raise the lion flag (Ceylon Flag) again. Because of that brave act, the Thero is respected as one of the most defiant Nayake Thero in the history of Sri Lanka. Moreover, during the 1818 C.E rebellion, he protected the sacred Tooth Relic by hiding it and facing various hardships. Due to this, he also had to spend time in a prison in Jaffna. He was later released from prison and is remembered for his courageous act for his country..",
     ],
-    image: VenWariyapolaSriSumangala,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/VenWariyapolaSriSumangala.webp",
   },
 ];
 
@@ -502,11 +475,7 @@ const TimeLine: React.FC = () => {
                 index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
               } relative`}
             >
-              {/* <img
-                  src={timeline}
-                  alt="Timeline marker"
-                  className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-6 w-20 h-10 z-10"
-                /> */}
+     
               <FaRegDotCircle className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-6 w-20 h-10 z-10" />
 
               {/* IMAGE */}
@@ -557,12 +526,7 @@ const TimeLine: React.FC = () => {
         </div>
 
         <div className="relative flex flex-col items-center mt-20 lg:mt-16 px-4 py-6">
-          {/* <img
-              src={showmore}
-              alt="Show more"
-              className={`w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 opacity-60 hover:opacity-100 cursor-pointer transition-transform duration-300 z-10 ${
-                showAll ? "rotate-180" : "rotate-0"
-              }`} */}
+
           <RiArrowDownDoubleFill
             className={`w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-10 opacity-60 hover:opacity-100 cursor-pointer transition-transform duration-300 z-10 ${
               showAll ? "rotate-180" : "rotate-0"

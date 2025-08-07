@@ -1,37 +1,31 @@
 import React from "react";
 import { Link } from "react-router";
-
-// Images
-import KingCourt from "../../assets/home/kings-court-wite.png";
-import MadaMidula from "../../assets/home/MADA-MIDULA-White-vertical.png";
-import Prison from "../../assets/home/Prison-LOGO-Black.png";
-import WaxMuseum from "../../assets/home/wax-museum-white.png";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 const zones = [
   {
-    image: Prison,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/home/Prison-LOGO-Black.webp",
     title: "Old Prison Cells",
     description:
       "Where history meets retail therapy, forty shopping cells house luxury brands like Maliban, PG Martin, and Silani in a uniquely transformed heritage space.",
     link: "/PrisonArcade",
   },
   {
-    image: MadaMidula,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/home/MADA-MIDULA-White-vertical.webp",
     title: "Mada Midula Garden",
     description:
       "A tranquil sanctuary where ancient stone walls whisper tales of yesteryear, offering visitors peaceful moments amidst beautifully landscaped heritage gardens.",
     link: "/courtyard",
   },
   {
-    image: WaxMuseum,
+    image:  "https://assets.ehelepolawalawwa.lk/assets/assets/home/wax-museum-white.webp",
     title: "Wax Museum",
     description:
       "Thirty-five lifelike figures bring Sri Lanka's greatest heroes to life, surrounded by exhibits showcasing Kandyan architecture, royal customs, and traditional crafts.",
     link: "/WaxMuseum",
   },
   {
-    image: KingCourt,
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/home/kings-court-wite.webp",
     title: "The King's Court",
     description:
       "Authentic royal dining experience recreating ancient culinary traditions, where traditional flavors meet regal ambiance in a restaurant fit for royalty.",

@@ -11,12 +11,6 @@ import NavBar from "./components/common/NavBar";
 import HeroSection from "./components/home/HeroSection";
 import NewsSection from "./components/home/NewsSection";
 
-import FooterTopImage from "./assets/footer-image.png";
-import FootetrtTopImageMobile from './assets/footer-image-mobile.png'
-
-import PatternArt from "./assets/gallery/pattern-art.png"
-import FooterArt2 from './assets/gallery/perahera-art.png'
-import FooterArt from "./assets/logos/ehelepola-walauwwe-logo-white.png";
 import { GoArrowRight } from "react-icons/go";
 
 const App: React.FC = () => {
@@ -36,8 +30,11 @@ const App: React.FC = () => {
     <>
       {/* header */}
       <section
-        className={`hidden lg:block absolute w-full z-50 transition-all duration-2000 ease-in-out ${showNav ? "hidden lg:block translate-y-0 opacity-100" : "hidden lg:block -translate-y-10 opacity-0"
-          }`}
+        className={`hidden lg:block absolute w-full z-50 transition-all duration-2000 ease-in-out ${
+          showNav
+            ? "hidden lg:block translate-y-0 opacity-100"
+            : "hidden lg:block -translate-y-10 opacity-0"
+        }`}
       >
         <NavBar page="home" />
       </section>
@@ -55,9 +52,7 @@ const App: React.FC = () => {
         {/* reservation for desktop*/}
         <section className="hidden bg-black lg:flex gap-40 justify-center h-40 pt-15 px-10  w-3/4 shadow-2xl rounded-2xl -mt-5 absolute left-1/2 transform -translate-x-1/2 mx-auto">
           <div className="w-auto">
-            <h2 className="text-white text-2xl">
-              School Student Reservation
-            </h2>
+            <h2 className="text-white text-2xl">School Student Reservation</h2>
             <p className="text-white/40 text-sm mt-2">
               Don't miss out on this exclusive opportunity. Slots fill up fast
               reserve your visit today!
@@ -74,9 +69,8 @@ const App: React.FC = () => {
           </Link>
         </section>
 
-
         {/* reservation for Mobile*/}
-        <section className="z-[-1]  lg:hidden mt-10 bg-black rounded-2xl shadow-2xl absolute left-1/2 transform -translate-x-1/2 w-[90%] max-w-md px-6 py-8 space-y-6">
+        <section className="  lg:hidden mt-10 bg-black rounded-2xl shadow-2xl absolute left-1/2 transform -translate-x-1/2 w-[90%] max-w-md px-6 py-8 space-y-6">
           <div>
             <h2 className="text-white text-xl font-semibold">
               School Student Reservation
@@ -105,7 +99,7 @@ const App: React.FC = () => {
 
         {/*pattern art*/}
         <img
-          src={PatternArt}
+          src="https://assets.ehelepolawalawwa.lk/assets/assets/gallery/pattern-art.webp"
           alt=""
           className="absolute w-105 right-0 bottom-0 lg:top-0 lg:h-full object-cover z-10 opacity-30 lg:rotate-0 rotate-180 h-1/2"
         />
@@ -118,15 +112,19 @@ const App: React.FC = () => {
       {/* footer top */}
       <section className="">
         <div>
-          <img src={FooterTopImage} className='hidden md:block ' />
-          <img src={FootetrtTopImageMobile} className='md:hidden block' />
+          <img src="https://assets.ehelepolawalawwa.lk/assets/assets/footer-image.webp" className="hidden md:block " />
+          <img src="https://assets.ehelepolawalawwa.lk/assets/assets/footer-image-mobile.webp" className="md:hidden block" />
         </div>
 
         {/* footer body */}
         <section className="bg-primary relative z-10">
           <div className="absolute h-11/12 py-5 right-0 opacity-5 scale-x-[-1]">
-            <img src={FooterArt2} alt="" className="h-full w-full hidden lg:block" />
-            <img src={FooterArt} alt="" className="h-140 w-200 hidden" />
+            <img
+              src="https://assets.ehelepolawalawwa.lk/assets/assets/assets/gallery/perahera-art.webp"
+              alt=""
+              className="h-full w-full hidden lg:block"
+            />
+            <img src="https://assets.ehelepolawalawwa.lk/assets/assets/logos/ehelepola-walauwwe-logo-white.webp" alt="" className="h-140 w-200 hidden" />
           </div>
 
           <Footer />
