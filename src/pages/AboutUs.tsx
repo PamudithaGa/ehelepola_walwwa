@@ -5,11 +5,7 @@ import HeroSection from "../components/aboutus/HeroSection";
 import Footer from "../components/common/Footer";
 import Places from "../components/aboutus/Places";
 import History from "../components/aboutus/History";
-import MuseumLife from "../components/aboutus/museumLife";
-import FooterTopImage from "../assets/footer-image.png";
-import FootetrtTopImageMobile from "../assets/footer-image-mobile.png";
-import FooterArt2 from "../assets/gallery/perahera-art.png";
-import FooterArt from "../assets/logos/ehelepola-walauwwe-logo-white.png";
+import MuseumLife from "../components/aboutus/MuseumLife";
 
 const AboutUs: React.FC = () => {
   useEffect(() => {
@@ -34,7 +30,7 @@ const AboutUs: React.FC = () => {
       <section className="mt-20 lg:mt-30">
         <MuseumLife />
       </section>
-      
+
       <section className="relative bg-black mt-30 py-10 h-auto z-1">
         <Places />
       </section>
@@ -42,19 +38,29 @@ const AboutUs: React.FC = () => {
       {/* footer top */}
       <section className="">
         <div>
-          <img src={FooterTopImage} className="hidden md:block " />
-          <img src={FootetrtTopImageMobile} className="md:hidden block" />
+          <img
+            src="https://assets.ehelepolawalawwa.lk/assets/assets/footer-image.webp"
+            className="hidden md:block "
+          />
+          <img
+            src="https://assets.ehelepolawalawwa.lk/assets/assets/footer-image-mobile.webp"
+            className="md:hidden block"
+          />
         </div>
 
         {/* footer body */}
         <section className="bg-primary relative z-10">
           <div className="absolute h-11/12 py-5 right-0 opacity-5 scale-x-[-1]">
             <img
-              src={FooterArt2}
+              src="https://assets.ehelepolawalawwa.lk/assets/assets/assets/gallery/perahera-art.webp"
               alt=""
               className="h-full w-full hidden lg:block"
             />
-            <img src={FooterArt} alt="" className="h-140 w-200 hidden" />
+            <img
+              src="https://assets.ehelepolawalawwa.lk/assets/assets/logos/ehelepola-walauwwe-logo-white.webp"
+              alt=""
+              className="h-140 w-200 hidden"
+            />
           </div>
 
           <Footer />

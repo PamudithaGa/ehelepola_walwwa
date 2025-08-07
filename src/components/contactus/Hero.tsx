@@ -1,7 +1,6 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 import { PiPhoneCall } from "react-icons/pi";
-import Walawwa from "../../assets/logos/walawwa-building.png";
 
 const Hero = () => {
   /* contact feature */
@@ -41,7 +40,7 @@ const Hero = () => {
               ))}
             </h1>
             <div className="bg-amber-400 lg:hidden block">
-              <img src={Walawwa} alt="" className="lg:hidden block" />
+              <img src="https://assets.ehelepolawalawwa.lk/assets/assets/logos/walawwa-building.webp" alt="" className="lg:hidden block" />
             </div>
             <p className="text-[15px] text-white/30 mt-5 mb-10 text-justify pr-10">
               Let’s talk we’re always ready to welcome you into the legacy of

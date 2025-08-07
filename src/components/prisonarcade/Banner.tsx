@@ -3,10 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 
 const bannerImages: string[] = [
-    new URL("../../assets/prisonarcade/AdVertical2.png", import.meta.url).href,
-    new URL("../../assets/prisonarcade/AdVertical3.png", import.meta.url).href,
-  // new URL("../../assets/prisonarcade/examples (2).png", import.meta.url).href,
-  // new URL("../../assets/prisonarcade/examples (3).png", import.meta.url).href,
+    "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/AdVertical2.webp",
+    "https://assets.ehelepolawalawwa.lk/assets/assets/prisonarcade/AdVertical3.webp",
 ];
 
 const Banner: React.FC = () => {

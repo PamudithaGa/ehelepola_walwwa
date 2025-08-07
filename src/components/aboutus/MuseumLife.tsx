@@ -1,7 +1,6 @@
 import React from "react";
 import { GiPrisoner} from "react-icons/gi";
 import { IoLogoReact } from "react-icons/io5";
-import crown from "../../assets/crown.svg";
 
 const MuseumLife: React.FC = () => {
   return (
@@ -10,7 +9,7 @@ const MuseumLife: React.FC = () => {
         <div className=" flex items-center  flex-col lg:flex-row justify-center gap-8 lg:gap-25 h-full">
           <div className="w-full lg:w-1/3 flex flex-col items-center justify-center p-8 lg:p-0  rounded shadow-2xl lg:shadow-none">
             <div className="flex pb-6 items-center justify-center w-20 h-20 ">
-                <img src={crown} alt="" />
+                <img src="https://assets.ehelepolawalawwa.lk/assets/assets/crown.svg" alt="" />
             </div>
             <div>
               <p className="text-center">
