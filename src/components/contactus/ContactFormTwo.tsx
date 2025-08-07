@@ -39,10 +39,10 @@ const ContactFormTwo: React.FC = () => {
     };
 
     emailjs
-      .sendForm(
+      .send(
         "service_jakx4qq",
         "template_80yb4bp",
-        formRef.current,
+        contactData,
         "XANFY_YY290qHq7ZO"
       )
       .then(
