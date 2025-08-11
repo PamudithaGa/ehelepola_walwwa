@@ -1,5 +1,7 @@
 import React from "react";
 
+import BannerVideo from '../../assets/videos/KingsCourt.mp4'
+
 
 const PageHero: React.FC = () => {
   return (
@@ -36,7 +38,7 @@ const PageHero: React.FC = () => {
               loop
               playsInline
             >
-              <source src="https://assets.ehelepolawalawwa.lk/assets/assets/videos/KingsCourt.mp4" type="video/mp4" />
+              <source src={BannerVideo} type="video/mp4" />
             </video>
           </div>
 

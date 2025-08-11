@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router";
 
+
+import HeroVideo from '../../assets/videos/ehalepolaNew.mp4';
+
 const HeroSection: React.FC = () => {
   return (
     <>
-      <section className="relative w-full lg:h-[100dvh] h-[95dvh] overflow-hidden z-10">
+      <section className="relative w-full lg:h-[100dvh] h-[100dvh] overflow-hidden z-10">
         {/* Background video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -13,12 +16,9 @@ const HeroSection: React.FC = () => {
           loop
           playsInline
         >
-          <source src="https://assets.ehelepolawalawwa.lk/assets/assets/videos/ehalepolaNew.mp4" type="video/mp4" />
+          <source src={HeroVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
-        {/* Top-to-bottom overlay */}
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-10" /> */}
 
         {/*Desktop and Mobile overlay Bottom-to-top */}
         <div className="block absolute inset-0 bg-gradient-to-t from-black lg:via-black/75 via-black/15 to-transparent z-10" />
@@ -28,11 +28,7 @@ const HeroSection: React.FC = () => {
 
         {/* Content */}
         <div className="relative z-20 w-full h-full flex items-center justify-center  px-6">
-          <div className="mt-20 md:mt-60 w-11/12 items-center flex flex-col justify-center">
-            {/* <h1 className="font-bold bg-gradient-to-t text-center from-white to-black/10 bg-clip-text text-transparent lg:text-4xl text-[48px] md:text-8xl mb-4 leading-tight">
-              Ehelepola Walauwwa
-            </h1> */}
-
+          <div className="mt-25 md:mt-60 w-11/12 items-center flex flex-col justify-center">
             <h1 className="font-bold text-[56px] lg:text-8xl justify-center -mt-10 lg:mt-0 items-center text-center leading-tight flex flex-wrap gap-x-2">
               {"Ehelepola Walauwwe".split(" ").map((word, i) => (
                 <span
@@ -48,13 +44,13 @@ const HeroSection: React.FC = () => {
               Step into the legendary Ehelepola Walauwa, where Sri Lanka's regal heritage comes alive through four extraordinary experiences: shopping at the Prison Arcade, exploring exhibitions at the Wax Museum, enjoying the serenity of the Courtyard, and dining at the Kings Court
             </p>
 
-            {/* sketch walauwwe */}
+            {/* sketch walauwwe mobile only*/}
             <div className="lg:block hidden mt-4 lg:mt-0 lg:w-1/2">
               <img src="https://assets.ehelepolawalawwa.lk/assets/assets/logos/sketch-white.webp" alt="" className="opacity-45" />
             </div>
 
-            {/* Buttons */}
-            <div className="flex lg:hidden flex-wrap md:justify-center justify-center gap-4 mt-20">
+            {/* Buttons mobile only*/}
+            <div className="flex lg:hidden flex-wrap md:justify-center justify-center gap-4 mt-10">
               {/* Primary Button */}
               <Link
                 to="aboutUs"
