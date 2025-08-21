@@ -12,7 +12,7 @@ const timelineData = [
 
       "He safeguarded the Sacred Tooth Relic at the Delgamuwa Raja Maha Viharaya for a period of 43 years consistently performing the requisite rituals and monastic duties associated with its veneration. Furthermore, he played a vital role in organizing and participating in 11 processions (Peraheras) in collaboration with the king, underscoring his unwavering commitment to the preservation and public reverence of the relic. Among his principal disciples were Ven. Devanagala Rathanalankara Thero (also known as Galagoda Thero) and Ven. Ellepola Mangala Thero, both of whom along with Hiripitiye Rala worked closely with him. Significantly, it was under Ven. Mahindalankara Thero’s guidance that the Sacred Tooth Relic was eventually transferred to the Kingdom of Kandy (Udarata) and ceremonially presented to King Vimaladharmasuriya I, marking a defining moment in Sri Lanka’s religious and political history.",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/DewanagalaMahindalankaraThero.webp",
   },
 
   {
@@ -64,7 +64,7 @@ const timelineData = [
 
       "Beyond his military achievements, King Senarath’s reign saw significant cultural and religious revival within the Kandyan Kingdom. His contributions included the restoration and renovation of major Buddhist temples and the construction of a two-storied shrine in Kandy to enshrine the Sacred Tooth Relic, a vital symbol of legitimate kingship. Towards the end of his reign, King Senarath divided the kingdom among his three sons: Prince Vijayapala, who was assigned Matale; Prince Kumarasinghe, who was given Uva; and Prince Rajasinghe, who ruled Senkadagala. In 1635 CE, Prince Rajasinghe succeeded him as king, reigning as King Rajasinghe II (1635–1687 CE).",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/KingSenarath.webp",
   },
 
   {
@@ -105,7 +105,7 @@ const timelineData = [
 
       "In 1693 CE, King Vimaladharmasuriya II dispatched a religious delegation to Rakkhanga (Rakhine in present-day Myanmar) to invite Theravāda monks to reestablish the higher ordination (upasampadā) in Sri Lanka, which had lapsed by that time. Upon his death on June 4, 1707 CE, he was succeeded by his son King Veera Parakrama Narendrasinghe, who reigned from 1707 to 1739 CE.",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/VimaladharmasuriyaII.webp",
   },
 
   {
@@ -120,7 +120,7 @@ const timelineData = [
 
       "Sri Veera Parakrama Narendrasinghe passed away on Friday, 13 May 1739 CE, after a reign marked by religious devotion, cultural patronage and relative political stability. Personal artifacts such as his royal shirt, specs and a ceremonial sword are still preserved at the Kundasale Sri Veera Parakrama Narendrasinghe Raja Maha Viharaya, a temple he founded—serving as lasting material testimonies of his enduring legacy.",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/SriVeeraParakramaNarendrasinghe.webp",
   },
 
   {
@@ -135,7 +135,7 @@ const timelineData = [
 
       "Despite political complexities, including Dutch control over island trade and internal factionalism, King Sri Vijaya Rajasinghe maintained stability and reinforced the role of Buddhism in the Kandyan Kingdom. He ruled for eight years and passed away in 1747 CE.",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/SriVijayaRajasinghe.webp",
   },
 
   {
@@ -155,7 +155,7 @@ const timelineData = [
     description: [
       "During the Kandyan period, the Buddhist monastic order had once again fallen into decline. To restore its lost glory, King Kirti Sri Rajasinghe reintroduced higher ordination (Upasampada) from Siam (Present day Thailand) in 1753 CE, thereby rejuvenating the Buddhist clergy. Following this revival, King Kirti Sri Rajasinghe formally appointed Ven. Urulewatte Sri Priyadarsi Dharmasiddhi Maha Nayaka Thero as the Mahanayaka (Chief Prelate) of the Asgiri Maha Viharaya, bestowing upon him the prestigious title of Upasangharaja along with an official royal decree (Nila Vijinipatha). Ven. Urulewatte Thero was a principal disciple of Asgiri Gana Detunayaka Golahenwatte Rajaguru Dharmakirti Thero. His ordination took place in the first Seema Malaka (ordination hall) of the Asgiri Maha Vihara, under the guidance of the Siamese Upali Thero, who served as the Upajjhaya (preceptor), while Mahaprajna Thero and Brahmajoti Thero officiated as the Karmacharyas (ritual instructors). This historic event occurred on Sunday, the 8th of August 2296; Buddhist Era. Urulewatte Sri Priyadarsi Dharmasiddhi Thero was a highly erudite scholar, proficient in both Grantha Dhura (scriptural exegesis) and Vidarsana Dhura (meditative practice). His profound knowledge and intellectual prowess earned him great recognition within the monastic community. He continued to serve as the Mahanayaka Thero of the Asgiri Maha Vihara until his demise in the year 1778 CE.",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/UrulewatteSriPriyadarsiDharmasiddhiMahaNayakaThero.webp",
   },
 
   {
@@ -164,7 +164,7 @@ const timelineData = [
     description: [
       "The Buddhist Order in Sri Lanka has experienced both advancements and declines throughout history. By the mid-18th century CE, the monastic discipline had significantly deteriorated. In response, King Kirti Sri Rajasinghe revived the Buddhist monastic order by reintroducing higher ordination (Upasampada) from Siam (present-day Thailand). Following the establishment of the Siamese Upasampada lineage in 1753 CE, the first Mahanayaka (chief prelate) of the Malwathu Maha Vihara faction was none other than Ven. Tibbatuwawe Sri Siddhartha Buddharakkhita Maha Nayaka Thero. He was one of the five prominent ordained disciples of Ven. Welivita Saranankara Sangharaja Thero and was considered the foremost among them. According to the Mandarampuwata Kawya (Verse), King Kirti Sri Rajasinghe formally conferred upon him the prestigious title of Upasangharaja along with an official royal decree (Nila Vijinipatha). Ven. Tibbatuwawe Sri Siddhartha Buddharakkhita Thero made significant contributions to Buddhist scholarship. He compiled the Sri Saddharmavada Sangrahaya, a treatise on the virtues of the Lord Buddha. Additionally he played a pivotal role in the translation and preservation of Buddhist texts such as the Saddhammopayana, the Sathipatthana Sutta Sannaya and the Siamoupasampadawatha (History of the Siamese Ordination). One of his most distinguished achievements was overseeing the compilation of the Mahavamsa (the Great Chronicle), ensuring its continuity from the Kurunegala period (13th–14th century CE) to the era of King Kirti Sri Rajasinghe in Kandyan Period. The manuscript of the Mahavamsa, written in his own handwriting, has now been recognized as a UNESCO World Heritage document and is preserved in the main library of the University of Peradeniya. After serving as the esteemed Mahanayaka Thero for two decades, he passed away in 1773 CE.",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/TibbatuwaweSriSiddharthaBuddharakkhitaMahaNayakaThero.webp",
   },
 
   {
@@ -173,7 +173,7 @@ const timelineData = [
     description: [
       "Ven. Pravara Upali Maha Thero was a distinguished senior monastic leader in a Sangha (Monk) lineage that originated from the Maha Vihara of Anuradhapura in Sri Lanka and later flourished in Siam (Thailand). With the patronage of King Phra Maha Dharmaraja Paramakosa (1733–1759 CE) of Thailand, he led a group of ordained monks to Sri Lanka with the primary objective of re-establishing the Upasampadā (higher ordination) lineage in the country. Arriving in Sri Lanka via Trincomalee, Ven. Pravara Upali Maha Thero played a pivotal role in the formal reestablishment of the Siyam Upasampadā tradition. On the Esala Poya day of the year 1753 CE, within the Visungama Sīmā (the consecrated boundary) of the Malwathu Maha Vihara, he conferred higher ordination upon a group of Sri Lankan monks, including Ven. Welivita Saranankara Thero. This significant event marked the revival of the Siyam Nikaya ordination lineage in Sri Lanka under his leadership. Ven. Pravara Upali Maha Thero passed away in February 1775 CE within the Uposatha Hall of the Malwathu Vihara, leaving behind an enduring legacy in the history of Sri Lankan Buddhism.",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/UpaliMahaThero.webp",
   },
 
   {
@@ -184,7 +184,7 @@ const timelineData = [
 
       "Apart from his monastic and administrative contributions, Välivita Saranankara Thero was a distinguished scholar and prolific writer. His works include Muniguna Alankāra, Sārārtha Saṅgrahaya, Abhisambodhi Alankāra, Madhurārtha Prakāsanīya, Rūpamālā and Bhēsajja Manjusā Sannaya. His literary and doctrinal contributions greatly enriched Buddhist studies and helped revive the study of Dhamma and Vinaya (doctrine and monastic discipline) in Sri Lanka. Furthermore, he took an active role in establishing and restoring numerous Buddhist monasteries and temples across the island. In recognition of his exceptional service to the Buddhist monastic tradition, King Kirti Sri Rajasinghe officially conferred upon him the title of Sangharaja (Supreme Patriarch of the Buddhist Order) in 1760 CE. After dedicating his life to the restoration and advancement of Buddhism in Sri Lanka, Wälivita Sri Saranankara Sangharaja Thero passed away on July 18, 1778 CE, at the Malwathu Maha Vihara. It is said that in his final moments, he listened to a sermon (āsanna bana) delivered by Ven. Kamburupitiye Gunaratana Thero, remaining fully conscious and composed as he peacefully passed away. ",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/WalivitaSriSaranankaraSangharajaThero.webp",
   },
 
   {
@@ -203,7 +203,7 @@ const timelineData = [
 
       "King Kirti Sri Rajasinha vigorously defended the Kandyan Kingdom from Dutch aggression and remained committed to religious merit-making until his death in 1782 CE. A statue believed to be sculpted during his lifetime remains enshrined at the Dambulla Viharaya, symbolizing his enduring legacy.",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/KirthiSriRajasinghe.webp",
   },
 
   {
@@ -214,7 +214,7 @@ const timelineData = [
 
       "As a devout patron of Buddhism, the king restored several temples, donated land to the Sangha, and oversaw the completion of the Degaldoruwa Royal Temple. He famously illuminated the Temple of the Sacred Tooth Relic with fifty thousand oil lamps and commissioned a Buddha statue modeled after his own form, symbolizing personal spiritual aspiration. King Rajadhi Rajasinha passed away on 26 July 1798 CE. With no designated heir, a succession crisis followed, leading to the enthronement of Prince Kannasamy as King Sri Wickrama Rajasinha. A rare painting of Rajadhi Rajasinha and his brother is preserved at Babarakanda Rajamaha Vihara.",
     ],
-    image: "https://assets.ehelepolawalawwa.lk/assets/assets/gallery/no-preview.webp",
+    image: "https://assets.ehelepolawalawwa.lk/assets/assets/images/charactors/RajadhiRajasinghe.webp",
   },
 
   {
