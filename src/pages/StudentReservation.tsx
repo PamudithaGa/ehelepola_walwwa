@@ -2,6 +2,7 @@ import React from 'react'
 
 import NavBar from '../components/common/NavBar'
 import ReservationForm from '../components/reservation/ReservationForm'
+import ReservationFormBackend from '../components/reservation/ReservationFormBackend'
 
 const StudentReservation: React.FC = () => {
   return (
@@ -13,8 +14,12 @@ const StudentReservation: React.FC = () => {
         <NavBar page="other" />
       </section>
 
-      <section className="bg-primary pt-25">
+      <section className="bg-primary pt-25 hidden">
         <ReservationForm />
+      </section>
+
+      <section className="bg-primary pt-25">
+        <ReservationFormBackend />
       </section>
     </>
   )

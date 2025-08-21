@@ -15,8 +15,10 @@ import ContactUsTwo from "./pages/ContactUsTwo.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import StudentReservation from "./pages/StudentReservation.tsx";
 import Blogs from "./pages/Blogs.tsx";
-
-
+import Success from "./components/reservation/Success.tsx";
+import Cancel from "./components/reservation/Cancel.tsx";
+import Admin from "./pages/Admin.tsx";
+import AdminLogin from "./pages/AdminLogin.tsx";
 import FAQ from "./pages/FAQ.tsx";
 const router = createBrowserRouter([
   {
@@ -56,10 +58,26 @@ const router = createBrowserRouter([
     path: "/blogs",
     element: <Blogs />,
   },
-  
+
   {
     path: "/FAQ",
     element: <FAQ />,
+  },
+  {
+    path: "/success",
+    element: <Success/>,
+  },
+  {
+    path: "/cancel",
+    element: <Cancel />,
+  },
+  {
+    path: "/admin",
+    element: <Admin />,
+  },
+  {
+    path: "/adminLogin",
+    element: <AdminLogin />,
   },
 ]);
 
