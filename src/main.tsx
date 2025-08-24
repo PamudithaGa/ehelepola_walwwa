@@ -1,10 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router";
 
 import "./index.css";
 import "./style/fonts.css";
 import App from "./App.tsx";
-import { RouterProvider, createBrowserRouter } from "react-router";
 
 // Pages
 import PrisonArcade from "./pages/PrisonArcade.tsx";
@@ -17,9 +17,19 @@ import StudentReservation from "./pages/StudentReservation.tsx";
 import Blogs from "./pages/Blogs.tsx";
 import Success from "./components/reservation/Success.tsx";
 import Cancel from "./components/reservation/Cancel.tsx";
-import Admin from "./pages/Admin.tsx";
-import AdminLogin from "./pages/AdminLogin.tsx";
+import Admin from "./pages/admin/Admin.tsx";
 import FAQ from "./pages/FAQ.tsx";
+
+// Admin pages
+import AdminLogin from "./pages/admin/AdminLogin.tsx";
+import Dashboard from "./pages/admin/Dashboard.tsx";
+import Calendar from "./pages/admin/Calendar.tsx";
+import Reservations from "./pages/admin/Reservations.tsx";
+import Staff from "./pages/admin/Staff.tsx";
+
+// Layouts
+import AdminLayout from "./components/admin/AdminLayout.tsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -65,7 +75,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/success",
-    element: <Success/>,
+    element: <Success />,
   },
   {
     path: "/cancel",
@@ -78,6 +88,19 @@ const router = createBrowserRouter([
   {
     path: "/adminLogin",
     element: <AdminLogin />,
+  },
+
+  // Admin routes
+  { path: "/admin/login", element: <AdminLogin /> },
+  {
+    path: "/admin",
+    element: <AdminLayout />, // Wraps all child admin pages
+    children: [
+      { path: "dashboard", element: <Dashboard /> },
+      { path: "calendar", element: <Calendar /> },
+      { path: "reservations", element: <Reservations /> },
+      { path: "staff", element: <Staff /> },
+    ],
   },
 ]);
 
